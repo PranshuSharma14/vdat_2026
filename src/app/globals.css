@@ -1,0 +1,154 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.animate-fadeIn {
+  animation: fadeIn 1s ease-out;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+.underline-animation {
+  position: relative;
+  display: inline-block;
+}
+
+.underline {
+  position: relative;
+  width: 100%;
+  height: 5px;
+  background-color: #a855f7;
+  margin-top: 10px;
+  overflow: hidden;
+}
+
+.dot {
+  position: absolute;
+  width: 10px;
+  height: 100%;
+  background-color: white;
+  animation: moveDot 3s linear infinite alternate;
+}
+
+@keyframes moveDot {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: calc(100% - 10px);
+  }
+}
+
+.section-heading {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  text-align: center; /* Center the text */
+  flex: 0 0 100%;
+}
+
+.section-heading h2 {
+  margin: 10px auto; /* Equal margin top and bottom */
+  color: #a855f7;
+  flex: 0 0 100%; /* Make the heading take full width on mobile */
+}
+
+.section-heading::before,
+.section-heading::after {
+  content: "";
+  flex-grow: 1;
+  height: 2px;
+  background-color: #a855f7;
+}
+
+@media (max-width: 768px) {
+  .section-heading h2 {
+    font-size: 1.5rem;
+    margin: 10px 10px;
+  }
+}
+
+@keyframes moveDot {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: calc(100% - 10px); /* Move to the end, adjusting for the dot's width */
+  }
+}
+.logo-container {
+  width: 100%;
+}
+
+.logo-item {
+  flex-basis: 25%; /* Default: 25% for larger screens */
+}
+
+@media (max-width: 768px) { /* Adjust breakpoint as needed */
+  .logo-item {
+      flex-basis: 42%; /* 40% for smaller screens */
+  }
+}
+
+@media (max-width: 370px){
+  .sub {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 1665px){
+.nav{
+  font-size: 20px;
+}
+}
+
+.fixed-column {
+  position: sticky;
+  left: 0;
+  background-color: white; 
+  z-index: 10; 
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.animate-fadeIn {
+  animation: fadeIn 1s ease-out;
+}

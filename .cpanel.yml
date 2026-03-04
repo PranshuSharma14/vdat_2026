@@ -1,0 +1,4 @@
+---
+deployment:
+  tasks:
+    - /bin/cp -r out/* /home/yz7713srccas/public_html/
