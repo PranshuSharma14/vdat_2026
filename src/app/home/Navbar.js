@@ -56,6 +56,7 @@ const Navbar = () => {
     {
       label: "Previous Years",
       dropdown: [
+        { label: "VDAT 2025", href: "https://vdat.org.in/" },
         { label: "VDAT 2024", href: "https://vit.ac.in/vdat2024/" },
         { label: "VDAT 2023", href: "https://discovery.bits-pilani.ac.in/VDAT2023/" },
         { label: "VDAT 2022", href: "https://iitjammu.ac.in/vdat2022/" },
