@@ -721,7 +721,8 @@ const PhDForum = () => {
   return (
     <div className="bg-black min-h-screen text-white">
       <Navbar />
-      
+      <ComingSoon/>
+    {/*  
       <main className="container mx-auto px-4 py-8">
         <PhDForumBanner />
         
@@ -747,7 +748,7 @@ const PhDForum = () => {
           <FAQ />
         </div>
       </main>
-      
+      */}
       <Footer />
     </div>
   );

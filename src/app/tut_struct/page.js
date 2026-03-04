@@ -5,7 +5,27 @@ import Link from "next/link";
 import { Cpu, CircuitBoard, Layers, ExternalLink, Clock, Calendar, Users } from "lucide-react";
 import Navbar from "../home/Navbar";
 import Footer from "../footer/footer";
+const ComingSoon = () => {
+  return (
+    <section className="bg-black py-32 text-center">
+      <div className="container mx-auto px-6">
+        <h2 className="text-7xl font-black bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent mb-6">
+          COMING SOON
+        </h2>
 
+        <p className="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
+          The detailed tutorial schedule for VDAT-2026 will be announced soon.
+          Stay tuned to explore exciting sessions across system, analog,
+          digital, and device design tracks.
+        </p>
+
+        <div className="mt-8 text-cyan-400 text-lg animate-pulse">
+          🚀 Full tutorial program will be revealed shortly.
+        </div>
+      </div>
+    </section>
+  );
+};
 
 const ConferenceScheduleTable = () => {
   const scheduleData = [
@@ -212,10 +232,13 @@ const ConferenceScheduleTable = () => {
           
           <div className="flex items-center justify-center space-x-2 text-sm">
             <Calendar size={16} />
-            <span>August 7, 2025 (Day 1)</span>
+            <span>Date to be announced soon</span>
           </div>
         </div>
       </header>
+
+      <ComingSoon/>
+         {/*
 
       <div className="max-w-full mx-auto p-2 sm:p-6 bg-gray-50 min-h-screen">
         <div className="bg-white rounded-xl shadow-2xl overflow-hidden border border-gray-200">
@@ -226,7 +249,7 @@ const ConferenceScheduleTable = () => {
               <Users className="ml-3" size={28} />
             </h2>
           </div>
-          
+         
           <div className="w-full overflow-x-auto">
             <table className="w-full border-collapse">
               <thead>
@@ -303,7 +326,9 @@ const ConferenceScheduleTable = () => {
               </tbody>
             </table>
           </div>
-          
+
+
+            
           <div className="bg-gradient-to-r from-gray-50 to-gray-100 p-6 border-t border-gray-200">
             <div className="flex flex-col sm:flex-row items-center justify-between space-y-4 sm:space-y-0">
               <p className="text-sm text-gray-600 flex items-center">
@@ -318,6 +343,7 @@ const ConferenceScheduleTable = () => {
           </div>
         </div>
       </div>
+      */}
       <Footer />
     </div>  
   );
