@@ -57,8 +57,10 @@ const images = [
   "/images/jiit3.webp",
   "/images/jiit4.png",
   "/images/jiit5.webp",
-  "/images/jiit6.jpg",
-  "/images/jiit7.jpg",
+  "/images/jiit6.avif",
+  "/images/jiit7.webp",
+  "/images/jiit8.jpg",
+  "/images/jiit9.jpeg",
 ];
 
 const sponsors = [
@@ -164,7 +166,7 @@ const Carousel = ({
         ))}
       </div>
 
-      <Navbar />
+      {/* REMOVED <Navbar /> from here — it now lives in HomePage above Carousel */}
 
       {/* Hero content — centered on mobile, left-aligned on md+ */}
       <div className="flex-grow flex items-center justify-center md:justify-start z-10 relative px-4 sm:px-8 md:px-28 py-8">
@@ -538,6 +540,9 @@ const HomePage = () => {
       onTouchStart={() => setIsPaused(true)}
       onTouchEnd={() => setTimeout(() => setIsPaused(false), 5000)}
     >
+      {/* MOVED: Navbar is now here, above Carousel, so it never overlaps the carousel images */}
+      <Navbar />
+
       <Carousel
         images={images}
         currentImageIndex={currentImageIndex}
