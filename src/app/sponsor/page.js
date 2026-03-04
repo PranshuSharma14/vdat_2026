@@ -2,6 +2,27 @@
   import Footer from '../footer/footer';
   import Navbar from '../home/Navbar';
   import { CheckCircle, Mail, X, Star, Award, Shield, FileDown } from "lucide-react";
+  
+  const ComingSoon = () => {
+  return (
+    <section className="bg-black py-32 text-center">
+      <div className="container mx-auto px-6">
+        <h2 className="text-7xl font-black bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent mb-6">
+          COMING SOON
+        </h2>
+
+        <p className="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
+          Sponsorship opportunities for VDAT will be announced soon.
+          Stay tuned to partner with us and support innovation in VLSI design.
+        </p>
+
+        <div className="mt-8 text-cyan-400 text-lg animate-pulse">
+          🚀 Sponsorship details will be available shortly.
+        </div>
+      </div>
+    </section>
+  );
+};
 
   const sponsorshipTiers = [
     { 
@@ -61,7 +82,7 @@
         {/* Hero Section with Parallax Effect */}
         <header
           className="text-center text-white py-20 relative bg-cover bg-center bg-fixed"
-          style={{ backgroundImage: "url('/images/iit-ropar-5.avif')" }}
+          style={{ backgroundImage: "url('/images/jiit5.webp')" }}
         >
           <div className="absolute inset-0 bg-gradient-to-r from-blue-900/80 to-violet-900/80"></div>
           <div className="relative z-10 px-4 py-16">
@@ -70,8 +91,8 @@
             
           </div>
         </header>
-
-        {/* Current Partners Section */}
+        <ComingSoon />
+        {/* Current Partners Section 
       <section className="container mx-auto px-6 py-16">
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold mb-4 text-violet-800 uppercase relative inline-block">
@@ -80,7 +101,7 @@
           </h2>
         </div>
 
-        {/* Platinum Partner */}
+        {/* Platinum Partner 
         <div className="mb-16">
           <h3 className="text-2xl font-bold text-center text-violet-700 mb-8">Platinum Partner</h3>
           <div className="flex justify-center items-center">
@@ -94,7 +115,7 @@
           </div>
         </div>
 
-        {/* Gold Partners */}
+        {/* Gold Partners 
         <div className="mb-16">
           <h3 className="text-2xl font-bold text-center text-violet-700 mb-8">Gold Partners</h3>
           <div className="flex flex-wrap justify-center items-center gap-6">
@@ -116,7 +137,7 @@
             </div>
           </div>
         </div>
-        {/* {Media Partners} */}
+        {/* {Media Partners} 
         <div>
           <h3 className="text-2xl font-bold text-center text-violet-700 mb-8">Media Partner</h3>
           <div className="flex flex-wrap justify-center items-center gap-6">
@@ -145,7 +166,7 @@
           </div>
         </div>
 
-        {/* Publication Sponsors */}
+        {/* Publication Sponsors 
         <div className="py-8">
           <h3 className="text-2xl font-bold text-center text-violet-700 mb-8">Inaugration Sponsors</h3>
           <div className="flex flex-wrap justify-center items-center gap-6">
@@ -200,7 +221,7 @@
         </div>
       </section>
 
-        {/* Call for Sponsors Section */}
+        {/* Call for Sponsors Section 
         <section className="container mx-auto px-6 py-16">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold mb-4 text-violet-800 uppercase relative inline-block">
@@ -234,7 +255,7 @@
               </li>
             </ul>
             
-            {/* PDF Download Link in the sponsor section */}
+            {/* PDF Download Link in the sponsor section 
             <div className="mt-6 text-center">
               <a 
                 href="..\pdfs\VDAT2025 - sponsorship.pdf" 
@@ -248,7 +269,7 @@
           </div>
         </section>
 
-        {/* Sponsorship Cards */}
+        {/* Sponsorship Cards 
         <section className="container mx-auto px-6 py-16 bg-gradient-to-b from-white to-gray-50">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold mb-4 text-violet-800 uppercase relative inline-block">
@@ -287,7 +308,7 @@
             ))}
           </div>
 
-          {/* Detailed Benefits Table */}
+          {/* Detailed Benefits Table *
           <div className="overflow-x-auto shadow-lg rounded-lg mt-8">
             <table className="w-full border-collapse bg-white shadow-lg rounded-lg text-left">
               <thead>
@@ -326,7 +347,7 @@
           </div>
         </section>
 
-        {/* Additional Opportunities */}
+        {/* Additional Opportunities 
         <section className="container mx-auto px-6 py-16">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold mb-4 text-violet-800 uppercase relative inline-block">
@@ -360,7 +381,7 @@
           </div>
         </section>
 
-        {/* Advertisement Rates */}
+        {/* Advertisement Rates 
         <section className="container mx-auto px-6 py-16 bg-gradient-to-b from-gray-50 to-white">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold mb-2 text-violet-800 uppercase relative inline-block">
@@ -380,7 +401,7 @@
             ))}
           </div>
         </section>
-    
+    */}
         <Footer />
       </div>
     );

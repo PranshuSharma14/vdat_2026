@@ -3,6 +3,27 @@ import Navbar from '../home/Navbar';
 import Footer from '../footer/footer';
 import { Calendar, Mail, CheckCircle, BookOpen, Users, AlertCircle, ExternalLink, Download, FileText, DollarSign } from "lucide-react";
 
+const ComingSoon = () => {
+  return (
+    <section className="bg-black py-32 text-center">
+      <div className="container mx-auto px-6">
+        <h2 className="text-7xl font-black bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent mb-6">
+          COMING SOON
+        </h2>
+
+        <p className="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
+          The VDAT Fellowship Program details will be announced soon.
+          Stay tuned for updates regarding fellowships and student support.
+        </p>
+
+        <div className="mt-8 text-cyan-400 text-lg animate-pulse">
+          🚀 Fellowship information will be available shortly.
+        </div>
+      </div>
+    </section>
+  );
+};
+
 const FellowshipPage = () => {
   const importantDates = [
     { event: "Fellowship application open", date: "01 June 2025" },
@@ -21,16 +42,17 @@ const FellowshipPage = () => {
       {/* Hero Section */}
       <header 
         className="text-center text-white py-32 relative bg-cover bg-center bg-fixed"
-        style={{ backgroundImage: "url('/images/iit-ropar-5.avif')" }}
+        style={{ backgroundImage: "url('/images/jiit5.webp')" }}
       >
         <div className="absolute inset-0 bg-gradient-to-r from-indigo-900/80 to-violet-900/80"></div>
         <div className="relative z-10 px-2 py-8">
-          <h1 className="text-5xl font-extrabold tracking-tight uppercase mb-2 drop-shadow-lg">VDAT 2025 Fellowship Program</h1>
+          <h1 className="text-5xl font-extrabold tracking-tight uppercase mb-2 drop-shadow-lg">VDAT 2026 Fellowship Program</h1>
           <p className="text-lg max-w-xl mx-auto font-light">Supporting students and faculty in the field of VLSI design</p>
         </div>
       </header>
+      <ComingSoon/>
 
-      {/* About the Fellowship */}
+      {/* About the Fellowship 
       <section className="container mx-auto px-4 py-12">
         <div className="text-center mb-8">
           <h2 className="text-2xl font-bold mb-2 text-violet-800 uppercase relative inline-block">
@@ -77,7 +99,7 @@ const FellowshipPage = () => {
         </div>
       </section>
 
-      {/* Fellowship Guidelines */}
+      {/* Fellowship Guidelines 
       <section className="container mx-auto px-4 py-12 bg-gradient-to-b from-white to-gray-50">
         <div className="text-center mb-8">
           <h2 className="text-3xl font-bold mb-2 text-violet-800 uppercase relative inline-block">
@@ -164,7 +186,7 @@ const FellowshipPage = () => {
         </div>
       </section>
 
-      {/* Application Process */}
+      {/* Application Process 
       <section className="container mx-auto px-4 py-12">
         <div className="text-center mb-8">
           <h2 className="text-3xl font-bold mb-2 text-violet-800 uppercase relative inline-block">
@@ -199,7 +221,7 @@ const FellowshipPage = () => {
             ))}
           </ul>
           
-          {/* Application Form and LOR Template */}
+          {/* Application Form and LOR Template 
           <div className="mt-6 p-4 bg-gradient-to-r from-red-50 to-orange-50 rounded-lg border border-red-200">
             <h3 className="text-lg font-semibold text-red-800 mb-2 text-center">Fellowship Application Status</h3>
             <div className="flex flex-col sm:flex-row gap-2 justify-center items-center">
@@ -228,7 +250,7 @@ const FellowshipPage = () => {
         </div>
       </section>
 
-      {/* Fellowship Lists Section */}
+      {/* Fellowship Lists Section 
       <section className="container mx-auto px-4 py-12 bg-gradient-to-b from-gray-50 to-white">
         <div className="text-center mb-8">
           <h2 className="text-3xl font-bold mb-2 text-violet-800 uppercase relative inline-block">
@@ -238,11 +260,11 @@ const FellowshipPage = () => {
         </div>
         
         <div className="max-w-5xl mx-auto">
-          {/* Round 1 Fellowship Lists */}
+          {/* Round 1 Fellowship Lists 
           <div className="mb-12">
             <h3 className="text-2xl font-semibold text-gray-800 mb-6 text-center">Round 1 Fellowship Lists</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              {/* Faculty Fellowship List - Round 1 */}
+              {/* Faculty Fellowship List - Round 1 
               <div className="bg-white p-6 rounded-xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300">
                 <div className="flex justify-center mb-4">
                   <div className="p-3 bg-blue-100 rounded-full">
@@ -266,7 +288,7 @@ const FellowshipPage = () => {
                 </div>
               </div>
 
-              {/* Student Fellowship List - Round 1 */}
+              {/* Student Fellowship List - Round 1 
               <div className="bg-white p-6 rounded-xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300">
                 <div className="flex justify-center mb-4">
                   <div className="p-3 bg-purple-100 rounded-full">
@@ -292,11 +314,11 @@ const FellowshipPage = () => {
             </div>
           </div>
 
-          {/* Round 2 Fellowship Lists */}
+          {/* Round 2 Fellowship Lists 
           <div className="mb-8">
             <h3 className="text-2xl font-semibold text-gray-800 mb-6 text-center">Round 2 Fellowship Lists</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              {/* Faculty Fellowship List - Round 2 */}
+              {/* Faculty Fellowship List - Round 2 *
               <div className="bg-white p-6 rounded-xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300">
                 <div className="flex justify-center mb-4">
                   <div className="p-3 bg-emerald-100 rounded-full">
@@ -320,7 +342,7 @@ const FellowshipPage = () => {
                 </div>
               </div>
 
-              {/* Student Fellowship List - Round 2 */}
+              {/* Student Fellowship List - Round 2 *
               <div className="bg-white p-6 rounded-xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300">
                 <div className="flex justify-center mb-4">
                   <div className="p-3 bg-teal-100 rounded-full">
@@ -357,7 +379,7 @@ const FellowshipPage = () => {
         </div>
       </section>
 
-      {/* Terms and Conditions */}
+      {/* Terms and Conditions *
       <section className="container mx-auto px-4 py-12 bg-gradient-to-b from-white to-gray-50">
         <div className="text-center mb-8">
           <h2 className="text-3xl font-bold mb-2 text-violet-800 uppercase relative inline-block">
@@ -419,7 +441,7 @@ const FellowshipPage = () => {
         </div>
       </section>
 
-      {/* Important Dates */}
+      {/* Important Dates *
       <section className="container mx-auto px-4 py-12 bg-gradient-to-b from-gray-50 to-white">
         <div className="text-center mb-8">
           <h2 className="text-3xl font-bold mb-2 text-violet-800 uppercase relative inline-block">
@@ -462,7 +484,7 @@ const FellowshipPage = () => {
         </div>
       </section>
 
-      {/* Contact Section */}
+      {/* Contact Section *
       <section className="container mx-auto px-4 py-12 text-center">
         <div className="bg-gradient-to-r from-violet-600 to-indigo-600 rounded-xl shadow-lg p-8 max-w-3xl mx-auto text-white">
           <h2 className="text-2xl font-bold mb-3">Have Questions?</h2>
@@ -474,6 +496,7 @@ const FellowshipPage = () => {
           </div>
         </div>
       </section>
+        */}
       
       <Footer />
     </div>

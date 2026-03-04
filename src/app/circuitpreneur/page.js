@@ -2,6 +2,26 @@
 import React from "react";
 import Footer from "../footer/footer";
 import Navbar from "../home/Navbar";
+const ComingSoon = () => {
+  return (
+    <section className="bg-black py-32 text-center">
+      <div className="container mx-auto px-6">
+        <h2 className="text-7xl font-black bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent mb-6">
+          COMING SOON
+        </h2>
+
+        <p className="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
+          CIRCUITPRENEUR contest details will be announced soon.
+          Stay tuned to pitch your startup ideas and innovations at VDAT.
+        </p>
+
+        <div className="mt-8 text-cyan-400 text-lg animate-pulse">
+          🚀 Contest information will be available shortly.
+        </div>
+      </div>
+    </section>
+  );
+};
 
 const CircuitpreneurBanner = () => {
   return (
@@ -870,7 +890,7 @@ const Circuitpreneur = () => {
       {/* Improved Hero Section */}
       <header
         className="text-center text-white py-20 relative bg-cover bg-center bg-fixed"
-        style={{ backgroundImage: "url('/images/iit-ropar-5.avif')" }}
+        style={{ backgroundImage: "url('/images/jiit5.webp')" }}
       >
         <div className="absolute inset-0 bg-gradient-to-r from-black/90 to-purple-900/80"></div>
 
@@ -927,10 +947,10 @@ const Circuitpreneur = () => {
                 <Icon name="calendar" className="h-5 w-5 mr-3" />
                 <div className="text-center">
                   <p className="text-sm font-medium text-purple-300">
-                    Registration Deadline
+                    Deadline to be announced soon
                   </p>
                   <p className="text-lg font-semibold text-white">
-                    15th June, 2025
+                    Stay tuned for updates!
                   </p>
                 </div>
               </div>
@@ -938,15 +958,17 @@ const Circuitpreneur = () => {
           </div>
         </div>
       </header>
+      <ComingSoon/>
+      {/*
 
       <main className="container mx-auto px-4 py-10">
         <div className="max-w-10xl mx-auto">
-          {/* Important Dates Section added here */}
+          {/* Important Dates Section added here *
           <FinalPitchingSchedule /> 
           <EvaluationProcess />
           <EvaluatorImages />
-          {/* <CircuitpreneurBanner /> */}
-          {/* Map through content sections for cleaner rendering */}
+          {/* <CircuitpreneurBanner />
+          {/* Map through content sections for cleaner rendering *
           {CONTENT_SECTIONS.map((section, index) => (
             <ContentSection
               key={index}
@@ -983,15 +1005,15 @@ const Circuitpreneur = () => {
                 Submit your Idea
               </button>
             </div>
-          </div>  */}
+          </div>  *
         </div>
 
-        {/* Contact Section */}
+        {/* Contact Section *
         <section className="max-w-4xl mx-auto text-center relative bg-gray-900 py-8 mt-4 rounded-xl shadow-md overflow-hidden">
-          {/* Circuit pattern overlay */}
+          {/* Circuit pattern overlay *
           <CircuitPattern />
 
-          {/* Accent lines */}
+          {/* Accent lines *
           <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-purple-900 via-purple-500 to-purple-900"></div>
           <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-purple-900 via-purple-500 to-purple-900"></div>
 
@@ -1014,7 +1036,7 @@ const Circuitpreneur = () => {
           </div>
         </section>
       </main>
-
+   */}
       <Footer />
     </div>
     

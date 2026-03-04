@@ -23,6 +23,26 @@ import {
   Target,
   Microscope,
 } from "lucide-react";
+const ComingSoon = () => {
+  return (
+    <section className="bg-black py-32 text-center">
+      <div className="container mx-auto px-6">
+        <h2 className="text-7xl font-black bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent mb-6">
+          COMING SOON
+        </h2>
+
+        <p className="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
+          Camera Ready submission guidelines for VDAT will be announced soon.
+          Stay tuned for updates regarding the final paper submission process.
+        </p>
+
+        <div className="mt-8 text-cyan-400 text-lg animate-pulse">
+          🚀 Submission details will be available shortly.
+        </div>
+      </div>
+    </section>
+  );
+};
 
 export default function CameraReadyGuidelines() {
   const steps = [
@@ -142,7 +162,7 @@ export default function CameraReadyGuidelines() {
           <div className="mt-8">
             <div className="group relative inline-flex items-center px-12 py-5 bg-gradient-to-r from-red-500 via-pink-500 to-purple-600 text-white font-bold text-xl rounded-full shadow-2xl transform hover:scale-105 transition-all duration-300 uppercase tracking-wider animate-pulse">
               <Clock className="mr-3 animate-spin" size={28} />
-              Deadline: July 15th, 2025
+              Coming soon: Camera Ready Submission Details
               <AlertTriangle
                 className="ml-3 group-hover:animate-bounce"
                 size={24}
@@ -152,6 +172,8 @@ export default function CameraReadyGuidelines() {
           </div>
         </div>
       </header>
+      <ComingSoon/>
+      {/*
       <div className="my-8 container mx-auto px-6 relative z-10">
         <div className="text-center mb-12">
           <div className="flex items-center justify-center mb-6">
@@ -200,7 +222,7 @@ export default function CameraReadyGuidelines() {
           </ol>
         </div>
       </div>
-      {/* Steps Section */}
+      {/* Steps Section 
       <section className="container mx-auto px-4 py-16 max-w-7xl">
         <div className="space-y-12">
           {steps.map((step, index) => (
@@ -208,11 +230,11 @@ export default function CameraReadyGuidelines() {
               key={step.number}
               className="bg-white/95 backdrop-blur-sm rounded-2xl shadow-2xl border border-white/20 overflow-hidden transform hover:scale-[1.02] transition-all duration-300"
             >
-              {/* Step Header */}
+              {/* Step Header *
               <div
                 className={`bg-gradient-to-r ${step.color} text-white p-8 relative overflow-hidden`}
               >
-                {/* Floating background elements */}
+                {/* Floating background elements 
                 <div className="absolute inset-0 overflow-hidden opacity-10">
                   <div className="absolute top-4 right-4">
                     <Hash size={80} className="text-white animate-float" />
@@ -245,10 +267,10 @@ export default function CameraReadyGuidelines() {
                 </div>
               </div>
 
-              {/* Step Content */}
+              {/* Step Content 
               <div className={`bg-gradient-to-br ${step.bgGradient} p-8`}>
                 <div className="grid lg:grid-cols-2 gap-8">
-                  {/* Requirements */}
+                  {/* Requirements *
                   <div>
                     <div className="flex items-center mb-6">
                       <Zap className="text-violet-600 mr-3" size={24} />
@@ -271,7 +293,7 @@ export default function CameraReadyGuidelines() {
                     </ul>
                   </div>
 
-                  {/* Files */}
+                  {/* Files *
                   <div>
                     <div className="flex items-center mb-6">
                       <FileText className="text-blue-600 mr-3" size={24} />
@@ -299,11 +321,11 @@ export default function CameraReadyGuidelines() {
         </div>
       </section>
 
-      {/* Registration Process Section */}
+      {/* Registration Process Section *
       <section className="bg-gradient-to-r from-red-600 via-pink-600 to-purple-600 py-16 relative overflow-hidden">
         <div className="absolute inset-0 bg-black opacity-20"></div>
 
-        {/* Floating Icons */}
+        {/* Floating Icons *
         <div className="absolute inset-0 overflow-hidden opacity-10">
           <div className="absolute top-10 left-10 animate-float">
             <Upload size={120} className="text-white" />
@@ -314,7 +336,7 @@ export default function CameraReadyGuidelines() {
         </div>
       </section>
 
-      {/* Additional Instructions */}
+      {/* Additional Instructions *
       <section className="container mx-auto px-4 py-16 max-w-6xl">
         <div className="bg-white/95 backdrop-blur-sm rounded-2xl shadow-2xl border border-white/20 p-8">
           <div className="flex items-center mb-8">
@@ -371,11 +393,11 @@ export default function CameraReadyGuidelines() {
         </div>
       </section>
 
-      {/* Quick Links */}
+      {/* Quick Links *
       <section className="bg-gradient-to-r from-purple-600 via-blue-600 to-cyan-600 py-16 relative overflow-hidden">
         <div className="absolute inset-0 bg-black opacity-30"></div>
 
-        {/* Animated Background Elements */}
+        {/* Animated Background Elements *
         <div className="absolute inset-0 overflow-hidden opacity-10">
           <div className="absolute top-10 left-10 animate-float">
             <CircuitBoard size={120} className="text-white" />
@@ -462,7 +484,7 @@ export default function CameraReadyGuidelines() {
         </div>
       </section>
 
-      {/* Final CTA */}
+      {/* Final CTA *
       <section className="container mx-auto px-4 py-16 text-center">
         <div className="max-w-4xl mx-auto">
           <div className="bg-gradient-to-r from-cyan-500 via-blue-500 to-purple-500 p-1 rounded-3xl inline-block animate-pulse">
@@ -497,14 +519,14 @@ export default function CameraReadyGuidelines() {
                 className="ml-3 group-hover:translate-x-1 transition-transform"
                 size={24}
               />
-               {/* Animated ring effect  */}
+               {/* Animated ring effect  *
               <div className="absolute -inset-1 bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-600 rounded-full opacity-30 blur group-hover:opacity-50 animate-pulse"></div>
             </a>
           </div>
         </div>
       </section>
 
-      {/* Custom CSS for animations */}
+      {/* Custom CSS for animations *
       <style jsx>{`
         @keyframes float {
           0%,
@@ -519,6 +541,7 @@ export default function CameraReadyGuidelines() {
           animation: float 3s ease-in-out infinite;
         }
       `}</style>
+      */}
       <Footer />
     </div>
   );

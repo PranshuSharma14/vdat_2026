@@ -12,6 +12,30 @@ const handlePDFClick = () => {
   window.open("../pdfs/VDAT2025- Call for Tutorial.pdf", "_blank");
 }
 
+const ComingSoon = () => {
+  return (
+    <section className="bg-black py-32 text-center">
+      <div className="container mx-auto px-6">
+        <h2 className="text-7xl font-black bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent mb-6">
+          COMING SOON
+        </h2>
+
+        <p className="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
+          Tutorial sessions for VDAT-2026 will be announced soon.
+          Stay tuned to explore expert-led tutorials covering
+          cutting-edge topics in VLSI design, semiconductor technology,
+          and emerging computing paradigms.
+        </p>
+
+        <div className="mt-8 text-cyan-400 text-lg animate-pulse">
+          🚀 Tutorial lineup will be revealed shortly.
+        </div>
+      </div>
+    </section>
+  );
+};
+
+
 const Tutorials = () => {
   return (
     <div className="bg-white min-h-screen flex flex-col">
@@ -21,7 +45,7 @@ const Tutorials = () => {
       
       <header
         className="text-center text-white py-20 relative bg-cover bg-center bg-fixed"
-        style={{ backgroundImage: "url('/images/iit-ropar-5.avif')" }}
+        style={{ backgroundImage: "url('/images/jiit5.webp')" }}
       >
         <div className="absolute inset-0 bg-gradient-to-r from-blue-900/80 to-violet-900/80"></div>
         <div className="relative z-10 px-4 py-16">
@@ -29,8 +53,8 @@ const Tutorials = () => {
         </div>
       </header>
 
-      <main className="container mx-auto px-4 py-12 flex-grow">
-        <ContentSection />
+      <main className=" flex-grow">
+        <ComingSoon />
       </main>
 
       <Footer />
