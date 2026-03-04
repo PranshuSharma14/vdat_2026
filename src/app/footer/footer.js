@@ -170,14 +170,26 @@ const Footer = () => {
 
             {/* Developer Credit */}
 
-            <p className="text-sm text-gray-200 flex justify-center items-center gap-2">
+           <p className="text-sm text-gray-200 flex justify-center items-center gap-2 flex-wrap">
               Designed & Developed by
+
               <Link
                 href="https://www.linkedin.com/in/pranshu-sharma-6a84132a5"
                 target="_blank"
                 className="font-semibold hover:underline flex items-center gap-1"
               >
                 Pranshu Sharma
+                <FaLinkedin size={14} />
+              </Link>
+
+              <span>and</span>
+
+              <Link
+                href="https://www.linkedin.com/in/suryanshtomar/?originalSubdomain=in"
+                target="_blank"
+                className="font-semibold hover:underline flex items-center gap-1"
+              >
+                Suryansh Tomar
                 <FaLinkedin size={14} />
               </Link>
             </p>

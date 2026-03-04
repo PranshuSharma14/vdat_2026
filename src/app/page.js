@@ -549,9 +549,14 @@ const HomePage = () => {
         setCurrentImageIndex={setCurrentImageIndex}
         swipeHandlers={handlers}
       />
+
+      {/*
       <AwardeesSection/>
+      */}
 
       <ThemeBanner />
+
+      {/*
       
       <SpeakersSection speakers={speakers.slice(0,6)} />
 
@@ -568,9 +573,13 @@ const HomePage = () => {
           </Link>
         </div>
 
+        */}
+
       <AboutSection />
 
-
+      
+      {/*
+      
       <section className="py-8 sm:py-10 bg-white text-center px-4">
         <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-purple-700 mb-4">
           Our Statistics
@@ -580,6 +589,8 @@ const HomePage = () => {
         <Stats />
 
       </section>
+
+      */}
 
       
 
