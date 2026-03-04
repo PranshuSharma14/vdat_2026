@@ -5,274 +5,656 @@ import Footer from "../footer/footer";
 import { MapPin, Plane, Train, Bus, Navigation, ExternalLink, Map, Hotel, Globe } from "lucide-react";
 
 const VenuePage = () => {
+
   const attractions = [
     {
-      name: "City Centre",
-      image: "/images/chandigarh-city.jpg",
-      description: "Experience the buzz of Chandigarh's vibrant shopping and dining scene.",
-      link: "https://en.wikipedia.org/wiki/Chandigarh"
+      name: "Akshardham Temple",
+      image: "/images/akshardham.webp",
+      description: "A magnificent Hindu temple complex showcasing traditional Indian architecture, spirituality and culture.",
+      link: "https://akshardham.com"
     },
     {
-      name: "Rose Garden",
-      image: "/images/rose-garden.jpg",
-      description: "Take a leisurely walk through one of Asia's largest rose gardens.",
-      link: "https://www.chandigarhtourism.gov.in"
+      name: "India Gate",
+      image: "/images/indiagate.webp",
+      description: "A historic war memorial and one of the most iconic landmarks of New Delhi.",
+      link: "https://en.wikipedia.org/wiki/India_Gate"
     },
     {
-      name: "Rock Garden",
-      image: "/images/rock-garden.jpg",
-      description: "Explore the unique sculptures and artistic flair of this famed garden.",
-      link: "https://en.wikipedia.org/wiki/Rock_Garden_(Chandigarh)"
+      name: "Lodhi Garden",
+      image: "/images/lodhi-garden.jpeg",
+      description: "A beautiful historic park in New Delhi featuring tombs, gardens and peaceful walking trails.",
+      link: "https://en.wikipedia.org/wiki/Lodhi_Gardens"
     }
   ];
 
   const transportOptions = [
     {
       mode: "By Air",
-      icon: <Plane className="text-white" size={24} />,
+      icon: <Plane className="text-white" size={20} />,
       color: "bg-blue-500",
-      description: "The nearest airport is Chandigarh International Airport (about 12 km away). Taxis and ride-sharing services are readily available."
+      accent: "#3b82f6",
+      description: "The nearest airport is Indira Gandhi International Airport, New Delhi (about 35 km away). Taxis and ride-sharing services are readily available."
     },
     {
       mode: "By Train",
-      icon: <Train className="text-white" size={24} />,
+      icon: <Train className="text-white" size={20} />,
       color: "bg-green-500",
-      description: "Chandigarh Railway Station is approximately 8 km from the hotel. Taxis or auto-rickshaws can make the transfer comfortable and quick."
+      accent: "#22c55e",
+      description: "New Delhi Railway Station and Ghaziabad Railway Station provide convenient access to Noida."
     },
     {
       mode: "By Bus",
-      icon: <Bus className="text-white" size={24} />,
+      icon: <Bus className="text-white" size={20} />,
       color: "bg-purple-500",
-      description: "The hotel is well-connected via local and intercity bus services with nearby stops in Sector 17."
+      accent: "#a855f7",
+      description: "Noida is well connected via interstate bus services and Delhi Metro."
     }
   ];
 
-  return (
-    <div className="bg-gradient-to-b from-gray-50 to-white min-h-screen font-sans">
-      <div className="bg-black"  > 
-      <Navbar />
-      </div>
-      
-      {/* Hero Section with Parallax Effect */}
-      <header
-        className="text-center text-white py-20 relative bg-cover bg-center bg-fixed"
-        style={{ backgroundImage: "url('/images/iit-ropar-5.avif')" }}
-      >
-        <div className="absolute inset-0 bg-gradient-to-r from-purple-900/80 to-indigo-900/80"></div>
-        <div className="relative z-10 px-4 py-16">
-          <h1 className="text-6xl font-extrabold tracking-tight uppercase mb-4 drop-shadow-lg">Conference Venue</h1>
-          <div className="flex items-center justify-center mt-6">
-            <MapPin className="text-white mr-2" size={24} />
-            <h2 className="text-3xl font-light">Hotel Shivalik View, Chandigarh</h2>
-          </div>
-        </div>
-      </header>
+  const facilities = [
+    { title: "Modern Conference Halls", desc: "State-of-the-art facilities equipped with the latest audiovisual technology", icon: "🏛️" },
+    { title: "Exhibition Space", desc: "Dedicated areas for sponsors and exhibitors to showcase their products", icon: "🎪" },
+    { title: "Networking Lounges", desc: "Comfortable spaces designed to facilitate meaningful connections", icon: "🤝" },
+    { title: "High-Speed WiFi", desc: "Complimentary high-speed internet access throughout the venue", icon: "📡" },
+  ];
 
-      {/* Main Content */}
-      <main className="container mx-auto py-16 px-6 md:px-12">
-        {/* Hotel Info Section */}
-        <section className="mb-16">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold mb-4 text-violet-800 uppercase relative inline-block">
-              About the Venue
-              <div className="h-1 w-24 bg-violet-600 absolute bottom-0 left-1/2 transform -translate-x-1/2 mt-2"></div>
-            </h2>
+  return (
+    <>
+      <style>{`
+        @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=DM+Sans:wght@300;400;500&display=swap');
+
+        :root {
+          --deep:   #0f0225;
+          --purple: #3b0764;
+          --violet: #6d28d9;
+          --lilac:  #a855f7;
+          --yellow: #facc15;
+          --orange: #f97316;
+          --bg:     #f5f0ff;
+          --card:   #ffffff;
+          --text:   #1e1033;
+          --muted:  #6b7280;
+          --border: rgba(168,85,247,0.14);
+        }
+
+        .vp-root {
+          background: var(--bg);
+          min-height: 100vh;
+          font-family: 'DM Sans', sans-serif;
+          color: var(--text);
+        }
+
+        /* ─── HERO ─── */
+        .vp-hero {
+          position: relative;
+          height: 420px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          overflow: hidden;
+        }
+
+        .vp-hero-bg {
+          position: absolute;
+          inset: 0;
+
+          background-image: url('/images/jiit5.webp');
+          background-size: cover;        /* makes image fill container */
+          background-position: center;   /* center crop */
+          background-repeat: no-repeat;
+
+          width: 100%;
+          height: 100%;
+        }
+
+        .vp-hero-overlay {
+          position: absolute; inset: 0;
+          background: linear-gradient(135deg,
+            rgba(15,2,37,0.92) 0%,
+            rgba(109,40,217,0.78) 50%,
+            rgba(15,2,37,0.92) 100%);
+        }
+
+        /* slanted bottom cut */
+        .vp-hero::after {
+          content: '';
+          position: absolute;
+          bottom: -2px; left: 0; right: 0;
+          height: 70px;
+          background: var(--bg);
+          clip-path: polygon(0 100%, 100% 0, 100% 100%);
+        }
+
+        @media (max-width: 768px) {
+            .vp-hero::after {
+              clip-path: none;
+              height: 5px;
+            }
+          }
+        .vp-hero-body {
+          position: relative; z-index: 10;
+          text-align: center;
+          padding: 80px 24px 120px;
+        }
+        .vp-eyebrow {
+          display: inline-block;
+          font-size: 0.7rem; font-weight: 700;
+          letter-spacing: 0.35em; text-transform: uppercase;
+          color: var(--yellow);
+          background: rgba(250,204,21,0.1);
+          border: 1px solid rgba(250,204,21,0.28);
+          padding: 5px 18px; border-radius: 999px;
+          margin-bottom: 18px;
+        }
+        .vp-hero h1 {
+          font-family: 'Rajdhani', sans-serif;
+          font-size: clamp(2.8rem, 7vw, 5.5rem);
+          font-weight: 700; color: #fff;
+          letter-spacing: 0.07em; text-transform: uppercase;
+          line-height: 1; margin-bottom: 20px;
+          text-shadow: 0 6px 32px rgba(0,0,0,0.45);
+        }
+        .vp-hero h1 em {
+          font-style: normal;
+          background: linear-gradient(90deg, var(--yellow), var(--orange));
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+        .vp-hero-loc {
+          display: inline-flex; align-items: center; gap: 8px;
+          color: rgba(233,213,255,0.9); font-size: 1.05rem; font-weight: 400;
+          background: rgba(255,255,255,0.09);
+          border: 1px solid rgba(255,255,255,0.18);
+          padding: 9px 22px; border-radius: 999px;
+          backdrop-filter: blur(8px);
+        }
+
+        /* ─── SECTION WRAPPER ─── */
+        .vp-main {
+          max-width: 1160px;
+          margin: 0 auto;
+          padding: 72px 24px 88px;
+          display: flex;
+          flex-direction: column;
+          gap: 80px;
+        }
+
+        /* ─── SECTION HEADING ─── */
+        .vp-sh { text-align: center; margin-bottom: 36px; }
+        .vp-sh h2 {
+          font-family: 'Rajdhani', sans-serif;
+          font-size: clamp(1.7rem, 3.5vw, 2.5rem);
+          font-weight: 700; color: var(--deep);
+          letter-spacing: 0.06em; text-transform: uppercase;
+          margin-bottom: 10px;
+        }
+        .vp-bar {
+          width: 56px; height: 3px;
+          background: linear-gradient(90deg, var(--yellow), var(--lilac));
+          border-radius: 4px; margin: 0 auto;
+        }
+
+        /* ─── GLASS CARD BASE ─── */
+        .vp-card {
+          background: var(--card);
+          border-radius: 22px;
+          border: 1px solid var(--border);
+          box-shadow: 0 6px 30px rgba(109,40,217,0.08);
+          overflow: hidden;
+          transition: transform 0.28s ease, box-shadow 0.28s ease;
+          position: relative;
+        }
+        .vp-card::before {
+          content: '';
+          position: absolute; top: 0; left: 0; right: 0;
+          height: 3px;
+          background: linear-gradient(90deg, var(--yellow), var(--lilac));
+          opacity: 0;
+          transition: opacity 0.28s ease;
+        }
+        .vp-card:hover { transform: translateY(-5px); box-shadow: 0 20px 56px rgba(109,40,217,0.14); }
+        .vp-card:hover::before { opacity: 1; }
+
+        /* ─── HOTEL SECTION ─── */
+        .hotel-split { display: flex; flex-wrap: wrap; }
+        .hotel-img-col {
+          flex: 0 0 320px;
+          min-height: 300px;
+          position: relative;
+          overflow: hidden;
+        }
+        .hotel-info-col { flex: 1 1 320px; padding: 40px; }
+        .hotel-badges { display: flex; gap: 8px; margin-bottom: 16px; flex-wrap: wrap; }
+        .hotel-badge {
+          font-size: 0.72rem; font-weight: 700;
+          padding: 4px 12px; border-radius: 999px;
+        }
+        .hotel-badge.indigo { background: rgba(99,102,241,0.1); color: #4338ca; border: 1px solid rgba(99,102,241,0.2); }
+        .hotel-badge.purple { background: rgba(168,85,247,0.1); color: #7c3aed; border: 1px solid rgba(168,85,247,0.2); }
+        .hotel-name {
+          font-family: 'Rajdhani', sans-serif;
+          font-size: 2rem; font-weight: 700; color: var(--deep);
+          text-transform: uppercase; letter-spacing: 0.04em;
+          margin-bottom: 18px;
+        }
+        .hotel-desc { color: #4b5563; line-height: 1.78; font-size: 0.97rem; display: flex; flex-direction: column; gap: 14px; }
+
+        /* ─── MAP SECTION ─── */
+        .map-split { display: flex; flex-wrap: wrap; flex-direction: row-reverse; }
+        .map-col { flex: 0 0 50%; min-height: 360px; position: relative; }
+        .map-col iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+        .transport-col { flex: 1 1 320px; padding: 40px; }
+        .transport-header {
+          display: flex; align-items: center; gap: 12px; margin-bottom: 32px;
+        }
+        .transport-icon-wrap {
+          background: rgba(250,204,21,0.12);
+          border: 1px solid rgba(250,204,21,0.28);
+          border-radius: 10px; padding: 8px;
+        }
+        .transport-header h3 {
+          font-family: 'Rajdhani', sans-serif;
+          font-size: 1.5rem; font-weight: 700; color: var(--deep);
+          text-transform: uppercase; letter-spacing: 0.04em;
+        }
+        .transport-list { display: flex; flex-direction: column; gap: 24px; }
+        .transport-item { display: flex; align-items: flex-start; gap: 14px; }
+        .transport-icon {
+          flex-shrink: 0;
+          width: 42px; height: 42px;
+          border-radius: 12px;
+          display: flex; align-items: center; justify-content: center;
+        }
+        .transport-mode {
+          font-family: 'Rajdhani', sans-serif;
+          font-size: 1.1rem; font-weight: 700; color: var(--deep);
+          text-transform: uppercase; letter-spacing: 0.03em;
+          margin-bottom: 4px;
+        }
+        .transport-desc { color: var(--muted); font-size: 0.88rem; line-height: 1.68; }
+
+        /* ─── ATTRACTIONS ─── */
+        .attract-globe {
+          display: flex; justify-content: center; margin-bottom: 32px;
+        }
+        .attract-globe-icon {
+          background: rgba(168,85,247,0.1);
+          border: 1px solid rgba(168,85,247,0.22);
+          border-radius: 50%; padding: 18px;
+        }
+        .attract-grid {
+          display: grid;
+          grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+          gap: 24px;
+        }
+        .attract-card {
+          background: var(--card);
+          border-radius: 18px;
+          border: 1px solid var(--border);
+          box-shadow: 0 4px 20px rgba(109,40,217,0.07);
+          overflow: hidden;
+          transition: transform 0.28s ease, box-shadow 0.28s ease;
+          position: relative;
+        }
+        .attract-card::before {
+          content: '';
+          position: absolute; top: 0; left: 0; right: 0; height: 3px;
+          background: linear-gradient(90deg, var(--yellow), var(--lilac));
+          opacity: 0; transition: opacity 0.28s;
+          z-index: 1;
+        }
+        .attract-card:hover { transform: translateY(-6px); box-shadow: 0 20px 50px rgba(109,40,217,0.13); }
+        .attract-card:hover::before { opacity: 1; }
+        .attract-img-wrap { position: relative; height: 200px; overflow: hidden; }
+        .attract-img-overlay {
+          position: absolute; inset: 0;
+          background: linear-gradient(to top, rgba(15,2,37,0.5), transparent);
+        }
+        .attract-body { padding: 20px 24px 24px; }
+        .attract-name {
+          font-family: 'Rajdhani', sans-serif;
+          font-size: 1.2rem; font-weight: 700; color: var(--deep);
+          text-transform: uppercase; letter-spacing: 0.04em;
+          margin-bottom: 8px;
+        }
+        .attract-desc { color: var(--muted); font-size: 0.88rem; line-height: 1.65; margin-bottom: 14px; }
+        .attract-link {
+          display: inline-flex; align-items: center; gap: 6px;
+          color: #7c3aed; font-weight: 600; font-size: 0.88rem;
+          text-decoration: none;
+          transition: color 0.2s, gap 0.2s;
+        }
+        .attract-link:hover { color: var(--yellow); gap: 10px; }
+
+        /* ─── FACILITIES BANNER ─── */
+        .facilities-wrap {
+          background: linear-gradient(135deg, var(--deep) 0%, var(--purple) 50%, var(--deep) 100%);
+          border-radius: 22px;
+          padding: 52px 36px;
+          position: relative; overflow: hidden;
+          box-shadow: 0 24px 64px rgba(109,40,217,0.3);
+        }
+        .facilities-wrap::before {
+          content: '';
+          position: absolute; top: 0; left: 0; right: 0; height: 3px;
+          background: linear-gradient(90deg, transparent, var(--yellow), var(--lilac), var(--yellow), transparent);
+        }
+        /* decorative blobs */
+        .fac-blob1 {
+          position: absolute; width: 280px; height: 280px;
+          border-radius: 50%;
+          background: rgba(168,85,247,0.1);
+          top: -80px; right: -80px; pointer-events: none;
+        }
+        .fac-blob2 {
+          position: absolute; width: 180px; height: 180px;
+          border-radius: 50%;
+          background: rgba(250,204,21,0.06);
+          bottom: -50px; left: -50px; pointer-events: none;
+        }
+        .fac-grid {
+          display: grid;
+          grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+          gap: 16px;
+          position: relative; z-index: 1;
+        }
+        .fac-item {
+          padding: 28px 20px;
+          background: rgba(255,255,255,0.07);
+          border: 1px solid rgba(255,255,255,0.1);
+          border-radius: 16px;
+          text-align: center;
+          transition: background 0.22s, transform 0.22s;
+        }
+        .fac-item:hover { background: rgba(255,255,255,0.13); transform: translateY(-4px); }
+        .fac-icon { font-size: 2rem; margin-bottom: 12px; }
+        .fac-title {
+          font-family: 'Rajdhani', sans-serif;
+          font-size: 1.1rem; font-weight: 700;
+          color: var(--yellow);
+          text-transform: uppercase; letter-spacing: 0.04em;
+          margin-bottom: 8px;
+        }
+        .fac-desc { color: rgba(233,213,255,0.72); font-size: 0.86rem; line-height: 1.65; }
+
+        /* ─── SHARED BUTTONS ─── */
+        .btn-gold {
+          display: inline-flex; align-items: center; gap: 8px;
+          padding: 10px 22px;
+          background: linear-gradient(90deg, var(--yellow), var(--orange));
+          color: var(--deep);
+          font-weight: 800; font-size: 0.88rem; border-radius: 9px;
+          text-decoration: none;
+          transition: transform 0.2s, box-shadow 0.2s;
+          box-shadow: 0 4px 16px rgba(250,204,21,0.28);
+          margin-top: 28px;
+          cursor: pointer;
+        }
+        .btn-gold:hover { transform: translateY(-2px); box-shadow: 0 8px 28px rgba(250,204,21,0.42); }
+
+        .btn-green {
+          display: inline-flex; align-items: center; gap: 8px;
+          padding: 10px 22px;
+          background: linear-gradient(90deg, #22c55e, #16a34a);
+          color: #fff;
+          font-weight: 700; font-size: 0.88rem; border-radius: 9px;
+          text-decoration: none;
+          transition: transform 0.2s, box-shadow 0.2s;
+          box-shadow: 0 4px 16px rgba(34,197,94,0.25);
+          margin-top: 28px;
+          cursor: pointer;
+        }
+        .btn-green:hover { transform: translateY(-2px); box-shadow: 0 8px 28px rgba(34,197,94,0.38); }
+
+        .btn-purple {
+          display: inline-flex; align-items: center; gap: 8px;
+          padding: 13px 30px;
+          background: linear-gradient(90deg, var(--lilac), #7c3aed);
+          color: #fff;
+          font-weight: 700; font-size: 0.94rem; border-radius: 10px;
+          text-decoration: none;
+          transition: transform 0.2s, box-shadow 0.2s;
+          box-shadow: 0 4px 20px rgba(168,85,247,0.3);
+          cursor: pointer;
+        }
+        .btn-purple:hover { transform: translateY(-2px); box-shadow: 0 10px 32px rgba(168,85,247,0.45); }
+
+        @media (max-width: 767px) {
+          .hotel-img-col { flex: 0 0 100%; min-height: 220px; }
+          .map-col { flex: 0 0 100%; min-height: 260px; }
+          .hotel-info-col, .transport-col { padding: 28px 20px; }
+        }
+      `}</style>
+
+      <div className="vp-root">
+        <Navbar />
+
+        {/* HERO */}
+        <header className="vp-hero">
+          <div className="vp-hero-bg" />
+          <div className="vp-hero-overlay" />
+
+          <div className="vp-hero-body">
+            <span className="vp-eyebrow">VDAT 2026 · Noida, India</span>
+
+            <h1>
+              Conference <em>Venue</em>
+            </h1>
+
+            <div className="vp-hero-loc">
+              <MapPin size={20} color="#facc15" />
+              Jaypee Institute of Information Technology, Noida, Uttar Pradesh
+            </div>
           </div>
-          
-          <div className="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100 hover:shadow-xl transition-all duration-300">
-            <div className="md:flex">
-              <div className="md:w-1/3 relative h-64 md:h-auto">
-                <div className="absolute inset-0 flex items-center justify-center object-fill">
-                  <Image src = "/image.png" width = {810} height = {810} alt = {"Hotel.Img"} className="object-fit"/>
+        </header>
+
+        <main className="vp-main">
+
+          {/* ABOUT VENUE */}
+          <section>
+            <div className="vp-sh">
+              <h2>About the Venue</h2>
+              <div className="vp-bar" />
+            </div>
+
+            <div className="vp-card">
+              <div className="hotel-split">
+
+                <div className="hotel-img-col">
+                  <div className="absolute inset-0 flex items-center justify-center">
+                    <Image src="/images/jiit2.webp" alt="JIIT Campus" width={800} height={800}/>
+                  </div>
                 </div>
-              </div>
-              <div className="md:w-2/3 p-8">
-                <div className="flex items-center mb-4">
-                  <span className="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded">4-Star Hotel</span>
-                  <span className="bg-purple-100 text-purple-800 text-xs font-medium px-2.5 py-0.5 rounded ml-2">City Center</span>
-                </div>
-                <h3 className="text-3xl font-semibold text-gray-800 mb-4">Hotel Shivalik View</h3>
-                <div className="space-y-4 text-gray-700 text-lg">
-                  <p>
-                    Hotel Shivalikview is a contemporary 4-star hotel nestled in Sector 17E of Chandigarh.
-                    It boasts stylish, modern rooms with scenic views of a vibrant rose garden and the majestic
-                    Shivalik mountain range.
-                  </p>
-                  <p>
-                    Designed with the modern traveler in mind, the hotel offers all the amenities required for
-                    both business and leisure stays. Its prime location ensures easy access to the city's key attractions.
-                  </p>
-                  <div className="mt-6">
+
+                <div className="hotel-info-col">
+
+                  <div className="hotel-badges">
+                    <span className="hotel-badge indigo">Premier Engineering Institute</span>
+                    <span className="hotel-badge purple">Sector 62, Noida</span>
+                  </div>
+
+                  <h3 className="hotel-name">
+                    Jaypee Institute of Information Technology
+                  </h3>
+
+                  <div className="hotel-desc">
+
+                    <p>
+                      The symposium will be hosted at <strong>Jaypee Institute of Information Technology (JIIT), Noida</strong>,
+                      a premier engineering and research institution known for academic excellence,
+                      modern infrastructure, and strong industry collaboration.
+                    </p>
+
+                    <p>
+                      Established in 2001, the institute offers cutting-edge programs in
+                      Computer Science, Electronics, and Information Technology. The campus
+                      features advanced laboratories, modern auditoriums, seminar halls,
+                      and collaborative research spaces ideal for international conferences.
+                    </p>
+
+                    <p>
+                      Located in Sector 62, Noida, the campus is well connected to
+                      New Delhi and the National Capital Region through road networks
+                      and the Delhi Metro, making it highly accessible for national
+                      and international participants.
+                    </p>
+
                     <a
-                      href="https://www.makemytrip.com/hotels/hotel_shivalikview-details-chandigarh.html"
+                      href="https://www.jiit.ac.in"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center px-4 py-2 text-sm font-medium text-white bg-indigo-600 rounded-lg hover:bg-indigo-700 focus:ring-4 focus:outline-none focus:ring-indigo-300 transition-colors"
+                      className="btn-gold"
                     >
-                      View Hotel Details
-                      <ExternalLink size={16} className="ml-2" />
+                      Visit Official Website
+                      <ExternalLink size={15} />
                     </a>
+
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-        </section>
+          </section>
 
-        {/* Map and Directions */}
-        <section className="mb-16">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold mb-4 text-violet-800 uppercase relative inline-block">
-              How to Reach
-              <div className="h-1 w-24 bg-violet-600 absolute bottom-0 left-1/2 transform -translate-x-1/2 mt-2"></div>
-            </h2>
-          </div>
-          
-          <div className="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100 hover:shadow-xl transition-all duration-300">
-            <div className="md:flex flex-row-reverse">
-              <div className="md:w-1/2 relative h-80 md:h-auto">
-                <a
-                  href="https://www.google.com/maps/place/Hotel+Shivalikview/@30.7400909,76.773977,17z"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="absolute inset-0"
-                >
+
+          {/* HOW TO REACH */}
+          <section>
+            <div className="vp-sh">
+              <h2>How to Reach</h2>
+              <div className="vp-bar" />
+            </div>
+
+            <div className="vp-card">
+              <div className="map-split">
+
+                <div className="map-col">
                   <iframe
-                    src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJq6qqqgvtDzkRf6uYDdYE1UE&key=AIzaSyCeb_aqbbf8o4741BoBP7UFbywjrVqhrv0"
+                    src="https://www.google.com/maps?q=Jaypee+Institute+of+Information+Technology+Noida&output=embed"
                     width="100%"
                     height="100%"
                     style={{ border: 0 }}
-                    allowFullScreen=""
                     loading="lazy"
-                    title="Hotel Shivalikview Map"
-                  ></iframe>
-                </a>
-              </div>
-              <div className="md:w-1/2 p-8">
-                <div className="flex items-center mb-6">
-                  <Map size={24} className="text-indigo-600 mr-2" />
-                  <h3 className="text-2xl font-semibold text-gray-800">Transportation Options</h3>
-                </div>
-                <div className="space-y-6">
-                  {transportOptions.map((option, index) => (
-                    <div key={index} className="flex items-start space-x-4">
-                      <span className={`flex-shrink-0 p-2 ${option.color} rounded-full`}>
-                        {option.icon}
-                      </span>
-                      <div>
-                        <h3 className="font-medium text-xl text-gray-800">{option.mode}</h3>
-                        <p className="text-gray-600">{option.description}</p>
-                      </div>
-                    </div>
-                  ))}
-                  <div className="mt-6">
-                    <a
-                      href="https://www.google.com/maps/place/Hotel+Shivalikview/@30.7400909,76.773977,17z"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center px-4 py-2 text-sm font-medium text-white bg-green-600 rounded-lg hover:bg-green-700 focus:ring-4 focus:outline-none focus:ring-green-300 transition-colors"
-                    >
-                      Get Directions
-                      <Navigation size={16} className="ml-2" />
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Discover Chandigarh Section */}
-        <section className="mb-16">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold mb-4 text-violet-800 uppercase relative inline-block">
-              Discover Chandigarh
-              <div className="h-1 w-24 bg-violet-600 absolute bottom-0 left-1/2 transform -translate-x-1/2 mt-2"></div>
-            </h2>
-          </div>
-          
-          <div className="flex items-center justify-center mb-8">
-            <div className="p-4 bg-purple-100 rounded-full">
-              <Globe size={36} className="text-purple-700" />
-            </div>
-          </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {attractions.map((attraction, index) => (
-              <div key={index} className="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
-                <div className="relative h-48">
-                  <Image
-                    src={attraction.image}
-                    alt={attraction.name}
-                    layout="fill"
-                    objectFit="cover"
-                    className="transition-transform duration-500 hover:scale-110"
                   />
                 </div>
-                <div className="p-6">
-                  <h3 className="text-xl font-bold text-gray-800 mb-2">{attraction.name}</h3>
-                  <p className="text-gray-600 mb-4">{attraction.description}</p>
+
+                <div className="transport-col">
+
+                  <div className="transport-header">
+                    <div className="transport-icon-wrap">
+                      <Map size={22} color="#facc15" />
+                    </div>
+                    <h3>Transportation Options</h3>
+                  </div>
+
+                  <div className="transport-list">
+                    {transportOptions.map((option, index) => (
+                      <div key={index} className="transport-item">
+                        <span className={`transport-icon ${option.color}`}>
+                          {option.icon}
+                        </span>
+
+                        <div>
+                          <div className="transport-mode">{option.mode}</div>
+                          <p className="transport-desc">{option.description}</p>
+                        </div>
+
+                      </div>
+                    ))}
+                  </div>
+
                   <a
-                    href={attraction.link}
+                    href="https://maps.google.com/?q=Jaypee+Institute+of+Information+Technology+Noida"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center text-indigo-600 hover:text-indigo-800 transition-colors"
+                    className="btn-green"
                   >
-                    Learn more
-                    <ExternalLink size={16} className="ml-1" />
+                    Get Directions
+                    <Navigation size={15} />
                   </a>
+
                 </div>
-              </div>
-            ))}
-          </div>
-          
-          <div className="mt-12 text-center">
-            <a
-              href="https://www.chandigarhtourism.gov.in"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center px-6 py-3 bg-purple-600 text-white font-medium rounded-lg hover:bg-purple-700 transition-colors shadow-md"
-            >
-              Explore More of Chandigarh
-              <ExternalLink size={18} className="ml-2" />
-            </a>
-          </div>
-        </section>
-        
-        {/* Conference Facilities */}
-        <section>
-          <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold mb-4 text-violet-800 uppercase relative inline-block">
-              Conference Facilities
-              <div className="h-1 w-24 bg-violet-600 absolute bottom-0 left-1/2 transform -translate-x-1/2 mt-2"></div>
-            </h2>
-          </div>
-          
-          <div className="bg-gradient-to-r from-indigo-500 to-purple-600 rounded-xl shadow-lg p-8 text-white">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 text-center">
-              <div className="p-6 bg-white bg-opacity-10 rounded-lg backdrop-blur-sm">
-                <h3 className="text-xl font-semibold mb-2">Modern Conference Halls</h3>
-                <p>State-of-the-art facilities equipped with the latest audiovisual technology</p>
-              </div>
-              <div className="p-6 bg-white bg-opacity-10 rounded-lg backdrop-blur-sm">
-                <h3 className="text-xl font-semibold mb-2">Exhibition Space</h3>
-                <p>Dedicated areas for sponsors and exhibitors to showcase their products</p>
-              </div>
-              <div className="p-6 bg-white bg-opacity-10 rounded-lg backdrop-blur-sm">
-                <h3 className="text-xl font-semibold mb-2">Networking Lounges</h3>
-                <p>Comfortable spaces designed to facilitate meaningful connections</p>
-              </div>
-              <div className="p-6 bg-white bg-opacity-10 rounded-lg backdrop-blur-sm">
-                <h3 className="text-xl font-semibold mb-2">High-Speed WiFi</h3>
-                <p>Complimentary high-speed internet access throughout the venue</p>
+
               </div>
             </div>
-          </div>
-        </section>
-      </main>
-      
-      <Footer />
-    </div>
+          </section>
+
+
+          {/* DISCOVER NEARBY */}
+          <section>
+            <div className="vp-sh">
+              <h2>Nearby Attractions</h2>
+              <div className="vp-bar" />
+            </div>
+
+            <div className="attract-globe">
+              <div className="attract-globe-icon">
+                <Globe size={36} color="#a855f7" />
+              </div>
+            </div>
+
+            <div className="attract-grid">
+              {attractions.map((attraction, index) => (
+                <div key={index} className="attract-card">
+
+                  <div className="attract-img-wrap">
+                    <Image
+                      src={attraction.image}
+                      alt={attraction.name}
+                      layout="fill"
+                      objectFit="cover"
+                      className="transition-transform duration-500 hover:scale-110"
+                    />
+                    <div className="attract-img-overlay" />
+                  </div>
+
+                  <div className="attract-body">
+                    <h3 className="attract-name">{attraction.name}</h3>
+                    <p className="attract-desc">{attraction.description}</p>
+
+                    <a
+                      href={attraction.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="attract-link"
+                    >
+                      Learn more <ExternalLink size={14} />
+                    </a>
+                  </div>
+
+                </div>
+              ))}
+            </div>
+
+          </section>
+
+          {/* FACILITIES */}
+          <section>
+            <div className="vp-sh">
+              <h2>Conference Facilities</h2>
+              <div className="vp-bar" />
+            </div>
+
+            <div className="facilities-wrap">
+              <div className="fac-blob1" />
+              <div className="fac-blob2" />
+
+              <div className="fac-grid">
+                {facilities.map((f, i) => (
+                  <div key={i} className="fac-item">
+                    <div className="fac-icon">{f.icon}</div>
+                    <h3 className="fac-title">{f.title}</h3>
+                    <p className="fac-desc">{f.desc}</p>
+                  </div>
+                ))}
+              </div>
+
+            </div>
+          </section>
+
+        </main>
+
+        <Footer />
+      </div>
+    </>
   );
 };
 
