@@ -273,17 +273,17 @@ const SpeakersSection = () => {
           <div className="flex flex-col sm:flex-row justify-center gap-4 mt-8">
             <button
               className="bg-purple-600 text-white px-6 py-3 rounded-lg hover:bg-purple-700 transition duration-200 ease-in-out flex items-center justify-center"
-              onClick={handleLinkClick}
+             /* onClick={handleLinkClick} */
             >
               <ExternalLink className="w-5 h-5 mr-2" />
-              <p>Submit Paper</p>
+              <strike><p>Submit Paper</p></strike>
             </button>
             <button
               className="bg-indigo-600 text-white px-6 py-3 rounded-lg hover:bg-indigo-700 transition duration-200 ease-in-out flex items-center justify-center"
-              onClick={handlePDFClick}
+              /*onClick={handlePDFClick}*/
             >
               <FileText className="w-5 h-5 mr-2" />
-              Download Brochure
+              <strike><p>Download Brochure</p></strike>
             </button>
           </div>
         </div>
