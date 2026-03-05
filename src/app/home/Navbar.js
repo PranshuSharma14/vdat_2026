@@ -70,7 +70,15 @@ const Navbar = () => {
       <style>{`
         .nav-root {
           width: 100%;
-          background: linear-gradient(180deg, rgba(30,5,60,0.97) 0%, rgba(55,15,100,0.93) 100%);
+          background: linear-gradient(180deg, rgba(5, 53, 137, 0.97) 0%, rgba(4, 32, 143, 0.93) 100%),url('/images/chip.jpeg');
+          background-size: cover;
+          background-position: center;
+          background- repeat: no-repeat;
+          background-blend-mode: multiply;
+          
+          
+          
+          
           backdrop-filter: blur(16px);
           -webkit-backdrop-filter: blur(16px);
           border-bottom: 1px solid rgba(250,204,21,0.18);
@@ -78,6 +86,21 @@ const Navbar = () => {
           position: relative;
           z-index: 50;
         }
+          .nav-root::after {
+              content: "";
+              position: absolute;
+              inset: 0;
+              background: url('/images/chip.jpeg');
+             background-size: cover;
+             background-position: center;
+             opacity: 20%;
+              filter: blur(3px);
+              pointer-events: none;
+}
+
+
+
+
         /* Thin yellow accent line at very top */
         .nav-root::before {
           content: '';
@@ -88,10 +111,10 @@ const Navbar = () => {
         }
         .nav-link {
           color: rgba(255,255,255,1);
-          font-size: 0.88vw;
-          font-weight: 600;
-          letter-spacing: 0.03em;
-          padding: 5px 10px;
+          font-size: 0.98vw;
+          font-weight: 700;
+          letter-spacing: 0.05em;
+          padding: 8px 14px;
           border-radius: 6px;
           transition: all 0.2s ease;
           white-space: nowrap;
@@ -116,7 +139,7 @@ const Navbar = () => {
           right: 10px;
         }
         .dropdown-menu {
-          background: linear-gradient(160deg, #1e0545 0%, #2a0860 100%);
+          background: linear-gradient(160deg, #1744a5 0%, #2a0860 100%);
           border: 1px solid rgba(250,204,21,0.15);
           border-radius: 12px;
           box-shadow: 0 16px 40px rgba(0,0,0,0.5), 0 0 0 1px rgba(167,139,250,0.1);
