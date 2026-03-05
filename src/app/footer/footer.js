@@ -27,7 +27,9 @@ const Footer = () => {
   return (
     <footer
       className="relative text-white py-16 px-4 md:px-8 overflow-hidden"
-      style={{ backgroundColor: "#2b69c7" }}
+      style={{
+    background: "linear-gradient(180deg, rgba(7, 71, 182, 0.97) , rgba(4, 32, 143, 0.93))"
+  }}
     >
       <div className="max-w-7xl mx-auto">
 
@@ -36,7 +38,7 @@ const Footer = () => {
         ========================= */}
 
         <div className="mb-16">
-          <h3 className="text-3xl font-bold text-center mb-10">
+          <h3 className="text-4xl font-bold text-center mb-10">
             Organising Partner Institutes
           </h3>
 
@@ -45,7 +47,7 @@ const Footer = () => {
               <div
                 key={name}
                 className="relative group bg-white/10 backdrop-blur-sm rounded-lg p-4 hover:bg-white/20 transition-all duration-300 hover:scale-105"
-                style={{ aspectRatio: "4/3", minHeight: "120px" }}
+                style={{ aspectRatio: "4/3", minHeight: "155px" }}
               >
                 <div className="relative w-full h-full">
                   <Image
@@ -79,7 +81,7 @@ const Footer = () => {
 ========================= */}
 
         <div className="mb-16">
-          <h3 className="text-3xl font-bold text-center mb-12">
+          <h3 className="text-4xl font-bold text-center mb-12">
             Our Sponsors
           </h3>
 

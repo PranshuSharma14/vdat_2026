@@ -130,12 +130,12 @@ const SpeakersSection = () => {
     {
       id: "Track 7",
       name: "Track 7",
-      title: "Track 7 : Quantum, Future Computing & Beyond-CMOS Architectures",
+      title: "Track 7 : Quantum & Future Computing Architectures",
       content: [
         "Quantum Computing Devices & Architectures",
         "Quantum Circuit Design & Error Correction",
         "Cryogenic CMOS for Quantum Systems",
-        "ABeyond-CMOS Computing Paradigms",
+        "A Beyond-CMOS Computing Paradigms",
         "Hybrid Classical–Quantum Architectures",
       ],
     },
@@ -299,7 +299,7 @@ const SpeakersSection = () => {
     return (
       <>
         <ListSection
-          title="Submission Guidelines and review process"
+          title="Submission Guidelines and Review Process"
           items={[
             "Submit a single PDF containing all the information listed below.",
             "Paper Format: Papers should be in PDF format following the IEEE Conference paper format.",
@@ -327,7 +327,7 @@ const SpeakersSection = () => {
         className="text-center text-white py-20 relative bg-cover bg-center bg-fixed"
         style={{ backgroundImage: "url('/images/jiit5.webp')" }}
       >
-        <div className="absolute inset-0 bg-gradient-to-r from-blue-900/80 to-violet-900/80"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-blue-900/80 to-blue-900/80"></div>
         <div className="relative z-10 px-4 py-16">
           <h1 className="text-6xl font-extrabold tracking-tight uppercase mb-4 drop-shadow-lg">
             Call for paper
@@ -412,7 +412,7 @@ const SpeakersSection = () => {
               boxShadow: "0 8px 25px rgba(0, 0, 0, 0.3)",
             }}
           >
-            <div className="w-8 h-8 lg:w-10 lg:h-10 rounded-full bg-gradient-to-br from-purple-600 to-purple-800 flex items-center justify-center shadow-lg group-hover:shadow-purple-500/25 transition-all duration-300 flex-shrink-0">
+            <div className="w-8 h-8 lg:w-10 lg:h-10 rounded-full bg-gradient-to-br from-blue-600 to-blue-800 flex items-center justify-center shadow-lg group-hover:shadow-purple-500/25 transition-all duration-300 flex-shrink-0">
               <span className="text-purple-100 font-bold text-sm lg:text-base">
                 {index + 1}
               </span>

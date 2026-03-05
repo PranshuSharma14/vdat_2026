@@ -234,7 +234,7 @@ const RegistrationPage = () => {
         className="text-center text-white py-20 relative bg-cover bg-center bg-fixed"
         style={{ backgroundImage: "url('/images/jiit5.webp')" }}
       >
-        <div className="absolute inset-0 bg-gradient-to-r from-blue-900/85 to-violet-900/85"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-blue-900/85 to-blue-900/85"></div>
 
          
         <div className="absolute inset-0 opacity-20">
@@ -278,19 +278,19 @@ const RegistrationPage = () => {
               href={/*GOOGLE_FORM_LINK*/"#"}
               target="_blank"
               rel="noopener noreferrer"
-              className="group relative inline-flex items-center px-12 py-5 bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-600 text-white font-bold text-xl rounded-full shadow-2xl hover:shadow-3xl transform hover:scale-105 transition-all duration-300 uppercase tracking-wider animate-pulse hover:animate-none"
+              className="group relative inline-flex items-center px-12 py-5 bg-gradient-to-r text-white font-bold text-4xl rounded-full shadow-2xl hover:shadow-3xl uppercase tracking-wider "
             >
               <Star
                 className="mr-3 animate-spin group-hover:animate-none"
                 size={28}
               />
-              Coming Soon 
+              <p className="!text-white font-bold text-3xl">Coming Soon </p>
               <ExternalLink
                 className="ml-3 group-hover:translate-x-1 transition-transform"
                 size={24}
               />
                
-              <div className="absolute -inset-1 bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-600 rounded-full opacity-30 blur group-hover:opacity-50 animate-pulse"></div>
+              
             </a>
           </div>
 

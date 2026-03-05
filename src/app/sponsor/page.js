@@ -84,7 +84,7 @@
           className="text-center text-white py-20 relative bg-cover bg-center bg-fixed"
           style={{ backgroundImage: "url('/images/jiit5.webp')" }}
         >
-          <div className="absolute inset-0 bg-gradient-to-r from-blue-900/80 to-violet-900/80"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-blue-900/80 to-blue-900/80"></div>
           <div className="relative z-10 px-4 py-16">
             <h1 className="text-6xl font-extrabold tracking-tight uppercase mb-4 drop-shadow-lg">Sponsors</h1>
             <p className="text-xl max-w-2xl mx-auto font-light">Join leading companies supporting innovation in VLSI design</p>

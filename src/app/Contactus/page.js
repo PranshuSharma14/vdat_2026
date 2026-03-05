@@ -157,7 +157,7 @@ const ContactUsPage = () => {
         .contact-hero-overlay {
           position: absolute;
           inset: 0;
-          background: linear-gradient(135deg, rgba(30,5,60,0.88) 0%, rgba(109,40,217,0.75) 50%, rgba(30,5,60,0.88) 100%);
+          background: linear-gradient(135deg, rgba(29,98,146,0.88) 0%, rgba(29,98,146,0.75) 50%, rgba(29,98,146,0.88) 100%);
         }
         /* diagonal cut bottom */
         .contact-hero::after {
@@ -181,7 +181,9 @@ const ContactUsPage = () => {
           z-index: 10;
           text-align: center;
           padding: 80px 24px 100px;
+          
         }
+        
         .contact-hero-eyebrow {
           display: inline-block;
           font-size: 0.72rem;
@@ -408,13 +410,13 @@ const ContactUsPage = () => {
           justify-content: center;
         }
         .current-contact-card {
-          background: linear-gradient(135deg, #1e0545 0%, #3b0764 50%, #1e0545 100%);
+          background: linear-gradient(135deg, #0f172a, #1e40af, #2563eb);
           border-radius: 20px;
           padding: 52px 48px;
           text-align: center;
           position: relative;
           overflow: hidden;
-          max-width: 600px;
+          max-width: 800px;
           width: 100%;
           box-shadow: 0 20px 60px rgba(109,40,217,0.3);
         }
@@ -428,7 +430,7 @@ const ContactUsPage = () => {
         .current-contact-card .blob1 { top: -50px; right: -50px; }
         .current-contact-card .blob2 { bottom: -30px; left: -30px; }
         .current-contact-label {
-          font-size: 0.72rem;
+          font-size: 0.80rem;
           font-weight: 700;
           letter-spacing: 0.35em;
           text-transform: uppercase;
@@ -442,16 +444,16 @@ const ContactUsPage = () => {
         }
         .current-contact-title {
           font-family: 'Rajdhani', sans-serif;
-          font-size: clamp(1.5rem, 3vw, 2rem);
-          font-weight: 700;
+          font-size: clamp(2rem, 3vw, 2rem);
+          font-weight: 900;
           color: #fff;
           text-transform: uppercase;
-          letter-spacing: 0.05em;
+          letter-spacing: 0.08em;
           margin-bottom: 10px;
         }
         .current-contact-desc {
-          color: rgba(233,213,255,0.7);
-          font-size: 0.95rem;
+          color: rgba(255,255,255);
+          font-size: 1rem;
           margin-bottom: 32px;
           line-height: 1.7;
         }
@@ -462,13 +464,13 @@ const ContactUsPage = () => {
           background: linear-gradient(90deg, #facc15, #f97316);
           color: #1e0545;
           padding: 14px 32px;
-          border-radius: 10px;
-          font-weight: 800;
-          font-size: 0.7rem;
-          letter-spacing: 0.02em;
+          border-radius: 8px;
+          font-weight: 900;
+          font-size: 0.8rem;
+          letter-spacing: 0.08rem;
           text-decoration: none;
           transition: transform 0.2s, box-shadow 0.2s;
-          box-shadow: 0 4px 20px rgba(250,204,21,0.3);
+          box-shadow: 0 4px 20px rgba(255,255,255,0.3);
           word-break: break-all;
         }
         .current-contact-email-btn:hover {
@@ -476,8 +478,8 @@ const ContactUsPage = () => {
           box-shadow: 0 8px 30px rgba(250,204,21,0.45);
         }
         .current-contact-note {
-          color: rgba(196,181,253,0.6);
-          font-size: 0.82rem;
+          color: rgba(255,255,255);
+          font-size: 0.92rem;
           margin-top: 20px;
         }
       `}</style>
@@ -506,7 +508,12 @@ const ContactUsPage = () => {
             <p className="current-contact-desc">
               For any queries regarding VDAT 2026, reach out to us directly
             </p>
-            <a href="mailto:arti.noor@mail.jiit.ac.in" className="current-contact-email-btn">
+            <a
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=arti.noor@mail.jiit.ac.in"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="current-contact-email-btn"
+            >
               <Mail size={20} />
               arti.noor@mail.jiit.ac.in
             </a>

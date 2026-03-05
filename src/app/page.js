@@ -16,11 +16,11 @@ import AwardeesSection from "./awardee/page";
 // Improved Theme Banner Component with more visual elements
 const ThemeBanner = () => {
   return (
-    <div className="relative bg-gradient-to-r from-purple-700 via-purple-600 to-indigo-700 text-white py-16 px-4 sm:px-6 md:px-12 overflow-hidden">
+    <div className="relative bg-gradient-to-r from-blue-700 via-blue-600 to-blue-700 text-white py-16 px-4 sm:px-6 md:px-12 overflow-hidden">
       {/* Enhanced background with multiple elements */}
       <div className="absolute inset-0 transform -skew-y-3 bg-black opacity-20"></div>
       <div className="absolute top-0 left-0 w-full h-16 bg-white opacity-5 transform rotate-45"></div>
-      <div className="absolute bottom-0 right-0 w-64 h-64 rounded-full bg-purple-500 opacity-20 transform translate-x-1/3 translate-y-1/3"></div>
+      <div className="absolute bottom-0 right-0 w-64 h-64 rounded-full bg-blue-500 opacity-20 transform translate-x-1/3 translate-y-1/3"></div>
 
       <div className="relative z-10 max-w-4xl mx-auto text-center px-2 sm:px-6">
           {/* Title */}
@@ -36,11 +36,11 @@ const ThemeBanner = () => {
           bg-white/10 backdrop-blur-sm px-4 sm:px-8 py-4 sm:py-6 rounded-xl 
           border border-white/20 shadow-lg text-white">
 
-            <span className="text-yellow-300 font-semibold">
+            <span className="text-yellow-300 font-bold">
               Advancing Intelligent, Secure and Quantum-Ready
             </span>{" "}
             Semiconductor Systems for the
-            <span className="text-yellow-300 font-semibold">
+            <span className="text-yellow-300 font-bold">
               {" "}Next Era of Computing
             </span>
 
@@ -428,9 +428,9 @@ const Timeline = () => {
   ];
 
   return (
-    <section className="py-12 sm:py-16 md:py-24 bg-gradient-to-r from-purple-900 to-indigo-900 text-white">
+    <section className="py-12 sm:py-16 md:py-24 bg-gradient-to-r from-blue-800 to-blue-700 text-white">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-8 sm:mb-12 bg-gradient-to-r from-purple-300 to-blue-300 bg-clip-text text-transparent">
+        <h2 className="text-4xl sm:text-4xl md:text-5xl font-bold text-center mb-8 sm:mb-12 bg-gradient-to-r white bg-clip-text">
           Important Dates
         </h2>
 

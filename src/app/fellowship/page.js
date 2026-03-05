@@ -44,7 +44,7 @@ const FellowshipPage = () => {
         className="text-center text-white py-32 relative bg-cover bg-center bg-fixed"
         style={{ backgroundImage: "url('/images/jiit5.webp')" }}
       >
-        <div className="absolute inset-0 bg-gradient-to-r from-indigo-900/80 to-violet-900/80"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-blue-900/80 to-blue-900/80"></div>
         <div className="relative z-10 px-2 py-8">
           <h1 className="text-5xl font-extrabold tracking-tight uppercase mb-2 drop-shadow-lg">VDAT 2026 Fellowship Program</h1>
           <p className="text-lg max-w-xl mx-auto font-light">Supporting students and faculty in the field of VLSI design</p>

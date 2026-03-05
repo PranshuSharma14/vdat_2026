@@ -109,10 +109,7 @@ const VenuePage = () => {
 
         .vp-hero-overlay {
           position: absolute; inset: 0;
-          background: linear-gradient(135deg,
-            rgba(15,2,37,0.92) 0%,
-            rgba(109,40,217,0.78) 50%,
-            rgba(15,2,37,0.92) 100%);
+          background: linear-gradient(135deg, rgba(29,98,146,0.88) 0%, rgba(29,98,146,0.75) 50%, rgba(29,98,146,0.88) 100%);
         }
 
         /* slanted bottom cut */
