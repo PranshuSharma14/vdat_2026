@@ -101,6 +101,29 @@ const vlsiHighlights = [
   },
 ];
 
+/*coming soon */
+const ComingSoon = () => {
+  return (
+    <section className="bg-black py-32 text-center">
+      <div className="container mx-auto px-6">
+        <h2 className="text-7xl font-black bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent mb-6">
+          COMING SOON
+        </h2>
+
+        <p className="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
+          The VDAT-2026 Registration Portal will be opening soon.
+          Stay tuned for updates and prepare to join India's premier
+          VLSI Design & Test conference.
+        </p>
+
+        <div className="mt-8 text-cyan-400 text-lg animate-pulse">
+          🚀 Registration details will be available shortly.
+        </div>
+      </div>
+    </section>
+  );
+};
+
 const RegistrationDetails = () => (
 
 
@@ -209,7 +232,7 @@ const RegistrationPage = () => {
       {/* Hero Section with VLSI Circuit Animation */}
       <header
         className="text-center text-white py-20 relative bg-cover bg-center bg-fixed"
-        style={{ backgroundImage: "url('/images/iit-ropar-5.avif')" }}
+        style={{ backgroundImage: "url('/images/jiit5.webp')" }}
       >
         <div className="absolute inset-0 bg-gradient-to-r from-blue-900/85 to-violet-900/85"></div>
 
@@ -230,7 +253,7 @@ const RegistrationPage = () => {
           <div className="flex items-center justify-center mb-6">
             <Cpu className="text-cyan-300 mr-4 animate-spin" size={48} />
             <h1 className="text-6xl font-extrabold tracking-tight uppercase drop-shadow-lg">
-              VDAT-2025
+              VDAT-2026
             </h1>
             <CircuitBoard
               className="text-green-300 ml-4 animate-pulse"
@@ -252,7 +275,7 @@ const RegistrationPage = () => {
          
           <div className="mt-8">
             <a
-              href={GOOGLE_FORM_LINK}
+              href={/*GOOGLE_FORM_LINK*/"#"}
               target="_blank"
               rel="noopener noreferrer"
               className="group relative inline-flex items-center px-12 py-5 bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-600 text-white font-bold text-xl rounded-full shadow-2xl hover:shadow-3xl transform hover:scale-105 transition-all duration-300 uppercase tracking-wider animate-pulse hover:animate-none"
@@ -261,7 +284,7 @@ const RegistrationPage = () => {
                 className="mr-3 animate-spin group-hover:animate-none"
                 size={28}
               />
-              Register for VDAT-2025
+              Coming Soon 
               <ExternalLink
                 className="ml-3 group-hover:translate-x-1 transition-transform"
                 size={24}
@@ -276,7 +299,7 @@ const RegistrationPage = () => {
             <div className="animate-bounce">
               <p className="text-cyan-300 font-bold text-lg flex items-center justify-center">
                 <Zap className="mr-2" size={20} />
-                🚀 Early Bird - Limited Silicon Seats! 🚀
+                Registration Opens Soon
                 <Zap className="ml-2" size={20} />
               </p>
             </div>
@@ -286,17 +309,19 @@ const RegistrationPage = () => {
           </div>
         </div>
       </header>
+      <ComingSoon/>
 
       {/*--------------REMOVE THE COMMENTED PART JUST BELOW AND JUST ABOVE AFTER UPDATING THE GOOGLE FORM LINK
                                                               -By YOURS TRUELY
                                                               AYUSH TYAGI*/}
 
       {/* Floating Registration Button - VLSI themed */}
+      {/* 
       <div className="fixed bottom-6 right-6 z-50">
       
         <a
           href={GOOGLE_FORM_LINK}
-          target="_blank"
+          target="_blank" 
           rel="noopener noreferrer"
           className="group flex items-center px-6 py-3 bg-gradient-to-r from-cyan-500 to-purple-600 text-white font-bold rounded-full shadow-xl hover:shadow-2xl transform hover:scale-110 transition-all duration-300 animate-bounce hover:animate-none"
         >
@@ -308,7 +333,7 @@ const RegistrationPage = () => {
           />
         </a>
       </div>
-      {/* VLSI Highlights Section */}
+      // VLSI Highlights Section 
       <section className="bg-gradient-to-r from-slate-800 via-blue-800 to-indigo-900 py-12">
         <div className="container mx-auto px-6">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -326,13 +351,13 @@ const RegistrationPage = () => {
         </div>
       </section>
 
-      {/* --- ADD REGISTRATION PROCESS & BANK DETAILS HERE --- */}
+      //ADD REGISTRATION PROCESS & BANK DETAILS HERE --
       <RegistrationDetails />
-      {/* Prominent VLSI Registration Call-to-Action Section */}
+      // Prominent VLSI Registration Call-to-Action Section 
       <section className="bg-gradient-to-r from-purple-600 via-blue-600 to-cyan-600 py-16 relative overflow-hidden">
         <div className="absolute inset-0 bg-black opacity-30"></div>
 
-         Animated Background Elements 
+         
         <div className="absolute inset-0 overflow-hidden opacity-10">
           <div className="absolute top-10 left-10 animate-float">
             <CircuitBoard size={120} className="text-white" />
@@ -408,7 +433,7 @@ const RegistrationPage = () => {
         </div>
       </section>
 
-      {/* Enhanced Registration Information Section */}
+      {/* Enhanced Registration Information Section 
       <section className="container mx-auto px-6 py-16">
         <div className="text-center mb-12">
           <div className="flex items-center justify-center mb-4">
@@ -498,7 +523,7 @@ const RegistrationPage = () => {
         </div>
       </section>
 
-      {/* Enhanced Registration Fees Table */}
+      {/* Enhanced Registration Fees Table
       <section className="container mx-auto px-6 py-16 bg-gradient-to-b from-white to-gray-50">
         <div className="text-center mb-12">
           <div className="flex items-center justify-center mb-4">
@@ -584,7 +609,7 @@ const RegistrationPage = () => {
           </table>
         </div>
 
-        {/* Enhanced Registration Notes */}
+        {/* Enhanced Registration Notes 
         <div className="bg-gradient-to-r from-white to-blue-50 p-8 rounded-xl shadow-lg mt-10 max-w-5xl mx-auto border border-blue-100">
           <div className="flex items-center mb-6">
             <FileDown className="text-blue-600 mr-3" size={24} />
@@ -616,7 +641,7 @@ const RegistrationPage = () => {
           </div>
         </div>
 
-        {/* Final VLSI Registration CTA */}
+        {/* Final VLSI Registration CTA 
         <div className="text-center mt-16">
           <div className="bg-gradient-to-r from-cyan-500 via-blue-500 via-purple-500 to-pink-500 p-1 rounded-3xl inline-block animate-pulse">
             <a
@@ -638,8 +663,9 @@ const RegistrationPage = () => {
           </p>
         </div>
       </section>
-
-      {/* Footer would go here */}
+          
+         */}
+    
       <Footer />
     </div>
   );

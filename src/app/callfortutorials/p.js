@@ -3,7 +3,7 @@
       <header
         className="text-center text-white py-24 md:py-72 relative" // Adjusted padding for responsiveness
         style={{
-          backgroundImage: "url('/images/iit-ropar-5.avif')",
+          backgroundImage: "url('/images/jiit5.webp')",
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundColor: 'rgba(0, 0, 0, 0.5)',

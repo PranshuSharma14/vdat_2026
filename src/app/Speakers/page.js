@@ -2,6 +2,27 @@ import React from 'react';
 import Footer from '../footer/footer';
 import Navbar from '../home/Navbar';
 
+const ComingSoon = () => {
+  return (
+    <section className="bg-black py-32 text-center">
+      <div className="container mx-auto px-6">
+        <h2 className="text-7xl font-black bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent mb-6">
+          COMING SOON
+        </h2>
+
+        <p className="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
+          The featured speakers for VDAT-2026 will be announced soon.
+          Stay tuned to meet world-class innovators, researchers,
+          and industry leaders in VLSI and semiconductor technology.
+        </p>
+
+        <div className="mt-8 text-cyan-400 text-lg animate-pulse">
+          🚀 Speaker lineup will be revealed shortly.
+        </div>
+      </div>
+    </section>
+  );
+};
 
 // Speaker Title Card Component
 const SpeakerCard = ({ name, title, organization, photo, linkedin, website }) => {
@@ -273,8 +294,10 @@ const SpeakersSection = () => {
           </p>
         </div>
       </header>
+      <ComingSoon />
+  
       
-      {/* Main Content */}
+      {/* Main Content 
       <main className="flex-grow py-16 px-4 bg-gray-50">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-3xl font-bold text-center mb-12 text-gray-800">Meet Our Distinguished Speakers</h2>
@@ -292,7 +315,8 @@ const SpeakersSection = () => {
           </div>
         </div>
       </main>
-      
+/*       */}
+
       <Footer />
     </div>
   );

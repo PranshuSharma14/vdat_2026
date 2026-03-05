@@ -5,6 +5,27 @@ import { Cpu, CircuitBoard, Layers,Calendar, Clock } from "lucide-react";
 import MProTable from "./table";
 import Footer from "../footer/footer";
 import Navbar from "../home/Navbar";
+const ComingSoon = () => {
+  return (
+    <section className="bg-black py-32 text-center">
+      <div className="container mx-auto px-6">
+        <h2 className="text-7xl font-black bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent mb-6">
+          COMING SOON
+        </h2>
+
+        <p className="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
+          The detailed conference schedule for VDAT-2026 will be announced soon.
+          Stay tuned for session timings, keynote talks, tutorials,
+          and technical presentations.
+        </p>
+
+        <div className="mt-8 text-cyan-400 text-lg animate-pulse">
+          🚀 Conference program will be revealed shortly.
+        </div>
+      </div>
+    </section>
+  );
+};
 const Mpro = () => {
   return (
     <div className="bg-gradient-to-b from-gray-50 to-white min-h-screen font-sans">
@@ -32,17 +53,17 @@ const Mpro = () => {
           <div className="flex items-center justify-center mb-4">
             <Calendar className="text-cyan-300 mr-3" size={32} />
             <h1 className="text-3xl font-bold tracking-tight">
-              VDAT-2025 Conference Schedule
+              VDAT-2026 Conference Schedule
             </h1>
             <Clock className="text-green-300 ml-3" size={32} />
           </div>
 
           <p className="text-lg max-w-2xl mx-auto font-light leading-relaxed opacity-90">
-            Complete program schedule for all three days
+            The detailed conference schedule for VDAT-2026 will be announced soon.
           </p>
         </div>
       </header>
-      <MProTable />
+      <ComingSoon />
       <Footer />
       </div>
   );

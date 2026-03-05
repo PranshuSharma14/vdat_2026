@@ -2,6 +2,24 @@
 import React from 'react';
 import Footer from '../footer/footer';
 import Navbar from '../home/Navbar';
+const ComingSoon = () => {
+  return (
+    <section className="py-32 text-center">
+      <h2 className="text-7xl font-black bg-gradient-to-r from-purple-400 to-indigo-400 bg-clip-text text-transparent mb-6">
+        COMING SOON
+      </h2>
+
+      <p className="text-xl text-gray-300 max-w-2xl mx-auto">
+        PhD Forum details will be announced soon.  
+        Stay tuned for submission guidelines and participation details.
+      </p>
+
+      <div className="mt-8 text-purple-400 animate-pulse text-lg">
+        🎓 Information will be available shortly
+      </div>
+    </section>
+  );
+};
 
 const PhDForumBanner = () => {
   return (
@@ -703,7 +721,8 @@ const PhDForum = () => {
   return (
     <div className="bg-black min-h-screen text-white">
       <Navbar />
-      
+      <ComingSoon/>
+    {/*  
       <main className="container mx-auto px-4 py-8">
         <PhDForumBanner />
         
@@ -729,7 +748,7 @@ const PhDForum = () => {
           <FAQ />
         </div>
       </main>
-      
+      */}
       <Footer />
     </div>
   );

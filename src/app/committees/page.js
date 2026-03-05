@@ -4,6 +4,28 @@ import Box from "@mui/material/Box";
 import Footer from "../footer/footer";
 import Navbar from "../home/Navbar";
 
+const ComingSoon = () => {
+  return (
+    <section className="bg-black py-32 text-center">
+      <div className="container mx-auto px-6">
+        <h2 className="text-7xl font-black bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent mb-6">
+          COMING SOON
+        </h2>
+
+        <p className="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
+          The VDAT-2026 organizing committees will be announced soon.
+          Stay tuned to meet the distinguished experts and leaders
+          shaping this conference.
+        </p>
+
+        <div className="mt-8 text-cyan-400 text-lg animate-pulse">
+          🚀 Committee members will be revealed shortly.
+        </div>
+      </div>
+    </section>
+  );
+};
+
 const committees = [
   {
     title: "Steering Committee Chair",
@@ -618,7 +640,7 @@ export default function CommitteePage() {
       </div>
       <header
         className="text-center text-white py-20 relative bg-cover bg-center bg-fixed"
-        style={{ backgroundImage: "url('/images/iit-ropar-5.avif')" }}
+        style={{ backgroundImage: "url('/images/jiit5.webp')" }}
       >
         <div className="absolute inset-0 bg-gradient-to-r from-blue-900/80 to-violet-900/80"></div>
         <div className="relative z-10 px-4 py-16">
@@ -630,8 +652,10 @@ export default function CommitteePage() {
           </p>
         </div>
       </header>
+      <ComingSoon />
+      
 
-      {/* Custom Tab Navigation */}
+      {/* Custom Tab Navigation 
       <div className="sticky top-0 z-20 bg-white shadow-md">
         <div className="max-w-7xl mx-auto px-4 py-2">
           <div className="flex flex-wrap gap-1 md:gap-2 justify-center">
@@ -652,7 +676,7 @@ export default function CommitteePage() {
         </div>
       </div>
 
-      {/* Content Area */}
+      {/* Content Area 
       <div className="py-8 bg-gray-50">
         <div className="container mx-auto px-4">
           {committees
@@ -662,6 +686,7 @@ export default function CommitteePage() {
             ))}
         </div>
       </div>
+      */}
 
       <Footer />
     </div>
