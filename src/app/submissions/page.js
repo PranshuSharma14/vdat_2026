@@ -325,7 +325,7 @@ const SpeakersSection = () => {
 
       <header
         className="text-center text-white py-20 relative bg-cover bg-center bg-fixed"
-        style={{ backgroundImage: "url('/images/iit-ropar-5.avif')" }}
+        style={{ backgroundImage: "url('/images/jiit5.webp')" }}
       >
         <div className="absolute inset-0 bg-gradient-to-r from-blue-900/80 to-violet-900/80"></div>
         <div className="relative z-10 px-4 py-16">
