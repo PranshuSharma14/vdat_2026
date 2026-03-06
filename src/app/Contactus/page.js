@@ -164,9 +164,9 @@ const ContactUsPage = () => {
           content: '';
           position: absolute;
           bottom: -2px; left: 0; right: 0;
-          height: 60px;
+          height: 10px;
           background: #f8f4ff;
-          clip-path: polygon(0 100%, 100% 0, 100% 100%);
+          
         }
 
          @media (max-width: 768px) {
@@ -208,11 +208,7 @@ const ContactUsPage = () => {
           margin-bottom: 16px;
           text-shadow: 0 4px 24px rgba(0,0,0,0.4);
         }
-        .contact-hero h1 span {
-          background: linear-gradient(90deg, #facc15, #f97316);
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
-        }
+       
         .contact-hero p {
           font-size: 1.05rem;
           color: rgba(233,213,255,0.85);
@@ -493,7 +489,7 @@ const ContactUsPage = () => {
           <div className="contact-hero-overlay" />
           <div className="contact-hero-content">
             <span className="contact-hero-eyebrow">VDAT 2026 · Noida, India</span>
-            <h1>Contact <span>Us</span></h1>
+            <h1>Contact Us</h1>
             <p>Get in touch with the VDAT 2026 organizing team — we're here to help</p>
           </div>
         </header>

@@ -142,11 +142,11 @@ const SpeakersSection = () => {
   ];
 
  const handleLinkClick = () => {
-    window.open("https://softconf.com/vlsi/vdat2025/", "_blank");
+    window.open("https://softconf.com/vlsi/vdat2026", "_blank");
   };
 
   const handlePDFClick = () => {
-    window.open("/pdfs/VDAT - CFP2025.pdf", "_blank");
+    window.open("/pdfs/VDAT2026_CFP.pdf", "_blank");
   };
 
   const ListSection = ({ title, items, isAlternate }) => (
@@ -273,17 +273,17 @@ const SpeakersSection = () => {
           <div className="flex flex-col sm:flex-row justify-center gap-4 mt-8">
             <button
               className="bg-purple-600 text-white px-6 py-3 rounded-lg hover:bg-purple-700 transition duration-200 ease-in-out flex items-center justify-center"
-             /* onClick={handleLinkClick} */
+             onClick={handleLinkClick} 
             >
               <ExternalLink className="w-5 h-5 mr-2" />
-              <strike><p>Submit Paper</p></strike>
+              <p>Submit Paper</p>
             </button>
             <button
               className="bg-indigo-600 text-white px-6 py-3 rounded-lg hover:bg-indigo-700 transition duration-200 ease-in-out flex items-center justify-center"
-              /*onClick={handlePDFClick}*/
+              onClick={handlePDFClick}
             >
               <FileText className="w-5 h-5 mr-2" />
-              <strike><p>Download Brochure</p></strike>
+              <p>Download Call for Papers</p>
             </button>
           </div>
         </div>

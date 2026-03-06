@@ -117,9 +117,9 @@ const VenuePage = () => {
           content: '';
           position: absolute;
           bottom: -2px; left: 0; right: 0;
-          height: 70px;
+          height: 20px;
           background: var(--bg);
-          clip-path: polygon(0 100%, 100% 0, 100% 100%);
+          
         }
 
         @media (max-width: 768px) {
@@ -157,6 +157,7 @@ const VenuePage = () => {
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
         }
+
         .vp-hero-loc {
           display: inline-flex; align-items: center; gap: 8px;
           color: rgba(233,213,255,0.9); font-size: 1.05rem; font-weight: 400;
@@ -234,7 +235,7 @@ const VenuePage = () => {
           text-transform: uppercase; letter-spacing: 0.04em;
           margin-bottom: 18px;
         }
-        .hotel-desc { color: #4b5563; line-height: 1.78; font-size: 0.97rem; display: flex; flex-direction: column; gap: 14px; }
+        .hotel-desc { color: #4b5563; line-height: 1.78; font-size: 0.97rem; display: flex; flex-direction: column; gap: 14px; text-align:justify; }
 
         /* ─── MAP SECTION ─── */
         .map-split { display: flex; flex-wrap: wrap; flex-direction: row-reverse; }
@@ -435,7 +436,7 @@ const VenuePage = () => {
             <span className="vp-eyebrow">VDAT 2026 · Noida, India</span>
 
             <h1>
-              Conference <em>Venue</em>
+              Conference Venue
             </h1>
 
             <div className="vp-hero-loc">

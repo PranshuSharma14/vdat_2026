@@ -6,7 +6,7 @@ import Navbar from "../home/Navbar";
 
 const ComingSoon = () => {
   return (
-    <section className="bg-black py-32 text-center">
+    <section className="bg-black py-16 md:py-24 lg:py-32 text-center">
       <div className="container mx-auto px-6">
         <h2 className="text-7xl font-black bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent mb-6">
           COMING SOON
@@ -644,7 +644,7 @@ export default function CommitteePage() {
       >
         <div className="absolute inset-0 bg-gradient-to-r from-blue-900/80 to-blue-900/80"></div>
         <div className="relative z-10 px-4 py-16">
-          <h1 className="text-6xl font-extrabold tracking-tight uppercase mb-4 drop-shadow-lg">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight uppercase mb-4 drop-shadow-lg">
             Committees
           </h1>
           <p className="text-xl max-w-2xl mx-auto font-light">
