@@ -47,7 +47,7 @@ const VenuePage = () => {
       icon: <Bus className="text-white" size={20} />,
       color: "bg-purple-500",
       accent: "#a855f7",
-      description: "Noida is well connected via interstate bus services and Delhi Metro."
+      description: "Noida is well connected through interstate bus services and the Delhi Metro Blue Line, providing easy access from different parts of Delhi."
     }
   ];
 

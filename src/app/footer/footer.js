@@ -3,14 +3,31 @@ import Link from "next/link";
 import { FaLinkedin } from "react-icons/fa";
 
 const Footer = () => {
-
   const partnerLogos = {
-    "JIIT NOIDA": "/logos/jiit.png",
-    "Delhi Technological University": "/logos/dtu.jpeg",
-    "IIIT Delhi": "/logos/iiitdelhi.png",
-    "IGDTUW": "/logos/igdtuw.jpeg",
-    "NSUT": "/logos/nsut.png",
-    "NIT Delhi": "/logos/nitdelhi.png",
+    "JIIT NOIDA": {
+      src: "/logos/jiit.png",
+      link: "https://www.jiit.ac.in/",
+    },
+    "Delhi Technological University": {
+      src: "/logos/dtu.jpeg",
+      link: "https://dtu.ac.in/",
+    },
+    "IIIT Delhi": {
+      src: "/logos/iiitdelhi.png",
+      link: "https://www.iiitd.ac.in/",
+    },
+    IGDTUW: {
+      src: "/logos/igdtuw.jpeg",
+      link: "https://www.igdtuw.ac.in/",
+    },
+    NSUT: {
+      src: "/logos/nsut.png",
+      link: "https://www.nsut.ac.in/",
+    },
+    "NIT Delhi": {
+      src: "/logos/nitdelhi.png",
+      link: "https://nitdelhi.ac.in/",
+    },
   };
 
   const sponsorLogos = {
@@ -21,18 +38,18 @@ const Footer = () => {
     "Publication Sponsor": "/images/springer.png",
     "Inauguration Sponsor": "/logos/NXP.jpg",
     "Startup Partner": "/logos/SOC.png",
-    "Exhibitor": "/logos/sqube.png",
+    Exhibitor: "/logos/sqube.png",
   };
 
   return (
     <footer
       className="relative text-white py-16 px-4 md:px-8 overflow-hidden"
       style={{
-    background: "linear-gradient(180deg, rgba(7, 71, 182, 0.97) , rgba(4, 32, 143, 0.93))"
-  }}
+        background:
+          "linear-gradient(180deg, rgba(7, 71, 182, 0.97) , rgba(4, 32, 143, 0.93))",
+      }}
     >
       <div className="max-w-7xl mx-auto">
-
         {/* =========================
            Partner Institutes
         ========================= */}
@@ -43,27 +60,33 @@ const Footer = () => {
           </h3>
 
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 items-center">
-            {Object.entries(partnerLogos).map(([name, src]) => (
-              <div
+            {Object.entries(partnerLogos).map(([name, data]) => (
+              <Link
                 key={name}
-                className="relative group bg-white/10 backdrop-blur-sm rounded-lg p-4 hover:bg-white/20 transition-all duration-300 hover:scale-105"
-                style={{ aspectRatio: "4/3", minHeight: "155px" }}
+                href={data.link}
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                <div className="relative w-full h-full">
-                  <Image
-                    src={src}
-                    alt={name}
-                    fill
-                    className="object-contain p-2"
-                  />
-                </div>
+                <div
+                  className="relative group bg-white/10 backdrop-blur-sm rounded-lg p-4 hover:bg-white/20 transition-all duration-300 hover:scale-105 cursor-pointer"
+                  style={{ aspectRatio: "4/3", minHeight: "155px" }}
+                >
+                  <div className="relative w-full h-full">
+                    <Image
+                      src={data.src}
+                      alt={name}
+                      fill
+                      className="object-contain p-2"
+                    />
+                  </div>
 
-                <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 to-transparent rounded-b-lg p-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <span className="text-xs font-medium block text-center">
-                    {name}
-                  </span>
+                  <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 to-transparent rounded-b-lg p-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <span className="text-xs font-medium block text-center">
+                      {name}
+                    </span>
+                  </div>
                 </div>
-              </div>
+              </Link>
             ))}
           </div>
         </div>
@@ -76,10 +99,6 @@ const Footer = () => {
            Sponsors
         ========================= */}
 
-        {/* =========================
-           Sponsors
-========================= */}
-
         <div className="mb-16">
           <h3 className="text-4xl font-bold text-center mb-12">
             Our Sponsors
@@ -88,7 +107,6 @@ const Footer = () => {
           {/* Coming Soon Section */}
 
           <div className="flex flex-col items-center justify-center py-16">
-
             <div className="text-6xl mb-6 animate-pulse">🚀</div>
 
             <h4 className="text-3xl font-semibold text-gray-200 mb-4">
@@ -96,12 +114,10 @@ const Footer = () => {
             </h4>
 
             <p className="text-gray-400 text-lg max-w-xl text-center">
-              We are currently finalizing our sponsorship partnerships. 
-              Stay tuned for exciting announcements from our esteemed sponsors.
+              We are currently finalizing our sponsorship partnerships. Stay
+              tuned for exciting announcements from our esteemed sponsors.
             </p>
-
           </div>
-
 
           {/* =========================
                 ORIGINAL SPONSOR CODE
@@ -156,46 +172,43 @@ const Footer = () => {
             })}
           </div>
           */}
-
         </div>
 
-        {/* Divider */}
-
         {/* Bottom Section */}
-          <div className="border-t border-white/20 pt-8 text-center space-y-3">
 
-            {/* Copyright */}
+        <div className="border-t border-white/20 pt-8 text-center space-y-3">
+          {/* Copyright */}
 
-            <p className="text-sm text-gray-300">
-              © {new Date().getFullYear()} All rights reserved.
-            </p>
+          <p className="text-sm text-gray-300">
+            © {new Date().getFullYear()} All rights reserved.
+          </p>
 
-            {/* Developer Credit */}
+          {/* Developer Credit */}
 
-           <p className="text-sm text-gray-200 flex justify-center items-center gap-2 flex-wrap">
-              Designed & Developed by
+          <p className="text-sm text-gray-200 flex justify-center items-center gap-2 flex-wrap">
+            Designed & Developed by
 
-              <Link
-                href="https://www.linkedin.com/in/pranshu-sharma-6a84132a5"
-                target="_blank"
-                className="font-semibold hover:underline flex items-center gap-1"
-              >
-                Pranshu Sharma
-                <FaLinkedin size={14} />
-              </Link>
+            <Link
+              href="https://www.linkedin.com/in/pranshu-sharma-6a84132a5"
+              target="_blank"
+              className="font-semibold hover:underline flex items-center gap-1"
+            >
+              Pranshu Sharma
+              <FaLinkedin size={14} />
+            </Link>
 
-              <span>and</span>
+            <span>and</span>
 
-              <Link
-                href="https://www.linkedin.com/in/suryanshtomar/?originalSubdomain=in"
-                target="_blank"
-                className="font-semibold hover:underline flex items-center gap-1"
-              >
-                Suryansh Tomar
-                <FaLinkedin size={14} />
-              </Link>
-            </p>
-          </div>
+            <Link
+              href="https://www.linkedin.com/in/suryanshtomar/?originalSubdomain=in"
+              target="_blank"
+              className="font-semibold hover:underline flex items-center gap-1"
+            >
+              Suryansh Tomar
+              <FaLinkedin size={14} />
+            </Link>
+          </p>
+        </div>
       </div>
 
       {/* Decorative Background */}
@@ -203,7 +216,6 @@ const Footer = () => {
       <div className="absolute inset-0 opacity-5 pointer-events-none">
         <div className="absolute inset-0 bg-gradient-to-br from-white/10 to-transparent"></div>
       </div>
-
     </footer>
   );
 };

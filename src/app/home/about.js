@@ -64,10 +64,10 @@ const AboutSection = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-start">
         {/* Left Text Section */}
         <div className="md:w-1/2 mb-8 md:mb-0">
-          <h1 className="text-3xl font-bold mb-4 text-purple-500">
+          <h1 className="text-4xl font-bold mb-4 text-purple-500">
             About VDAT 2026
           </h1>
-          <p className="text-lg leading-7">
+          <p className="text-xl leading-7 text-justify">
             VDAT 2026 invites original, high-quality research papers in the
             areas of VLSI design, semiconductor devices, AI-driven hardware
             systems, advanced packaging, reliability, security, and quantum

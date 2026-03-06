@@ -396,7 +396,7 @@ const Timeline = () => {
       icon: "📄",
       oldDate: "April 30, 2026",
       newDate: "",
-      note: "(Firm deadline, no further extension)"
+      note: ""
     },
     {
       title: "Acceptance Notification", 
@@ -412,7 +412,7 @@ const Timeline = () => {
       borderColor: "border-l-blue-600", 
       bgColor: "bg-blue-50",
       icon: "📅",
-      oldDate: "July 5, 2026",
+      oldDate: "July 6, 2026",
       newDate: "",
       note: ""
     },

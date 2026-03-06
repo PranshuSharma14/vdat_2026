@@ -215,7 +215,7 @@ const SpeakersSection = () => {
                   </span>
                 </p>
                 <p className="text-sm text-gray-500 mt-1">
-                  (Firm deadline, no further extension)
+                  
                 </p>
               </div>
 
@@ -247,7 +247,7 @@ const SpeakersSection = () => {
                 <p className="text-gray-700 flex items-baseline gap-2">
                   <strong>Deadline:</strong>
                   <span>
-                    {/*<strike className="text-red-500">June 20, 2025</strike>*/} July 5, 2026
+                    {/*<strike className="text-red-500">June 20, 2025</strike>*/} July 6, 2026
                   </span>
                 </p>
               </div>
