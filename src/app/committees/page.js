@@ -285,36 +285,153 @@ const committees = [
 //       },
 //     ],
 //   },
-//   {
-//     title: "Local Organising Chair",
-//     members: [
-//       {
-//         name: "Pardeep Duhan",
-//         institute: "IIT Ropar",
-//         linkedin:
-//           "https://www.linkedin.com/in/pardeep-duhan-64262b74/?originalSubdomain=in",
-//         website: "https://www.iitrpr.ac.in/electrical/pardeepduhan",
-//         image: "../images/pradeep.jpg",
-//       },
-//       {
-//         name: "Ruchika Gupta",
-//         institute: "Chandigarh University",
-//         linkedin:
-//           "https://www.linkedin.com/in/ruchika-gupta-55bbb764/?originalSubdomain=in",
-//         website: "https://sites.google.com/view/ruchikagupta/",
-//         image: "../images/ruchika.jpg",
-//       },
-//       {
-//         name: "Arun Singh",
-//         institute: "PEC Chandigarh",
-//         linkedin:
-//           "https://www.linkedin.com/in/arun-kumar-singh-a5627742/?originalSubdomain=in",
-//         website: "https://pec.ac.in/ece/faculty/arun-kumar-singh",
-//         image: "../images/arun.jpg",
-//       },
-//     ],
-//   },
-//   {
+   {
+    title: "Organising Chair",
+members: [
+{
+  name: "Prof. Arti Noor",
+  institute: "JIIT Noida, Dean & HOD, ECE",
+  designation: "Dean & HOD, ECE",
+  linkedin: "https://www.linkedin.com/in/arti-noor-3b20a1125/",
+  website: "https://www.jiit.ac.in/prof-arti-noor",
+  image: "/images/arti.jpg"
+},
+{
+  name: "Prof. Jitendra Mohan",
+  institute: "JIIT Noida, Professor",
+  designation: "Professor",
+  linkedin: "https://www.linkedin.com/in/jitendra-mohan-67aa7b19/",
+  website: "https://www.jiit.ac.in/prof-jitendra-mohan",
+  image: "/images/jitendra.jpg"
+},
+
+{
+  name: "Dr. Inder Kumar Chaudhary",
+  institute: "DDTU (VDSemiX), EE, VDSemiX",
+  designation: "VDSemiX",
+  linkedin: "https://www.linkedin.com/in/dr-inder-chaudhary-34702a30/",
+  website: "https://dtu.ac.in/Web/Departments/Electrical/faculty/inderchaudhary.php",
+  image: "/images/inder.jpg"
+},
+{
+  name: "Dr. Sumit Kale",
+  institute: "DTU (VDSemiX), ECE, VDSemiX",
+  designation: "VDSemiX",
+  linkedin: "https://www.linkedin.com/in/sumit-kale",
+  website: "https://dtu.ac.in/Web/Departments/Electronics/faculty/sumitkale.php",
+  image: "/images/sumitkale.jpg"
+},
+{
+  name: "Dr. Rikmantra Basu",
+  institute: "NIT Delhi, Head Department of ECE",
+  designation: "Head Department of ECE",
+  linkedin: "https://www.linkedin.com/in/rikmantra-basu-82074933a/",
+  website: "https://nitdelhi.ac.in/faculty/rikmantra-basu",
+  image: "/images/rikmantra.jpg"
+},
+{
+  name: "Prof. Tarun Kumar Rawat",
+  institute: "NSUT, Delhi, Professor",
+  designation: "Professor",
+  website: "https://www.nsut.ac.in/en/node/271",
+  image: "/images/tarunrawat.jpg"
+},
+{
+  name: "Prof. Jasdeep Kaur Dhanoa",
+  institute: "IIGDTUW, Delhi, Professor",
+  designation: "Professor",
+  linkedin: "https://www.linkedin.com/in/jasdeep-kaur-dhanoa",
+  website: "https://www.igdtuw.ac.in/pdfs/faculty/ece/jasdeepkaur.pdf",
+  image: "/images/jasdeep.jpg"
+},
+{
+  name: "Prof. Sumit Darak",
+  institute: "IIIT Delhi, Professor and Dean Academics",
+  designation: "Professor and Dean Academics",
+  linkedin: "https://www.linkedin.com/in/sumit-darak",
+  website: "https://iiitd.ac.in/sumit",
+  image: "/images/darak.jpg"
+},
+{
+  name: "Dr. Kunwar Singh",
+  institute: "NSUT, Delhi, Associate Professor",
+  designation: "Associate Professor",
+  linkedin: "https://www.linkedin.com/in/ksdelhi/",
+  website: "https://www.nsut.ac.in/en/node/272",
+  image: "/images/kunwar.jpg"
+}
+]
+ },
+ {
+  title: "Technical Program Chair(s)",
+members: [
+  {
+    name: "Prof. Sudeb Dasgupta",
+    institute: "IIT Roorkee, Professor",
+    linkedin: "https://www.linkedin.com/in/sudeb-dasgupta-2b19b64/",
+    website: "https://ece.iitr.ac.in/sudeb-das-gupta/",
+    image: "/images/sudeb.jpg",
+  },
+  {
+    name: "Mr. Preet Yadav",
+    institute: "NXP Semiconductors, Head India Innovation Ecosystem at NXP",
+    linkedin: "https://www.linkedin.com/in/preet-yadav/",
+    image: "/images/preet.jpg",
+  },
+
+  {
+    name: "Prof. Brijesh Kumar",
+    institute: "IGDTUW, Professor",
+    website: "https://www.igdtuw.ac.in/faculty/ece/brijesh-kumar.php",
+    image: "/images/brijesh.jpg",
+  },
+  {
+    name: "Prof. Neeta Pandey",
+    institute: "DTU (VDSemiX), ECE, VDSemiX",
+    website: "https://dtu.ac.in/Web/Departments/Electronics/faculty/neetaPandey.php",
+    image: "/images/neeta.jpg",
+  },
+  {
+    name: "Dr. Manisha Bharti",
+    institute: "NIT Delhi, Associate Professor, Department of ECE",
+    website: "https://nitdelhi.ac.in/faculty/manisha-bharti",
+    image: "/images/manisha.jpg",
+  },
+
+  {
+    name: "Dr. Shruti Kalra",
+    institute: "JIIT Noida, Associate Professor, ECE",
+    website: "https://www.jiit.ac.in/dr-shruti-kalra",
+    linkedin: "https://www.linkedin.com/in/dr-shruti-kalra-64a799a7/",
+    image: "/images/shruti.jpg",
+  },
+  {
+    name: "Dr. Ajay Kumar",
+    institute: "JIIT Noida, Associate Professor, ECE",
+    website: "https://www.jiit.ac.in/dr-ajay-kumar",
+    image: "/images/ajay1.jpg",
+  },
+  {
+    name: "Dr. M. S. Mehata",
+    institute: "DTU (VDSemiX), Assistant Professor, VDSemiX",
+    image: "/images/mehata.jpg",
+  },
+
+  {
+    name: "Dr. Urvashi Bansal",
+    institute: "NSUT, Delhi, Assistant Professor",
+    website: "http://www.nsut.ac.in/en/faculty/urvashi-bansal",
+    image: "/images/urvashi.jpg",
+  },
+  {
+    name: "Dr. Shweta Gautam",
+    institute: "NSUT, Assistant Professor",
+    website: "http://www.nsut.ac.in/en/faculty/shweta-gautam",
+    image: "/images/shweta1.jpg",
+  }
+],
+},
+  //{
 //     title: "Finance Chair",
 //     members: [
 //       {
@@ -565,6 +682,57 @@ const committees = [
 //     ],
 //   },
  ];
+ const MemberCard = ({ member }) => (
+  <div className="relative group w-52 mb-6 transition-all duration-300 hover:-translate-y-2">
+    <div className="relative overflow-hidden rounded-lg shadow-lg">
+      <div className="bg-gradient-to-b from-blue-100 to-blue-50 p-3 rounded-t-lg">
+        <div className="relative mx-auto w-36 h-36 overflow-hidden rounded-full border-4 border-blue-400 shadow-md">
+          <img
+            src={member.image || "/default-avatar.png"}
+            alt={member.name}
+            className="w-full h-full object-cover transition-transform duration-300 transform group-hover:scale-110"
+          />
+
+          <div className="absolute inset-0 bg-blue-900 bg-opacity-70 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <div className="flex gap-3">
+              {member.linkedin && (
+                <a
+                  href={member.linkedin}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-white p-2 rounded-full text-blue-700"
+                >
+                  in
+                </a>
+              )}
+
+              {member.website && (
+                <a
+                  href={member.website}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-white p-2 rounded-full text-blue-700"
+                >
+                  🌐
+                </a>
+              )}
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="p-4 bg-white rounded-b-lg border-t border-blue-100">
+        <h3 className="text-lg font-bold text-blue-900 mb-1 h-[56px] flex items-center justify-center text-center">
+          {member.name}
+        </h3>
+
+        <p className="text-sm text-blue-600 font-medium h-[60px] flex items-center justify-center text-center">
+          {member.institute}
+        </p>
+      </div>
+    </div>
+  </div>
+);
 
 const CommitteeCard = ({ title, members }) => {
   return (
@@ -572,80 +740,19 @@ const CommitteeCard = ({ title, members }) => {
       <h2 className="text-4xl font-extrabold text-blue-700 mb-10">
   {title}
 </h2>
-      <div className="flex flex-wrap justify-center gap-8">
-        {members.map((member, index) => (
-          <div
-            key={index}
-            className="relative group w-52 mb-6 transition-all duration-300 hover:-translate-y-2"
-          >
-            <div className="relative overflow-hidden rounded-lg shadow-lg">
-              <div className="bg-gradient-to-b from-blue-100 to-blue-50 p-3 rounded-t-lg">
-                <div className="relative mx-auto w-36 h-36 overflow-hidden rounded-full border-4 border-blue-400 shadow-md">
-                  <img
-                    src={member.image || "/default-avatar.png"}
-                    alt={member.name}
-                    className="w-full h-full object-cover transition-transform duration-300 transform group-hover:scale-110"
-                  />
-                  <div className="absolute inset-0 bg-blue-900 bg-opacity-70 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    <div className="flex gap-3">
-                      {member.linkedin && (
-                        <a
-                          href={member.linkedin}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="bg-white p-2 rounded-full text-blue-700 transition-all hover:bg-purple-200"
-                        >
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="20"
-                            height="20"
-                            viewBox="0 0 24 24"
-                            fill="currentColor"
-                          >
-                            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
-                          </svg>
-                        </a>
-                      )}
-                      {member.website && (
-                        <a
-                          href={member.website}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="bg-white p-2 rounded-full text-blue-700 transition-all hover:bg-blue-200"
-                        >
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="20"
-                            height="20"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            stroke="currentColor"
-                            strokeWidth="2"
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                          >
-                            <circle cx="12" cy="12" r="10"></circle>
-                            <line x1="2" y1="12" x2="22" y2="12"></line>
-                            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
-                          </svg>
-                        </a>
-                      )}
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="p-4 bg-white rounded-b-lg border-t border-blue-100">
-                <h3 className="text-lg font-bold text-blue-900 mb-1 h-[56px] flex items-center justify-center text-center">
-                  {member.name}
-                </h3>
-               <p className="text-sm text-blue-600 font-medium h-[60px] flex items-center justify-center text-center">  
-                  {member.institute}
-              </p>
-              </div>
-            </div>
-          </div>
-        ))}
-      </div>
+      {/* First row (2 members) */}
+<div className="flex justify-center gap-8 mb-8">
+  {members.slice(0, 2).map((member, index) => (
+    <MemberCard key={index} member={member} />
+  ))}
+</div>
+
+{/* Remaining members */}
+<div className="flex flex-wrap justify-center gap-8">
+  {members.slice(2).map((member, index) => (
+    <MemberCard key={index} member={member} />
+  ))}
+</div>
     </div>
   );
 };
