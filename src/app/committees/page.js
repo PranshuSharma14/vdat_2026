@@ -73,6 +73,7 @@ const committees = [
       },
     ],
   },
+
 //   {
 //     title: "Advisory Committee",
 //     members: [
@@ -129,6 +130,85 @@ const committees = [
 //       },
 //     ],
 //   },
+  {
+    title: "Advisory Committee",
+    members: [
+      {
+        name: "Prof. Chandra Shekhar",
+        institute: "Senior Professor Emeritus, Birla Institute of Technology & Science (BITS), Pilani, India",
+        website: "https://www.bits-pilani.ac.in/pilani/chandra-shekhar/",
+        image: "/images/chandrashekhar.jpg",
+      },
+      {
+        name: "Prof. J. P. Singh",
+        institute: "Professor, Department of Physics, Indian Institute of Technology Delhi (IIT Delhi), New Delhi, India",
+        website: "https://web.iitd.ac.in/~jpsingh/member.php",
+        image: "/images/jpsingh.jpg",
+      },
+      {
+        name: "Prof. Rajendra Singh",
+        institute: "Professor, Department of Physics, Indian Institute of Technology Delhi (IIT Delhi), New Delhi, India",
+        website: "https://web.iitd.ac.in/~rsingh/",
+        image: "/images/rajendra.jpg",
+      },
+      {
+        name: "Prof. Satyabrata Jit",
+        institute: "Professor, Department of Electronics Engineering, Indian Institute of Technology (BHU), Varanasi",
+        website: "https://www.iitbhu.ac.in/dept/ece/people/sjitece",
+        image: "/images/satyab.jpg",
+      },
+      {
+        name: "Dr. Manoj Singh Gaur",
+        institute: "Director IIT Jammu",
+        linkedin:
+          "https://www.linkedin.com/in/manoj-gaur-8270614/",
+        website: "https://iitjammu.ac.in/faculty/~manojsinghgaur",
+        image: "/images/manoj.jpg",
+      },
+      {
+        name: "Mr. Hitesh Garg",
+        institute: "India Country Manager, NXP",
+        linkedin: "https://www.linkedin.com/in/hiteshgarg/",
+        image: "/images/hitesh.jpg",
+      },
+      {
+        name: "Mr. Pradip Thaker",
+        institute: "Country Head & VP, Engineering",
+        linkedin:
+          "https://www.linkedin.com/in/pradip-thaker-09b3434/",
+        image: "/images/pradip.jpg",
+      },
+      {
+        name: "Sri Vivek Khaneja",
+        institute: "Executive Director CDAC Noida",
+        linkedin:
+          "https://www.linkedin.com/in/vivekkhaneja/?originalSubdomain=in",
+        website: "https://www.semiconindia.org/node/6686",
+        image: "/images/vivek.jpg",
+      },
+      {
+        name: "Dr. Abhilasha Gaur",
+        institute: "CEO - SSC NASSCOM",
+        linkedin:
+          "https://www.linkedin.com/in/dr-abhilasha-gaur-b99a87a/?originalSubdomain=in",
+        image: "/images/abhilasha.jpg",
+      },
+      {
+        name: "Dr. Manish Kumar Hooda",
+        institute: "Director (Technology) India Semiconductor Mission",
+        linkedin:
+          "https://www.linkedin.com/in/dr-manish-kumar-hooda-10081a24/?originalSubdomain=in",
+        image: "/images/manishk.jpg",
+      },
+      {
+        name: "Mr. Yogesh Mittal",
+        institute: "Director (Technology) India Semiconductor Mission",
+        linkedin:
+          "https://www.linkedin.com/in/yogesh-mittal-9548421/?originalSubdomain=in",
+        image: "/images/yogesh.jpg",
+      },
+    ],
+  },
   {
     title: "General Chairs",
     members: [
