@@ -7,18 +7,18 @@ import Navbar from "../home/Navbar";
 
 const committees = [
   {
-    title: "Steering Committee Chair",
+    title: "Steering Committee Chair(s)",
     members: [
       {
         name: "Dr.Satya Gupta",
-        institute: "VLSI Society of India,President",
+        institute: "President, VLSI Society of India",
         linkedin:
           "https://www.linkedin.com/in/dr-satya-gupta-950787/?original_referer=https%3A%2F%2Fwww%2Egoogle%2Ecom%2F&originalSubdomain=in",
         image: "/images/satya.jpg",
       },
       {
       name: "Dr.Chitra Hariharan",
-      institute: "VLSI Society of India,Secretary",
+      institute: "Secretary, VLSI Society of India",
       linkedin: "https://www.linkedin.com/in/chitra-hariharan-3a52691/?originalSubdomain=in",
       image: "/images/chitra.jpg",
     },
@@ -30,7 +30,7 @@ const committees = [
       
       {
         name: "Prof S.C. Saxena",
-        institute: "Pro Chancellor, JIIT Noida",
+        institute: "Pro Chancellor, Jaypee Institute of Information Technology, Noida",
          linkedin:
           "https://www.linkedin.com/in/suresh-saxena-53843440/?originalSubdomain=in",
         website: "https://www.jiit.ac.in/pro-chancellor",
@@ -45,7 +45,7 @@ const committees = [
       },
       {
         name: "Prof. Prateek Sharma",
-        institute: "Vice Chancellor, DTU",
+        institute: "Vice Chancellor, Delhi Technological University",
         linkedin:
           "https://www.linkedin.com/in/prateek-sharma-736923218/?originalSubdomain=in",
         website: "https://dtu.ac.in/Web/Administrations/Vice-Chancellor.php",
@@ -53,19 +53,19 @@ const committees = [
       },
       {
         name: "Prof.(Dr.) Ajay K Sharma",
-        institute: "Director, NIT Delhi",
+        institute: "Director, National Institute of Technology, Delhi",
         website: "https://nitdelhi.ac.in/directors-profile/",
         image: "/images/ajay.jpg",
       },
       {
         name: "Prof.Ranjana Jha",
-        institute: "Vice Chancellor, IGDTUW",
+        institute: "Vice Chancellor, Indira Gandhi Delhi Technical University for Women",
         website: "https://www.igdtuw.ac.in/about-us/vice-chancellor",
         image: "/images/ranjana.jpg",
       },
       {
         name: "Prof.Anand Srivastava",
-        institute: "Vice Chancellor, NSUT",
+        institute: "Vice Chancellor, Netaji Subhas University of Technology",
         linkedin:
           "https://www.linkedin.com/in/anand-srivastava-a930a262/?originalSubdomain=in",
         website: "https://nsut.ac.in/en/vice-chancellor",
@@ -135,31 +135,31 @@ const committees = [
     members: [
       {
         name: "Prof. Chandra Shekhar",
-        institute: "Senior Professor Emeritus, Birla Institute of Technology & Science (BITS), Pilani, India",
+        institute: "Senior Professor Emeritus, Birla Institute of Technology & Science, Pilani, India",
         website: "https://www.bits-pilani.ac.in/pilani/chandra-shekhar/",
-        image: "/images/chandrashekhar.jpg",
+        image: "/images/chandrashekhar.jpeg",
       },
       {
         name: "Prof. J. P. Singh",
-        institute: "Professor, Department of Physics, Indian Institute of Technology Delhi (IIT Delhi), New Delhi, India",
+        institute: "Professor, Department of Physics, Indian Institute of Technology Delhi, New Delhi, India",
         website: "https://web.iitd.ac.in/~jpsingh/member.php",
         image: "/images/jpsingh.jpg",
       },
       {
         name: "Prof. Rajendra Singh",
-        institute: "Professor, Department of Physics, Indian Institute of Technology Delhi (IIT Delhi), New Delhi, India",
+        institute: "Professor, Department of Physics, Indian Institute of Technology Delhi, New Delhi, India",
         website: "https://web.iitd.ac.in/~rsingh/",
         image: "/images/rajendra.jpg",
       },
       {
         name: "Prof. Satyabrata Jit",
-        institute: "Professor, Department of Electronics Engineering, Indian Institute of Technology (BHU), Varanasi",
+        institute: "Professor, Department of Electronics Engineering, Indian Institute of Technology, Varanasi",
         website: "https://www.iitbhu.ac.in/dept/ece/people/sjitece",
         image: "/images/satyab.jpg",
       },
       {
         name: "Dr. Manoj Singh Gaur",
-        institute: "Director IIT Jammu",
+        institute: "Director, Indian Institute of Technology, Jammu",
         linkedin:
           "https://www.linkedin.com/in/manoj-gaur-8270614/",
         website: "https://iitjammu.ac.in/faculty/~manojsinghgaur",
@@ -180,7 +180,7 @@ const committees = [
       },
       {
         name: "Sri Vivek Khaneja",
-        institute: "Executive Director CDAC Noida",
+        institute: "Executive Director, Centre for Development of Advanced Computing, Noida",
         linkedin:
           "https://www.linkedin.com/in/vivekkhaneja/?originalSubdomain=in",
         website: "https://www.semiconindia.org/node/6686",
@@ -195,14 +195,14 @@ const committees = [
       },
       {
         name: "Dr. Manish Kumar Hooda",
-        institute: "Director (Technology) India Semiconductor Mission",
+        institute: "Director (Technology), India Semiconductor Mission",
         linkedin:
           "https://www.linkedin.com/in/dr-manish-kumar-hooda-10081a24/?originalSubdomain=in",
         image: "/images/manishk.jpg",
       },
       {
         name: "Mr. Yogesh Mittal",
-        institute: "Director (Technology) India Semiconductor Mission",
+        institute: "HPC India R&D Head, HPC Engineering@ Renesas Electronics",
         linkedin:
           "https://www.linkedin.com/in/yogesh-mittal-9548421/?originalSubdomain=in",
         image: "/images/yogesh.jpg",
@@ -210,11 +210,11 @@ const committees = [
     ],
   },
   {
-    title: "General Chairs",
+    title: "General Chairs(s)",
     members: [
       {
         name: "Prof.Shweta Srivastav",
-        institute: "Director,JIIT Noida",
+        institute: "Director, Jaypee Institute of Information Technology, Noida",
         linkedin:
           "https://www.linkedin.com/in/shweta-srivastava-b69356a/?originalSubdomain=in",
         website: "https://www.jiit.ac.in/prof-shweta-srivastava",
@@ -222,7 +222,7 @@ const committees = [
       },
       {
         name: "Prof.Rishu Chaujar",
-        institute: "Director,Vinod Dham Centre of Excellence for Semiconductors and Microelectronics",
+        institute: "Director, Vinod Dham Centre of Excellence for Semiconductors and Microelectronics, Delhi Technological University",
         linkedin:
           "https://www.linkedin.com/in/prof-rishu-chaujar-7064917/?original_referer=https%3A%2F%2Fwww%2Egoogle%2Ecom%2F&originalSubdomain=in",
         website:
@@ -232,7 +232,7 @@ const committees = [
    
       {
         name: "Prof.Sujay Deb",
-        institute: "Professor,IIIT Delhi",
+        institute: "Professor, Indraprastha Institute of Information Technology, Delhi",
         linkedin:
           "https://www.linkedin.com/in/debsujay/?originalSubdomain=in",
         website:
@@ -241,7 +241,7 @@ const committees = [
       },
       {
         name: "Prof.Nidhi Goel",
-        institute: "Professor,IGDTUW",
+        institute: "Professor, Indira Gandhi Delhi Technical University for Women",
         linkedin:
           "https://www.linkedin.com/in/nidhi-goel-7bb48222/?originalSubdomain=in",
         website:
@@ -250,7 +250,7 @@ const committees = [
       },
            {
         name: "Prof.Maneesha Gupta",
-        institute: "Adjunct Professor,NSUT",
+        institute: "Adjunct Professor, Netaji Subhas University of Technology, Delhi",
         linkedin:
           "https://www.linkedin.com/in/maneesha-gupta-8701b619/?originalSubdomain=in",
         website:
@@ -366,11 +366,11 @@ const committees = [
 //     ],
 //   },
    {
-    title: "Organising Chair",
+    title: "Organising Chair(s)",
 members: [
 {
   name: "Prof. Arti Noor",
-  institute: "JIIT Noida, Dean & HOD, ECE",
+  institute: "Dean & HOD, ECE, Jaypee Institute of Information Technology, Noida",
   designation: "Dean & HOD, ECE",
   linkedin: "https://www.linkedin.com/in/arti-noor-3b20a1125/",
   website: "https://www.jiit.ac.in/prof-arti-noor",
@@ -378,7 +378,7 @@ members: [
 },
 {
   name: "Prof. Jitendra Mohan",
-  institute: "JIIT Noida, Professor",
+  institute: "Professor, Jaypee Institute of Information Technology, Noida",
   designation: "Professor",
   linkedin: "https://www.linkedin.com/in/jitendra-mohan-67aa7b19/",
   website: "https://www.jiit.ac.in/prof-jitendra-mohan",
@@ -387,7 +387,7 @@ members: [
 
 {
   name: "Dr. Inder Kumar Chaudhary",
-  institute: "DDTU (VDSemiX), EE, VDSemiX",
+  institute: "Assistant Professor, VDSemiX, Delhi Technological University",
   designation: "VDSemiX",
   linkedin: "https://www.linkedin.com/in/dr-inder-chaudhary-34702a30/",
   website: "https://dtu.ac.in/Web/Departments/Electrical/faculty/inderchaudhary.php",
@@ -395,15 +395,15 @@ members: [
 },
 {
   name: "Dr. Sumit Kale",
-  institute: "DTU (VDSemiX), ECE, VDSemiX",
+  institute: "Assistant Professor, VDSemiX, Delhi Technological University",
   designation: "VDSemiX",
   linkedin: "https://www.linkedin.com/in/sumit-kale",
   website: "https://dtu.ac.in/Web/Departments/Electronics/faculty/sumitkale.php",
-  image: "/images/sumitkale.jpg"
+  image: "/images/sumitkale.jpeg"
 },
 {
   name: "Dr. Rikmantra Basu",
-  institute: "NIT Delhi, Head Department of ECE",
+  institute: "Head, Department of ECE, National Institute of Technology, Delhi",
   designation: "Head Department of ECE",
   linkedin: "https://www.linkedin.com/in/rikmantra-basu-82074933a/",
   website: "https://nitdelhi.ac.in/faculty/rikmantra-basu",
@@ -411,14 +411,14 @@ members: [
 },
 {
   name: "Prof. Tarun Kumar Rawat",
-  institute: "NSUT, Delhi, Professor",
+  institute: "Professor, Netaji Subhas University of Technology, Delhi",
   designation: "Professor",
   website: "https://www.nsut.ac.in/en/node/271",
   image: "/images/tarunrawat.jpg"
 },
 {
   name: "Prof. Jasdeep Kaur Dhanoa",
-  institute: "IIGDTUW, Delhi, Professor",
+  institute: "Professor, Indira Gandhi Delhi Technical University for Women, Delhi",
   designation: "Professor",
   linkedin: "https://www.linkedin.com/in/jasdeep-kaur-dhanoa",
   website: "https://www.igdtuw.ac.in/pdfs/faculty/ece/jasdeepkaur.pdf",
@@ -426,7 +426,7 @@ members: [
 },
 {
   name: "Prof. Sumit Darak",
-  institute: "IIIT Delhi, Professor and Dean Academics",
+  institute: "Professor and Dean Academics, Indraprastha Institute of Information Technology, Delhi",
   designation: "Professor and Dean Academics",
   linkedin: "https://www.linkedin.com/in/sumit-darak",
   website: "https://iiitd.ac.in/sumit",
@@ -434,7 +434,7 @@ members: [
 },
 {
   name: "Dr. Kunwar Singh",
-  institute: "NSUT, Delhi, Associate Professor",
+  institute: "Associate Professor, Netaji Subhas University of Technology, Delhi",
   designation: "Associate Professor",
   linkedin: "https://www.linkedin.com/in/ksdelhi/",
   website: "https://www.nsut.ac.in/en/node/272",
@@ -447,65 +447,65 @@ members: [
 members: [
   {
     name: "Prof. Sudeb Dasgupta",
-    institute: "IIT Roorkee, Professor",
+    institute: "Professor, Indian Institute of Technology, Roorkee",
     linkedin: "https://www.linkedin.com/in/sudeb-dasgupta-2b19b64/",
     website: "https://ece.iitr.ac.in/sudeb-das-gupta/",
     image: "/images/sudeb.jpg",
   },
   {
     name: "Mr. Preet Yadav",
-    institute: "NXP Semiconductors, Head India Innovation Ecosystem at NXP",
+    institute: "Head India Innovation Ecosystem, NXP Semiconductors",
     linkedin: "https://www.linkedin.com/in/preet-yadav/",
     image: "/images/preet.jpg",
   },
 
   {
     name: "Prof. Brijesh Kumar",
-    institute: "IGDTUW, Professor",
+    institute: "Professor, Indira Gandhi Delhi Technical University for Women, Delhi",
     website: "https://www.igdtuw.ac.in/faculty/ece/brijesh-kumar.php",
     image: "/images/brijesh.jpg",
   },
   {
     name: "Prof. Neeta Pandey",
-    institute: "DTU (VDSemiX), ECE, VDSemiX",
+    institute: "Professor, VDSemiX, Delhi Technological University, Delhi",
     website: "https://dtu.ac.in/Web/Departments/Electronics/faculty/neetaPandey.php",
     image: "/images/neeta.jpg",
   },
   {
     name: "Dr. Manisha Bharti",
-    institute: "NIT Delhi, Associate Professor, Department of ECE",
+    institute: "Associate Professor, Department of ECE, National Institute of Technology, Delhi",
     website: "https://nitdelhi.ac.in/faculty/manisha-bharti",
     image: "/images/manisha.jpg",
   },
 
   {
     name: "Dr. Shruti Kalra",
-    institute: "JIIT Noida, Associate Professor, ECE",
+    institute: "Associate Professor, ECE, Jaypee Institute of Technology, Noida",
     website: "https://www.jiit.ac.in/dr-shruti-kalra",
     linkedin: "https://www.linkedin.com/in/dr-shruti-kalra-64a799a7/",
     image: "/images/shruti.jpg",
   },
   {
     name: "Dr. Ajay Kumar",
-    institute: "JIIT Noida, Associate Professor, ECE",
+    institute: "Associate Professor, ECE, Jaypee Institute of Technology, Noida",
     website: "https://www.jiit.ac.in/dr-ajay-kumar",
     image: "/images/ajay1.jpg",
   },
   {
     name: "Dr. M. S. Mehata",
-    institute: "DTU (VDSemiX), Assistant Professor, VDSemiX",
+    institute: "Assistant Professor, VDSemiX, Delhi Technological University, Delhi",
     image: "/images/mehata.jpg",
   },
 
   {
     name: "Dr. Urvashi Bansal",
-    institute: "NSUT, Delhi, Assistant Professor",
+    institute: "Assistant Professor, Netaji Subhas University of Technology, Delhi",
     website: "http://www.nsut.ac.in/en/faculty/urvashi-bansal",
     image: "/images/urvashi.jpg",
   },
   {
     name: "Dr. Shweta Gautam",
-    institute: "NSUT, Assistant Professor",
+    institute: "Assistant Professor, Netaji Subhas University of Technology, Delhi",
     website: "http://www.nsut.ac.in/en/faculty/shweta-gautam",
     image: "/images/shweta1.jpg",
   }
@@ -820,19 +820,14 @@ const CommitteeCard = ({ title, members }) => {
       <h2 className="text-4xl font-extrabold text-blue-700 mb-10">
   {title}
 </h2>
-      {/* First row (2 members) */}
-<div className="flex justify-center gap-8 mb-8">
-  {members.slice(0, 2).map((member, index) => (
-    <MemberCard key={index} member={member} />
-  ))}
-</div>
 
-{/* Remaining members */}
 <div className="flex flex-wrap justify-center gap-8">
-  {members.slice(2).map((member, index) => (
+  {members.map((member, index) => (
     <MemberCard key={index} member={member} />
   ))}
 </div>
+ 
+  
     </div>
   );
 };
