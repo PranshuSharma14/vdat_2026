@@ -136,7 +136,7 @@ const committees = [
       {
         name: "Prof. Chandra Shekhar",
         institute: "Senior Professor Emeritus, Birla Institute of Technology & Science, Pilani, India",
-        website: "https://www.bits-pilani.ac.in/pilani/chandra-shekhar/",
+        linkedin:"https://www.linkedin.com/in/chandra-shekhar-22891a166?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
         image: "/images/chandrashekhar.jpeg",
       },
       {
@@ -213,7 +213,7 @@ const committees = [
     title: "General Chairs(s)",
     members: [
       {
-        name: "Prof.Shweta Srivastav",
+        name: "Prof.Shweta Srivastava",
         institute: "Director, Jaypee Institute of Information Technology, Noida",
         linkedin:
           "https://www.linkedin.com/in/shweta-srivastava-b69356a/?originalSubdomain=in",
@@ -378,28 +378,11 @@ members: [
 },
 {
   name: "Prof. Jitendra Mohan",
-  institute: "Professor, Jaypee Institute of Information Technology, Noida",
-  designation: "Professor",
+  institute: "Assistant Head and Professor, Jaypee Institute of Information Technology, Noida",
+  designation: "Assistant Head and Professor",
   linkedin: "https://www.linkedin.com/in/jitendra-mohan-67aa7b19/",
   website: "https://www.jiit.ac.in/prof-jitendra-mohan",
   image: "/images/jitendra.jpg"
-},
-
-{
-  name: "Dr. Inder Kumar Chaudhary",
-  institute: "Assistant Professor, VDSemiX, Delhi Technological University",
-  designation: "VDSemiX",
-  linkedin: "https://www.linkedin.com/in/dr-inder-chaudhary-34702a30/",
-  website: "https://dtu.ac.in/Web/Departments/Electrical/faculty/inderchaudhary.php",
-  image: "/images/inder.jpg"
-},
-{
-  name: "Dr. Sumit Kale",
-  institute: "Assistant Professor, VDSemiX, Delhi Technological University",
-  designation: "VDSemiX",
-  linkedin: "https://www.linkedin.com/in/sumit-kale",
-  website: "https://dtu.ac.in/Web/Departments/Electronics/faculty/sumitkale.php",
-  image: "/images/sumitkale.jpeg"
 },
 {
   name: "Dr. Rikmantra Basu",
@@ -439,7 +422,24 @@ members: [
   linkedin: "https://www.linkedin.com/in/ksdelhi/",
   website: "https://www.nsut.ac.in/en/node/272",
   image: "/images/kunwar.jpg"
-}
+},
+{
+  name: "Dr. Inder Kumar Chaudhary",
+  institute: "Assistant Professor, VDSemiX, Delhi Technological University",
+  designation: "VDSemiX",
+  linkedin: "https://www.linkedin.com/in/dr-inder-chaudhary-34702a30/",
+  website: "https://dtu.ac.in/Web/Departments/Electrical/faculty/inderchaudhary.php",
+  image: "/images/inder.jpg"
+},
+{
+  name: "Dr. Sumit Kale",
+  institute: "Assistant Professor, VDSemiX, Delhi Technological University",
+  designation: "VDSemiX",
+  linkedin: "https://www.linkedin.com/in/sumit-kale",
+  website: "https://dtu.ac.in/Web/Departments/Electronics/faculty/sumitkale.php",
+  image: "/images/sumitkale.jpeg"
+},
+
 ]
  },
  {
