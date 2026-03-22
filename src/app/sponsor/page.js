@@ -1,10 +1,12 @@
-  import React from 'react';
+import React from 'react';
   import Footer from '../footer/footer';
   import Navbar from '../home/Navbar';
   import { CheckCircle, Mail, X, Star, Award, Shield, FileDown } from "lucide-react";
   
   const ComingSoon = () => {
-  return (
+ 
+
+    /*
     <section className="bg-black py-32 text-center">
       <div className="container mx-auto px-6">
         <h2 className="text-7xl font-black bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent mb-6">
@@ -21,7 +23,9 @@
         </div>
       </div>
     </section>
-  );
+
+    */
+  
 };
 
   const sponsorshipTiers = [
@@ -219,7 +223,7 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
         {/* Call for Sponsors Section 
         <section className="container mx-auto px-6 py-16">
@@ -267,16 +271,18 @@
               </a>
             </div>
           </div>
-        </section>
+        </section> */}
+
+          <div className="text-center mt-10 mb-12">
+            <h2 className="text-4xl font-bold mb-4 text-blue-800 uppercase relative inline-block">
+              Sponsorship Tiers
+              <div className="h-1 w-24 bg-blue-600 absolute bottom-0 left-1/2 transform -translate-x-1/2 mt-2"></div>
+            </h2>
+          </div>
 
         {/* Sponsorship Cards 
         <section className="container mx-auto px-6 py-16 bg-gradient-to-b from-white to-gray-50">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold mb-4 text-violet-800 uppercase relative inline-block">
-              Sponsorship Tiers
-              <div className="h-1 w-24 bg-violet-600 absolute bottom-0 left-1/2 transform -translate-x-1/2 mt-2"></div>
-            </h2>
-          </div>
+        
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-10">
             {sponsorshipTiers.map((tier, index) => (
@@ -307,45 +313,123 @@
               </div>
             ))}
           </div>
+          </section>*/}
 
-          {/* Detailed Benefits Table *
-          <div className="overflow-x-auto shadow-lg rounded-lg mt-8">
-            <table className="w-full border-collapse bg-white shadow-lg rounded-lg text-left">
-              <thead>
-                <tr className="bg-gradient-to-r from-blue-600 to-violet-700 text-white">
-                  <th className="border p-4 uppercase text-sm tracking-wider">Sponsorship Benefits</th>
-                  {sponsorshipTiers.map((tier, index) => (
-                    <th key={index} className="border p-4 uppercase text-sm tracking-wider text-center">
-                      {tier.tier}
-                    </th>
-                  ))}
-                </tr>
-              </thead>
-              <tbody>
-                {benefitLabels.map((label, rowIndex) => (
-                  <tr key={rowIndex} className="odd:bg-gray-50 even:bg-white border-b hover:bg-gray-100 transition-all">
-                    <td className="p-4 font-medium text-gray-700">
-                      {label}
-                    </td>
-                    {sponsorshipTiers.map((tier, colIndex) => (
-                      <td key={colIndex} className="p-4 text-center">
-                        {rowIndex === 0 ? (
-                          <span className="font-bold text-gray-800">{tier.amount}</span>
-                        ) : tier.benefits[rowIndex - 1] === true ? (
-                          <CheckCircle className="text-green-500 inline-block" size={20} />
-                        ) : tier.benefits[rowIndex - 1] === false ? (
-                          <X className="text-red-400 inline-block" size={20} />
-                        ) : (
-                          <span className="font-medium text-black">{tier.benefits[rowIndex - 1]}</span>
-                        )}
-                      </td>
+          
+  
+<section className="container mx-auto px-6 py-16 bg-gradient-to-b from-white to-gray-50">        
+  <div className="overflow-x-auto shadow-lg rounded-lg mt-8">
+    <table className="w-full border-collapse bg-white rounded-lg overflow-hidden text-left">
+
+      <thead>
+        <tr className="bg-gradient-to-r from-blue-600 to-violet-700 text-white">
+          <th className="p-4 border">S.No.</th>
+          <th className="p-4 border">Category</th>
+          <th className="p-4 border">INR</th>
+          <th className="p-4 border">USD</th>
+          <th className="p-4 border">Inclusions</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        {[
+          ["1","Bronze Sponsor","₹50,000","1,200 USD",[
+            "2 complimentary delegate passes",
+            "Display of 1 standee and 1 poster",
+            "Logo on conference website"
+          ]],
+          ["2","Silver Sponsor","₹1,00,000","2,400 USD",[
+            "4 complimentary delegate passes",
+            "Display of 1 standee and 1 poster",
+            "Logo on conference website and printed material"
+          ]],
+          ["3","Gold Sponsor","₹2,50,000","5,000 USD",[
+            "6 complimentary delegate passes",
+            "Complimentary exhibit stall",
+            "Display of 1 standee and 1 poster",
+            "Logo on website, banners, and printed material"
+          ]],
+          ["4","Platinum Sponsor","₹5,00,000","8,000 USD",[
+            "8 complimentary delegate passes",
+            "Complimentary exhibit stall",
+            "30-minute technical presentation slot",
+            "Logo on backdrop, website, and all conference materials"
+          ]],
+          ["5","Diamond Sponsor","₹7,50,000","10,000 USD",[
+            "10 complimentary delegate passes",
+            "Premium exhibit stall (prime location)",
+            "30-minute keynote industry presentation",
+            "Workshop / tutorial session slot (subject to schedule)",
+            "Logo on all conference material and banners"
+          ]],
+          ["6","Title Sponsor","₹15,00,000","20,000 USD",[
+            "Naming rights: VDAT 2026 powered by ...",
+            "15 complimentary delegate passes",
+            "Premium exhibition booth",
+            "Keynote presentation slot",
+            "Full branding on website, banners, and conference kit"
+          ]]
+        ].map((row, i) => (
+          <tr key={i} className="odd:bg-gray-50 even:bg-white border-b hover:bg-gray-100 transition">
+            
+            {row.map((cell, j) => (
+              <td key={j} className="p-4 border text-gray-800 align-top">
+                
+                {Array.isArray(cell) ? (
+                  <ul className="list-disc pl-5 space-y-1">
+                    {cell.map((item, idx) => (
+                      <li key={idx}>{item}</li>
                     ))}
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-        </section>
+                  </ul>
+                ) : (
+                  cell
+                )}
+
+              </td>
+            ))}
+
+          </tr>
+        ))}
+      </tbody>
+
+    </table>
+  </div>
+
+
+  
+  <div className="overflow-x-auto shadow-lg rounded-lg mt-12">
+    <table className="w-full border-collapse bg-white rounded-lg overflow-hidden text-left">
+
+      <thead>
+        <tr className="bg-gradient-to-r from-blue-600 to-violet-700 text-white">
+          <th className="p-4 border">Category</th>
+          <th className="p-4 border">Amount (INR)</th>
+          <th className="p-4 border">Benefits</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        {[
+          ["Conference Dinner Sponsor","₹4,00,000","Branding during gala dinner + standee + logo"],
+          ["Conference Kit Sponsor","₹2,50,000","Logo on conference bags and kits"],
+          ["Lanyard Sponsor","₹1,50,000","Logo on delegate lanyards"],
+          ["Student Travel Grant Sponsor","₹1,00,000","Acknowledgement during student awards"],
+          ["Best Paper Award Sponsor","₹75,000","Branding during award ceremony"]
+        ].map((row, i) => (
+          <tr key={i} className="odd:bg-gray-50 even:bg-white border-b hover:bg-gray-100 transition">
+            {row.map((cell, j) => (
+              <td key={j} className="p-4 border text-gray-800">
+                {cell}
+              </td>
+            ))}
+          </tr>
+        ))}
+      </tbody>
+
+    </table>
+  </div>
+
+</section>
 
         {/* Additional Opportunities 
         <section className="container mx-auto px-6 py-16">
@@ -379,7 +463,7 @@
               </div>
             </div>
           </div>
-        </section>
+        </section>*/}
 
         {/* Advertisement Rates 
         <section className="container mx-auto px-6 py-16 bg-gradient-to-b from-gray-50 to-white">
