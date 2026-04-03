@@ -27,7 +27,7 @@ const committees = [
         institute: "Northrop Grumman",
         linkedin:
           "https://www.linkedin.com/in/dr-satya-gupta-950787/?original_referer=https%3A%2F%2Fwww%2Egoogle%2Ecom%2F&originalSubdomain=in",
-        image: "/images/nagi.jpeg",
+        image: "/images/Nagi.jpeg",
       },
 
     ],
