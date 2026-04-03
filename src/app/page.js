@@ -233,6 +233,11 @@ const Carousel = ({
                 Jaypee Institute of Information Technology, Sector 62, Noida, Uttar Pradesh, India
               </p>
 
+              <p className="text-sm sm:text-lg md:text-xl font-medium leading-relaxed text-white drop-shadow-md">
+                <span className="text-yellow-300 font-semibold">Conference Record No:</span>{" "}
+                72243
+              </p>
+
             </div>
 
           </div>
@@ -331,7 +336,7 @@ const Carousel = ({
 };
 
 
-{/*
+
 // Improved sponsors section with animation
 const SponsorsSection = ({ title, items, comingSoon = false }) => (
   <section className="py-16 md:py-20 bg-gradient-to-b from-gray-50 to-gray-100">
@@ -344,14 +349,8 @@ const SponsorsSection = ({ title, items, comingSoon = false }) => (
       {comingSoon ? (
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-8 mx-auto max-w-7xl">
           {[
-            { src: './logos/mandi__.png', alt: 'Mandi Logo' },
-            { src: './logos/OS.png', alt: 'Orbit & Skyline India' },
-            { src: './images/Agmatel_Keyisght Logo HD.png', alt: 'Agmatel-Keysight Logo' },
-            { src: './images/yourpedia.png', alt: 'YourPedia Logo' },
-            { src: './images/springer.png', alt: 'Springer Logo' },
-            { src: './logos/NXP.jpg', alt: 'NXP Logo' },
-            { src: './logos/SOC.png', alt: 'SOC TeamUp' },
-            { src: './logos/sqube.png', alt: 'S-Qube systems' },
+            { src: '/images/cadencegold.png', alt: 'Cadence Gold' },
+            
           ].map((logo, i) => (
             <div
               key={i}
@@ -383,7 +382,7 @@ const SponsorsSection = ({ title, items, comingSoon = false }) => (
   </section>
 );
 
-*/}
+
 
 const Timeline = () => {
   const [currentDate] = useState(new Date());
@@ -594,7 +593,7 @@ const HomePage = () => {
 
       
 
-      {/*
+      
 
       <SponsorsSection
         title="Our Sponsors"
@@ -602,13 +601,16 @@ const HomePage = () => {
         comingSoon={true}
       />
 
+{/*
+
+
       <SponsorsSection
         title="Endorsed By"
         items={endorsedBy}
         comingSoon={true}
       /> 
-
-      */}
+*/}
+      
 
       <Timeline />
 

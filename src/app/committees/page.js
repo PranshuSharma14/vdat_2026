@@ -22,6 +22,14 @@ const committees = [
       linkedin: "https://www.linkedin.com/in/chitra-hariharan-3a52691/?originalSubdomain=in",
       image: "/images/chitra.jpg",
     },
+    {
+        name: "Mr.Nagi Naganathan",
+        institute: "Northrop Grumman",
+        linkedin:
+          "https://www.linkedin.com/in/dr-satya-gupta-950787/?original_referer=https%3A%2F%2Fwww%2Egoogle%2Ecom%2F&originalSubdomain=in",
+        image: "/images/nagi.jpeg",
+      },
+
     ],
   },
   {
@@ -74,62 +82,6 @@ const committees = [
     ],
   },
 
-//   {
-//     title: "Advisory Committee",
-//     members: [
-//       {
-//         name: "Sudeb Das Gupta",
-//         institute: "IIT Roorkee",
-//         linkedin:
-//           "https://www.linkedin.com/in/sudeb-dasgupta-2b19b64/?originalSubdomain=in",
-//         website: "https://ece.iitr.ac.in/sudeb-das-gupta/",
-//         image: "../images/sudeb.jpg",
-//       },
-//       {
-//         name: "M Balakrishnan",
-//         institute: "IIT Delhi",
-//         linkedin:
-//           "https://www.linkedin.com/in/m-balakrishnan-b3467924/?originalSubdomain=in",
-//         website: "https://www.cse.iitd.ernet.in/~mbala/",
-//         image: "../images/MBala.jpg",
-//       },
-//       {
-//         name: "R.K Sharma",
-//         institute: "NIT Kururkshetra",
-//         linkedin:
-//           "https://www.linkedin.com/in/r-k-sharma-21b3792a/?originalSubdomain=in",
-//         website: "https://nitkkr.ac.in/author/r-k-sharma/",
-//         image: "../images/rk.jpg",
-//       },
-//       {
-//         name: "Vineet Sahula",
-//         institute: "MNIT Jaipur",
-//         linkedin: "https://www.linkedin.com/in/vineet07/?originalSubdomain=in",
-//         website: "https://mnit.ac.in/dept_ece/profile?fid=Q6w=",
-//         image: "../images/vineet.jpg",
-//       },
-//       {
-//         name: "Chitra Hariharan",
-//         institute: "Renesas",
-//         linkedin:
-//           "https://www.linkedin.com/in/chitra-hariharan-3a52691/?originalSubdomain=in",
-//         image: "../images/chit.jpg",
-//       },
-//       {
-//         name: "RAJNISH SHARMA",
-//         institute: "Chitkara University",
-//         linkedin: "https://www.linkedin.com/in/rajnish-sharma-39948719/",
-//         image: "../images/rajnish.jpg",
-//       },
-//       {
-//         name: "Yajvender Pal Verma",
-//         institute: " UIET Panjab University Chandigarh",
-//         linkedin:
-//           "https://www.linkedin.com/in/yajvender-pal-verma-042a5193/?originalSubdomain=in",
-//         image: "../images/pal.jpg",
-//       },
-//     ],
-//   },
   {
     title: "Advisory Committee",
     members: [
@@ -138,6 +90,18 @@ const committees = [
         institute: "Senior Professor Emeritus, Birla Institute of Technology & Science, Pilani, India",
         linkedin:"https://www.linkedin.com/in/chandra-shekhar-22891a166?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
         image: "/images/chandrashekhar.jpeg",
+      },
+      {
+        name: "Prof. Yogesh Singh Chauhan",
+        institute: "Professor, IIT Kanpur (Chair, IEEE UP Section)",
+        linkedin:"https://www.linkedin.com/in/yogesh-singh-chauhan-8964b23/?originalSubdomain=in",
+        image: "/images/yogeshsc.jpeg",
+      },
+      {
+        name: "Prof. Indranil Sengupta",
+        institute: "Professor, Indian Institute of Technology, Kharagpur",
+        linkedin:"https://www.linkedin.com/in/indranil-sengupta-7a654520/",
+        image: "/images/indranil.jpeg",
       },
       {
         name: "Prof. J. P. Singh",
@@ -172,8 +136,14 @@ const committees = [
         image: "/images/hitesh.jpg",
       },
       {
+        name: "Ms. Tal Zigman",
+        institute: "Group Director, Global Academics Partnerships, Cadence Design Systems",
+        linkedin: "https://www.linkedin.com/in/tal-zigman/",
+        image: "/images/talzigman.jpeg",
+      },
+      {
         name: "Mr. Pradip Thaker",
-        institute: "Country Head & VP, Engineering",
+        institute: "Country Head & VP, Engineering, d-Matrix",
         linkedin:
           "https://www.linkedin.com/in/pradip-thaker-09b3434/",
         image: "/images/pradip.jpg",
@@ -185,6 +155,13 @@ const committees = [
           "https://www.linkedin.com/in/vivekkhaneja/?originalSubdomain=in",
         website: "https://www.semiconindia.org/node/6686",
         image: "/images/vivek.jpg",
+      },
+      {
+        name: "Prof. Madan Mohan Tripathi",
+        institute: "Director General, NIELIT",
+        linkedin:
+          "https://www.pib.gov.in/PressReleasePage.aspx?PRID=1794652&reg=3&lang=2",
+        image: "/images/mmtripathi.jpg",
       },
       {
         name: "Dr. Abhilasha Gaur",
@@ -206,6 +183,13 @@ const committees = [
         linkedin:
           "https://www.linkedin.com/in/yogesh-mittal-9548421/?originalSubdomain=in",
         image: "/images/yogesh.jpg",
+      },
+      {
+        name: "Mr. Aroop Tyagi",
+        institute: "Director Academic Program Asia Pacific at Synopsys Inc",
+        linkedin:
+          "https://www.linkedin.com/in/aroop-tyagi-809a30b/",
+        image: "/images/aroop.jpeg",
       },
     ],
   },
@@ -346,25 +330,37 @@ const committees = [
 //       },
 //     ],
 //   },
-//   {
-//     title: "Tutorial Chair",
-//     members: [
-//       {
-//         name: "TV Kalyan",
-//         institute: "IIT Ropar",
-//         linkedin:
-//           "https://www.linkedin.com/in/venkata-kalyan-t-29ab28a0/?originalSubdomain=in",
-//         website: "https://sites.google.com/view/kalyantv",
-//         image: "../images/tv.jpg",
-//       },
-//       {
-//         name: "Namrta",
-//         institute: "Aritrak Technologies",
-//         linkedin: "https://www.linkedin.com/in/namrta-sharma-blr/",
-//         image: "../images/namrta.jpeg",
-//       },
-//     ],
-//   },
+   {
+     title: "Tutorial Chair(s)",
+      members: [
+       {
+         name: "Dr. Sankalp Singh",
+         institute: "University Program Manager, Synopsys India. Driving SARA initiative of Synopsys Inc. in the region",
+         linkedin:
+           "https://www.linkedin.com/in/sankalp-singh-5410055b/",
+         website: "https://www.linkedin.com/in/sankalp-singh-5410055b/",
+         image: "/images/sankalpsingh.jpeg",
+       },
+       {
+         name: "Dr. Sushama",
+         institute: "Senior Programm Manager, Cadence Design Systems",
+         linkedin: "https://www.linkedin.com/in/sushamavak/",
+         image: "/images/sushama.jpeg",
+       },
+       {
+         name: "Mr. Abhishek Mahajan",
+         institute: "Director of Engineering, SoC DFT, Renesas Electronics India Noida",
+         linkedin: "https://www.linkedin.com/in/abhishek-mahajan-09648022/",
+         image: "/images/abhishek.jpeg",
+       },
+       {
+         name: "Dr. Hemant Kumar",
+         institute: "Associate Professor, Jaypee Institute of Information Technology",
+         linkedin: "https://www.linkedin.com/in/hemant-kumar-20419972/?originalSubdomain=in",
+         image: "/images/hemant.jpeg",
+       },
+     ],
+   },
    {
     title: "Organising Chair(s)",
 members: [
@@ -378,8 +374,8 @@ members: [
 },
 {
   name: "Prof. Jitendra Mohan",
-  institute: "Assistant Head and Professor, Jaypee Institute of Information Technology, Noida",
-  designation: "Assistant Head and Professor",
+  institute: "Associate Head and Professor, Jaypee Institute of Information Technology, Noida",
+  designation: "Associate Head and Professor",
   linkedin: "https://www.linkedin.com/in/jitendra-mohan-67aa7b19/",
   website: "https://www.jiit.ac.in/prof-jitendra-mohan",
   image: "/images/jitendra.jpg"
@@ -458,6 +454,12 @@ members: [
     linkedin: "https://www.linkedin.com/in/preet-yadav/",
     image: "/images/preet.jpg",
   },
+  {
+    name: "Prof. Nagarjuna Nallam",
+    institute: "Associate Professor, Electrical Engineering, IIT Kanpur (IEEE UP Section)",
+    linkedin: "https://www.linkedin.com/in/nagarjunanallam/?originalSubdomain=in",
+    image: "/images/nagarjuna.jpeg",
+  },
 
   {
     name: "Prof. Brijesh Kumar",
@@ -490,6 +492,12 @@ members: [
     institute: "Associate Professor, ECE, Jaypee Institute of Technology, Noida",
     website: "https://www.jiit.ac.in/dr-ajay-kumar",
     image: "/images/ajay1.jpg",
+  },
+  {
+    name: "Mr. Varun Kakkar",
+    institute: "Assistant Professor, Bipin Tripathi Kumaon Institute of Technology (IEEE UP Section)",
+    website: "https://kecua.ac.in/index.php/member/mr-varun-kakar/",
+    image: "/images/varun.jpg",
   },
   {
     name: "Dr. M. S. Mehata",
@@ -642,35 +650,47 @@ members: [
 //       },
 //     ],
 //   },
-//   {
-//     title: "Startup Chair",
-//     members: [
-//       {
-//         name: "Gaganpreet Kaur",
-//         institute: "Thapar University",
-//         image: "../images/gaganpreet.jpg",
-//       },
-//     ],
-//   },
-//   {
-//     title: "PhD Forum Chair",
-//     members: [
-//       {
-//         name: "Debiprasanna Sahoo",
-//         institute: "IIT Bhubaneswar",
-//         linkedin: "https://old.iitbbs.ac.in/profile.php/%20dpsahoo/",
-//         image: "../images/debiprasanna.png",
-//       },
-//       {
-//         name: "Ganesh C. Patil",
-//         institute: "VNIT Nagpur",
-//         linkedin:
-//           "https://www.linkedin.com/in/ganesh-c-patil-79b6306/?originalSubdomain=in",
-//         website: "https://vnit.ac.in/engineering/cvlsi/dr-ganesh-c-patil/",
-//         image: "../images/ganesh.jpg",
-//       },
-//     ],
-//   },
+  {
+     title: "Startup Chair(s)",
+     members: [
+       {
+         name: "Mr. Nishit Gupta",
+         institute: "Scientist E, MeitY",
+         linkedin: "https://www.linkedin.com/in/guptanishit/?originalSubdomain=in",
+         image: "/images/nishit.jpeg",
+       },
+       {
+         name: "Mr. Taranjit Singh Kukal",
+         institute: "Sr. Architect, Cadence Design Systems",
+         linkedin: "https://www.linkedin.com/in/taranjitkukal/",
+         image: "/images/taranjitsingh.jpeg",
+       },
+       {
+         name: "Prof. Alok Joshi",
+         institute: "Professor, Jaypee Institute of Information Technology",
+         linkedin: "https://www.linkedin.com/in/prof-dr-alok-joshi-7897b858/?originalSubdomain=in",
+         image: "/images/alokjoshi.jpeg",
+       },
+      
+     ],
+   },
+   {
+     title: "PhD Forum Chair(s)",
+    members: [
+       {
+         name: "Dr. Shruti Jain",
+         institute: "Dean (Academics) and Professor at Jaypee University of Information Technology, Waknaghat",
+         linkedin: "https://www.linkedin.com/in/dr-shruti-jain-92705b130/",
+         image: "/images/shrutijain.jpeg",
+       },
+       {
+         name: "Dr. Rishibrind Upadhyay",
+         institute: "Assistant Professor (Senior Grade), Jaypee Institute of Information Technology, Noida",
+         linkedin: "https://www.linkedin.com/in/dr-rishibrind-upadhyay-a1379a117/?utm_source=share_via&utm_content=profile&utm_medium=member_android",
+         image: "/images/rishibrind.jpeg",
+       },
+     ],
+   },
 //   {
 //     title: "Publication Chair",
 //     members: [
@@ -692,41 +712,25 @@ members: [
 //       },
 //     ],
 //   },
-//   {
-//     title: "Publicity and Outreach Chair",
-//     members: [
-//       {
-//         name: "Sagar Juneja",
-//         institute: "Chitkara University",
-//         linkedin: "https://www.linkedin.com/in/sagar-juneja/",
-//         website: "https://curin.chitkara.edu.in/profile/sagar-juneja/",
-//         image: "../images/sagar.jpg",
-//       },
-//       {
-//         name: "Gaurav Saini",
-//         institute: "NIT Kurukshetra",
-//         linkedin:
-//           "https://www.linkedin.com/in/dr-gaurav-saini-8a09ab18/?originalSubdomain=in",
-//         website: "https://nitkkr.ac.in/author/gaurav-saini/",
-//         image: "../images/gaurav.jpg",
-//       },
-//       {
-//         name: "Gargi Khanna",
-//         institute: "NIT Hamirpur",
-//         linkedin:
-//           "https://www.linkedin.com/in/gargi-khanna-9605078/?originalSubdomain=in",
-//         image: "../images/gargi.jpg",
-//       },
-//       {
-//         name: "Navneet Sehgal",
-//         institute: "Chandigarh University",
-//         linkedin:
-//           "https://www.linkedin.com/in/dr-navneet-sehgal-b090389b/?originalSubdomain=in",
-//         image: "../images/navneet.jpg",
-//       },
-//     ],
-//   },
-//   {
+  {
+    title: "Publicity and Outreach Chair(s)",
+     members: [
+       {
+         name: "Meghana Shridhar",
+         institute: "Lead Technical Writer, Omni Design Technology",
+         linkedin: "https://www.linkedin.com/in/meghana-sridhar-0918aaa2/",
+         image: "/images/meghana.jpeg",
+       },
+       {
+         name: "Dr. Ashish Gupta",
+         institute: "Associate Professor, Jaypee Institute of Information Technology, Noida",
+         linkedin: "https://www.linkedin.com/in/dr-ashish-gupta-62406a35/?originalSubdomain=in",
+         image: "/images/ashishgupta.jpeg",
+       },
+       
+     ],
+   },
+//  {
 //     title: "Registration Chair",
 //     members: [
 //       {

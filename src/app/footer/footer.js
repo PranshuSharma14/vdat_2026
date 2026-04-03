@@ -91,40 +91,13 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Divider */}
+          {/*
 
         <div className="border-t border-white/20 my-12"></div>
 
-        {/* =========================
-           Sponsors
-        ========================= */}
-
         <div className="mb-16">
-          <h3 className="text-4xl font-bold text-center mb-12">
-            Our Sponsors
-          </h3>
-
-          {/* Coming Soon Section */}
-
-          <div className="flex flex-col items-center justify-center py-16">
-            <div className="text-6xl mb-6 animate-pulse">🚀</div>
-
-            <h4 className="text-3xl font-semibold text-gray-200 mb-4">
-              Sponsors Coming Soon
-            </h4>
-
-            <p className="text-gray-400 text-lg max-w-xl text-center">
-              We are currently finalizing our sponsorship partnerships. Stay
-              tuned for exciting announcements from our esteemed sponsors.
-            </p>
-          </div>
-
-          {/* =========================
-                ORIGINAL SPONSOR CODE
-                (COMMENTED OUT)
-          ========================= */}
-
-          {/*
+       
+        
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 justify-items-center">
             {Object.entries(sponsorLogos).map(([category, src]) => {
 
@@ -171,8 +144,10 @@ const Footer = () => {
               );
             })}
           </div>
-          */}
+          
         </div>
+
+        */}
 
         {/* Bottom Section */}
 
