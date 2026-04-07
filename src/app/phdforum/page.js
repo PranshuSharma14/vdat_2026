@@ -432,7 +432,7 @@ const CONTENT_SECTIONS = [
   {
     id: "eligibility",
     title: "PhD Forum Overview",
-    content: "The Organizing Committee of VDAT 2026 invites submissions to the PhD Forum to be presented at the conference in Chandigarh. This prestigious forum provides an exclusive platform for PhD students who have submitted their thesis within the past year (after 1st June 2024) or are nearing completion. Present your cutting-edge research, gain valuable feedback, and establish meaningful connections with leading researchers and industry professionals in the VLSI design community.",
+    content: "The Organizing Committee of VDAT 2026 invites submissions to the PhD Forum to be presented at the conference in Noida. This prestigious forum provides an exclusive platform for PhD students who have submitted their thesis within the past year (after 1st June 2025) or are nearing completion. Present your cutting-edge research, gain valuable feedback, and establish meaningful connections with leading researchers and industry professionals in the VLSI design community.",
     type: "paragraph",
     bgColor: "bg-gray-900 text-white",
     accentColor: "indigo"

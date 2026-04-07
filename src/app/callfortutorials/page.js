@@ -100,7 +100,7 @@ const ImportantDatesSection = ({ title, isAlternate }) => (
             <ul className="space-y-3 text-gray-700">
               <li className="flex items-baseline">
                 <ChevronRight className="text-purple-500 w-4 h-4 mr-2 flex-shrink-0" />
-                <span><strong>Submissions Open:</strong> March 6, 2026</span>
+                <span><strong>Submissions Open:</strong> April 6, 2026</span>
               </li>
               <li className="flex items-baseline">
                 <ChevronRight className="text-purple-500 w-4 h-4 mr-2 flex-shrink-0" />
