@@ -35,6 +35,12 @@ const committees = [
   {
     title: "Patrons",
     members: [
+
+      {
+        name: "Shri Manoj Gaur Ji (Chief Patron)",
+        institute: "Chancellor, Jaypee Institute of Information Technology (JIIT)  Noida.",
+        image: "/images/manojgaur.jpeg",
+      },
       
       {
         name: "Prof S.C. Saxena",
@@ -46,7 +52,7 @@ const committees = [
       },
       {
         name: "Sh.Manu Bhaskar Gaur",
-        institute: "CEO@Higher Education,Jaypee Group",
+        institute: "CEO, Jaypee Institute of Information Technology, Noida",
         linkedin:
           "https://www.linkedin.com/in/manu-bhaskar-gaur/?originalSubdomain=in",
         image: "/images/manu.jpg",
@@ -373,7 +379,7 @@ members: [
   image: "/images/arti.jpg"
 },
 {
-  name: "Prof. Jitendra Mohan",
+  name: "Prof. Jitendra Mohan (Co-Chair)",
   institute: "Associate Head and Professor, Jaypee Institute of Information Technology, Noida",
   designation: "Associate Head and Professor",
   linkedin: "https://www.linkedin.com/in/jitendra-mohan-67aa7b19/",
@@ -439,17 +445,17 @@ members: [
 ]
  },
  {
-  title: "Technical Program Chair(s)",
+  title: "Technical Program Committee",
 members: [
   {
-    name: "Prof. Sudeb Dasgupta",
+    name: "Prof. Sudeb Dasgupta (TPC Chair)",
     institute: "Professor, Indian Institute of Technology, Roorkee",
     linkedin: "https://www.linkedin.com/in/sudeb-dasgupta-2b19b64/",
     website: "https://ece.iitr.ac.in/sudeb-das-gupta/",
     image: "/images/sudeb.jpg",
   },
   {
-    name: "Mr. Preet Yadav",
+    name: "Mr. Preet Yadav (TPC Chair)",
     institute: "Head India Innovation Ecosystem, NXP Semiconductors",
     linkedin: "https://www.linkedin.com/in/preet-yadav/",
     image: "/images/preet.jpg",
@@ -498,6 +504,12 @@ members: [
     institute: "Assistant Professor, Bipin Tripathi Kumaon Institute of Technology (IEEE UP Section)",
     website: "https://kecua.ac.in/index.php/member/mr-varun-kakar/",
     image: "/images/varun.jpg",
+  }, 
+  {
+    name: "Dr. Pinku Ranjan",
+    institute: "Assistant Professor, ABV- IIITM Gwalior",
+    website: "https://www.linkedin.com/in/dr-pinku-ranjan-62aa0332/?originalSubdomain=in",
+    image: "/images/pinku.jpeg",
   },
   {
     name: "Dr. M. S. Mehata",
@@ -519,18 +531,18 @@ members: [
   }
 ],
 },
-  //{
-//     title: "Finance Chair",
-//     members: [
-//       {
-//         name: "Mahendra Sakare",
-//         institute: "IIT Ropar",
-//         linkedin: "https://www.linkedin.com/in/mahendra-sakare-238134b/",
-//         website: "https://sites.google.com/a/iitrpr.ac.in/mahendra/home",
-//         image: "../images/mahendra.jpg",
-//       },
-//     ],
-//   },
+  {
+     title: "Finance Chair",
+     members: [
+       {
+         name: "Prof. Jasmine Saini ",
+         institute: "Professor, Jaypee Institute of Information Technology, Noida",
+         website: "https://www.jiit.ac.in/prospective-student/faculty/prof-jasmine-saini",
+         image: "/images/jasmine.jpeg",
+       },
+     ],
+   },
+
 //   {
 //     title: "Sponsorship Chair",
 //     members: [
@@ -666,10 +678,22 @@ members: [
          image: "/images/taranjitsingh.jpeg",
        },
        {
+        name: "Prof. Alpana Agarwal",
+        institute: "Professor at Thapar Institute of Engineering and Technology",
+        website: "https://www.linkedin.com/in/alpana-agarwal-1542b118/?originalSubdomain=in",
+        image: "/images/alpana.jpeg",
+        },
+       {
          name: "Prof. Alok Joshi",
          institute: "Professor, Jaypee Institute of Information Technology",
          linkedin: "https://www.linkedin.com/in/prof-dr-alok-joshi-7897b858/?originalSubdomain=in",
          image: "/images/alokjoshi.jpeg",
+       },
+       {
+         name: "Mr. Abhishek Tiwari",
+         institute: "Associate Director & Scientist ‘F’, C-DAC, Noida",
+         linkedin: "https://www.linkedin.com/in/abhishek-tiwari-b34b2711b/?utm_source=share_via&utm_content=profile&utm_medium=member_android",
+         image: "/images/abhishektiwari.jpeg",
        },
       
      ],
@@ -715,6 +739,12 @@ members: [
   {
     title: "Publicity and Outreach Chair(s)",
      members: [
+      {
+         name: "Dr. Somesh Kumar Dahiya",
+         institute: "Lead Technical Writer, Omni Design Technology",
+         linkedin: "https://www.linkedin.com/in/dr-somesh-kumar-dahiya-b551a836/?originalSubdomain=in",
+         image: "/images/somesh.jpeg",
+       },
        {
          name: "Meghana Shridhar",
          institute: "Lead Technical Writer, Omni Design Technology",

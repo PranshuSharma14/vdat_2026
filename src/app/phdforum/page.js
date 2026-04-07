@@ -2,24 +2,7 @@
 import React from 'react';
 import Footer from '../footer/footer';
 import Navbar from '../home/Navbar';
-const ComingSoon = () => {
-  return (
-    <section className="py-32 text-center">
-      <h2 className="text-7xl font-black bg-gradient-to-r from-purple-400 to-indigo-400 bg-clip-text text-transparent mb-6">
-        COMING SOON
-      </h2>
 
-      <p className="text-xl text-gray-300 max-w-2xl mx-auto">
-        PhD Forum details will be announced soon.  
-        Stay tuned for submission guidelines and participation details.
-      </p>
-
-      <div className="mt-8 text-purple-400 animate-pulse text-lg">
-        🎓 Information will be available shortly
-      </div>
-    </section>
-  );
-};
 
 const PhDForumBanner = () => {
   return (
@@ -76,7 +59,7 @@ const PhDForumBanner = () => {
         
         <div className="bg-black bg-opacity-40 p-4 rounded-lg border border-purple-700 backdrop-blur-sm">
           <p className="text-base md:text-lg text-gray-200 leading-relaxed mb-3">
-            Present your completed or near-completion doctoral research at VDAT-2025's prestigious PhD Forum.
+            Present your completed or near-completion doctoral research at VDAT-2026's prestigious PhD Forum.
           </p>
           <p className="text-base md:text-lg text-gray-200 leading-relaxed">
             Connect with leading <span className="font-bold text-purple-300">researchers, industry experts, and fellow academics</span> in the field of VLSI Design and Semiconductor Technology.
@@ -88,7 +71,7 @@ const PhDForumBanner = () => {
             <svg className="w-4 h-4 mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
             </svg>
-            <a href="..\pdfs\VDAT2025- PhDforum.pdf" download className="text-white font-semibold">
+            <a href="..\pdfs\VDAT2026- PhDforum.pdf" download className="text-white font-semibold">
             Download Information
             </a>
           </button>
@@ -449,7 +432,7 @@ const CONTENT_SECTIONS = [
   {
     id: "eligibility",
     title: "PhD Forum Overview",
-    content: "The Organizing Committee of VDAT 2025 invites submissions to the PhD Forum to be presented at the conference in Chandigarh. This prestigious forum provides an exclusive platform for PhD students who have submitted their thesis within the past year (after 1st June 2024) or are nearing completion. Present your cutting-edge research, gain valuable feedback, and establish meaningful connections with leading researchers and industry professionals in the VLSI design community.",
+    content: "The Organizing Committee of VDAT 2026 invites submissions to the PhD Forum to be presented at the conference in Chandigarh. This prestigious forum provides an exclusive platform for PhD students who have submitted their thesis within the past year (after 1st June 2024) or are nearing completion. Present your cutting-edge research, gain valuable feedback, and establish meaningful connections with leading researchers and industry professionals in the VLSI design community.",
     type: "paragraph",
     bgColor: "bg-gray-900 text-white",
     accentColor: "indigo"
@@ -494,6 +477,8 @@ const CONTENT_SECTIONS = [
     bgColor: "bg-gray-900 text-white",
     accentColor: "mixed"
   },
+
+  /*
   {
     id: "eligibility-criteria",
     title: "Eligibility Criteria",
@@ -512,6 +497,10 @@ const CONTENT_SECTIONS = [
     bgColor: "bg-gray-800 text-white",
     accentColor: "indigo"
   },
+
+  */
+
+  /*
   {
     id: "awards",
     title: "Outstanding Presentation Awards",
@@ -520,6 +509,8 @@ const CONTENT_SECTIONS = [
     bgColor: "bg-gray-900 text-white",
     accentColor: "purple"
   }
+
+*/
 ];
 
 // // Contact information component
@@ -676,7 +667,7 @@ const CallToAction = () => {
           </div>
           <h2 className="text-2xl md:text-3xl font-bold text-white mb-2">Ready to Showcase Your Research?</h2>
           <p className="text-lg text-indigo-100 mb-10 max-w-2xl mx-auto">
-            Share your groundbreaking doctoral research with the world's leading experts in VLSI and semiconductor technology at VDAT-2025.
+            Share your groundbreaking doctoral research with the world's leading experts in VLSI and semiconductor technology at VDAT-2026.
           </p>
         </div>
         
@@ -684,14 +675,15 @@ const CallToAction = () => {
         <div className="mb-6 flex flex-col items-center">
           <div className="bg-white p-3 rounded-lg shadow-lg mb-2">
             <img 
-              src="/images/qr-submission.png" 
+              src="https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=https://docs.google.com/forms/d/e/1FAIpQLSfHj1znV0-c-BTWhY1c73ysXg5p1J5jG71dpkoD5iYSSlUQBw/viewform"
               alt="Scan to Submit QR Code" 
               className="w-36 h-36"
               onError={(e) => {
                 e.target.onerror = null;
-                e.target.src = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIQAAACECAYAAABRRIOnAAAFPklEQVR4nO2dwW4bOQxA6f//aGcLFMjBCBkNST3S78FekgDReEiK1GTSvF4v+r++vr5+zP/87+eP+Z/5zz++//vXfxf/O/h+8L3zf+/7+e/n39f3E3zf/N/7fv77zfdjvh/852m+j2qeEPj5foKJ+/7v/oL7zPdzg3ucCX9znjBxkicG8cBgPuMtNggdwRMBfO+sJwRPiOEJYYY8IczwhDADnhBmD08IMzzwf7zVqifgYxD4qiegeGLsJ+zf1xOo5zx9fzNPJIiAJwInlE/c388T6ufcfT8zT8SEAp4InKCf+Ps8oXoO8/3MPKE7ASdqx++zPZF5jvL9zDxBdwIiVO/9vXpC/Zym+6l4gnYCItSeJ3LPabyfgicqToCI/Ps9wT7H8X5snugIbTixInT9vKsnss9pvp+MJypCK06sClWfr54gnuN0P4wnukIzTuwIrTyPesLlOcr7yXiCIRQROnke9QTxnOb7UXiCJRQR2nke9UTTc977KXhiIrT7POqJwHP27mfhiYHQqfMQT7AeE93PZB8RCoV6QuOJ9H7YhEIV6u6JKaHVJ9YTWk+k9iMWivGEwhOjQplnMvtRCcV6Qu0Je6FMoQpPPFC/J6x9BBN6zhPsQtWeYD0xLTTrCbVQB0+whQ56YkRoxRMIoY6eaBfa5QlnodtC2Z5gFyoWui300BOKQkdCK57YFur8RPdCWUIrhA55QilU5gl1oV2haE9MCnXwRJfQrCcchK4LrXqi5IS6eMJRaFZo1RMlQjueIM8TrkIzQhs90S50yhPqQqNCK5648zxrocw8ESJ0QuhjT2zfz7RQe088kCfchUaENnri7vNchGb3E+lCpzzBLnRHaN0TDc9zEpr5fqJM6LQnWIVGhFY9kXlehtDM90OdUJUnmIRGhVY8kXlehdDI/VCEqj3BIHRHaNYTmec5Co3cz0SoiyfUQqNCM55QP89ZaOR+KkJdPaEUuid0zxPN9+MgNHs/GaHunlAI3RVKPcF8v6vQCaER97MQmuGJTqF7QrEn2O83W+iUJzLfz7sIzfLE3t/vC90RWvZE8/1OC532ROb72RLa5Ym9vz8ndEdo2RPE+00TOuGJzPfDEMr2xN7f54XuCmU9QbxfF6HdnsgKZQlleWLv74cK3RFK9wTxftVCOz2RFcoUyvDE3t+PFxoRSvME+X6VQjs8USGULRR5Yu/vzwmNCqV4gny/CqHVnqgS6iAUeWLv788LjQgtPwe+X6bQSk9UC3URijyx9/fXCo0KLXmCfL8ModmecBHqJHTPE3t/f73QqNCSJ8j3qxaa6Qk3oW5C9zyx9/f9hEaFpj1Bvl+V0KgnHIW6Ct3zxN7f9xUaFZryBPl+FUKjnnAW6iz0nic6hUaEMs+h38+9UIUnAoS6C73niU6hEaHMc+j3cyt0zxMhQgOE3vNEt9CI0L3zsvtxKXT1RJjQIKF3PNEtNCK0cR+x/TgU+t4TG0JDhN7xRLfQiNC984j9hBT67omHG8FBoVVPDAiNCI2eG74fB6GrJz7KE2FCoZ7YEZo9t3cf4UIXTzyI/p+qjCcyhWbP7dkHXejqia2/HyUU4gmy0Oy52f3ECA3zRJhQW0+QhGbPze4nTGiIJ0KF2nmCIDR7bmY/kUJDPBEu1MYTLUKz52b2Ey3U3hMpQu09QQrNnpvZT4ZQa0+kCbX1BCE0e250P1lCbT2RKtTOE1uFCs+N7idbqJ0nUoXaeWJTqPDcrfs5IdTKE+lCbTyxIVR8rnU/JKFunsgsVOKJpFDxudb9nBRq4QlaoeKCq54ghIrPteznpFB5T1CEigtmPLEpVHyu/PupELrnCSeh4oIZT0SFVvx+zghVeOId9jRLx7+Hc7cAAAAASUVORK5CYII=";
+                e.target.src = "https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=https://docs.google.com/forms/d/e/1FAIpQLSfHj1znV0-c-BTWhY1c73ysXg5p1J5jG71dpkoD5iYSSlUQBw/viewform";
               }}
             />
+
           </div>
           <h3 className="text-lg text-white font-bold mb-1">Scan to Submit</h3>
           <p className="text-indigo-100 text-sm">
@@ -704,8 +696,8 @@ const CallToAction = () => {
             <svg className="w-6 h-6 mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
             </svg>
-            <a onClick={() => window.open("https://forms.gle/s8Wdr7nPuYpuhyUE7", "_blank")}>
-            <strike>Submit Extended Abstract</strike>
+            <a onClick={() => window.open("https://docs.google.com/forms/d/e/1FAIpQLSfHj1znV0-c-BTWhY1c73ysXg5p1J5jG71dpkoD5iYSSlUQBw/viewform", "_blank")}>
+            Submit Extended Abstract
             </a>
           </button>
           
@@ -721,10 +713,15 @@ const PhDForum = () => {
   return (
     <div className="bg-black min-h-screen text-white">
       <Navbar />
-      <ComingSoon/>
-    {/*  
+      
+
+    
+    {
       <main className="container mx-auto px-4 py-8">
+
+      
         <PhDForumBanner />
+
         
         <CallToAction />
         <div className="mt-10 space-y-10">
@@ -741,14 +738,18 @@ const PhDForum = () => {
               accentColor={section.accentColor}
             />
           ))}
+
+          {/*
           
           <EnhancedTimeline />
           <SubmissionFormat />
      
           <FAQ />
+
+          */}
         </div>
       </main>
-      */}
+      }
       <Footer />
     </div>
   );

@@ -5,35 +5,13 @@ import Navbar from '../home/Navbar';
 import { ChevronRight, Calendar, FileText, ExternalLink, Strikethrough } from 'lucide-react';
 
 const handleLinkClick = () => {
-  window.open("https://docs.google.com/forms/d/e/1FAIpQLSf1uVsPhajRPqSo7Oodi_y2XllweQmoskxxYMvZENGymHVeqA/viewform", "_blank");
+  window.open("https://softconf.com/vlsi/vdat2026/", "_blank");
 };
 
 const handlePDFClick = () => {
-  window.open("../pdfs/VDAT2025- Call for Tutorial.pdf", "_blank");
+  window.open("../pdfs/VDAT2026_Call_for_Tutorial.pdf", "_blank");
 }
 
-const ComingSoon = () => {
-  return (
-    <section className="bg-black py-32 text-center">
-      <div className="container mx-auto px-6">
-        <h2 className="text-7xl font-black bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent mb-6">
-          COMING SOON
-        </h2>
-
-        <p className="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          Tutorial sessions for VDAT-2026 will be announced soon.
-          Stay tuned to explore expert-led tutorials covering
-          cutting-edge topics in VLSI design, semiconductor technology,
-          and emerging computing paradigms.
-        </p>
-
-        <div className="mt-8 text-cyan-400 text-lg animate-pulse">
-          🚀 Tutorial lineup will be revealed shortly.
-        </div>
-      </div>
-    </section>
-  );
-};
 
 
 const Tutorials = () => {
@@ -54,7 +32,7 @@ const Tutorials = () => {
       </header>
 
       <main className=" flex-grow">
-        <ComingSoon />
+        <ContentSection/>
       </main>
 
       <Footer />
@@ -71,10 +49,10 @@ const ContentSection = () => {
       />
 
       <ParagraphSection
-        title="VDAT 2025 Tutorial Proposals"
-        content={`The Organizing Committee of the VDAT 2025 invites proposals for tutorials to be presented at the conference, scheduled for 7-Aug-2025 in Chandigarh.
-        
-Tutorials are a cornerstone of the VDAT Conference, providing a unique opportunity for experts to share their knowledge on cutting-edge research, emerging technologies, and practical applications in the field of VLSI design and related areas. We welcome proposals for 90 minutes (1.5 hours) and half-day (3 hours) tutorials covering both academic and industrial topics. Proposals can range from established areas of research to emerging trends, providing fresh insights or novel solutions that will benefit attendees from academia and industry alike. The topics for the tutorials can be in-line with the theme and tracks of the VDAT2025 conference but need not be limited to them.`}
+        title="VDAT 2026 Tutorial Proposals"
+        content={`The Organizing Committee of VDAT 2026 invites proposals for tutorials to be presented at the conference, scheduled for August 19, 2026, at Jaypee Institute of Information Technology, Noida.
+
+Tutorials form an integral part of VDAT, offering experts from academia and industry a platform to share their knowledge, insights, and practical experiences with researchers, students, and professionals in VLSI design and related fields. We are delighted to welcome proposals for 90-minute (1.5-hour) or half-day (3-hour) sessions covering both academic and industrial topics. These can span established research areas or emerging trends, delivering fresh insights and novel solutions that benefit attendees from academia and industry alike. While topics aligned with the VDAT 2026 theme and tracks are encouraged, proposals need not be limited to them.`}
         isAlternate={false}
       />
 
@@ -122,11 +100,11 @@ const ImportantDatesSection = ({ title, isAlternate }) => (
             <ul className="space-y-3 text-gray-700">
               <li className="flex items-baseline">
                 <ChevronRight className="text-purple-500 w-4 h-4 mr-2 flex-shrink-0" />
-                <span><strong>Submissions Open:</strong> March 3, 2025</span>
+                <span><strong>Submissions Open:</strong> March 6, 2026</span>
               </li>
               <li className="flex items-baseline">
                 <ChevronRight className="text-purple-500 w-4 h-4 mr-2 flex-shrink-0" />
-                <span><strong>Deadline for submission:</strong> <strike>April 24, 2025</strike> May 15, 2025 (Hard) </span>
+                <span><strong>Deadline for submission:</strong> May 15, 2026 </span>
               </li>
             </ul>
           </div>
@@ -139,11 +117,11 @@ const ImportantDatesSection = ({ title, isAlternate }) => (
             <ul className="space-y-3 text-gray-700">
               <li className="flex items-baseline">
                 <ChevronRight className="text-indigo-500 w-4 h-4 mr-2 flex-shrink-0" />
-                <span><strong>Deadline for acceptance:</strong> June 15, 2025</span>
+                <span><strong>Deadline for acceptance:</strong> June 30, 2026</span>
               </li>
               <li className="flex items-baseline">
                 <ChevronRight className="text-indigo-500 w-4 h-4 mr-2 flex-shrink-0" />
-                <span><strong>Deadline for camera-ready:</strong> July 5, 2025</span>
+                <span><strong>Deadline for camera-ready:</strong> July 15, 2026</span>
               </li>
             </ul>
           </div>
@@ -155,7 +133,7 @@ const ImportantDatesSection = ({ title, isAlternate }) => (
             onClick={handleLinkClick}
           >
             <ExternalLink className="w-5 h-5 mr-2" />
-            <strike>Submit Proposal</strike>
+            Submit Proposal
           </button>
           <button
             className="bg-indigo-600 text-white px-6 py-3 rounded-lg hover:bg-indigo-700 transition duration-200 ease-in-out flex items-center justify-center"
