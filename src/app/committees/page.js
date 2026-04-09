@@ -741,7 +741,7 @@ members: [
      members: [
       {
          name: "Dr. Somesh Kumar Dahiya",
-         institute: "Assistant Professor, ABV-IITM, Gwalior",
+         institute: "Assistant Professor, ABV-IIITM, Gwalior",
          linkedin: "https://www.linkedin.com/in/dr-somesh-kumar-dahiya-b551a836/?originalSubdomain=in",
          image: "/images/somesh.jpeg",
        },
