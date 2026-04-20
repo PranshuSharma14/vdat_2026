@@ -168,30 +168,73 @@ const Navbar = () => {
 
           {/* ── TOP ROW: Logo + Hamburger (mobile) ── */}
           <div className="flex items-center justify-between w-full lg:w-auto">
-            <Link href="/" className="flex py-2 items-center gap-3">
-              {/* Logo with yellow ring */}
-              <div style={{
-                borderRadius: '10px',
-                padding: '3px',
-                background: 'linear-gradient(135deg, #facc15, #a855f7)',
-              }}>
-                <div style={{borderRadius:'8px', overflow:'hidden', background:'rgba(30,5,60,0.9)', padding:'2px'}}>
-                  <Image src="/vlsi.png" alt="VLSI Society of India Logo" width={48} height={48} />
+            <Link href="/" className="flex py-2 items-center gap-4">
+                {/* VDAT Logo */}
+                <div
+                  style={{
+                    borderRadius: "10px",
+                    padding: "3px",
+                    background: "linear-gradient(135deg, #facc15, #a855f7)",
+                  }}
+                >
+                  <div
+                    style={{
+                      borderRadius: "8px",
+                      overflow: "hidden",
+                      background: "rgba(30,5,60,0.9)",
+                      padding: "2px",
+                    }}
+                  >
+                    <Image
+                      src="/vlsi.png"
+                      alt="VLSI Logo"
+                      width={48}
+                      height={48}
+                    />
+                  </div>
                 </div>
-              </div>
 
-              {/* Title */}
-              <div className="flex flex-col leading-none">
-                <span className="text-xl sm:text-2xl font-black tracking-widest"
-                  style={{background:'linear-gradient(90deg,#facc15 0%,#e879f9 60%,#818cf8 100%)', WebkitBackgroundClip:'text', WebkitTextFillColor:'transparent'}}>
-                  VDAT 2026
-                </span>
-                <span className="text-[9px] sm:text-[10px] tracking-[0.3em] uppercase font-medium"
-                  style={{color:'rgba(250,204,21,1)'}}>
-                  VLSI Design &amp; Test
-                </span>
-              </div>
-            </Link>
+                {/* IEEE Logo */}
+                <div
+                  className="hidden sm:flex"
+                  style={{
+                    background: "white",
+                    borderRadius: "10px",
+                    padding: "4px 8px",
+                    boxShadow: "0 4px 12px rgba(0,0,0,0.15)",
+                  }}
+                >
+                  <Image
+                    src="/images/ieeelogo.jpg"
+                    alt="IEEE Logo"
+                    width={90}
+                    height={38}
+                    style={{ objectFit: "contain" }}
+                  />
+                </div>
+
+                {/* Title */}
+                <div className="flex flex-col leading-none">
+                  <span
+                    className="text-xl sm:text-2xl font-black tracking-widest"
+                    style={{
+                      background:
+                        "linear-gradient(90deg,#facc15 0%,#e879f9 60%,#818cf8 100%)",
+                      WebkitBackgroundClip: "text",
+                      WebkitTextFillColor: "transparent",
+                    }}
+                  >
+                    VDAT 2026
+                  </span>
+
+                  <span
+                    className="text-[9px] sm:text-[10px] tracking-[0.3em] uppercase font-medium"
+                    style={{ color: "rgba(250,204,21,1)" }}
+                  >
+                    VLSI Design &amp; Test
+                  </span>
+                </div>
+              </Link>
 
             {/* Hamburger — mobile only */}
             <button

@@ -52,7 +52,6 @@ const ThemeBanner = () => {
 };
 
 const images = [
-  "/images/jiit1.jpeg",
   "/images/jiit2.webp",
   "/images/jiit3.webp",
   "/images/jiit4.png",
