@@ -501,6 +501,20 @@ const Stats = () => {
     </section>
   );
 };
+const ScrollingTicker = () => {
+  return (
+    <div className="ticker-wrapper">
+      <div className="ticker">
+        <p>
+          All accepted and presented papers will be submitted for inclusion in the IEEE Xplore Digital Library, subject to IEEE quality review and compliance.
+        </p>
+        <p>
+          All accepted and presented papers will be submitted for inclusion in the IEEE Xplore Digital Library, subject to IEEE quality review and compliance.
+        </p>
+      </div>
+    </div>
+  );
+};
 
 const HomePage = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -551,7 +565,7 @@ const HomePage = () => {
       {/*
       <AwardeesSection/>
       */}
-
+<ScrollingTicker />
       <ThemeBanner />
 
       {/*

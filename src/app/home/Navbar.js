@@ -199,7 +199,7 @@ const Navbar = () => {
                 }}
               >
                 <Image
-                  src="/images/ieeelogo.jpg"
+                  src="/images/ieeelogo.jpeg"
                   alt="IEEE Logo"
                   width={100}
                   height={20}

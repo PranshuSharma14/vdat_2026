@@ -130,6 +130,33 @@ html {
   font-size: 20px;
 }
 }
+.ticker-wrapper {
+  overflow: hidden;
+  white-space: nowrap;
+  background: linear-gradient(to right, #1e40af, #2563eb);
+  color: white;
+  padding: 12px 0;
+}
+
+.ticker {
+  display: inline-flex;
+  animation: scroll 18s linear infinite;
+}
+
+.ticker p {
+  margin: 0 60px;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
 
 .fixed-column {
   position: sticky;
