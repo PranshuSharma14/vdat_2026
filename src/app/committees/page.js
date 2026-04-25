@@ -767,7 +767,7 @@ members: [
   members: [
     {
       name: "Prof. Sajaivir Singh",
-      institute: "Jaypee Institute of Information Technology",
+      institute: "Professor, Jaypee Institute of Information Technology, Noida",
       linkedin: "https://www.linkedin.com/in/sajaivir-singh-75481145/", // add later if needed
       image: "/images/sajaivir.jpg", // make sure image exists
     },
@@ -802,7 +802,7 @@ members: [
     members: [
       {
         name: "Prof. Ashish Goel",
-        institute: "Jaypee Institute of Information Technology",
+        institute: "Professor, Jaypee Institute of Information Technology, Noida",
         linkedin: "", // add later if needed
         image: "/images/ashishg.png", // ensure this file exists
       },
