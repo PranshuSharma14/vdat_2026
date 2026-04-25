@@ -146,7 +146,7 @@ const SpeakersSection = () => {
   };
 
   const handlePDFClick = () => {
-    window.open("/pdfs/VDAT2026_CFP.pdf", "_blank");
+    window.open("/pdfs/VDAT 2026_call for papers_updated.pdf", "_blank");
   };
 
   const ListSection = ({ title, items, isAlternate }) => (
