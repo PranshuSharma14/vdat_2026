@@ -678,6 +678,12 @@ members: [
          image: "/images/taranjitsingh.jpeg",
        },
        {
+         name: " Mr. Manoj Kumar",
+         institute: "Director, STMicroelectronics",
+         linkedin: "https://www.linkedin.com/in/k-manoj/",
+         image: "/images/manojk.jpg",
+       },
+       {
         name: "Prof. Alpana Agarwal",
         institute: "Professor at Thapar Institute of Engineering and Technology",
         website: "https://www.linkedin.com/in/alpana-agarwal-1542b118/?originalSubdomain=in",
@@ -715,27 +721,58 @@ members: [
        },
      ],
    },
-//   {
-//     title: "Publication Chair",
-//     members: [
-//       {
-//         name: "Balwinder Raj",
-//         institute: "NIT Jalandhar",
-//         linkedin:
-//           "https://www.linkedin.com/in/balwinderraj/?originalSubdomain=in",
-//         website:
-//           "https://departments.nitj.ac.in/dept/ece/Faculty/6430445538bff038a7805bcd",
-//         image: "../images/balwinder.jpg",
-//       },
-//       {
-//         name: "Sivanantham",
-//         institute: "VIT Vellore",
-//         linkedin:
-//           "https://www.linkedin.com/in/vlsisiva/?original_referer=https%3A%2F%2Fwww%2Egoogle%2Ecom%2F&originalSubdomain=in",
-//         image: "../images/sivanantham.jpg",
-//       },
-//     ],
-//   },
+  {
+    title: "Publication Chair",
+    members: [
+      {
+        name: "Prof. Sumit Darak",
+        institute: "IIIT Delhi Professor",
+        linkedin: "https://www.linkedin.com/in/sumitdarak/", // add later
+        image: "/images/sumitd.jpeg",
+      },
+      {
+        name: "Dr. Devanand",
+        institute: "Delhi Technological University (DTU) Professor",
+        linkedin: "https://www.linkedin.com/in/dr-deva-nand/",
+        image: "/images/devanand.jpg",
+      },
+      {
+        name: "Dr. Bharti Singh",
+        institute: "Delhi Technological University (DTU) Professor",
+        linkedin: "https://www.linkedin.com/in/bharti-singh-b17b0128/",
+        image: "/images/bhartisingh.jpg",
+      },
+      {
+        name: "Dr. Neeraj Goel",
+        institute: "Netaji Subhas University of Technology (NSUT)  Assistant Professor",
+        linkedin: "https://www.linkedin.com/in/neeraj-goel-28597293/",
+        image: "/images/neerajg.jpg",
+      },
+      {
+        name: "Prof. Richa Gupta",
+        institute: "Jaypee Institute of Information Technology (JIIT), Noida  Professor",
+        linkedin: "https://www.linkedin.com/in/dr-richa-gupta-37908b19/",
+        image: "/images/richa_gupta.jpeg",
+      },
+      {
+        name: "Dr. Sandeep Chauhan",
+        institute: "Netaji Subhas University of Technology (NSUT)  Assistant Professor",
+        linkedin: "https://www.linkedin.com/in/sandeep-singh-chauhan-124a40279/",
+        image: "/images/sandeep.jpg",
+      },
+    ],
+  },
+  {
+  title: "Sponsorship Chair",
+  members: [
+    {
+      name: "Prof. Sajaivir Singh",
+      institute: "Jaypee Institute of Information Technology",
+      linkedin: "https://www.linkedin.com/in/sajaivir-singh-75481145/", // add later if needed
+      image: "/images/sajaivir.jpg", // make sure image exists
+    },
+  ],
+},
   {
     title: "Publicity and Outreach Chair(s)",
      members: [
@@ -760,41 +797,17 @@ members: [
        
      ],
    },
-//  {
-//     title: "Registration Chair",
-//     members: [
-//       {
-//         name: "Somesh Kumar",
-//         institute: "IIITM Gwalior",
-//         linkedin:
-//           "https://www.linkedin.com/in/dr-somesh-kumar-dahiya-b551a836/?originalSubdomain=in",
-//         website:
-//           "https://www.iiitm.ac.in/index.php/en/component/splms/teacher/Dr.Somesh",
-//         image: "../images/somesh.jpg ",
-//       },
-//       {
-//         name: "Sharda Vashisth",
-//         institute: "The NorthCap University, Gurugoan",
-//         linkedin: "https://www.linkedin.com/in/dr-sharda-vashisth-23a25021/",
-//         image: "../images/sharda.jpg",
-//       },
-//       {
-//         name: "Simranjit Singh",
-//         institute: "IEEE Chandigarh Subsection & PEC Chandigarh",
-//         linkedin: "https://www.linkedin.com/in/simranjitsingh87/",
-//         website: "https://pec.ac.in/ece/faculty/simranjit-singh",
-//         image: "../images/simranjit.jpg",
-//       },
-//       {
-//         name: "Ganesh C. Patil",
-//         institute: "VNIT Nagpur",
-//         linkedin:
-//           "https://www.linkedin.com/in/ganesh-c-patil-79b6306/?originalSubdomain=in",
-//         website: "https://vnit.ac.in/engineering/cvlsi/dr-ganesh-c-patil/",
-//         image: "../images/ganesh.jpg",
-//       },
-//     ],
-//   },
+  {
+    title: "Registration Chair",
+    members: [
+      {
+        name: "Prof. Ashish Goel",
+        institute: "Jaypee Institute of Information Technology",
+        linkedin: "", // add later if needed
+        image: "/images/ashishg.png", // ensure this file exists
+      },
+    ],
+  },
  ];
  const MemberCard = ({ member }) => (
   <div className="relative group w-52 mb-6 transition-all duration-300 hover:-translate-y-2">
