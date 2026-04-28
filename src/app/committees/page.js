@@ -726,37 +726,37 @@ members: [
     members: [
       {
         name: "Prof. Sumit Darak",
-        institute: "IIIT Delhi Professor",
+        institute: "Professor,IIIT Delhi",
         linkedin: "https://www.linkedin.com/in/sumitdarak/", // add later
         image: "/images/sumitd.jpeg",
       },
       {
         name: "Dr. Devanand",
-        institute: "Delhi Technological University (DTU) Professor",
+        institute: "Professor,Delhi Technological University (DTU) ",
         linkedin: "https://www.linkedin.com/in/dr-deva-nand/",
         image: "/images/devanand.jpg",
       },
       {
         name: "Dr. Bharti Singh",
-        institute: "Delhi Technological University (DTU) Professor",
+        institute: "Professor,Delhi Technological University (DTU) ",
         linkedin: "https://www.linkedin.com/in/bharti-singh-b17b0128/",
         image: "/images/bhartisingh.jpg",
       },
       {
         name: "Dr. Neeraj Goel",
-        institute: "Netaji Subhas University of Technology (NSUT)  Assistant Professor",
+        institute: "Assistant Professor,Netaji Subhas University of Technology (NSUT) ",
         linkedin: "https://www.linkedin.com/in/neeraj-goel-28597293/",
         image: "/images/neerajg.jpg",
       },
       {
         name: "Prof. Richa Gupta",
-        institute: "Jaypee Institute of Information Technology (JIIT), Noida  Professor",
+        institute: "Professor,Jaypee Institute of Information Technology (JIIT), Noida",
         linkedin: "https://www.linkedin.com/in/dr-richa-gupta-37908b19/",
         image: "/images/richa_gupta.jpeg",
       },
       {
         name: "Dr. Sandeep Chauhan",
-        institute: "Netaji Subhas University of Technology (NSUT)  Assistant Professor",
+        institute: "Assistant Professor,Netaji Subhas University of Technology (NSUT) ",
         linkedin: "https://www.linkedin.com/in/sandeep-singh-chauhan-124a40279/",
         image: "/images/sandeep.jpg",
       },
