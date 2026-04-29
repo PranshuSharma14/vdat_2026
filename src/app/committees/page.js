@@ -726,37 +726,37 @@ const committees = [
     members: [
       {
         name: "Prof. Richa Gupta",
-        institute: "Professor,Jaypee Institute of Information Technology (JIIT), Noida",
+        institute: "Professor, Jaypee Institute of Information Technology (JIIT), Noida",
         linkedin: "https://www.linkedin.com/in/dr-richa-gupta-37908b19/",
         image: "/images/richa_gupta.jpeg",
       },
       {
         name: "Prof. Sumit Darak",
-        institute: "Professor,Indraprastha Institute of Information Technology(IIIT), Delhi",
+        institute: "Professor, Indraprastha Institute of Information Technology(IIIT), Delhi",
         linkedin: "https://www.linkedin.com/in/sumitdarak/", // add later
         image: "/images/sumitd.jpeg",
       },
       {
-        name: "Dr. Devanand",
-        institute: "Professor,Delhi Technological University (DTU) ",
+        name: "Dr. Deva Nand",
+        institute: "Associate Professor, Delhi Technological University (DTU) ",
         linkedin: "https://www.linkedin.com/in/dr-deva-nand/",
         image: "/images/devanand.jpg",
       },
       {
         name: "Dr. Bharti Singh",
-        institute: "Professor,Delhi Technological University (DTU) ",
+        institute: "Assistant Professor, Delhi Technological University (DTU) ",
         linkedin: "https://www.linkedin.com/in/bharti-singh-b17b0128/",
         image: "/images/bhartisingh.jpg",
       },
       {
         name: "Dr. Neeraj Goel",
-        institute: "Assistant Professor,Netaji Subhas University of Technology (NSUT) ",
+        institute: "Assistant Professor, Netaji Subhas University of Technology (NSUT) ",
         linkedin: "https://www.linkedin.com/in/neeraj-goel-28597293/",
         image: "/images/neerajg.jpg",
       },
       {
         name: "Dr. Sandeep Chauhan",
-        institute: "Assistant Professor,Netaji Subhas University of Technology (NSUT) ",
+        institute: "Assistant Professor, Netaji Subhas University of Technology (NSUT) ",
         linkedin: "https://www.linkedin.com/in/sandeep-singh-chauhan-124a40279/",
         image: "/images/sandeep.jpg",
       },
@@ -912,8 +912,8 @@ export default function CommitteePage() {
                 key={committee.title}
                 onClick={() => setActiveCommittee(index)}
                 className={`px-3 py-2 text-sm md:text-base rounded-md transition-all duration-200 ${activeCommittee === index
-                    ? "bg-blue-600 text-white font-medium shadow-md"
-                    : "bg-gray-100 text-gray-700 hover:bg-purple-100"
+                  ? "bg-blue-600 text-white font-medium shadow-md"
+                  : "bg-gray-100 text-gray-700 hover:bg-purple-100"
                   }`}
               >
                 {committee.title}
