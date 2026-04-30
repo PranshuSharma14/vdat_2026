@@ -445,7 +445,7 @@ const RegistrationPage = () => {
                   </p>
                 </div>
                 <p className="text-3xl font-bold text-yellow-300">
-                  6 July 2026, 23:59 PM
+                  20 July 2026, 23:59 PM
                 </p>
                 <p className="text-sm text-cyan-200 mt-1">
                   Save up to Rs 2000!

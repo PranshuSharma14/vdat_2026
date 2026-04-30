@@ -145,7 +145,7 @@ const SpeakersSection = () => {
   };
 
   const handlePDFClick = () => {
-    window.open("/pdfs/VDAT 2026_call for papers_updated.pdf", "_blank");
+    window.open("/pdfs/VDAT 2026_call for papers (4).pdf", "_blank");
   };
 
   const ListSection = ({ title, items, isAlternate }) => (
@@ -204,12 +204,10 @@ const SpeakersSection = () => {
                     Paper Submission
                   </h3>
                 </div>
-                <p className="text-gray-700 flex items-baseline gap-2">
+                <p className="text-gray-700 flex items-baseline gap-x-2 flex-wrap">
                   <strong>Deadline:</strong>
-                  <span>
-                    {/* <strike className="text-red-500">April 15, 2025</strike> */}
-                    April 30, 2026
-                  </span>
+                  <strike className="text-red-500">April 30, 2026</strike>
+                  <span className="font-bold">May 15, 2026</span>
                 </p>
                 <p className="text-sm text-gray-500 mt-1">
 
@@ -223,12 +221,10 @@ const SpeakersSection = () => {
                     Acceptance Notification
                   </h3>
                 </div>
-                <p className="text-gray-700 flex items-baseline gap-2">
+                <p className="text-gray-700 flex items-baseline gap-x-2 flex-wrap">
                   <strong>Date:</strong>
-                  <span>
-                    {/*<strike className="text-red-500">June 15, 2025</strike>*/}
-                    June 30, 2026
-                  </span>
+                  <strike className="text-red-500">June 30, 2026</strike>
+                  <span className="font-bold">July 15, 2026</span>
                 </p>
               </div>
             </div>
@@ -241,11 +237,10 @@ const SpeakersSection = () => {
                     Early Bird Registration
                   </h3>
                 </div>
-                <p className="text-gray-700 flex items-baseline gap-2">
+                <p className="text-gray-700 flex items-baseline gap-x-2 flex-wrap">
                   <strong>Deadline:</strong>
-                  <span>
-                    {/*<strike className="text-red-500">June 20, 2025</strike>*/} July 6, 2026
-                  </span>
+                  <strike className="text-red-500">July 6, 2026</strike>
+                  <span className="font-bold">July 20, 2026</span>
                 </p>
               </div>
 
@@ -256,12 +251,10 @@ const SpeakersSection = () => {
                     Camera-ready Submission
                   </h3>
                 </div>
-                <p className="text-gray-700 flex items-baseline gap-2">
+                <p className="text-gray-700 flex items-baseline gap-x-2 flex-wrap">
                   <strong>Deadline:</strong>
-                  <span>
-                    {/* <strike className="text-red-500">July 1, 2025</strike> */} July
-                    31, 2026
-                  </span>
+                  <strike className="text-red-500">July 31, 2026</strike>
+                  <span className="font-bold">August 1, 2026</span>
                 </p>
               </div>
             </div>

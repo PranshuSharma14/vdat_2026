@@ -393,7 +393,7 @@ const Timeline = () => {
       bgColor: "bg-purple-50",
       icon: "📄",
       oldDate: "April 30, 2026",
-      newDate: "",
+      newDate: "May 15, 2026",
       note: ""
     },
     {
@@ -402,7 +402,7 @@ const Timeline = () => {
       bgColor: "bg-blue-50",
       icon: "📩",
       oldDate: "June 30, 2026",
-      newDate: "",
+      newDate: "July 15, 2026",
       note: ""
     },
     {
@@ -411,16 +411,16 @@ const Timeline = () => {
       bgColor: "bg-blue-50",
       icon: "📅",
       oldDate: "July 6, 2026",
-      newDate: "",
+      newDate: "July 20, 2026",
       note: ""
     },
     {
-      title: "Camera-ready Submission",
+      title: "Regular Registration",
       borderColor: "border-l-green-500",
       bgColor: "bg-green-50", 
       icon: "📸",
       oldDate: "July 16, 2026",
-      newDate: "",
+      newDate: "August 1, 2026",
       note: ""
     }
   ];
@@ -445,17 +445,15 @@ const Timeline = () => {
                 </div>
                 
                 <div className="space-y-2">
-                  <div className="flex items-center flex-wrap">
-                    <span className="font-semibold text-gray-700 mr-2 text-sm sm:text-base">
+                  <div className="flex items-center flex-wrap gap-x-2">
+                    <span className="font-semibold text-gray-700 mr-1 text-sm sm:text-base">
                       {item.title === "Acceptance Notification" ? "Date:" : "Deadline:"}
                     </span>
-                    {/* 
-                      <span className="line-through text-red-500 mr-2 text-sm">
-                        {item.oldDate}
-                      </span> 
-                    */}
-                    <span className="font-bold text-gray-800 text-sm sm:text-base">
+                    <span className="line-through text-red-500 text-sm">
                       {item.oldDate}
+                    </span>
+                    <span className="font-bold text-gray-800 text-sm sm:text-base">
+                      {item.newDate}
                     </span>
                   </div>
                   
