@@ -5,8 +5,6 @@ import {
   CheckCircle,
   Smartphone,
   Link2,
-} from "lucide-react";
-import {
   Calendar,
   Clock,
   FileDown,
@@ -25,6 +23,8 @@ import {
   Award,
   Globe,
   Target,
+  Hash,
+  Building,
 } from "lucide-react";
 
 
