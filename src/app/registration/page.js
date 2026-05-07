@@ -134,7 +134,7 @@ const RegistrationDetails = () => (
         <CreditCard size={120} className="text-white" />
       </div>
       <div className="absolute bottom-10 right-10 animate-float delay-1000">
-        <CreditCard size={100} className="text-white" />
+        <Hash size={100} className="text-white" />
       </div>
     </div>
 
@@ -150,30 +150,19 @@ const RegistrationDetails = () => (
             Registration Process
           </h2>
         </div>
-        <ol style={{ color: "black" }} className="max-w-3xl mx-auto bg-white/90 backdrop-blur-sm p-8 rounded-2xl shadow-xl space-y-6">
+        <ol  style={{color: "black"}} className="max-w-3xl mx-auto bg-white/90 backdrop-blur-sm p-8 rounded-2xl shadow-xl space-y-6">
           <li className="flex items-start">
             <span className="text-yellow-500 mr-3 mt-1 font-bold text-xl">
               1.
             </span>
-            <p>
-              Choose the right registration as per your category.{" "}
-              <a
-                href="/Category Doc.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-purple-600 font-semibold hover:text-purple-800 transition-colors"
-              >
-                View Categories ↗
-              </a>
-            </p>
+            <p>Choose the right registration as per your category.</p>
           </li>
           <li className="flex items-start">
             <span className="text-yellow-500 mr-3 mt-1 font-bold text-xl">
               2.
             </span>
-            <p>
-              Complete the payment through the payment gateway link provided
-              below, or scan the QR code to pay via UPI.
+            <p>Make an online transfer of money to the bank given below. You can
+              also do a UPI transfer using the bank QR code.
             </p>
           </li>
           <li className="flex items-start">
@@ -189,102 +178,36 @@ const RegistrationDetails = () => (
         </ol>
       </div>
 
-      {/* Registration Instructions */}
-      <div className="max-w-6xl mx-auto bg-white/90 backdrop-blur-sm p-8 rounded-2xl shadow-xl border border-white/20 mb-8">
-        <h3 className="text-xl font-bold text-gray-800 mb-4">Registration Instructions</h3>
-        <ul className="list-disc list-inside space-y-3 text-gray-700 text-sm leading-relaxed">
-          <li>
-            Kindly download and fill the <strong>Registration Form</strong> and complete your registration through <strong>Register Now</strong>, irrespective of the mode of payment.
-          </li>
-          <li>
-            Kindly ensure that the Remitter's (Participant/Author) name and the Purpose of remittance (Registration Fees) are clearly mentioned by the Remitter in the Funds Transfer Application.
-          </li>
-          <li>
-            Authors claiming discounted registration fee must produce valid proof for availing the discounted fee (copy of student matriculation card, IEEE membership card must be submitted).
-          </li>
-          <li>
-            Papers must be strictly checked through <strong>IEEE PDF express (Conference ID: )</strong>. Final paper checked through IEEE pdf express must be uploaded through <strong>The Link</strong>.
-          </li>
-          <li>
-            The electronic IEEE Copyright Form (eCF) will be used to transfer the copyright to IEEE. <strong>The corresponding author/registered author will receive the link of eCF on registered email ID.</strong>
-          </li>
-          <li>
-            For any query/help regarding registration, please feel free to contact <strong>Prof. Ashish Goel</strong> at{" "}
-            <a href="mailto:ashish.goel@mail.jiit.ac.in" className="text-purple-600 hover:text-purple-800 transition-colors">
-              ashish.goel@mail.jiit.ac.in
-            </a>
-          </li>
-        </ul>
-
-        <h3 className="text-xl font-bold text-gray-800 mt-8 mb-4">Additional Instructions for Co-Authors/Non-Author participants:-</h3>
-        <ul className="list-disc list-inside space-y-3 text-gray-700 text-sm leading-relaxed">
-          <li>In a paper with more than one author, all authors cannot register as "Co-Authors".</li>
-          <li>One of the authors must pay full registration fee, while others can avail Co-Author discount.</li>
-          <li>Co-Author registration discount can be availed only after one of the authors has successfully registered with full registration fee.</li>
-          <li>Co-Authors who wish to avail registration discount have to compulsorily indicate fee payment details of first author.</li>
-          <li>Other interested participants can also attend the conference by registering them under separate category of non-author participants.</li>
-          <li>Co-Authors/Non-Author participants claiming discounted registration fee must produce valid proof for availing the discounted fee (copy of student matriculation card, IEEE membership card must be submitted).</li>
-        </ul>
-      </div>
-
-      {/* Payment Section */}
+      {/* Bank Details */}
       <div className="max-w-6xl mx-auto bg-white/90 backdrop-blur-sm p-8 rounded-2xl shadow-xl border border-white/20">
-        <div className="flex flex-col lg:flex-row gap-10 items-center justify-center">
-
-          {/* Payment Gateway */}
-          <div className="flex-1 flex flex-col items-center text-center">
-            <div className="flex items-center mb-4">
-              <Link2 className="text-purple-600 mr-3" size={32} />
-              <h3 className="text-2xl font-bold text-gray-800">Payment Gateway</h3>
-            </div>
-            <p className="text-gray-600 mb-6 max-w-sm">
-              Click the button below to securely complete your registration
-              payment online.
+        <div className="flex items-center mb-6">
+          <Building className="text-blue-600 mr-3" size={32} />
+          <h3 className="text-2xl font-bold text-gray-800">Bank Details</h3>
+        </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 text-gray-700">
+          <div className="space-y-4">
+            <p>
+              <strong>Account Name:</strong> JAYPEE INSTITUTE OF INFORMATION TECHNOLOGY
             </p>
-            <a
-              href="https://payments.cashfree.com/forms/IEEE"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group inline-flex items-center gap-3 px-10 py-4 bg-gradient-to-r from-purple-600 to-blue-600 text-white font-bold text-lg rounded-full shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300"
-            >
-              <Smartphone size={22} />
-              Pay Now
-              <span className="group-hover:translate-x-1 transition-transform inline-block">→</span>
-            </a>
-            <p className="text-xs text-gray-400 mt-3">Secure & encrypted payment</p>
-          </div>
-
-          {/* Divider */}
-          <div className="hidden lg:flex flex-col items-center gap-2">
-            <div className="w-px h-24 bg-gray-300"></div>
-            <span className="text-gray-400 font-semibold text-sm px-2">OR</span>
-            <div className="w-px h-24 bg-gray-300"></div>
-          </div>
-          <div className="flex lg:hidden items-center gap-4 w-full">
-            <div className="flex-1 h-px bg-gray-300"></div>
-            <span className="text-gray-400 font-semibold text-sm">OR</span>
-            <div className="flex-1 h-px bg-gray-300"></div>
-          </div>
-
-          {/* QR Code */}
-          <div className="flex-1 flex flex-col items-center text-center">
-            <div className="flex items-center mb-4">
-              <Smartphone className="text-green-600 mr-3" size={32} />
-              <h3 className="text-2xl font-bold text-gray-800">Scan & Pay via UPI</h3>
-            </div>
-            <p className="text-gray-600 mb-4 max-w-sm">
-              Open any UPI app and scan the QR code to complete your payment instantly.
+            <p>
+              <strong>Account No.:</strong> 0200104000323550
             </p>
-            <div className="flex flex-col items-center">
-              <img
-                src="/images/qr-submission.jpg"
-                alt="UPI QR Code for payment"
-                className="w-52 h-52 object-contain rounded-2xl border-2 border-purple-200 shadow-xl"
-              />
-              <p className="text-xs text-gray-500 mt-2">Supports PhonePe, GPay, Paytm & all UPI apps</p>
+            <p>
+              <strong>IFSC Code:</strong> IBKL0000200
+            </p>
+            <p>
+              <strong>Branch Name:</strong> SECTOR 63 NOIDA-201307
+            </p>
+          </div>
+          <div className="space-y-4">
+            <p>
+              <strong>Bank:</strong> IDBI BANK
+            </p>
+            <div className="flex items-center">
+              <Smartphone className="text-green-600 mr-2" size={20} />
+              <span>UPI payments accepted via bank QR code</span>
             </div>
           </div>
-
         </div>
       </div>
     </div>
@@ -306,7 +229,7 @@ const RegistrationPage = () => {
       >
         <div className="absolute inset-0 bg-gradient-to-r from-blue-900/85 to-blue-900/85"></div>
 
-
+         
         <div className="absolute inset-0 opacity-20">
           <div className="absolute top-1/4 left-1/4 animate-pulse">
             <CircuitBoard size={64} className="text-cyan-300" />
@@ -342,7 +265,7 @@ const RegistrationPage = () => {
             innovation.
           </p>
 
-
+         
           <div className="mt-8">
             <a
               href={GOOGLE_FORM_LINK}
@@ -359,17 +282,17 @@ const RegistrationPage = () => {
                 className="ml-3 group-hover:translate-x-1 transition-transform"
                 size={24}
               />
-
-
+               
+              
             </a>
           </div>
 
-
+        
           <div className="mt-8 space-y-2">
             <div className="animate-bounce">
               <p className="text-cyan-300 font-bold text-lg flex items-center justify-center">
-                🚀 Registration Now Open!
-              </p>
+  🚀 Registration Now Open!
+</p>
             </div>
             <p className="text-white/90 text-sm">
               Secure your place in the future of VLSI innovation
@@ -377,13 +300,13 @@ const RegistrationPage = () => {
           </div>
         </div>
       </header>
-
+      
 
       <RegistrationDetails />
       <section className="bg-gradient-to-r from-purple-600 via-blue-600 to-cyan-600 py-16 relative overflow-hidden">
         <div className="absolute inset-0 bg-black opacity-30"></div>
 
-
+         
         <div className="absolute inset-0 overflow-hidden opacity-10">
           <div className="absolute top-10 left-10 animate-float">
             <CircuitBoard size={120} className="text-white" />
@@ -445,7 +368,7 @@ const RegistrationPage = () => {
                   </p>
                 </div>
                 <p className="text-3xl font-bold text-yellow-300">
-                  6 July 2026, 23:59 PM
+                  14 July 2025, 23:59 PM
                 </p>
                 <p className="text-sm text-cyan-200 mt-1">
                   Save up to Rs 2000!
@@ -457,10 +380,11 @@ const RegistrationPage = () => {
             </div>
           </div>
         </div>
+        
       </section>
 
 
-
+    
       <Footer />
     </div>
   );
