@@ -216,7 +216,7 @@ const RegistrationDetails = () => (
 
 const RegistrationPage = () => {
   // Replace this with your actual Google Form link
-  const GOOGLE_FORM_LINK = "https://forms.gle/5EDPziJ8CRHtourk8";
+  const GOOGLE_FORM_LINK = "";
 
   return (
     <div className="bg-black to-white min-h-screen">
