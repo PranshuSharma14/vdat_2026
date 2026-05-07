@@ -21,7 +21,7 @@ const SpeakersSection = () => {
     },
     {
       name: "Prof. Maryam Shojaei Baghini",
-      title: "Faculty, Electrical Engineering",
+      title: "Professor",
       organization: "IIT Bombay",
       photo: "/images/maryam.png",
       bio: "Prof. Maryam Shojaei Baghini is Professor, Department of Electrical Engineering, Indian Institute of Technology Bombay, and a globally recognized researcher in analog/mixed-signal/RF VLSI, sensors, biomedical instrumentation, energy-efficient integrated circuits, and emerging semiconductor technologies. Her pioneering contributions span device-to-system-level innovation, including biosensors, healthcare electronics, neuromorphic systems, energy harvesting circuits, and intelligent sensing platforms. Prof. Baghini has published more than 300 peer-reviewed research papers and holds numerous Indian and US patents. She is a recipient of several prestigious recognitions including the Qualcomm Faculty Award and has served in leadership roles across major IEEE conferences and VLSI forums. Her research and mentorship have significantly influenced next-generation semiconductor and healthcare technologies.",
@@ -55,10 +55,10 @@ const SpeakersSection = () => {
       linkedin: "https://www.linkedin.com/in/navin-bishnoi-707a6b3/",
     },
     {
-      name: "Prof. HS Jattana",
-      title: "Professor",
+      name: "Shri H.S. Jattana",
+      title: "Scientist & Faculty",
       organization: "PGIMER",
-      photo: "/images/jattana.png",
+      photo: "/images/HS.jpg",
       bio: "H. S. Jattana is a distinguished technologist, researcher, and academic expert with extensive experience in microelectronics, VLSI design, semiconductor devices, embedded systems, and medical electronics. He is currently associated with Postgraduate Institute of Medical Education and Research and has contributed significantly to interdisciplinary research spanning semiconductor technology and healthcare innovation. With decades of expertise in CMOS design, device modeling, and advanced electronics systems, he has actively mentored researchers and delivered expert lectures across premier institutions and national skill-development initiatives. He also holds patents in the area of intelligent medical systems, including Closed Loop Anaesthesia Drug Delivery Systems (CLADS). His work continues to bridge academia, healthcare, and semiconductor innovation through impactful research, technology development, and academic leadership.",
       linkedin: "https://www.linkedin.com/in/hs-jattana-00738326/",
     },
