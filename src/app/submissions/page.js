@@ -145,7 +145,7 @@ const SpeakersSection = () => {
   };
 
   const handlePDFClick = () => {
-    window.open("/pdfs/VDAT 2026_call for papers (4).pdf", "_blank");
+    window.open("/pdfs/VDAT 2026_call for papers (5).pdf", "_blank");
   };
 
   const ListSection = ({ title, items, isAlternate }) => (
@@ -206,8 +206,8 @@ const SpeakersSection = () => {
                 </div>
                 <p className="text-gray-700 flex items-baseline gap-x-2 flex-wrap">
                   <strong>Deadline:</strong>
-                  <strike className="text-red-500">April 30, 2026</strike>
-                  <span className="font-bold">May 15, 2026</span>
+                  <strike className="text-red-500">May 15, 2026</strike>
+                  <span className="font-bold">May 22, 2026</span>
                 </p>
                 <p className="text-sm text-gray-500 mt-1">
 

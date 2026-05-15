@@ -392,8 +392,9 @@ const Timeline = () => {
       borderColor: "border-l-purple-500",
       bgColor: "bg-purple-50",
       icon: "📄",
-      oldDate: "April 30, 2026",
-      newDate: "May 15, 2026",
+      originalDate: "April 30, 2026",
+      oldDate: "May 15, 2026",
+      newDate: "May 22, 2026",
       note: ""
     },
     {
@@ -445,18 +446,29 @@ const Timeline = () => {
                 </div>
                 
                 <div className="space-y-2">
-                  <div className="flex items-center flex-wrap gap-x-2">
+                  <div className="flex items-center flex-wrap gap-x-2 gap-y-1">
                     <span className="font-semibold text-gray-700 mr-1 text-sm sm:text-base">
                       {item.title === "Acceptance Notification" ? "Date:" : "Deadline:"}
                     </span>
+                    {item.originalDate && (
+                      <span className="line-through text-gray-400 text-sm">
+                        {item.originalDate}
+                      </span>
+                    )}
                     <span className="line-through text-red-500 text-sm">
                       {item.oldDate}
                     </span>
-                    <span className="font-bold text-gray-800 text-sm sm:text-base">
-                      {item.newDate}
+                    <span className="inline-flex items-center gap-2">
+                      <span className="font-bold text-gray-800 text-sm sm:text-base">
+                        {item.newDate}
+                      </span>
+                      {item.originalDate && (
+                        <span className="px-2 py-0.5 bg-red-600 text-white text-xs font-bold rounded-full uppercase tracking-wide whitespace-nowrap">
+                          Final Deadline
+                        </span>
+                      )}
                     </span>
                   </div>
-                  
                   {item.note && (
                     <p className="text-gray-600 text-xs sm:text-sm italic">
                       {item.note}

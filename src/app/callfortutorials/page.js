@@ -9,7 +9,7 @@ const handleLinkClick = () => {
 };
 
 const handlePDFClick = () => {
-  window.open("../pdfs/VDAT2026_Call_for_Tutorial.pdf", "_blank");
+  window.open("../pdfs/VDAT2026_Call_for_Tutorial_v2.pdf", "_blank");
 }
 
 
@@ -50,7 +50,7 @@ const ContentSection = () => {
 
       <ParagraphSection
         title="VDAT 2026 Tutorial Proposals"
-        content={`The Organizing Committee of VDAT 2026 invites proposals for tutorials to be presented at the conference, scheduled for August 19, 2026, at Jaypee Institute of Information Technology, Noida.
+        content={`The Organizing Committee of VDAT 2026 invites proposals for tutorials to be presented at the conference, scheduled for August 20–22, 2026, at Jaypee Institute of Information Technology, Noida.
 
 Tutorials form an integral part of VDAT, offering experts from academia and industry a platform to share their knowledge, insights, and practical experiences with researchers, students, and professionals in VLSI design and related fields. We are delighted to welcome proposals for 90-minute (1.5-hour) or half-day (3-hour) sessions covering both academic and industrial topics. These can span established research areas or emerging trends, delivering fresh insights and novel solutions that benefit attendees from academia and industry alike. While topics aligned with the VDAT 2026 theme and tracks are encouraged, proposals need not be limited to them.`}
         isAlternate={false}
@@ -104,7 +104,7 @@ const ImportantDatesSection = ({ title, isAlternate }) => (
               </li>
               <li className="flex items-baseline">
                 <ChevronRight className="text-purple-500 w-4 h-4 mr-2 flex-shrink-0" />
-                <span><strong>Deadline for submission:</strong> May 15, 2026 </span>
+                <span><strong>Deadline for submission:</strong> <span className="line-through text-red-500 whitespace-nowrap">May 15, 2026</span> <span className="font-bold text-gray-900 whitespace-nowrap">May 30, 2026</span></span>
               </li>
             </ul>
           </div>

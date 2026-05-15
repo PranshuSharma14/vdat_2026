@@ -155,7 +155,17 @@ const RegistrationDetails = () => (
             <span className="text-yellow-500 mr-3 mt-1 font-bold text-xl">
               1.
             </span>
-            <p>Choose the right registration as per your category.</p>
+            <p>
+              Choose the right registration as per your category.{" "}
+              <a
+                href="/Category Doc.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-purple-600 font-semibold hover:text-purple-800 transition-colors"
+              >
+                View Categories →
+              </a>
+            </p>
           </li>
           <li className="flex items-start">
             <span className="text-yellow-500 mr-3 mt-1 font-bold text-xl">
@@ -206,6 +216,15 @@ const RegistrationDetails = () => (
             <div className="flex items-center">
               <Smartphone className="text-green-600 mr-2" size={20} />
               <span>UPI payments accepted via bank QR code</span>
+            </div>
+            <div className="flex flex-col items-start mt-2">
+              <p className="text-gray-600 mb-2 text-sm font-medium">Scan to pay via UPI:</p>
+              <img
+                src="/images/qr-submission.jpg"
+                alt="UPI QR Code for payment"
+                className="w-44 h-44 object-contain rounded-xl border-2 border-purple-200 shadow-lg"
+              />
+              <p className="text-xs text-gray-500 mt-1">Supports PhonePe, GPay, Paytm &amp; all UPI apps</p>
             </div>
           </div>
         </div>
@@ -330,7 +349,7 @@ const RegistrationPage = () => {
             </div>
 
             <p className="text-xl text-white/95 mb-4 leading-relaxed">
-              Don't miss VDAT-2025 - India's premier VLSI Design & Test
+              Don't miss VDAT-2026 - India's premier VLSI Design & Test
               conference!
             </p>
             <p className="text-lg text-cyan-200 mb-8 leading-relaxed">
@@ -368,7 +387,7 @@ const RegistrationPage = () => {
                   </p>
                 </div>
                 <p className="text-3xl font-bold text-yellow-300">
-                  14 July 2025, 23:59 PM
+                  July 20, 2026, 23:59 PM
                 </p>
                 <p className="text-sm text-cyan-200 mt-1">
                   Save up to Rs 2000!
