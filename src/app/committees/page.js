@@ -445,15 +445,36 @@ const committees = [
     ]
   },
   {
+  title: "Technical Management Committee",
+  members: [
+    {
+      name: "Dr. M. S. Mehata",
+      institute:
+        "Assistant Professor, VDSemiX, Delhi Technological University, Delhi",
+      linkedin: "",
+      image: "/images/msmehata.jpg",
+    },
+
+    {
+      name: "Dr. Urvashi Bansal",
+      institute:
+        "Assistant Professor, Netaji Subhas University of Technology, Delhi",
+      linkedin: "",
+      image: "/images/urvashi.jpg",
+    },
+
+    {
+      name: "Dr. Shweta Gautam",
+      institute:
+        "Assistant Professor, Netaji Subhas University of Technology, Delhi",
+      linkedin: "",
+      image: "/images/shweta1.jpg",
+    },
+  ],
+},
+  {
     title: "Technical Program Committee",
     members: [
-      {
-        name: "Prof. Sudeb Dasgupta (TPC Chair)",
-        institute: "Professor, Indian Institute of Technology, Roorkee",
-        linkedin: "https://www.linkedin.com/in/sudeb-dasgupta-2b19b64/",
-        website: "https://ece.iitr.ac.in/sudeb-das-gupta/",
-        image: "/images/sudeb.jpg",
-      },
       {
         name: "Mr. Preet Yadav (TPC Chair)",
         institute: "Head India Innovation Ecosystem, NXP Semiconductors",
@@ -478,12 +499,6 @@ const committees = [
         institute: "Professor, VDSemiX, Delhi Technological University, Delhi",
         website: "https://dtu.ac.in/Web/Departments/Electronics/faculty/neetaPandey.php",
         image: "/images/neeta.jpg",
-      },
-      {
-        name: "Dr. Manisha Bharti",
-        institute: "Associate Professor, Department of ECE, National Institute of Technology, Delhi",
-        website: "https://nitdelhi.ac.in/faculty/manisha-bharti",
-        image: "/images/manisha.jpg",
       },
 
       {
@@ -510,24 +525,6 @@ const committees = [
         institute: "Assistant Professor, ABV- IIITM Gwalior",
         website: "https://www.linkedin.com/in/dr-pinku-ranjan-62aa0332/?originalSubdomain=in",
         image: "/images/pinku.jpeg",
-      },
-      {
-        name: "Dr. M. S. Mehata",
-        institute: "Assistant Professor, VDSemiX, Delhi Technological University, Delhi",
-        image: "/images/mehata.jpg",
-      },
-
-      {
-        name: "Dr. Urvashi Bansal",
-        institute: "Assistant Professor, Netaji Subhas University of Technology, Delhi",
-        website: "http://www.nsut.ac.in/en/faculty/urvashi-bansal",
-        image: "/images/urvashi.jpg",
-      },
-      {
-        name: "Dr. Shweta Gautam",
-        institute: "Assistant Professor, Netaji Subhas University of Technology, Delhi",
-        website: "http://www.nsut.ac.in/en/faculty/shweta-gautam",
-        image: "/images/shweta1.jpg",
       }
     ],
   },
@@ -664,44 +661,53 @@ const committees = [
   //   },
   {
     title: "Startup Chair(s)",
+    condolence: {
+      name: "Prof. Alpana Agarwal",
+      institute: "Thapar Institute of Engineering & Technology",
+      image: "/images/alpana.jpeg",
+      message:
+        "VDAT 2026 expresses deep sorrow on the untimely demise of Prof. Alpana Agarwal from Thapar Institute of Engineering & Technology, who had graciously agreed to serve as Startup Chair for VDAT 2026. We sincerely acknowledge her support, guidance, and contributions to the academic and research community. Her loss is deeply felt by all associated with VDAT. We pray for eternal peace to the departed soul and extend our heartfelt condolences to her family, colleagues, and students.",
+    },
     members: [
       {
         name: "Mr. Nishit Gupta",
         institute: "Scientist E, MeitY",
-        linkedin: "https://www.linkedin.com/in/guptanishit/?originalSubdomain=in",
+        linkedin:
+          "https://www.linkedin.com/in/guptanishit/?originalSubdomain=in",
         image: "/images/nishit.jpeg",
       },
+
       {
         name: "Mr. Taranjit Singh Kukal",
         institute: "Sr. Architect, Cadence Design Systems",
         linkedin: "https://www.linkedin.com/in/taranjitkukal/",
         image: "/images/taranjitsingh.jpeg",
       },
+
       {
-        name: " Mr. Manoj Kumar",
+        name: "Mr. Manoj Kumar",
         institute: "Director, STMicroelectronics",
         linkedin: "https://www.linkedin.com/in/k-manoj/",
         image: "/images/manojk.jpg",
       },
-      {
-        name: "Prof. Alpana Agarwal",
-        institute: "Professor at Thapar Institute of Engineering and Technology",
-        website: "https://www.linkedin.com/in/alpana-agarwal-1542b118/?originalSubdomain=in",
-        image: "/images/alpana.jpeg",
-      },
+
       {
         name: "Prof. Alok Joshi",
-        institute: "Professor, Jaypee Institute of Information Technology",
-        linkedin: "https://www.linkedin.com/in/prof-dr-alok-joshi-7897b858/?originalSubdomain=in",
+        institute:
+          "Professor, Jaypee Institute of Information Technology",
+        linkedin:
+          "https://www.linkedin.com/in/prof-dr-alok-joshi-7897b858/?originalSubdomain=in",
         image: "/images/alokjoshi.jpeg",
       },
+
       {
         name: "Mr. Abhishek Tiwari",
-        institute: "Associate Director & Scientist ‘F’, C-DAC, Noida",
-        linkedin: "https://www.linkedin.com/in/abhishek-tiwari-b34b2711b/?utm_source=share_via&utm_content=profile&utm_medium=member_android",
+        institute:
+          "Associate Director & Scientist ‘F’, C-DAC, Noida",
+        linkedin:
+          "https://www.linkedin.com/in/abhishek-tiwari-b34b2711b/?utm_source=share_via&utm_content=profile&utm_medium=member_android",
         image: "/images/abhishektiwari.jpeg",
       },
-
     ],
   },
   {
@@ -718,6 +724,12 @@ const committees = [
         institute: "Assistant Professor (Senior Grade), Jaypee Institute of Information Technology, Noida",
         linkedin: "https://www.linkedin.com/in/dr-rishibrind-upadhyay-a1379a117/?utm_source=share_via&utm_content=profile&utm_medium=member_android",
         image: "/images/rishibrind.jpeg",
+      },
+      {
+        name: "Prof. Vandana Niranjan",
+        institute: "Professor, Indira Gandhi Delhi Technical University for Women",
+        linkedin: "https://www.linkedin.com/in/prof-vandana-niranjan-a9381a226/",
+        image: "/images/vandana.jpg",
       },
     ],
   },
@@ -794,9 +806,213 @@ const committees = [
         linkedin: "https://www.linkedin.com/in/dr-ashish-gupta-62406a35/?originalSubdomain=in",
         image: "/images/ashishgupta.jpeg",
       },
+      {
+        name: "Dr. Richa Yadav",
+        institute: "Assistant Professor, Indira Gandhi Delhi Technical University for Women",
+        linkedin: "https://www.linkedin.com/in/dr-richa-yadav-8573141a/",
+        image: "/images/Richa_yadav.jpg",
+      },
 
     ],
   },
+  {
+  title: "Track Chair(s)",
+
+  table: [
+    {
+      track: "Track 1",
+
+      trackName: "VLSI & System-on-Chip (SoC) Design",
+
+      chair1: {
+        name: "Prof. Ruchika Gupta",
+        institute: "Chandigarh University",
+        image: "/images/ruchika.jpg",
+      },
+
+      chair2: {
+        name: "Prof. Manoj Singh Parihar",
+        institute: "IIITM Gwalior",
+        image: "/images/manojparihar.jpeg",
+      },
+
+      chair3: {
+        name: "Prof. Rohit Sharma",
+        institute: "IIT Ropar",
+        image: "/images/rohit.jpg",
+      },
+
+      chair4: {
+        name: "Prof. Sourajeet Roy",
+        institute: "IIT Roorkee",
+        image: "/images/sourajeet.jpg",
+      },
+
+      papers: 182,
+    },
+
+    {
+      track: "Track 2",
+
+      trackName:
+        "Nanoelectronics, Emerging Devices & Beyond-CMOS Technologies",
+
+      chair1: {
+        name: "Prof. Avirup Dasgupta",
+        institute: "IIT Roorkee",
+        image: "/images/avirup.jpg",
+      },
+
+      chair2: {
+        name: "Prof. Sourav De",
+        institute: "NTHU, Taiwan",
+        image: "/images/souravde.webp",
+      },
+
+      chair3: {
+        name: "Prof. Ganesh C. Patil",
+        institute: "VNIT Nagpur",
+        image: "/images/ganesh.jpg",
+      },
+
+      chair4: null,
+
+      papers: 63,
+    },
+
+    {
+      track: "Track 3",
+
+      trackName:
+        "Electronic Design Automation (EDA), CAD & AI-Driven Design",
+
+      chair1: {
+        name: "Prof. Fabrizio Bonani",
+        institute: "Politecnico di Torino, Italy",
+        image: "/images/fabrizio.jpg",
+      },
+
+      chair2: {
+        name: "Prof. Jasdeep",
+        institute: "IGDTUW",
+        image: "/images/jasdeep.jpg",
+      },
+
+      chair3: null,
+
+      chair4: null,
+
+      papers: 24,
+    },
+
+    {
+      track: "Track 4",
+
+      trackName:
+        "Design Automation for Advanced Technology Nodes",
+
+      chair1: {
+        name: "Prof Basu",
+        institute: "NIT Delhi",
+        image: "/images/basu.jpg",
+      },
+
+      chair2: {
+        name: "Dr. Manisha Bharti",
+        institute:
+          "Associate Professor, Department of ECE, NIT Delhi",
+        image: "/images/manisha.jpg",
+      },
+
+      chair3: {
+        name: "Dr. Garima",
+        institute:
+          "Associate Professor, Department of ECE, JIIT Noida",
+        image: "/images/garima.jpg",
+      },
+
+      chair4: null,
+
+      papers: 75,
+    },
+
+    {
+      track: "Track 5",
+
+      trackName:
+        "Verification, Testing, Reliability & Hardware Security",
+
+      chair1: {
+        name: "Prof. Chandan Karfa",
+        institute: "IIT Guwahati",
+        image: "/images/chandan.jpg",
+      },
+
+      chair2: {
+        name: "Mr. Preet Yadav",
+        institute: "Head India Innovation Ecosystem, NXP Semiconductors",
+        image: "/images/preet.jpg",
+      },
+
+      chair3: {
+        name: "Dr. Satyendra",
+        institute:
+          "Associate Professor, Department of ECE, JIIT Noida",
+        image: "/images/satyendra.webp",
+      },
+
+      chair4: null,
+
+      papers: 66,
+    },
+
+    {
+      track: "Track 6",
+
+      trackName:
+        "3D-IC, Advanced Packaging & Heterogeneous Integration",
+
+      chair1: null,
+
+      chair2: null,
+
+      chair3: {
+        name: "Prof. Neeta Pandey",
+        institute: "Professor, VDSemiX, Delhi Technological University, Delhi",
+        image: "/images/neeta.jpg",
+      },
+
+      chair4: null,
+
+      papers: 2,
+    },
+
+    {
+      track: "Track 7",
+
+      trackName:
+        "Quantum & Future Computing Architectures",
+
+      chair1: {
+        name: "Prof. Navjeet Bagga",
+        institute: "IIT Bhubaneswar",
+        image: "/images/navjeet.jpg",
+      },
+
+      chair2: {
+        name: "Prof. Sayak Bhattacharya",
+        institute: "IIIT Delhi",
+        image: "/images/sayak.jpg",
+      },
+
+      chair3: null,
+
+      chair4: null,
+
+      papers: 23,
+    },
+  ],
+},
   {
     title: "Registration Chair",
     members: [
@@ -861,19 +1077,187 @@ const MemberCard = ({ member }) => (
   </div>
 );
 
-const CommitteeCard = ({ title, members }) => {
+const CommitteeCard = ({ title, members, table, condolence }) => {
   return (
     <div className="w-full max-w-7xl mx-auto bg-white text-center my-12 px-4">
+
+      {/* TITLE */}
       <h2 className="text-4xl font-extrabold text-blue-700 mb-10">
         {title}
       </h2>
+      {/* CONDOLENCE SECTION */}
 
-      <div className="flex flex-wrap justify-center gap-8">
-        {members.map((member, index) => (
-          <MemberCard key={index} member={member} />
-        ))}
+{condolence && (
+
+  <div className="max-w-6xl mx-auto mb-14">
+
+    <div className="bg-gradient-to-r from-gray-50 to-gray-100 border border-gray-300 rounded-3xl shadow-lg p-8 md:p-10">
+
+      <div className="flex flex-col md:flex-row items-center gap-8">
+
+        {/* PHOTO */}
+        <div className="flex-shrink-0">
+
+          <img
+            src={condolence.image}
+            alt={condolence.name}
+            className="w-52 h-52 object-cover rounded-2xl border-4 border-red-200 shadow-xl grayscale"
+          />
+
+        </div>
+
+        {/* TEXT */}
+        <div className="text-left">
+
+          <h3 className="text-3xl md:text-4xl font-extrabold text-red-700 mb-5">
+            Tribute & Condolence
+          </h3>
+
+          <p className="text-lg md:text-xl text-gray-800 leading-relaxed">
+
+            {condolence.message}
+
+          </p>
+
+        </div>
+
       </div>
 
+    </div>
+
+  </div>
+
+)}
+
+      {/* NORMAL COMMITTEE CARDS */}
+      {members && (
+        <div className="flex flex-wrap justify-center gap-8">
+          {members.map((member, index) => (
+            <MemberCard key={index} member={member} />
+          ))}
+        </div>
+      )}
+
+      {/* TRACK CHAIR TABLE */}
+      {table && (
+        <div className="overflow-x-auto rounded-3xl shadow-2xl border border-gray-200">
+
+          <table className="w-full border-collapse bg-white table-fixed">
+
+            {/* TABLE HEADER */}
+            <thead className="bg-gradient-to-r from-blue-700 to-blue-900 text-white">
+
+              <tr>
+
+                <th className="border px-6 py-5 text-lg font-bold">
+                  Track
+                </th>
+
+                <th className="border px-6 py-5 text-lg font-bold">
+                  Track Name
+                </th>
+
+                <th className="border px-6 py-5 text-lg font-bold">
+                  Chair 1
+                </th>
+
+                <th className="border px-6 py-5 text-lg font-bold">
+                  Chair 2
+                </th>
+
+                <th className="border px-6 py-5 text-lg font-bold">
+                  Chair 3
+                </th>
+
+                <th className="border px-6 py-5 text-lg font-bold">
+                  Chair 4
+                </th>
+
+                <th className="border px-6 py-5 text-lg font-bold">
+                  No. of Papers
+                </th>
+
+              </tr>
+
+            </thead>
+
+            {/* TABLE BODY */}
+            <tbody>
+
+              {table.map((row, idx) => (
+
+                <tr
+                  key={idx}
+                  className="hover:bg-gray-50 transition text-black bg-white"
+                >
+
+                  {/* TRACK */}
+                  <td className="border px-5 py-6 font-bold text-3xl text-black bg-white align-middle">
+                    {row.track}
+                  </td>
+
+                  {/* TRACK NAME */}
+                  <td className="border px-5 py-6 text-left font-semibold text-black text-lg leading-relaxed bg-white align-middle">
+                    {row.trackName}
+                  </td>
+
+                  {/* CHAIRS */}
+                  {[row.chair1, row.chair2, row.chair3, row.chair4].map(
+                    (chair, i) => (
+
+                      <td
+                        key={i}
+                        className="border px-4 py-6 align-middle bg-white"
+                      >
+
+                        {chair ? (
+
+                          <div className="flex flex-col items-center text-center">
+
+                            <img
+                              src={chair.image}
+                              alt={chair.name}
+                              className="w-28 h-28 rounded-full object-cover border-4 border-blue-500 shadow-lg mb-4"
+                            />
+
+                            <p className="font-bold text-blue-700 text-xl leading-snug">
+                              {chair.name}
+                            </p>
+
+                            <p className="text-base text-gray-700 mt-2 leading-relaxed">
+                              {chair.institute}
+                            </p>
+
+                          </div>
+
+                        ) : (
+
+                          <div className="text-4xl text-gray-400">
+                            —
+                          </div>
+
+                        )}
+
+                      </td>
+
+                    )
+                  )}
+
+                  {/* PAPERS */}
+                  <td className="border px-4 py-6 font-bold text-4xl text-center text-black bg-white align-middle">
+                    {row.papers}
+                  </td>
+
+                </tr>
+
+              ))}
+
+            </tbody>
+
+          </table>
+
+        </div>
+      )}
 
     </div>
   );
