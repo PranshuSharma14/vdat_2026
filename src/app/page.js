@@ -352,11 +352,17 @@ const SponsorsSection = ({ title, items, comingSoon = false }) => (
             
           ].map((logo, i) => (
             <div
-              key={i}
-              className="w-full bg-white p-6 rounded-xl shadow-lg flex items-center justify-center transition-transform duration-300 ease-in-out hover:scale-105"
-            >
-              <img src={logo.src} alt={logo.alt} className="object-contain w-full h-auto max-h-28" />
-            </div>
+  key={i}
+  className="w-full max-w-[1500px] bg-white rounded-3xl shadow-2xl overflow-hidden mx-auto hover:shadow-[0_20px_60px_rgba(0,0,0,0.25)] transition duration-300"
+>
+
+  <img
+    src={logo.src}
+    alt={logo.alt}
+    className="w-full h-auto object-cover scale-[1.08]"
+  />
+
+</div>
           ))}
         </div>
       ) : (

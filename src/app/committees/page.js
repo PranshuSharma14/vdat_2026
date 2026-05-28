@@ -815,204 +815,187 @@ const committees = [
 
     ],
   },
-  {
-  title: "Track Chair(s)",
+  /*{
+    title: "Track Chair(s)",
 
-  table: [
-    {
-      track: "Track 1",
+    table: [
+      {
+        track: "Track 1",
 
-      trackName: "VLSI & System-on-Chip (SoC) Design",
+        trackName: "VLSI & System-on-Chip (SoC) Design",
 
-      chair1: {
-        name: "Prof. Ruchika Gupta",
-        institute: "Chandigarh University",
-        image: "/images/ruchika.jpg",
+        chair1: {
+          name: "Prof. Ruchika Gupta",
+          institute: "Chandigarh University",
+          image: "/images/ruchika.jpg",
+        },
+
+        chair2: {
+          name: "Prof. Manoj Singh Parihar",
+          institute: "IIITM Gwalior",
+          image: "/images/manojparihar.jpeg",
+        },
+
+        chair3: {
+          name: "Prof. Rohit Sharma",
+          institute: "IIT Ropar",
+          image: "/images/rohit.jpg",
+        },
+
+        chair4: {
+          name: "Prof. Sourajeet Roy",
+          institute: "IIT Roorkee",
+          image: "/images/sourajeet.jpg",
+        },
       },
 
-      chair2: {
-        name: "Prof. Manoj Singh Parihar",
-        institute: "IIITM Gwalior",
-        image: "/images/manojparihar.jpeg",
+      {
+        track: "Track 2",
+
+        trackName:
+          "Nanoelectronics, Emerging Devices & Beyond-CMOS Technologies",
+
+        chair1: {
+          name: "Prof. Avirup Dasgupta",
+          institute: "IIT Roorkee",
+          image: "/images/avirup.jpg",
+        },
+
+        chair2: {
+          name: "Prof. Sourav De",
+          institute: "NTHU, Taiwan",
+          image: "/images/souravde.webp",
+        },
+
+        chair3: {
+          name: "Prof. Ganesh C. Patil",
+          institute: "VNIT Nagpur",
+          image: "/images/ganesh.jpg",
+        },
+
+        chair4: null,
       },
 
-      chair3: {
-        name: "Prof. Rohit Sharma",
-        institute: "IIT Ropar",
-        image: "/images/rohit.jpg",
+      {
+        track: "Track 3",
+
+        trackName:
+          "Electronic Design Automation (EDA), CAD & AI-Driven Design",
+
+        chair1: {
+          name: "Prof. Fabrizio Bonani",
+          institute: "Politecnico di Torino, Italy",
+          image: "/images/fabrizio.jpg",
+        },
+
+        chair2: {
+          name: "Prof. Jasdeep",
+          institute: "IGDTUW",
+          image: "/images/jasdeep.jpg",
+        },
+
+        chair3: null,
+
+        chair4: null,
       },
 
-      chair4: {
-        name: "Prof. Sourajeet Roy",
-        institute: "IIT Roorkee",
-        image: "/images/sourajeet.jpg",
+      {
+        track: "Track 4",
+
+        trackName:
+          "Design Automation for Advanced Technology Nodes",
+
+        chair1: {
+          name: "Dr. Rikmantra Basu",
+          institute: "NIT Delhi",
+          image: "/images/basu.jpg",
+        },
+
+        chair2: {
+          name: "Dr. Manisha Bharti",
+          institute:
+            "NIT Delhi",
+          image: "/images/manisha.jpg",
+        },
+
+        chair3: {
+          name: "Dr. Garima",
+          institute:
+            "JIIT Noida",
+          image: "/images/garima.jpg",
+        },
+
+        chair4: null,
       },
 
-      papers: 182,
-    },
+      {
+        track: "Track 5",
 
-    {
-      track: "Track 2",
+        trackName:
+          "Verification, Testing, Reliability & Hardware Security",
 
-      trackName:
-        "Nanoelectronics, Emerging Devices & Beyond-CMOS Technologies",
+        chair1: {
+          name: "Prof. Chandan Karfa",
+          institute: "IIT Guwahati",
+          image: "/images/chandan.jpg",
+        },
 
-      chair1: {
-        name: "Prof. Avirup Dasgupta",
-        institute: "IIT Roorkee",
-        image: "/images/avirup.jpg",
+        chair2: null,
+          
+        
+        chair3: {
+          name: "Dr. Satyendra",
+          institute:
+            "JIIT Noida",
+          image: "/images/satyendra.webp",
+        },
+
+        chair4: null,
       },
 
-      chair2: {
-        name: "Prof. Sourav De",
-        institute: "NTHU, Taiwan",
-        image: "/images/souravde.webp",
+      {
+        track: "Track 6",
+
+        trackName:
+          "3D-IC, Advanced Packaging & Heterogeneous Integration",
+
+        chair1:  {
+          name: "Prof. Neeta Pandey",
+          institute: "DTU",
+          image: "/images/neeta.jpg",
+        },
+
+        chair2: null,
+
+        chair3: null,
+
+        chair4: null,
       },
 
-      chair3: {
-        name: "Prof. Ganesh C. Patil",
-        institute: "VNIT Nagpur",
-        image: "/images/ganesh.jpg",
+      {
+        track: "Track 7",
+
+        trackName:
+          "Quantum & Future Computing Architectures",
+
+        chair1: {
+          name: "Prof. Navjeet Bagga",
+          institute: "IIT Bhubaneswar",
+          image: "/images/navjeet.jpg",
+        },
+
+        chair2: {
+          name: "Prof. Sayak Bhattacharya",
+          institute: "IIIT Delhi",
+          image: "/images/sayak.jpg",
+        },
+
+        chair3: null,
+
+        chair4: null,
       },
-
-      chair4: null,
-
-      papers: 63,
-    },
-
-    {
-      track: "Track 3",
-
-      trackName:
-        "Electronic Design Automation (EDA), CAD & AI-Driven Design",
-
-      chair1: {
-        name: "Prof. Fabrizio Bonani",
-        institute: "Politecnico di Torino, Italy",
-        image: "/images/fabrizio.jpg",
-      },
-
-      chair2: {
-        name: "Prof. Jasdeep",
-        institute: "IGDTUW",
-        image: "/images/jasdeep.jpg",
-      },
-
-      chair3: null,
-
-      chair4: null,
-
-      papers: 24,
-    },
-
-    {
-      track: "Track 4",
-
-      trackName:
-        "Design Automation for Advanced Technology Nodes",
-
-      chair1: {
-        name: "Prof Basu",
-        institute: "NIT Delhi",
-        image: "/images/basu.jpg",
-      },
-
-      chair2: {
-        name: "Dr. Manisha Bharti",
-        institute:
-          "Associate Professor, Department of ECE, NIT Delhi",
-        image: "/images/manisha.jpg",
-      },
-
-      chair3: {
-        name: "Dr. Garima",
-        institute:
-          "Associate Professor, Department of ECE, JIIT Noida",
-        image: "/images/garima.jpg",
-      },
-
-      chair4: null,
-
-      papers: 75,
-    },
-
-    {
-      track: "Track 5",
-
-      trackName:
-        "Verification, Testing, Reliability & Hardware Security",
-
-      chair1: {
-        name: "Prof. Chandan Karfa",
-        institute: "IIT Guwahati",
-        image: "/images/chandan.jpg",
-      },
-
-      chair2: {
-        name: "Mr. Preet Yadav",
-        institute: "Head India Innovation Ecosystem, NXP Semiconductors",
-        image: "/images/preet.jpg",
-      },
-
-      chair3: {
-        name: "Dr. Satyendra",
-        institute:
-          "Associate Professor, Department of ECE, JIIT Noida",
-        image: "/images/satyendra.webp",
-      },
-
-      chair4: null,
-
-      papers: 66,
-    },
-
-    {
-      track: "Track 6",
-
-      trackName:
-        "3D-IC, Advanced Packaging & Heterogeneous Integration",
-
-      chair1: null,
-
-      chair2: null,
-
-      chair3: {
-        name: "Prof. Neeta Pandey",
-        institute: "Professor, VDSemiX, Delhi Technological University, Delhi",
-        image: "/images/neeta.jpg",
-      },
-
-      chair4: null,
-
-      papers: 2,
-    },
-
-    {
-      track: "Track 7",
-
-      trackName:
-        "Quantum & Future Computing Architectures",
-
-      chair1: {
-        name: "Prof. Navjeet Bagga",
-        institute: "IIT Bhubaneswar",
-        image: "/images/navjeet.jpg",
-      },
-
-      chair2: {
-        name: "Prof. Sayak Bhattacharya",
-        institute: "IIIT Delhi",
-        image: "/images/sayak.jpg",
-      },
-
-      chair3: null,
-
-      chair4: null,
-
-      papers: 23,
-    },
-  ],
-},
+    ],
+  },*/
   {
     title: "Registration Chair",
     members: [
@@ -1085,49 +1068,47 @@ const CommitteeCard = ({ title, members, table, condolence }) => {
       <h2 className="text-4xl font-extrabold text-blue-700 mb-10">
         {title}
       </h2>
+
       {/* CONDOLENCE SECTION */}
+      {condolence && (
 
-{condolence && (
+        <div className="max-w-6xl mx-auto mb-14">
 
-  <div className="max-w-6xl mx-auto mb-14">
+          <div className="bg-gradient-to-r from-gray-50 to-gray-100 border border-gray-300 rounded-3xl shadow-lg p-8 md:p-10">
 
-    <div className="bg-gradient-to-r from-gray-50 to-gray-100 border border-gray-300 rounded-3xl shadow-lg p-8 md:p-10">
+            <div className="flex flex-col md:flex-row items-center gap-8">
 
-      <div className="flex flex-col md:flex-row items-center gap-8">
+              {/* PHOTO */}
+              <div className="flex-shrink-0">
 
-        {/* PHOTO */}
-        <div className="flex-shrink-0">
+                <img
+                  src={condolence.image}
+                  alt={condolence.name}
+                  className="w-52 h-52 object-cover rounded-2xl border-4 border-red-200 shadow-xl grayscale"
+                />
 
-          <img
-            src={condolence.image}
-            alt={condolence.name}
-            className="w-52 h-52 object-cover rounded-2xl border-4 border-red-200 shadow-xl grayscale"
-          />
+              </div>
+
+              {/* TEXT */}
+              <div className="text-left">
+
+                <h3 className="text-3xl md:text-4xl font-extrabold text-red-700 mb-5">
+                  Tribute & Condolence
+                </h3>
+
+                <p className="text-lg md:text-xl text-gray-800 leading-relaxed">
+                  {condolence.message}
+                </p>
+
+              </div>
+
+            </div>
+
+          </div>
 
         </div>
 
-        {/* TEXT */}
-        <div className="text-left">
-
-          <h3 className="text-3xl md:text-4xl font-extrabold text-red-700 mb-5">
-            Tribute & Condolence
-          </h3>
-
-          <p className="text-lg md:text-xl text-gray-800 leading-relaxed">
-
-            {condolence.message}
-
-          </p>
-
-        </div>
-
-      </div>
-
-    </div>
-
-  </div>
-
-)}
+      )}
 
       {/* NORMAL COMMITTEE CARDS */}
       {members && (
@@ -1140,11 +1121,12 @@ const CommitteeCard = ({ title, members, table, condolence }) => {
 
       {/* TRACK CHAIR TABLE */}
       {table && (
+
         <div className="overflow-x-auto rounded-3xl shadow-2xl border border-gray-200">
 
           <table className="w-full border-collapse bg-white table-fixed">
 
-            {/* TABLE HEADER */}
+            {/* HEADER */}
             <thead className="bg-gradient-to-r from-blue-700 to-blue-900 text-white">
 
               <tr>
@@ -1173,15 +1155,11 @@ const CommitteeCard = ({ title, members, table, condolence }) => {
                   Chair 4
                 </th>
 
-                <th className="border px-6 py-5 text-lg font-bold">
-                  No. of Papers
-                </th>
-
               </tr>
 
             </thead>
 
-            {/* TABLE BODY */}
+            {/* BODY */}
             <tbody>
 
               {table.map((row, idx) => (
@@ -1192,7 +1170,7 @@ const CommitteeCard = ({ title, members, table, condolence }) => {
                 >
 
                   {/* TRACK */}
-                  <td className="border px-5 py-6 font-bold text-3xl text-black bg-white align-middle">
+                  <td className="border px-5 py-6 font-bold text-2xl text-black bg-white align-middle">
                     {row.track}
                   </td>
 
@@ -1243,11 +1221,6 @@ const CommitteeCard = ({ title, members, table, condolence }) => {
                     )
                   )}
 
-                  {/* PAPERS */}
-                  <td className="border px-4 py-6 font-bold text-4xl text-center text-black bg-white align-middle">
-                    {row.papers}
-                  </td>
-
                 </tr>
 
               ))}
@@ -1257,6 +1230,7 @@ const CommitteeCard = ({ title, members, table, condolence }) => {
           </table>
 
         </div>
+
       )}
 
     </div>

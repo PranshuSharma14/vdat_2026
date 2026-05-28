@@ -14,7 +14,7 @@ const SpeakersSection = () => {
     name: "Dr. Hari Shanker Gupta",
     title: "Scientist",
     organization: "Indian Space Research Organisation (ISRO)",
-    photo: "/images/hari.jpg",
+    photo: "/images/hari.jpeg",
     bio: "Dr. Hari Shanker Gupta is Scientist at Indian Space Research Organisation and an accomplished expert in analog and mixed-signal integrated circuit design, semiconductor device engineering, and space-grade electronic systems. He has been actively involved in the design and development of advanced ASICs, high-speed data converters, PLLs, LVDS interfaces, CCD clock drivers, and infrared sensor readout integrated circuits for strategic and space applications. His research and development contributions span semiconductor technologies based on Tower, UMC, and SCL 180 nm processes, with expertise in circuit design, characterization, layout verification, and hardware prototyping using industry-standard EDA tools. Dr. Gupta’s work has significantly contributed to reliable and high-performance electronic systems for aerospace and imaging applications. He is also associated with advanced research in mixed-signal VLSI systems, hardware characterization, and emerging semiconductor technologies, while actively contributing to academia–industry–research collaborations in the Indian ecosystem.",
     linkedin: "https://www.linkedin.com/in/dr-hari-shanker-gupta-b563b09/"
   },
