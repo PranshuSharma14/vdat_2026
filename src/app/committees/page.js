@@ -445,36 +445,44 @@ const committees = [
     ]
   },
   {
-  title: "Technical Management Committee",
-  members: [
-    {
-      name: "Dr. M. S. Mehata",
-      institute:
-        "Assistant Professor, VDSemiX, Delhi Technological University, Delhi",
-      linkedin: "",
-      image: "/images/msmehata.jpg",
-    },
+    title: "Technical Management Committee",
+    members: [
 
-    {
-      name: "Dr. Urvashi Bansal",
-      institute:
-        "Assistant Professor, Netaji Subhas University of Technology, Delhi",
-      linkedin: "",
-      image: "/images/urvashi.jpg",
-    },
+      {
+        name: "Dr. M. S. Mehata",
+        institute:
+          "Assistant Professor, VDSemiX, Delhi Technological University, Delhi",
+        linkedin: "",
+        image: "/images/msmehata.jpg",
+      },
 
-    {
-      name: "Dr. Shweta Gautam",
-      institute:
-        "Assistant Professor, Netaji Subhas University of Technology, Delhi",
-      linkedin: "",
-      image: "/images/shweta1.jpg",
-    },
-  ],
-},
+      {
+        name: "Dr. Urvashi Bansal",
+        institute:
+          "Assistant Professor, Netaji Subhas University of Technology, Delhi",
+        linkedin: "",
+        image: "/images/urvashi.jpg",
+      },
+
+      {
+        name: "Dr. Shweta Gautam",
+        institute:
+          "Assistant Professor, Netaji Subhas University of Technology, Delhi",
+        linkedin: "",
+        image: "/images/shweta1.jpg",
+      },
+    ],
+  },
   {
     title: "Technical Program Committee",
     members: [
+      {
+        name: "Prof. Sudeb Dasgupta (TPC Chair)",
+        institute: "Professor, Indian Institute of Technology, Roorkee",
+        linkedin: "https://www.linkedin.com/in/sudeb-dasgupta-2b19b64/",
+        website: "https://ece.iitr.ac.in/sudeb-das-gupta/",
+        image: "/images/sudeb.jpg",
+      },
       {
         name: "Mr. Preet Yadav (TPC Chair)",
         institute: "Head India Innovation Ecosystem, NXP Semiconductors",
@@ -707,6 +715,13 @@ const committees = [
         linkedin:
           "https://www.linkedin.com/in/abhishek-tiwari-b34b2711b/?utm_source=share_via&utm_content=profile&utm_medium=member_android",
         image: "/images/abhishektiwari.jpeg",
+      },
+      {
+        name: "Mr. Saurabh Sharma",
+        institute: "FPGA Design Engineer, eInfochips, Pune",
+        linkedin:
+          "https://www.linkedin.com/in/saurabh-sharma-036216160?utm_source=share_via&utm_content=profile&utm_medium=member_android",
+        image: "/images/saurabh_sharma.jpeg",
       },
     ],
   },
