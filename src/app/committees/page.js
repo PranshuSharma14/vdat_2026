@@ -677,6 +677,7 @@ const committees = [
         "VDAT 2026 expresses deep sorrow on the untimely demise of Prof. Alpana Agarwal from Thapar Institute of Engineering & Technology, who had graciously agreed to serve as Startup Chair for VDAT 2026. We sincerely acknowledge her support, guidance, and contributions to the academic and research community. Her loss is deeply felt by all associated with VDAT. We pray for eternal peace to the departed soul and extend our heartfelt condolences to her family, colleagues, and students.",
     },
     members: [
+
       {
         name: "Mr. Nishit Gupta",
         institute: "Scientist E, MeitY",
