@@ -91,7 +91,7 @@ const Footer = () => {
           </div>
         </div>
 
-          {/*
+        {/*
 
         <div className="border-t border-white/20 my-12"></div>
 
@@ -164,23 +164,23 @@ const Footer = () => {
             Designed & Developed by
 
             <Link
-              href="https://www.linkedin.com/in/pranshu-sharma-6a84132a5"
+              href="https://www.linkedin.com/in/arnava-vashishtha/"
               target="_blank"
               className="font-semibold hover:underline flex items-center gap-1"
             >
-              Pranshu Sharma
-              <FaLinkedin size={14} />
+              Arnava Vashishtha
+              <FaLinkedin size={17} />
             </Link>
 
             <span>and</span>
 
             <Link
-              href="https://www.linkedin.com/in/suryanshtomar/?originalSubdomain=in"
+              href="https://www.linkedin.com/in/anish-dutta-338738375/"
               target="_blank"
               className="font-semibold hover:underline flex items-center gap-1"
             >
-              Suryansh Tomar
-              <FaLinkedin size={14} />
+              Anish Dutta
+              <FaLinkedin size={17} />
             </Link>
           </p>
         </div>
