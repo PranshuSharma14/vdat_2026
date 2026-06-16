@@ -475,40 +475,22 @@ const committees = [
   },
   {
     title: "Technical Program Committee",
-    members: [
+    chairs: [
       {
-        name: "Prof. Sudeb Dasgupta (TPC Chair)",
+        name: "Prof. Sudeb Dasgupta",
         institute: "Professor, Indian Institute of Technology, Roorkee",
         linkedin: "https://www.linkedin.com/in/sudeb-dasgupta-2b19b64/",
         website: "https://ece.iitr.ac.in/sudeb-das-gupta/",
         image: "/images/sudeb.jpg",
       },
       {
-        name: "Mr. Preet Yadav (TPC Chair)",
+        name: "Mr. Preet Yadav",
         institute: "Head India Innovation Ecosystem, NXP Semiconductors",
         linkedin: "https://www.linkedin.com/in/preet-yadav/",
         image: "/images/preet.jpg",
       },
-      {
-        name: "Prof. Nagarjuna Nallam",
-        institute: "Associate Professor, Electrical Engineering, IIT Kanpur (IEEE UP Section)",
-        linkedin: "https://www.linkedin.com/in/nagarjunanallam/?originalSubdomain=in",
-        image: "/images/nagarjuna.jpeg",
-      },
-
-      {
-        name: "Prof. Brijesh Kumar",
-        institute: "Professor, Indira Gandhi Delhi Technical University for Women, Delhi",
-        website: "https://www.igdtuw.ac.in/faculty/ece/brijesh-kumar.php",
-        image: "/images/brijesh.jpg",
-      },
-      {
-        name: "Prof. Neeta Pandey",
-        institute: "Professor, VDSemiX, Delhi Technological University, Delhi",
-        website: "https://dtu.ac.in/Web/Departments/Electronics/faculty/neetaPandey.php",
-        image: "/images/neeta.jpg",
-      },
-
+    ],
+    members: [
       {
         name: "Dr. Shruti Kalra",
         institute: "Associate Professor, ECE, Jaypee Institute of Technology, Noida",
@@ -523,6 +505,24 @@ const committees = [
         image: "/images/ajay1.jpg",
       },
       {
+        name: "Prof. Nagarjuna Nallam",
+        institute: "Associate Professor, Electrical Engineering, IIT Kanpur (IEEE UP Section)",
+        linkedin: "https://www.linkedin.com/in/nagarjunanallam/?originalSubdomain=in",
+        image: "/images/nagarjuna.jpeg",
+      },
+      {
+        name: "Prof. Brijesh Kumar",
+        institute: "Professor, Indira Gandhi Delhi Technical University for Women, Delhi",
+        website: "https://www.igdtuw.ac.in/faculty/ece/brijesh-kumar.php",
+        image: "/images/brijesh.jpg",
+      },
+      {
+        name: "Prof. Neeta Pandey",
+        institute: "Professor, VDSemiX, Delhi Technological University, Delhi",
+        website: "https://dtu.ac.in/Web/Departments/Electronics/faculty/neetaPandey.php",
+        image: "/images/neeta.jpg",
+      },
+      {
         name: "Mr. Varun Kakkar",
         institute: "Assistant Professor, Bipin Tripathi Kumaon Institute of Technology (IEEE UP Section)",
         website: "https://kecua.ac.in/index.php/member/mr-varun-kakar/",
@@ -533,7 +533,7 @@ const committees = [
         institute: "Assistant Professor, ABV- IIITM Gwalior",
         website: "https://www.linkedin.com/in/dr-pinku-ranjan-62aa0332/?originalSubdomain=in",
         image: "/images/pinku.jpeg",
-      }
+      },
     ],
   },
   {
@@ -1076,7 +1076,7 @@ const MemberCard = ({ member }) => (
   </div>
 );
 
-const CommitteeCard = ({ title, members, table, condolence }) => {
+const CommitteeCard = ({ title, members, chairs, table, condolence }) => {
   return (
     <div className="w-full max-w-7xl mx-auto bg-white text-center my-12 px-4">
 
@@ -1126,8 +1126,27 @@ const CommitteeCard = ({ title, members, table, condolence }) => {
 
       )}
 
-      {/* NORMAL COMMITTEE CARDS */}
-      {members && (
+      {/* CHAIRS + MEMBERS WITH DIVIDER */}
+      {chairs && (
+        <>
+          <h3 className="text-2xl font-bold text-blue-600 mb-6">Committee Chairs</h3>
+          <div className="flex flex-wrap justify-center gap-8">
+            {chairs.map((member, index) => (
+              <MemberCard key={index} member={member} />
+            ))}
+          </div>
+          <hr className="my-8 border-t-2 border-blue-200 max-w-2xl mx-auto" />
+          <h3 className="text-2xl font-bold text-blue-600 mb-6">Committee Members</h3>
+          <div className="flex flex-wrap justify-center gap-8">
+            {members && members.map((member, index) => (
+              <MemberCard key={index} member={member} />
+            ))}
+          </div>
+        </>
+      )}
+
+      {/* NORMAL COMMITTEE CARDS (no chairs split) */}
+      {!chairs && members && (
         <div className="flex flex-wrap justify-center gap-8">
           {members.map((member, index) => (
             <MemberCard key={index} member={member} />

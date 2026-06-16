@@ -180,9 +180,23 @@ const RegistrationDetails = () => (
               3.
             </span>
             <p>
-              Once you complete the payment, please register using the following
-              link (you need to upload the payment proof to complete the
-              registration)
+              Once you complete the payment, please{" "}
+              <a
+                href="/Registration_Form.docx"
+                download
+                className="text-purple-600 font-semibold hover:text-purple-800 transition-colors"
+              >
+                download and fill the Registration Form
+              </a>
+              , then upload the filled form along with your payment proof by submitting it via the{" "}
+              <a
+                href="https://forms.gle/TLRRNfZ11pqNCJHm9"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-purple-600 font-semibold hover:text-purple-800 transition-colors"
+              >
+                Registration Google Form →
+              </a>
             </p>
           </li>
         </ol>
@@ -235,7 +249,7 @@ const RegistrationDetails = () => (
 
 const RegistrationPage = () => {
   // Replace this with your actual Google Form link
-  const GOOGLE_FORM_LINK = "";
+  const GOOGLE_FORM_LINK = "https://forms.gle/TLRRNfZ11pqNCJHm9";
 
   return (
     <div className="bg-black to-white min-h-screen">
