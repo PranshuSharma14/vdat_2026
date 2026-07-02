@@ -23,30 +23,30 @@ const ThemeBanner = () => {
       <div className="absolute bottom-0 right-0 w-64 h-64 rounded-full bg-blue-500 opacity-20 transform translate-x-1/3 translate-y-1/3"></div>
 
       <div className="relative z-10 max-w-4xl mx-auto text-center px-2 sm:px-6">
-          {/* Title */}
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold mb-6 text-white tracking-wide">
-            Our <span className="text-yellow-400">Theme</span>
-          </h2>
+        {/* Title */}
+        <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold mb-6 text-white tracking-wide">
+          Our <span className="text-yellow-400">Theme</span>
+        </h2>
 
-          {/* Divider */}
-          <div className="h-1 w-28 bg-gradient-to-r from-yellow-400 via-orange-400 to-yellow-500 mx-auto mb-8 sm:mb-10 rounded-full shadow-md"></div>
+        {/* Divider */}
+        <div className="h-1 w-28 bg-gradient-to-r from-yellow-400 via-orange-400 to-yellow-500 mx-auto mb-8 sm:mb-10 rounded-full shadow-md"></div>
 
-          {/* Theme text */}
-          <p className="text-base sm:text-xl md:text-2xl font-medium max-w-3xl mx-auto leading-relaxed 
+        {/* Theme text */}
+        <p className="text-base sm:text-xl md:text-2xl font-medium max-w-3xl mx-auto leading-relaxed 
           bg-white/10 backdrop-blur-sm px-4 sm:px-8 py-4 sm:py-6 rounded-xl 
           border border-white/20 shadow-lg text-white">
 
-            <span className="text-yellow-300 font-bold">
-              Advancing Intelligent, Secure and Quantum-Ready
-            </span>{" "}
-            Semiconductor Systems for the
-            <span className="text-yellow-300 font-bold">
-              {" "}Next Era of Computing
-            </span>
+          <span className="text-yellow-300 font-bold">
+            Advancing Intelligent, Secure and Quantum-Ready
+          </span>{" "}
+          Semiconductor Systems for the
+          <span className="text-yellow-300 font-bold">
+            {" "}Next Era of Computing
+          </span>
 
-          </p>
-        </div>
-        
+        </p>
+      </div>
+
     </div>
   );
 };
@@ -71,46 +71,46 @@ const endorsedBy = [
 ];
 
 const speakers = [
-{
-  name: "Tapas Nandy",
-  title: "Sr. Director, Microsoft / Sr. Member, IEEE",
-  organization: "IEEE",
-  photo: "/images/tapasnandy.jpg",
-  linkedin: "https://www.linkedin.com/in/tapas-nandy-35133518/",
-  website: ""
-},
-{
-  name: "Dipan Sahu",
-  title: "Assistant Innovation Director",
-  organization: "Ministry of Education's Innovation Cell",
-  photo: "/images/dipansahu.jpg",
-  linkedin: "https://www.linkedin.com/in/deepansahu/",
-  website: ""
-},
-{
-  name: "Ganesan Narayanasamy",
-  title: "President, OpenPOWER Foundation",
-  organization: "Object Automation Inc.",
-  photo: "/images/ganesan.jpeg",
-  linkedin: "https://www.linkedin.com/in/ganesannarayanasamy/",
-  website: ""
-},
-{
-  name: "Shanthi Pavan",
-  title: "Professor",
-  organization: "IIT Madras",
-  photo: "/images/shanthi.jpeg",
-  linkedin: "https://www.linkedin.com/in/shanthi-pavan-39715a137/",
-  website: ""
-},
-{
-  name: "Gaurav Goel",
-  title: "Senior Principal Engineer",
-  organization: "Renesas Electronics",
-  photo: "/images/gauravgoel.jpeg",
-  linkedin: "https://www.linkedin.com/in/gaurav-goel-01185a5/",
-  website: ""
-}
+  {
+    name: "Tapas Nandy",
+    title: "Sr. Director, Microsoft / Sr. Member, IEEE",
+    organization: "IEEE",
+    photo: "/images/tapasnandy.jpg",
+    linkedin: "https://www.linkedin.com/in/tapas-nandy-35133518/",
+    website: ""
+  },
+  {
+    name: "Dipan Sahu",
+    title: "Assistant Innovation Director",
+    organization: "Ministry of Education's Innovation Cell",
+    photo: "/images/dipansahu.jpg",
+    linkedin: "https://www.linkedin.com/in/deepansahu/",
+    website: ""
+  },
+  {
+    name: "Ganesan Narayanasamy",
+    title: "President, OpenPOWER Foundation",
+    organization: "Object Automation Inc.",
+    photo: "/images/ganesan.jpeg",
+    linkedin: "https://www.linkedin.com/in/ganesannarayanasamy/",
+    website: ""
+  },
+  {
+    name: "Shanthi Pavan",
+    title: "Professor",
+    organization: "IIT Madras",
+    photo: "/images/shanthi.jpeg",
+    linkedin: "https://www.linkedin.com/in/shanthi-pavan-39715a137/",
+    website: ""
+  },
+  {
+    name: "Gaurav Goel",
+    title: "Senior Principal Engineer",
+    organization: "Renesas Electronics",
+    photo: "/images/gauravgoel.jpeg",
+    linkedin: "https://www.linkedin.com/in/gaurav-goel-01185a5/",
+    website: ""
+  }
 ]
 
 //the carousel should automatically slide every 3 seconds , and if clicked to go to next or prev the timer should reset
@@ -139,9 +139,8 @@ const Carousel = ({
         {images.map((src, index) => (
           <div
             key={index}
-            className={`absolute inset-0 w-full h-full transition-opacity duration-5000 ${
-              index === currentImageIndex ? "opacity-100" : "opacity-0"
-            }`}
+            className={`absolute inset-0 w-full h-full transition-opacity duration-5000 ${index === currentImageIndex ? "opacity-100" : "opacity-0"
+              }`}
           >
             <Image
               src={src}
@@ -153,9 +152,8 @@ const Carousel = ({
             />
             {/* Add a subtle zoom effect to active image */}
             <div
-              className={`absolute inset-0 bg-cover bg-center transition-transform duration-10000 ease-out ${
-                index === currentImageIndex ? "scale-110" : "scale-100"
-              }`}
+              className={`absolute inset-0 bg-cover bg-center transition-transform duration-10000 ease-out ${index === currentImageIndex ? "scale-110" : "scale-100"
+                }`}
               style={{
                 backgroundImage: `url(${src})`,
                 opacity: 0.1, // Very subtle effect
@@ -272,11 +270,10 @@ const Carousel = ({
           <button
             key={index}
             onClick={() => setCurrentImageIndex(index)}
-            className={`h-2.5 w-2.5 sm:h-3 sm:w-3 rounded-full transition-all duration-300 cursor-pointer ${
-              index === currentImageIndex
-                ? "bg-yellow-400 scale-125 shadow-md"
-                : "bg-white/60 hover:bg-white/80"
-            }`}
+            className={`h-2.5 w-2.5 sm:h-3 sm:w-3 rounded-full transition-all duration-300 cursor-pointer ${index === currentImageIndex
+              ? "bg-yellow-400 scale-125 shadow-md"
+              : "bg-white/60 hover:bg-white/80"
+              }`}
             aria-label={`Go to slide ${index + 1}`}
           />
         ))}
@@ -349,20 +346,26 @@ const SponsorsSection = ({ title, items, comingSoon = false }) => (
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-8 mx-auto max-w-7xl">
           {[
             { src: '/images/cadencegold.png', alt: 'Cadence Gold' },
-            
+            { src: '/logos/synopsis.jpg', alt: 'Synopsis', banner: 'SILVER SPONSOR' },
+            { src: '/logos/MEIT.avif', alt: 'Meit' },
           ].map((logo, i) => (
             <div
-  key={i}
-  className="w-full max-w-[1500px] bg-white rounded-3xl shadow-2xl overflow-hidden mx-auto hover:shadow-[0_20px_60px_rgba(0,0,0,0.25)] transition duration-300"
->
-
-  <img
-    src={logo.src}
-    alt={logo.alt}
-    className="w-full h-auto object-cover scale-[1.08]"
-  />
-
-</div>
+              key={i}
+              className="relative w-full h-48 bg-white rounded-3xl shadow-xl overflow-hidden mx-auto hover:shadow-2xl transition duration-300 flex items-center justify-center"
+            >
+              {logo.banner && (
+                <div className="absolute top-0 left-0 w-full z-10">
+                  <div className={`w-full py-2 text-xs sm:text-sm font-extrabold shadow-md text-black bg-gradient-to-b from-gray-100 via-gray-300 to-gray-400 border-b border-gray-400 text-center uppercase tracking-widest`}>
+                    {logo.banner}
+                  </div>
+                </div>
+              )}
+              <img
+                src={logo.src}
+                alt={logo.alt}
+                className="max-w-full max-h-full object-contain p-4"
+              />
+            </div>
           ))}
         </div>
       ) : (
@@ -404,7 +407,7 @@ const Timeline = () => {
       note: ""
     },
     {
-      title: "Acceptance Notification", 
+      title: "Acceptance Notification",
       borderColor: "border-l-blue-500",
       bgColor: "bg-blue-50",
       icon: "📩",
@@ -414,7 +417,7 @@ const Timeline = () => {
     },
     {
       title: "Early Bird Registration",
-      borderColor: "border-l-blue-600", 
+      borderColor: "border-l-blue-600",
       bgColor: "bg-blue-50",
       icon: "📅",
       oldDate: "July 6, 2026",
@@ -424,7 +427,7 @@ const Timeline = () => {
     {
       title: "Regular Registration",
       borderColor: "border-l-green-500",
-      bgColor: "bg-green-50", 
+      bgColor: "bg-green-50",
       icon: "📸",
       oldDate: "July 16, 2026",
       newDate: "August 1, 2026",
@@ -442,7 +445,7 @@ const Timeline = () => {
         <div className="max-w-5xl mx-auto">
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
             {timelineData.map((item, index) => (
-              <div 
+              <div
                 key={index}
                 className={`${item.bgColor} p-4 sm:p-6 rounded-xl shadow-lg border-l-4 ${item.borderColor} hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1`}
               >
@@ -450,7 +453,7 @@ const Timeline = () => {
                   <span className="text-xl sm:text-2xl mr-3">{item.icon}</span>
                   <h3 className="font-bold text-gray-800 text-base sm:text-lg">{item.title}</h3>
                 </div>
-                
+
                 <div className="space-y-2">
                   <div className="flex items-center flex-wrap gap-x-2 gap-y-1">
                     <span className="font-semibold text-gray-700 mr-1 text-sm sm:text-base">
@@ -581,7 +584,7 @@ const HomePage = () => {
       {/*
       <AwardeesSection/>
       */}
-<ScrollingTicker />
+      <ScrollingTicker />
       <ThemeBanner />
 
       {/*
@@ -605,7 +608,7 @@ const HomePage = () => {
 
       <AboutSection />
 
-      
+
       {/*
       
       <section className="py-8 sm:py-10 bg-white text-center px-4">
@@ -620,9 +623,9 @@ const HomePage = () => {
 
       */}
 
-      
 
-      
+
+
 
       <SponsorsSection
         title="Our Sponsors"
@@ -630,7 +633,7 @@ const HomePage = () => {
         comingSoon={true}
       />
 
-{/*
+      {/*
 
 
       <SponsorsSection
@@ -639,7 +642,7 @@ const HomePage = () => {
         comingSoon={true}
       /> 
 */}
-      
+
 
       <Timeline />
 
