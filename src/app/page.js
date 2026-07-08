@@ -345,13 +345,14 @@ const SponsorsSection = ({ title, items, comingSoon = false }) => (
       {comingSoon ? (
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-8 mx-auto max-w-7xl">
           {[
-            { src: '/images/cadencegold.png', alt: 'Cadence Gold' },
-            { src: '/logos/synopsis.jpg', alt: 'Synopsis', banner: 'SILVER SPONSOR' },
-            { src: '/logos/MEIT.avif', alt: 'Meit' },
+            { src: '/logos/Cadence.jpeg', alt: 'Cadence' },
+            { src: '/logos/Synopsis.png', alt: 'Synopsys' },
+            { src: '/logos/STM.png', alt: 'STMicroelectronics' },
+            { src: '/logos/MEIT.png', alt: 'MeitY' },
           ].map((logo, i) => (
             <div
               key={i}
-              className="relative w-full h-48 bg-white rounded-3xl shadow-xl overflow-hidden mx-auto hover:shadow-2xl transition duration-300 flex items-center justify-center"
+              className="relative w-full h-56 bg-white rounded-3xl shadow-xl overflow-hidden mx-auto hover:shadow-2xl transition duration-300 flex items-center justify-center"
             >
               {logo.banner && (
                 <div className="absolute top-0 left-0 w-full z-10">
@@ -363,7 +364,7 @@ const SponsorsSection = ({ title, items, comingSoon = false }) => (
               <img
                 src={logo.src}
                 alt={logo.alt}
-                className="max-w-full max-h-full object-contain p-4"
+                className="max-w-full max-h-full object-contain p-1"
               />
             </div>
           ))}

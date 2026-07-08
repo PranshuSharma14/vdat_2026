@@ -104,6 +104,15 @@ const SpeakersSection = () => {
     bio: "H. S. Jattana is a distinguished technologist, researcher, and academic expert with extensive experience in microelectronics, VLSI design, semiconductor devices, embedded systems, and medical electronics. He is currently associated with Postgraduate Institute of Medical Education and Research and has contributed significantly to interdisciplinary research spanning semiconductor technology and healthcare innovation. With decades of expertise in CMOS design, device modeling, and advanced electronics systems, he has actively mentored researchers and delivered expert lectures across premier institutions and national skill-development initiatives. He also holds patents in the area of intelligent medical systems, including Closed Loop Anaesthesia Drug Delivery Systems (CLADS). His work continues to bridge academia, healthcare, and semiconductor innovation through impactful research, technology development, and academic leadership.",
     linkedin: "https://www.linkedin.com/in/hs-jattana-00738326/",
   },
+
+  {
+    name: "Mr. Anand Kumar",
+    title: "Managing Director – India",
+    organization: "STMicroelectronics",
+    photo: "/images/AnandKumar.jpeg",
+    bio: "Mr. Anand Kumar is the Managing Director – India at STMicroelectronics, based in Greater Noida. With over 26 years of association with STMicroelectronics, he brings extensive leadership experience in semiconductor technology, analog and mixed-signal design, IP development, and global design team management. He began his career as an Analog Designer in ST's Central R&D organization and has since held several senior technical and leadership roles, contributing to advanced semiconductor IP design, technology programmes, customer engagement, and operational growth. His work has focused on building high-performing engineering teams and enabling innovation across semiconductor design and product development.",
+    linkedin: "https://www.linkedin.com/in/anand-kumar-b267491/",
+  },
 ];
 
   return (

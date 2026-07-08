@@ -517,13 +517,7 @@ const committees = [
         image: "/images/brijesh.jpg",
       },
       {
-        name: "Prof. Neeta Pandey",
-        institute: "Professor, VDSemiX, Delhi Technological University, Delhi",
-        website: "https://dtu.ac.in/Web/Departments/Electronics/faculty/neetaPandey.php",
-        image: "/images/neeta.jpg",
-      },
-      {
-        name: "Mr. Varun Kakkar",
+        name: "Mr. Varun Kakar",
         institute: "Assistant Professor, Bipin Tripathi Kumaon Institute of Technology (IEEE UP Section)",
         website: "https://kecua.ac.in/index.php/member/mr-varun-kakar/",
         image: "/images/varun.jpg",
@@ -831,7 +825,7 @@ const committees = [
 
     ],
   },
-  /*{
+  {
     title: "Track Chair(s)",
 
     table: [
@@ -841,9 +835,9 @@ const committees = [
         trackName: "VLSI & System-on-Chip (SoC) Design",
 
         chair1: {
-          name: "Prof. Ruchika Gupta",
-          institute: "Chandigarh University",
-          image: "/images/ruchika.jpg",
+          name: "Dr. Ashish Raman",
+          institute: "NIT Jalandhar",
+          image: "/images/AshishRaman.jpeg",
         },
 
         chair2: {
@@ -853,15 +847,15 @@ const committees = [
         },
 
         chair3: {
-          name: "Prof. Rohit Sharma",
-          institute: "IIT Ropar",
-          image: "/images/rohit.jpg",
+          name: "Prof. Shamim Akhter",
+          institute: "JIIT Noida",
+          image: "/images/ShamimAkhthar.jpeg",
         },
 
         chair4: {
-          name: "Prof. Sourajeet Roy",
-          institute: "IIT Roorkee",
-          image: "/images/sourajeet.jpg",
+          name: "Dr. Udit Kumar",
+          institute: "EdgeQ Inc.",
+          image: "/images/uditkumar.jpeg",
         },
       },
 
@@ -884,9 +878,9 @@ const committees = [
         },
 
         chair3: {
-          name: "Prof. Ganesh C. Patil",
-          institute: "VNIT Nagpur",
-          image: "/images/ganesh.jpg",
+          name: "Dr. Jyoti Kedia",
+          institute: "PEC, Chandigarh",
+          image: "/images/jyoti.jpg",
         },
 
         chair4: null,
@@ -922,22 +916,20 @@ const committees = [
           "Design Automation for Advanced Technology Nodes",
 
         chair1: {
-          name: "Dr. Rikmantra Basu",
+          name: "Prof. Rikmantra Basu",
           institute: "NIT Delhi",
           image: "/images/basu.jpg",
         },
 
         chair2: {
-          name: "Dr. Manisha Bharti",
-          institute:
-            "NIT Delhi",
-          image: "/images/manisha.jpg",
+          name: "Dr. M. Durga Prakash",
+          institute: "SRM University – Andhra Pradesh",
+          image: "/images/durgaprakash.jpeg",
         },
 
         chair3: {
-          name: "Dr. Garima",
-          institute:
-            "JIIT Noida",
+          name: "Dr. Garima Kapur",
+          institute: "JIIT Noida",
           image: "/images/garima.jpg",
         },
 
@@ -956,15 +948,13 @@ const committees = [
           image: "/images/chandan.jpg",
         },
 
-        chair2: null,
-          
-        
-        chair3: {
+        chair2: {
           name: "Dr. Satyendra",
-          institute:
-            "JIIT Noida",
+          institute: "JIIT Noida",
           image: "/images/satyendra.webp",
         },
+
+        chair3: null,
 
         chair4: null,
       },
@@ -975,7 +965,7 @@ const committees = [
         trackName:
           "3D-IC, Advanced Packaging & Heterogeneous Integration",
 
-        chair1:  {
+        chair1: {
           name: "Prof. Neeta Pandey",
           institute: "DTU",
           image: "/images/neeta.jpg",
@@ -1011,7 +1001,7 @@ const committees = [
         chair4: null,
       },
     ],
-  },*/
+  },
   {
     title: "Registration Chair",
     members: [
