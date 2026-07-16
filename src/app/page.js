@@ -198,6 +198,23 @@ const Carousel = ({
 
           </h1>
 
+          {/* Naming Rights Badge */}
+          <div className="mb-5 flex justify-center md:justify-start">
+            <span className="inline-flex items-center gap-4 pl-6 pr-3 py-3 rounded-full font-bold
+              bg-black/80 backdrop-blur-sm
+              border-2 border-yellow-400
+              shadow-[0_0_20px_rgba(250,204,21,0.5)]">
+              <span className="text-yellow-300 text-base sm:text-lg">Powered by</span>
+              <span className="bg-white rounded-full px-6 py-2 flex items-center shadow-md">
+                <img
+                  src="/logos/nxp-logo.png"
+                  alt="NXP"
+                  className="h-16 sm:h-20 w-auto object-contain"
+                />
+              </span>
+            </span>
+          </div>
+
           {/* Venue Card */}
           <div className="mb-8 sm:mb-10 flex justify-center md:justify-start">
 
@@ -256,6 +273,8 @@ const Carousel = ({
             </Link>
 
           </div>
+
+
 
         </div>
 
@@ -333,63 +352,60 @@ const Carousel = ({
 
 
 
-// Improved sponsors section with animation
-const SponsorsSection = ({ title, items, comingSoon = false }) => (
-  <section className="py-16 md:py-20 bg-gradient-to-b from-gray-50 to-gray-100">
-    <div className="container mx-auto px-4">
-      <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 tracking-tight text-purple-700">
-        {title}
-      </h2>
-      <div className="h-1 w-24 bg-purple-500 mx-auto mb-12 rounded-full"></div>
+const SponsorCard = ({ logo }) => {
+  return (
+    <div
+      className="relative w-full bg-white rounded-2xl shadow-lg overflow-hidden
+        hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
+    >
+      {/* Logo — scaled down with max-height */}
+      <div className="flex items-center justify-center p-4">
+        <img
+          src={logo.src}
+          alt={logo.alt}
+          className="max-w-full max-h-48 w-auto h-auto object-contain"
+        />
+      </div>
+    </div>
+  );
+};
 
-      {comingSoon ? (
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-8 mx-auto max-w-7xl">
-          {[
-            { src: '/logos/Cadence.jpeg', alt: 'Cadence' },
-            { src: '/logos/Synopsis.png', alt: 'Synopsys' },
-            { src: '/logos/STM.png', alt: 'STMicroelectronics' },
-            { src: '/logos/MEIT.png', alt: 'MeitY' },
-          ].map((logo, i) => (
+// Improved sponsors section — simple flat grid
+const SponsorsSection = () => {
+  const allSponsors = [
+    { src: '/logos/nxp-logo(titlesponsor).png', alt: 'NXP Semiconductors' },
+    { src: '/logos/Cadence(platinum sponsor).png', alt: 'Cadence' },
+    { src: '/logos/MEIT.png', alt: 'MeitY' },
+    { src: '/logos/STM(gold sponsor).png', alt: 'STMicroelectronics' },
+    { src: '/logos/synopsis(gold sponsor).png', alt: 'Synopsys' },
+  ];
+
+  return (
+    <section className="py-16 md:py-20 bg-gradient-to-b from-gray-50 to-gray-100">
+      <div className="container mx-auto px-4">
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 tracking-tight text-purple-700">
+          Our Sponsors
+        </h2>
+        <div className="h-1 w-24 bg-purple-500 mx-auto mb-12 rounded-full"></div>
+
+        <div className="grid grid-cols-5 gap-4 w-full">
+          {allSponsors.map((logo, i) => (
             <div
               key={i}
-              className="relative w-full h-56 bg-white rounded-3xl shadow-xl overflow-hidden mx-auto hover:shadow-2xl transition duration-300 flex items-center justify-center"
+              className="bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1 flex items-center justify-center p-5 w-full"
             >
-              {logo.banner && (
-                <div className="absolute top-0 left-0 w-full z-10">
-                  <div className={`w-full py-2 text-xs sm:text-sm font-extrabold shadow-md text-black bg-gradient-to-b from-gray-100 via-gray-300 to-gray-400 border-b border-gray-400 text-center uppercase tracking-widest`}>
-                    {logo.banner}
-                  </div>
-                </div>
-              )}
               <img
                 src={logo.src}
                 alt={logo.alt}
-                className="max-w-full max-h-full object-contain p-1"
+                className="max-w-full max-h-56 w-auto h-auto object-contain"
               />
             </div>
           ))}
         </div>
-      ) : (
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-8 mx-auto max-w-7xl">
-          {items.map((item, index) => (
-            <div
-              key={index}
-              className="w-full bg-white p-6 rounded-xl shadow-md flex items-center justify-center transition-transform duration-300 ease-in-out hover:scale-105"
-            >
-              <Image
-                src={item.src}
-                alt={item.alt}
-                width={150}
-                height={150}
-                className="object-contain w-full h-auto max-h-28"
-              />
-            </div>
-          ))}
-        </div>
-      )}
-    </div>
-  </section>
-);
+      </div>
+    </section>
+  );
+};
 
 
 
@@ -628,11 +644,7 @@ const HomePage = () => {
 
 
 
-      <SponsorsSection
-        title="Our Sponsors"
-        items={sponsors}
-        comingSoon={true}
-      />
+      <SponsorsSection />
 
       {/*
 

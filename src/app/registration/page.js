@@ -158,12 +158,12 @@ const RegistrationDetails = () => (
             <p>
               Choose the right registration as per your category.{" "}
               <a
-                href="/Category Doc.pdf"
+                href="/Category Document.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-purple-600 font-semibold hover:text-purple-800 transition-colors"
               >
-                View Categories →
+                Category Document →
               </a>
             </p>
           </li>
