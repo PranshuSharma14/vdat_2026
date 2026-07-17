@@ -46,7 +46,7 @@ const Navbar = () => {
     { label: "Committee", href: "/committees" },
     { label: "Venue", href: "/venue" },
     { label: "Fellowship", href: "/fellowship" },
-    { label: "Sponsors", href: "/sponsor" },
+    
     {
       label: "Previous Years",
       dropdown: [

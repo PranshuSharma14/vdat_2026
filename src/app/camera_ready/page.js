@@ -23,26 +23,6 @@ import {
   Target,
   Microscope,
 } from "lucide-react";
-const ComingSoon = () => {
-  return (
-    <section className="bg-black py-32 text-center">
-      <div className="container mx-auto px-6">
-        <h2 className="text-7xl font-black bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent mb-6">
-          COMING SOON
-        </h2>
-
-        <p className="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          Camera Ready submission guidelines for VDAT will be announced soon.
-          Stay tuned for updates regarding the final paper submission process.
-        </p>
-
-        <div className="mt-8 text-cyan-400 text-lg animate-pulse">
-          🚀 Submission details will be available shortly.
-        </div>
-      </div>
-    </section>
-  );
-};
 
 export default function CameraReadyGuidelines() {
   const steps = [
@@ -120,59 +100,273 @@ export default function CameraReadyGuidelines() {
       {/* <div className="bg-black"> */}
       <Navbar />
 
-      <header className="text-center text-white py-20 relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-blue-900/85 to-violet-900/85"></div>
+      
+      <section className="container mx-auto px-6 py-20">
 
-        {/* Animated Circuit Pattern Overlay */}
-        <div className="absolute inset-0 opacity-20">
-          <div className="absolute top-1/4 left-1/4 animate-pulse">
-            <CircuitBoard size={64} className="text-cyan-300" />
+  {/* Deadline Banner */}
+
+  
+
+  {/* Main Instructions */}
+
+  <div className="bg-white rounded-3xl shadow-2xl overflow-hidden">
+
+    <div className="bg-gradient-to-r from-blue-700 via-indigo-700 to-purple-700 text-white p-8">
+
+      <h2 className="text-4xl font-bold flex items-center gap-4">
+        <FileText size={42} />
+        <div className="text-center mb-10">
+
+    <h1 className="text-5xl font-extrabold text-white">
+        Camera Ready Submission
+    </h1>
+
+    <p className="text-xl text-gray-300 mt-4">
+        Please carefully follow all the instructions below before submitting your final paper.
+    </p>
+
+</div>
+        
+      </h2>
+      
+      
+
+    </div>
+
+    <div className="p-10 space-y-10">
+
+      {/* STEP 1 */}
+
+      <div>
+        <h2 className="text-2xl font-bold text-blue-700 mb-4">
+         Instructions for Camera-Ready Submission
+        </h2>
+        <p className="mt-4 text-xl text-gray-700 leading-8">
+  Authors are required to complete the following steps through their <strong>SoftConf account</strong>:
+</p>
+
+        <h3 className="text-2xl font-bold text-blue-700 mb-4">
+          1. IEEE Electronic Copyright Form
+        </h3>
+
+        <p className="text-gray-700 leading-8">
+          Before uploading the camera-ready paper, please complete the web-based IEEE Electronic Copyright Form by clicking the copyright link provided on this page.
+        </p>
+
+        <div className="bg-blue-50 border-l-4 border-blue-600 rounded-xl p-5 mt-5">
+
+          <h4 className="font-semibold mb-3">
+            After completing the form:
+          </h4>
+
+          <ul className="list-disc ml-6 space-y-2 text-gray-700">
+
+            <li>Download the completed IEEE Copyright PDF/receipt from the IEEE e-Copyright service.</li>
+
+            <li>Upload the downloaded copyright PDF in the field provided below.</li>
+
+          </ul>
+
+          <div className="mt-4 font-semibold text-blue-700">
+            Upload IEEE Copyright PDF
           </div>
-          <div className="absolute top-3/4 right-1/4 animate-pulse delay-1000">
-            <Cpu size={48} className="text-green-300" />
+
+          <div className="text-gray-600">
+            Please upload only the PDF copyright receipt received from IEEE.
           </div>
-          <div className="absolute bottom-1/4 left-1/3 animate-pulse delay-500">
-            <Layers size={56} className="text-purple-300" />
-          </div>
+
         </div>
 
-        <div className="relative z-10 px-4 py-16">
-          <div className="flex items-center justify-center mb-6">
-            <Cpu className="text-cyan-300 mr-4 animate-spin" size={48} />
-            <h1 className="text-6xl font-extrabold tracking-tight uppercase drop-shadow-lg">
-              Camera Ready
-            </h1>
-            <CircuitBoard
-              className="text-green-300 ml-4 animate-pulse"
-              size={48}
-            />
+      </div>
+
+      {/* STEP 2 */}
+
+      <div>
+
+        <h3 className="text-2xl font-bold text-blue-700 mb-4">
+          2. IEEE PDF eXpress Compliance Check
+        </h3>
+
+        <p className="text-gray-700 leading-8 mb-4">
+          The camera-ready paper must first be checked through IEEE PDF eXpress for IEEE compliance.
+        </p>
+
+        <div className="bg-gray-100 rounded-xl p-6">
+
+          <div className="mb-3">
+
+            <span className="font-semibold">
+              Client Login:
+            </span>
+
+            <br />
+
+            <a
+              href="https://ieee-pdf-express.org/account/clientlogin"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-600 hover:underline break-all"
+            >
+              https://ieee-pdf-express.org/account/clientlogin
+            </a>
+
           </div>
 
-          <h2 className="text-4xl font-bold mb-4 text-cyan-300 uppercase tracking-wide">
-            Submission Guidelines
-          </h2>
-
-          <p className="text-xl max-w-3xl mx-auto font-light mb-8 leading-relaxed">
-            Finalize your research paper with precision and excellence. Follow
-            these comprehensive guidelines to ensure your work meets the highest
-            academic standards for publication.
-          </p>
-
-          {/* Deadline Warning */}
-          <div className="mt-8">
-            <div className="group relative inline-flex items-center px-12 py-5 bg-gradient-to-r from-red-500 via-pink-500 to-purple-600 text-white font-bold text-xl rounded-full shadow-2xl transform hover:scale-105 transition-all duration-300 uppercase tracking-wider animate-pulse">
-              <Clock className="mr-3 animate-spin" size={28} />
-              Coming soon: Camera Ready Submission Details
-              <AlertTriangle
-                className="ml-3 group-hover:animate-bounce"
-                size={24}
-              />
-              <div className="absolute -inset-1 bg-gradient-to-r from-red-400 via-pink-400 to-purple-600 rounded-full opacity-30 blur group-hover:opacity-50 animate-pulse"></div>
-            </div>
+          <div className="text-xl font-bold text-red-600">
+            Conference ID : 72243X
           </div>
+
         </div>
-      </header>
-      <ComingSoon/>
+
+        <div className="mt-6">
+
+          <h4 className="font-semibold mb-3">
+            Please ensure that:
+          </h4>
+
+          <ul className="list-disc ml-6 space-y-2 text-gray-700">
+
+            <li>The paper follows the IEEE conference paper format.</li>
+
+            <li>All reviewer comments have been addressed.</li>
+
+            <li>The final PDF has been successfully approved by IEEE PDF eXpress.</li>
+
+            <li>The paper title, author names, affiliations and email addresses are correct.</li>
+
+            <li>No page numbers, headers or footers have been added manually.</li>
+
+          </ul>
+
+        </div>
+
+        <div className="mt-5 font-semibold text-blue-700">
+          Upload IEEE PDF eXpress-Compliant Camera Ready PDF
+        </div>
+
+      </div>
+
+      {/* STEP 3 */}
+
+      <div>
+
+        <h3 className="text-2xl font-bold text-blue-700 mb-4">
+          3. Upload Camera Ready Paper
+        </h3>
+
+        <p className="text-gray-700 leading-8">
+          Please upload the final IEEE PDF eXpress-compliant camera-ready paper.
+        </p>
+
+        <div className="mt-4 font-semibold text-blue-700">
+          Upload Camera Ready PDF
+        </div>
+
+        <div className="text-gray-600">
+          Only the final approved PDF should be uploaded.
+        </div>
+
+      </div>
+
+      {/* STEP 4 */}
+
+      <div>
+
+        <h3 className="text-2xl font-bold text-blue-700 mb-4">
+          4. Upload Source Files
+        </h3>
+
+        <p className="text-gray-700 leading-8">
+          Please upload the complete source files used to prepare the camera-ready paper.
+        </p>
+
+        <div className="bg-gray-50 rounded-xl p-6 mt-6">
+
+          <h4 className="font-semibold mb-4">
+            The source files may include:
+          </h4>
+
+          <ul className="grid md:grid-cols-2 gap-3 list-disc ml-6 text-gray-700">
+
+            <li>Microsoft Word file</li>
+
+            <li>LaTeX source files</li>
+
+            <li>Figures and images</li>
+
+            <li>Bibliography files</li>
+
+            <li>Class / Style files</li>
+
+            <li>ZIP archive containing all related files</li>
+
+          </ul>
+
+        </div>
+
+        <p className="mt-6 text-gray-700">
+          Please ensure that the uploaded source files generate the same PDF submitted as the camera-ready paper.
+        </p>
+
+      </div>
+
+      {/* Important */}
+
+      <div className="bg-red-50 border-l-8 border-red-600 rounded-xl p-8">
+
+        <h3 className="text-3xl font-bold text-red-700 mb-4">
+          Important
+        </h3>
+
+        <p className="text-lg leading-9 text-gray-800">
+
+          The camera-ready submission will be considered complete only after uploading:
+
+        </p>
+
+        <ul className="list-disc ml-6 mt-4 space-y-3 text-lg text-gray-800 marker:text-red-600">
+  <li>IEEE Copyright PDF</li>
+  <li>IEEE PDF eXpress-compliant Camera Ready PDF</li>
+  <li>Complete Source Files</li>
+</ul>
+
+        <p className="mt-6 text-red-700 font-bold text-xl">
+          Incomplete or non-compliant submissions may not be included in the conference proceedings.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+  <div className="max-w-3xl mx-auto mt-20">
+
+  <div className="bg-gradient-to-r from-red-600 via-pink-600 to-purple-700 rounded-2xl px-10 py-6 shadow-xl">
+
+    <div className="flex items-center justify-center gap-5">
+
+      <Clock className="text-yellow-300 w-10 h-10" />
+
+      <div className="text-center">
+
+        <h2 className="text-white text-2xl font-bold uppercase">
+          Camera Ready Submission Deadline
+        </h2>
+
+        <p className="text-yellow-300 text-5xl font-black mt-1">
+          10 August 2026
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+</section>
+      
       {/*
       <div className="my-8 container mx-auto px-6 relative z-10">
         <div className="text-center mb-12">
@@ -542,6 +736,7 @@ export default function CameraReadyGuidelines() {
         }
       `}</style>
       */}
+      
       <Footer />
     </div>
   );

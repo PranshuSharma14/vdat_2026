@@ -3,26 +3,6 @@ import Navbar from '../home/Navbar';
 import Footer from '../footer/footer';
 import { Calendar, Mail, CheckCircle, BookOpen, Users, AlertCircle, ExternalLink, Download, FileText, DollarSign } from "lucide-react";
 
-const ComingSoon = () => {
-  return (
-    <section className="bg-black py-32 text-center">
-      <div className="container mx-auto px-6">
-        <h2 className="text-7xl font-black bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent mb-6">
-          COMING SOON
-        </h2>
-
-        <p className="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          The VDAT Fellowship Program details will be announced soon.
-          Stay tuned for updates regarding fellowships and student support.
-        </p>
-
-        <div className="mt-8 text-cyan-400 text-lg animate-pulse">
-          🚀 Fellowship information will be available shortly.
-        </div>
-      </div>
-    </section>
-  );
-};
 
 const FellowshipPage = () => {
   const importantDates = [
@@ -40,17 +20,266 @@ const FellowshipPage = () => {
       </div>
       
       {/* Hero Section */}
-      <header 
-        className="text-center text-white py-32 relative bg-cover bg-center bg-fixed"
-        style={{ backgroundImage: "url('/images/jiit5.webp')" }}
-      >
-        <div className="absolute inset-0 bg-gradient-to-r from-blue-900/80 to-blue-900/80"></div>
-        <div className="relative z-10 px-2 py-8">
-          <h1 className="text-5xl font-extrabold tracking-tight uppercase mb-2 drop-shadow-lg">VDAT 2026 Fellowship Program</h1>
-          <p className="text-lg max-w-xl mx-auto font-light">Supporting students and faculty in the field of VLSI design</p>
+      <section className="container mx-auto px-6 py-16">
+
+  {/* Page Title */}
+  <div className="text-center mb-12">
+    <h1 className="text-5xl font-extrabold text-blue-700 mb-4">
+      VDAT 2026 Registration Fellowship
+    </h1>
+
+    <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
+      Supporting students, research scholars, postdoctoral researchers, and faculty
+      members to participate in the 30th IEEE International Symposium on VLSI
+      Design and Test (VDAT 2026).
+    </p>
+  </div>
+
+  {/* Conference Information */}
+  <div className="bg-white rounded-3xl shadow-2xl overflow-hidden mb-10">
+
+    <div className="bg-gradient-to-r from-blue-700 via-indigo-700 to-purple-700 p-8 text-white">
+
+      <h2 className="text-3xl font-bold flex items-center gap-3">
+        <Calendar size={36} />
+        Conference Information
+      </h2>
+
+    </div>
+
+    <div className="p-8">
+
+      <div className="grid md:grid-cols-2 gap-8">
+
+        <div className="bg-blue-50 rounded-xl p-6">
+          <h3 className="font-bold text-xl text-blue-700 mb-3">
+            Conference
+          </h3>
+
+          <p className="text-gray-700 leading-8">
+            <strong>30th IEEE International Symposium on</strong><br />
+            VLSI Design and Test (VDAT 2026)
+          </p>
         </div>
-      </header>
-      <ComingSoon/>
+
+        <div className="bg-indigo-50 rounded-xl p-6">
+          <h3 className="font-bold text-xl text-indigo-700 mb-3">
+            Conference Dates
+          </h3>
+
+          <p className="text-gray-700">
+            <strong>20–22 August 2026</strong>
+          </p>
+
+          <p className="mt-3 text-gray-700">
+            <strong>Tutorial Day:</strong><br />
+            19 August 2026
+          </p>
+        </div>
+
+        <div className="bg-purple-50 rounded-xl p-6 md:col-span-2">
+          <h3 className="font-bold text-xl text-purple-700 mb-3">
+            Venue
+          </h3>
+
+          <p className="text-gray-700">
+            Jaypee Institute of Information Technology,
+            Noida, India
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  {/* Fellowship Description */}
+
+  <div className="bg-white rounded-3xl shadow-xl p-10 mb-10">
+
+    <h2 className="text-3xl font-bold text-blue-700 mb-6">
+      Registration Fellowship
+    </h2>
+
+    <p className="text-lg text-gray-700 leading-9">
+
+      VDAT 2026 invites applications for registration fellowship support
+      from eligible students, research scholars, postdoctoral researchers,
+      and faculty members working in VLSI Design, Semiconductor Technology,
+      Electronic Design Automation (EDA), Hardware Security,
+      Advanced Packaging, Quantum Computing, and related areas.
+
+    </p>
+
+  </div>
+
+  {/* Support Cards */}
+
+  <div className="mb-10">
+
+    <h2 className="text-3xl font-bold text-center text-blue-700 mb-8">
+      Registration Fee Support
+    </h2>
+
+    <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+
+      {[
+        "25%",
+        "50%",
+        "75%",
+        "100%"
+      ].map((item) => (
+
+        <div
+          key={item}
+          className="bg-gradient-to-br from-blue-600 to-indigo-700 rounded-2xl p-8 text-center text-white shadow-xl"
+        >
+
+          <h3 className="text-5xl font-black">
+            {item}
+          </h3>
+
+          <p className="mt-4 text-lg">
+            Registration Fee Support
+          </p>
+
+        </div>
+
+      ))}
+
+    </div>
+
+    <p className="text-center text-gray-700 mt-8 text-lg">
+      The fellowship is limited to the applicable
+      <strong> VDAT 2026 registration fee only.</strong>
+    </p>
+
+  </div>
+
+  {/* Selection */}
+
+  <div className="bg-white rounded-3xl shadow-xl p-10 mb-10">
+
+    <h2 className="text-3xl font-bold text-blue-700 mb-6">
+      Selection Criteria
+    </h2>
+
+    <div className="grid md:grid-cols-2 gap-6">
+
+      {[
+        "Applicant's eligibility",
+        "Financial need",
+        "Relevance of research work",
+        "Availability of funds",
+        "Recommendation of the VDAT 2026 Fellowship Committee"
+      ].map((item) => (
+
+        <div
+          key={item}
+          className="flex items-start gap-3"
+        >
+
+          <CheckCircle className="text-green-600 mt-1" />
+
+          <p className="text-lg text-gray-700">
+            {item}
+          </p>
+
+        </div>
+
+      ))}
+
+    </div>
+
+  </div>
+
+  {/* Important */}
+
+  <div className="bg-red-50 border-l-8 border-red-600 rounded-2xl p-10">
+
+    <h2 className="text-3xl font-bold text-red-700 mb-6">
+      Important
+    </h2>
+
+    <ul className="space-y-4 text-lg text-gray-700 list-disc ml-6">
+
+      <li>
+        Fellowship is limited only to the applicable VDAT 2026 registration fee.
+      </li>
+
+      <li>
+        No travel, accommodation, local transportation or personal expenses
+        will be supported or reimbursed.
+      </li>
+
+      <li>
+        Submission of this application does not guarantee the award of a
+        fellowship.
+      </li>
+
+      <li>
+        The percentage of support approved by the VDAT 2026 Fellowship
+        Committee shall be final.
+      </li>
+
+      <li>
+        Applicants are advised to provide complete and accurate information.
+      </li>
+
+      <li>
+        Incomplete or duplicate applications may not be considered.
+      </li>
+
+    </ul>
+
+  </div>
+
+  {/* Coming Soon */}
+
+  <div className="max-w-3xl mx-auto mt-16">
+
+    <div className="bg-gradient-to-r from-blue-700 via-indigo-700 to-purple-700 rounded-3xl p-8 text-center shadow-2xl">
+
+      <Users className="mx-auto text-white mb-4" size={48} />
+
+      <h2 className="text-4xl font-bold text-white">
+        Fellowship Applications
+      </h2>
+
+      <div className="max-w-3xl mx-auto mt-16">
+
+  <div className="bg-gradient-to-r from-blue-700 via-indigo-700 to-purple-700 rounded-3xl p-8 text-center shadow-2xl">
+
+    <Users className="mx-auto text-white mb-4" size={48} />
+
+    <h2 className="text-4xl font-bold text-white">
+      
+    </h2>
+
+    <p className="text-white mt-4 text-lg">
+      Download the fellowship application form below and submit it as per the instructions.
+    </p>
+
+    <a
+      href="VDAT 2026 Registration Fellowship Application Form.docx"
+      download
+      className="inline-flex items-center mt-8 bg-white text-blue-700 font-semibold px-8 py-3 rounded-xl hover:bg-gray-100 transition duration-300 shadow-lg"
+    >
+      <Download className="mr-2" size={20} />
+      Download Application Form
+    </a>
+
+  </div>
+
+</div>
+
+    </div>
+
+  </div>
+
+</section>
+     
 
       {/* About the Fellowship 
       <section className="container mx-auto px-4 py-12">
