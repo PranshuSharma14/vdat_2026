@@ -262,13 +262,14 @@ const FellowshipPage = () => {
     </p>
 
     <a
-      href="VDAT 2026 Registration Fellowship Application Form.docx"
-      download
-      className="inline-flex items-center mt-8 bg-white text-blue-700 font-semibold px-8 py-3 rounded-xl hover:bg-gray-100 transition duration-300 shadow-lg"
-    >
-      <Download className="mr-2" size={20} />
-      Download Application Form
-    </a>
+  href="https://forms.gle/LomAadvRJBi7vwX37"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="inline-flex items-center mt-8 bg-white text-blue-700 font-semibold px-8 py-3 rounded-xl hover:bg-gray-100 transition duration-300 shadow-lg"
+>
+  <ExternalLink className="mr-2" size={20} />
+  Apply for Fellowship
+</a>
 
   </div>
 
