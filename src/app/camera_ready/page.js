@@ -20,7 +20,7 @@ export default function CameraReadyGuidelines() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-blue-900 flex flex-col">
       <Navbar />
-      
+
       <main className="flex-grow container mx-auto px-4 py-12">
         {/* Header Section */}
         <div className="text-center mb-16">
@@ -33,7 +33,7 @@ export default function CameraReadyGuidelines() {
         </div>
 
         <div className="max-w-5xl mx-auto space-y-8">
-          
+
           {/* Step 1: Paper Preparation */}
           <div className="bg-white/95 backdrop-blur-sm rounded-3xl p-8 md:p-10 shadow-2xl border-l-8 border-blue-500 hover:shadow-blue-500/20 transition-all duration-300">
             <div className="flex items-center gap-4 mb-6">
@@ -42,7 +42,7 @@ export default function CameraReadyGuidelines() {
               </div>
               <h2 className="text-3xl font-bold text-gray-900">1. Paper Preparation & Formatting</h2>
             </div>
-            
+
             <ul className="space-y-4 text-lg text-gray-700 list-none">
               <li className="flex gap-3">
                 <span className="text-blue-500 font-bold mt-1">1.</span>
@@ -95,7 +95,7 @@ export default function CameraReadyGuidelines() {
               </div>
               <h2 className="text-3xl font-bold text-gray-900">2. IEEE Electronic Copyright Form (eCF)</h2>
             </div>
-            
+
             <ul className="space-y-4 text-lg text-gray-700 list-none">
               <li className="flex gap-3">
                 <span className="text-purple-500 font-bold mt-1">6.</span>
@@ -120,7 +120,7 @@ export default function CameraReadyGuidelines() {
               </div>
               <h2 className="text-3xl font-bold text-gray-900">3. IEEE PDF eXpress Compliance</h2>
             </div>
-            
+
             <ul className="space-y-4 text-lg text-gray-700 list-none">
               <li className="flex gap-3">
                 <span className="text-emerald-500 font-bold mt-1">9.</span>
@@ -159,7 +159,7 @@ export default function CameraReadyGuidelines() {
               </div>
               <h2 className="text-3xl font-bold text-gray-900">4. Source Files & Final Submission</h2>
             </div>
-            
+
             <ul className="space-y-4 text-lg text-gray-700 list-none">
               <li className="flex gap-3">
                 <span className="text-amber-500 font-bold mt-1">13.</span>
@@ -195,9 +195,9 @@ export default function CameraReadyGuidelines() {
               <AlertTriangle size={36} className="text-yellow-300" />
               <h2 className="text-3xl font-bold">Important Information</h2>
             </div>
-            
+
             <p className="text-xl mb-6">The camera-ready submission will be considered complete <strong>only after uploading:</strong></p>
-            
+
             <div className="grid md:grid-cols-3 gap-4 mb-8">
               <div className="bg-black/20 p-5 rounded-2xl flex items-start gap-3 backdrop-blur-sm">
                 <CheckCircle className="text-green-400 shrink-0 mt-1" />
@@ -219,21 +219,21 @@ export default function CameraReadyGuidelines() {
               </p>
             </div>
           </div>
-          
+
           {/* Deadline Section */}
           <div className="flex justify-center mt-12 pb-12">
             <div className="inline-flex flex-col md:flex-row items-center gap-6 bg-white/10 backdrop-blur-md px-8 py-6 rounded-3xl border border-white/20 shadow-xl">
               <Clock className="text-yellow-400 w-12 h-12 animate-pulse" />
               <div className="text-center md:text-left">
                 <h3 className="text-gray-300 font-semibold uppercase tracking-wider mb-1">Final Submission Deadline</h3>
-                <p className="text-white text-3xl font-bold">10 August 2026</p>
+                <p className="text-white text-3xl font-bold">1st August 2026</p>
               </div>
             </div>
           </div>
 
         </div>
       </main>
-      
+
       <Footer />
     </div>
   );
