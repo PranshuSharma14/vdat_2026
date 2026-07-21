@@ -27,7 +27,7 @@ const ContactUsPage = () => {
       color: "purple"
     },
     {
-      title: "CIRCUITPRENEUR",
+      title: "CHIPPRENEUR",
       email: "vdat2025startup@gmail.com",
       description: "Startup competitions, entrepreneurship activities, and industry collaborations",
       icon: Lightbulb,

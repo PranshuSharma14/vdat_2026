@@ -701,7 +701,19 @@ const CallToAction = () => {
             </a>
           </button>
           
-          
+          <div className="flex flex-col items-center">
+            <button className="px-8 py-4 bg-gradient-to-r from-yellow-400 to-orange-500 text-indigo-900 font-extrabold rounded-lg hover:from-yellow-300 hover:to-orange-400 transition duration-300 shadow-xl flex items-center text-xl transform hover:scale-105 border-2 border-white">
+              <svg className="w-7 h-7 mr-2 animate-bounce" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
+              </svg>
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLScXtWfBL31gvh5ocEULoF789HoZ-z1R92eYKLSAa5g1RWgNng/viewform?usp=sharing&ouid=110980628039981304846" target="_blank" rel="noopener noreferrer">
+                REGISTER HERE
+              </a>
+            </button>
+            <p className="mt-3 text-yellow-300 font-semibold tracking-wide text-sm bg-indigo-900/50 px-3 py-1 rounded-full border border-yellow-300/30">
+              Last date: 1st August, 2026
+            </p>
+          </div>
         </div>
       </div>
     </div>

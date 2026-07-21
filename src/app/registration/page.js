@@ -243,6 +243,17 @@ const RegistrationDetails = () => (
           </div>
         </div>
       </div>
+
+      {/* Accommodation Note */}
+      <div className="max-w-6xl mx-auto bg-white/90 backdrop-blur-sm p-6 rounded-2xl shadow-xl border border-white/20 mt-8 flex items-start">
+        <Building className="text-purple-600 mr-4 mt-1 shrink-0" size={28} />
+        <div>
+          <h3 className="text-xl font-bold text-gray-800 mb-2">Accommodation</h3>
+          <p className="text-gray-700">
+            Participants are kindly requested to arrange their own accommodation. Several hotels are available near the institute (Sec 62/63, Noida).
+          </p>
+        </div>
+      </div>
     </div>
   </section>
 );
