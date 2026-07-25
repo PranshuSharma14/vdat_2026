@@ -257,11 +257,8 @@ const FellowshipPage = () => {
       
     </h2>
 
-    <p className="text-white mt-4 text-lg">
-      Download the fellowship application form below and submit it as per the instructions.
-    </p>
-
-    <a
+   
+ <a
   href="https://forms.gle/LomAadvRJBi7vwX37"
   target="_blank"
   rel="noopener noreferrer"

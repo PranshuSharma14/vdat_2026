@@ -171,8 +171,7 @@ const RegistrationDetails = () => (
             <span className="text-yellow-500 mr-3 mt-1 font-bold text-xl">
               2.
             </span>
-            <p>Make an online transfer of money to the bank given below. You can
-              also do a UPI transfer using the bank QR code.
+            <p>Complete your payment through the available registration method. After payment, please keep your proof of transaction ready.
             </p>
           </li>
           <li className="flex items-start">
@@ -200,48 +199,6 @@ const RegistrationDetails = () => (
             </p>
           </li>
         </ol>
-      </div>
-
-      {/* Bank Details */}
-      <div className="max-w-6xl mx-auto bg-white/90 backdrop-blur-sm p-8 rounded-2xl shadow-xl border border-white/20">
-        <div className="flex items-center mb-6">
-          <Building className="text-blue-600 mr-3" size={32} />
-          <h3 className="text-2xl font-bold text-gray-800">Bank Details</h3>
-        </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 text-gray-700">
-          <div className="space-y-4">
-            <p>
-              <strong>Account Name:</strong> JAYPEE INSTITUTE OF INFORMATION TECHNOLOGY
-            </p>
-            <p>
-              <strong>Account No.:</strong> 0200104000323550
-            </p>
-            <p>
-              <strong>IFSC Code:</strong> IBKL0000200
-            </p>
-            <p>
-              <strong>Branch Name:</strong> SECTOR 63 NOIDA-201307
-            </p>
-          </div>
-          <div className="space-y-4">
-            <p>
-              <strong>Bank:</strong> IDBI BANK
-            </p>
-            <div className="flex items-center">
-              <Smartphone className="text-green-600 mr-2" size={20} />
-              <span>UPI payments accepted via bank QR code</span>
-            </div>
-            <div className="flex flex-col items-start mt-2">
-              <p className="text-gray-600 mb-2 text-sm font-medium">Scan to pay via UPI:</p>
-              <img
-                src="/images/qr-submission.jpg"
-                alt="UPI QR Code for payment"
-                className="w-44 h-44 object-contain rounded-xl border-2 border-purple-200 shadow-lg"
-              />
-              <p className="text-xs text-gray-500 mt-1">Supports PhonePe, GPay, Paytm &amp; all UPI apps</p>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
   </section>
