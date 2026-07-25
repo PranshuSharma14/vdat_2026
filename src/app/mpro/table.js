@@ -153,8 +153,8 @@ const MProTable = () => {
       isBreak: false,
       sessions: {
         session2a: {
-          title: "Session 2a: Startup Contest - pitching session",
-          link: "/circuitpreneur",
+          title: "Session 2a: Startup Expert Session",
+          link: "/chippreneur",
           papers: "",
           location: "Majlis Main"
         },

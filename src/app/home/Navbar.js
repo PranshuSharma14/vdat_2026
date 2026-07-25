@@ -31,7 +31,7 @@ const Navbar = () => {
         { label: "Camera Ready Submission Guidelines", href: "/camera_ready" },
         { label: "Call For Papers", href: "/submissions" },
         { label: "Call for Tutorials", href: "/callfortutorials" },
-        { label: "CIRCUITPRENEUR", href: "/circuitpreneur" },
+        { label: "CHIPPRENEUR", href: "/chippreneur" },
         { label: "PHD-FORUM", href: "/phdforum" },
       ],
     },
