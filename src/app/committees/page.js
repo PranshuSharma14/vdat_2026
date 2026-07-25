@@ -471,6 +471,14 @@ const committees = [
         linkedin: "",
         image: "/images/shweta1.jpg",
       },
+      {
+        name: "Prof. Madhu Jain",
+        institute:
+          " Professor, Jaypee Institute of Information Technology, Noida",
+        linkedin: "",
+        image: "/images/madhu.jpeg",
+      },
+      
     ],
   },
   {

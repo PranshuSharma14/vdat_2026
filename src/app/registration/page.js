@@ -200,6 +200,51 @@ const RegistrationDetails = () => (
           </li>
         </ol>
       </div>
+
+     {/* Payment QR Code */}
+<div className="max-w-xl mx-auto bg-white/90 backdrop-blur-sm p-8 rounded-2xl shadow-xl border border-white/20">
+
+  <div className="flex items-center justify-center mb-6">
+    <Smartphone className="text-green-600 mr-3" size={32} />
+    <h3 className="text-2xl font-bold text-gray-800">
+      UPI Payment QR Code
+    </h3>
+  </div>
+
+  <p className="text-center text-gray-700 mb-6">
+    Scan the QR code below to make your payment via UPI.
+  </p>
+
+  <div className="flex flex-col items-center">
+
+    <p className="text-gray-600 mb-3 text-sm font-medium">
+      Scan to pay via UPI
+    </p>
+
+    <img
+      src="/images/qr-submission.jpg"
+      alt="UPI QR Code for payment"
+      className="w-56 h-56 object-contain rounded-xl border-2 border-purple-200 shadow-lg"
+    />
+
+    <p className="text-sm text-gray-500 mt-3 text-center">
+      Supports PhonePe, Google Pay, Paytm &amp; all UPI apps
+    </p>
+
+  </div>
+
+</div>
+
+      {/* Accommodation Note */}
+      <div className="max-w-6xl mx-auto bg-white/90 backdrop-blur-sm p-6 rounded-2xl shadow-xl border border-white/20 mt-8 flex items-start">
+        <Building className="text-purple-600 mr-4 mt-1 shrink-0" size={28} />
+        <div>
+          <h3 className="text-xl font-bold text-gray-800 mb-2">Accommodation</h3>
+          <p className="text-gray-700">
+            Participants are kindly requested to arrange their own accommodation. Several hotels are available near the institute (Sec 62/63, Noida).
+          </p>
+        </div>
+      </div>
     </div>
   </section>
 );
