@@ -447,6 +447,13 @@ const committees = [
   {
     title: "Technical Management Committee",
     members: [
+      {
+        name: "Prof. Madhu Jain",
+        institute:
+          " Professor, Jaypee Institute of Information Technology, Noida",
+        linkedin: "",
+        image: "/images/madhu.jpeg",
+      },
 
       {
         name: "Dr. M. S. Mehata",
@@ -471,13 +478,7 @@ const committees = [
         linkedin: "",
         image: "/images/shweta1.jpg",
       },
-      {
-        name: "Prof. Madhu Jain",
-        institute:
-          " Professor, Jaypee Institute of Information Technology, Noida",
-        linkedin: "",
-        image: "/images/madhu.jpeg",
-      },
+      
       
     ],
   },
