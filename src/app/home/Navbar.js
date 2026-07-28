@@ -24,7 +24,19 @@ const Navbar = () => {
 
   const menuItems = [
     { label: "Home", href: "/" },
-    { label: "Registration", href: "/registration" },
+    {
+  label: "Registration",
+  dropdown: [
+    {
+      label: "conference registration",
+      href: "/conference-registration",
+    },
+    {
+      label: "tutorial-registration",
+      href: "/tutorial-registration",
+    },
+  ],
+},
     {
       label: "Authors",
       dropdown: [
