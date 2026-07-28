@@ -113,6 +113,15 @@ const SpeakersSection = () => {
     bio: "Mr. Anand Kumar is the Managing Director – India at STMicroelectronics, based in Greater Noida. With over 26 years of association with STMicroelectronics, he brings extensive leadership experience in semiconductor technology, analog and mixed-signal design, IP development, and global design team management. He began his career as an Analog Designer in ST's Central R&D organization and has since held several senior technical and leadership roles, contributing to advanced semiconductor IP design, technology programmes, customer engagement, and operational growth. His work has focused on building high-performing engineering teams and enabling innovation across semiconductor design and product development.",
     linkedin: "https://www.linkedin.com/in/anand-kumar-b267491/",
   },
+
+  {
+    name: "Prof. Rajendra Singh",
+    title: "Professor, Department of Physics & Joint Faculty, Department of Electrical Engineering | Associate Dean for Research and Development",
+    organization: "IIT Delhi",
+    photo: "/images/rajendrasingh.jpg",
+    bio: "Prof. Rajendra Singh is a Professor in the Department of Physics and Joint Faculty in the Department of Electrical Engineering at the Indian Institute of Technology Delhi, and serves as the Associate Dean for Research and Development. He leads the Advanced Semiconductor Materials and Devices Group at IIT Delhi, with research interests spanning wide- and ultra-wide-bandgap semiconductors, GaN and gallium oxide devices, semiconductor nanowires, two-dimensional quantum materials, heterostructures, wafer bonding, nanolithography, and advanced fabrication technologies. He earned his Ph.D. from Jawaharlal Nehru University and pursued postdoctoral research in Germany. Prof. Singh has authored nearly 200 publications and has received notable awards for research excellence, teaching, and academic leadership in semiconductor technologies.",
+    linkedin: "https://web.iitd.ac.in/~rsingh/",
+  },
 ];
 
   return (

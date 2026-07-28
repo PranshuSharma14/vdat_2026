@@ -28,11 +28,11 @@ const Navbar = () => {
   label: "Registration",
   dropdown: [
     {
-      label: "conference registration",
+      label: "Conference Registration",
       href: "/conference-registration",
     },
     {
-      label: "tutorial-registration",
+      label: "Full Day Tutorial Registration",
       href: "/tutorial-registration",
     },
   ],
