@@ -207,7 +207,7 @@ const Carousel = ({
               <span className="text-yellow-300 text-base sm:text-lg">Powered by</span>
               <span className="bg-white rounded-full px-6 py-2 flex items-center shadow-md">
                 <img
-                  src="/logos/nxp-logo.png"
+                  src="/logos/NXP_Logo_CMYK_Colour.jpg.jpeg"
                   alt="NXP"
                   className="h-16 sm:h-20 w-auto object-contain"
                 />
@@ -373,7 +373,7 @@ const SponsorCard = ({ logo }) => {
 // Improved sponsors section — simple flat grid
 const SponsorsSection = () => {
   const allSponsors = [
-    { src: '/logos/nxp-logo(titlesponsor).png', alt: 'NXP Semiconductors' },
+    { src: '/logos/NXP new.png', alt: 'NXP Semiconductors' },
     { src: '/logos/Cadence(platinum sponsor).png', alt: 'Cadence' },
     { src: '/logos/MEIT.png', alt: 'MeitY' },
     { src: '/logos/STM(gold sponsor).png', alt: 'STMicroelectronics' },

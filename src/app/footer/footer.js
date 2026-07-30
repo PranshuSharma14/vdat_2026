@@ -36,7 +36,7 @@ const Footer = () => {
     "Gold Partner": "/images/Agmatel_Keyisght Logo HD.png",
     "Gold Partner, Media Partner": "/images/yourpedia.png",
     "Publication Sponsor": "/images/springer.png",
-    "Inauguration Sponsor": "/logos/NXP.jpg",
+    "Inauguration Sponsor": "/logos/NXP_Logo_CMYK_Colour.jpg.jpeg",
     "Startup Partner": "/logos/SOC.png",
     Exhibitor: "/logos/sqube.png",
   };

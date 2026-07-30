@@ -139,7 +139,7 @@ const committees = [
         name: "Mr. Hitesh Garg",
         institute: "India Country Manager, NXP",
         linkedin: "https://www.linkedin.com/in/hiteshgarg/",
-        image: "/images/hitesh.jpg",
+        image: "/images/Hitesh Garg_New 2026.jpg.jpeg",
       },
       {
         name: "Ms. Tal Zigman",

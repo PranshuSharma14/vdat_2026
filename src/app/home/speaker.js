@@ -89,7 +89,7 @@ const SpeakersSection = ({speakers}) => {
       name: "Hitesh Garg",
       title: "Vice President and India Country Manager",
       organization: " NXP Semiconductors",
-      photo: "/images/hitesh.png",
+      photo: "/images/Hitesh Garg_New 2026.jpg.jpeg",
       linkedin: "https://www.linkedin.com/in/hiteshgarg/",
       website: ""
     },

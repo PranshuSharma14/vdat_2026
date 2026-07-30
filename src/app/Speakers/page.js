@@ -42,7 +42,7 @@ const SpeakersSection = () => {
     name: "Mr. Hitesh Garg",
     title: "Vice President & India Managing Director",
     organization: "NXP Semiconductors",
-    photo: "/images/hiteshh.jpg",
+    photo: "/images/Hitesh Garg_New 2026.jpg.jpeg",
     bio: "Mr. Hitesh Garg is Vice President and India Managing Director at NXP Semiconductors, and a highly respected leader in the global semiconductor and embedded systems industry. With extensive experience in semiconductor technologies, automotive electronics, secure connected systems, and intelligent edge computing, he has played a pivotal role in strengthening India’s semiconductor innovation ecosystem and engineering leadership. He has been instrumental in driving advanced research and development initiatives in areas such as automotive SoCs, AI-enabled embedded platforms, secure IoT solutions, radar systems, and next-generation connectivity technologies. Under his leadership, NXP India has significantly contributed to cutting-edge semiconductor solutions for smart mobility, industrial automation, communication systems, and intelligent edge applications. Mr. Garg is widely recognized for fostering industry-academia collaboration, promoting semiconductor talent development, and accelerating innovation aligned with the future of AI-driven and connected electronic systems.",
     linkedin: "https://www.linkedin.com/in/hiteshgarg/"
   },
