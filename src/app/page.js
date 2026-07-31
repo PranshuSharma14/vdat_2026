@@ -446,8 +446,8 @@ const Timeline = () => {
       borderColor: "border-l-green-500",
       bgColor: "bg-green-50",
       icon: "📸",
-      oldDate: "July 16, 2026",
-      newDate: "August 1, 2026",
+      oldDate: "August 1, 2026",
+      newDate: "August 3, 2026",
       note: ""
     }
   ];

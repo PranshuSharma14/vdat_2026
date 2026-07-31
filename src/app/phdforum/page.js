@@ -19,29 +19,29 @@ const PhDForumBanner = () => {
           <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
             <defs>
               <pattern id="academic-circuit" x="0" y="0" width="120" height="120" patternUnits="userSpaceOnUse">
-                <path d="M20 20L50 20M50 20L50 80M50 80L80 80" stroke="#9966ff" strokeWidth="2" fill="none"/>
-                <circle cx="20" cy="20" r="4" fill="#9966ff"/>
-                <circle cx="80" cy="80" r="4" fill="#9966ff"/>
-                <path d="M20 80L40 80M40 80L40 40M40 40L80 40" stroke="#9966ff" strokeWidth="2" fill="none"/>
-                <circle cx="20" cy="80" r="4" fill="#9966ff"/>
-                <circle cx="80" cy="40" r="4" fill="#9966ff"/>
+                <path d="M20 20L50 20M50 20L50 80M50 80L80 80" stroke="#9966ff" strokeWidth="2" fill="none" />
+                <circle cx="20" cy="20" r="4" fill="#9966ff" />
+                <circle cx="80" cy="80" r="4" fill="#9966ff" />
+                <path d="M20 80L40 80M40 80L40 40M40 40L80 40" stroke="#9966ff" strokeWidth="2" fill="none" />
+                <circle cx="20" cy="80" r="4" fill="#9966ff" />
+                <circle cx="80" cy="40" r="4" fill="#9966ff" />
                 {/* Additional academic-inspired elements */}
-                <path d="M100 20L120 20M120 20L120 60" stroke="#9966ff" strokeWidth="2" fill="none"/>
-                <circle cx="100" cy="20" r="4" fill="#9966ff"/>
-                <path d="M10 100L10 120M10 120L60 120" stroke="#9966ff" strokeWidth="2" fill="none"/>
-                <circle cx="10" cy="100" r="3" fill="#9966ff"/>
-                <circle cx="60" cy="120" r="3" fill="#9966ff"/>
+                <path d="M100 20L120 20M120 20L120 60" stroke="#9966ff" strokeWidth="2" fill="none" />
+                <circle cx="100" cy="20" r="4" fill="#9966ff" />
+                <path d="M10 100L10 120M10 120L60 120" stroke="#9966ff" strokeWidth="2" fill="none" />
+                <circle cx="10" cy="100" r="3" fill="#9966ff" />
+                <circle cx="60" cy="120" r="3" fill="#9966ff" />
               </pattern>
             </defs>
-            <rect width="100%" height="100%" fill="url(#academic-circuit)"/>
+            <rect width="100%" height="100%" fill="url(#academic-circuit)" />
           </svg>
         </div>
       </div>
-      
+
       {/* Accent lines with academic twist */}
       <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-indigo-900 via-purple-500 to-indigo-900"></div>
       <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-indigo-900 via-purple-500 to-indigo-900"></div>
-      
+
       <div className="relative z-10 px-4 max-w-4xl mx-auto">
         <div className="mb-4">
           <div className="flex justify-center mb-6">
@@ -56,7 +56,7 @@ const PhDForumBanner = () => {
             Shaping the Future of VLSI Technology
           </h2>
         </div>
-        
+
         <div className="bg-black bg-opacity-40 p-4 rounded-lg border border-purple-700 backdrop-blur-sm">
           <p className="text-base md:text-lg text-gray-200 leading-relaxed mb-3">
             Present your completed or near-completion doctoral research at VDAT-2026's prestigious PhD Forum.
@@ -65,17 +65,17 @@ const PhDForumBanner = () => {
             Connect with leading <span className="font-bold text-purple-300">researchers, industry experts, and fellow academics</span> in the field of VLSI Design and Semiconductor Technology.
           </p>
         </div>
-        
+
         <div className="mt-6 flex flex-col md:flex-row justify-center items-center space-y-3 md:space-y-0 md:space-x-4">
           <button className="px-6 py-2 bg-gradient-to-r from-indigo-700 to-purple-700 text-white font-semibold rounded-lg hover:from-indigo-600 hover:to-purple-600 transition duration-300 shadow-lg flex items-center">
             <svg className="w-4 h-4 mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
             </svg>
             <a href="..\pdfs\VDAT2026- PhDforum.pdf" download className="text-white font-semibold">
-            Download Information
+              Download Information
             </a>
           </button>
-          
+
         </div>
       </div>
     </section>
@@ -98,8 +98,8 @@ const Icon = ({ name, className = "w-4 h-4 flex-shrink-0" }) => {
   };
 
   const combinedClassName = `${className} ${iconStyles[name] || ""}`;
-  
-  switch(name) {
+
+  switch (name) {
     case 'star':
       return (
         <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" className={combinedClassName}>
@@ -174,21 +174,21 @@ const AcademicCircuitPattern = () => {
         <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
           <defs>
             <pattern id="academic-circuit-pattern" x="0" y="0" width="120" height="120" patternUnits="userSpaceOnUse">
-              <path d="M20 20L50 20M50 20L50 80M50 80L80 80" stroke="#9966ff" strokeWidth="2" fill="none"/>
-              <circle cx="20" cy="20" r="4" fill="#9966ff"/>
-              <circle cx="80" cy="80" r="4" fill="#9966ff"/>
-              <path d="M20 80L40 80M40 80L40 40M40 40L80 40" stroke="#9966ff" strokeWidth="2" fill="none"/>
-              <circle cx="20" cy="80" r="4" fill="#9966ff"/>
-              <circle cx="80" cy="40" r="4" fill="#9966ff"/>
+              <path d="M20 20L50 20M50 20L50 80M50 80L80 80" stroke="#9966ff" strokeWidth="2" fill="none" />
+              <circle cx="20" cy="20" r="4" fill="#9966ff" />
+              <circle cx="80" cy="80" r="4" fill="#9966ff" />
+              <path d="M20 80L40 80M40 80L40 40M40 40L80 40" stroke="#9966ff" strokeWidth="2" fill="none" />
+              <circle cx="20" cy="80" r="4" fill="#9966ff" />
+              <circle cx="80" cy="40" r="4" fill="#9966ff" />
               {/* Additional academic-inspired elements */}
-              <path d="M100 20L120 20M120 20L120 60" stroke="#9966ff" strokeWidth="2" fill="none"/>
-              <circle cx="100" cy="20" r="4" fill="#9966ff"/>
-              <path d="M10 100L10 120M10 120L60 120" stroke="#9966ff" strokeWidth="2" fill="none"/>
-              <circle cx="10" cy="100" r="3" fill="#9966ff"/>
-              <circle cx="60" cy="120" r="3" fill="#9966ff"/>
+              <path d="M100 20L120 20M120 20L120 60" stroke="#9966ff" strokeWidth="2" fill="none" />
+              <circle cx="100" cy="20" r="4" fill="#9966ff" />
+              <path d="M10 100L10 120M10 120L60 120" stroke="#9966ff" strokeWidth="2" fill="none" />
+              <circle cx="10" cy="100" r="3" fill="#9966ff" />
+              <circle cx="60" cy="120" r="3" fill="#9966ff" />
             </pattern>
           </defs>
-          <rect width="100%" height="100%" fill="url(#academic-circuit-pattern)"/>
+          <rect width="100%" height="100%" fill="url(#academic-circuit-pattern)" />
         </svg>
       </div>
     </div>
@@ -202,18 +202,18 @@ const ContentSection = ({ id, title, content, items, type, icon, bgColor, accent
     "indigo": "from-indigo-900 via-indigo-500 to-indigo-900",
     "mixed": "from-purple-900 via-indigo-500 to-purple-900"
   };
-  
+
   const gradientClass = accentMap[accentColor] || accentMap.purple;
-  
+
   return (
     <section id={id} className={`relative py-6 px-4 ${bgColor} rounded-xl shadow-md mb-4 overflow-hidden`}>
       {/* Add academic circuit pattern overlay */}
       <AcademicCircuitPattern />
-      
+
       {/* Accent lines */}
       <div className={`absolute top-0 left-0 right-0 h-1 bg-gradient-to-r ${gradientClass}`}></div>
       <div className={`absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r ${gradientClass}`}></div>
-      
+
       <div className="max-w-6xl mx-auto relative z-10">
         <div className="text-center mb-6">
           <h2 className="text-xl md:text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-purple-400 mb-4">
@@ -221,7 +221,7 @@ const ContentSection = ({ id, title, content, items, type, icon, bgColor, accent
           </h2>
           <div className={`h-1 w-16 bg-gradient-to-r from-indigo-500 to-purple-500 mx-auto`}></div>
         </div>
-        
+
         {type === 'paragraph' && (
           <div>
             <p className="text-base text-gray-200 max-w-4xl mx-auto leading-relaxed">
@@ -229,7 +229,7 @@ const ContentSection = ({ id, title, content, items, type, icon, bgColor, accent
             </p>
           </div>
         )}
-        
+
         {type === 'list' && (
           <ul className="grid md:grid-cols-2 gap-x-6 gap-y-2 text-lg text-gray-200 max-w-4xl mx-auto">
             {items.map((item, index) => (
@@ -251,7 +251,7 @@ const ContentSection = ({ id, title, content, items, type, icon, bgColor, accent
 const EnhancedTimeline = () => {
   const dates = [
     {
-       date: "1st June 2025 AoE",
+      date: "1st June 2025 AoE",
       previousDate: "15th May 2025",
       title: "Submission Deadline",
       description: "Last date to submit your PhD Forum abstract",
@@ -281,10 +281,10 @@ const EnhancedTimeline = () => {
   return (
     <div className="relative py-8 px-4 bg-gray-900 rounded-xl shadow-md mb-4 overflow-hidden">
       <AcademicCircuitPattern />
-      
+
       <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-indigo-900 via-purple-500 to-indigo-900"></div>
       <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-indigo-900 via-purple-500 to-indigo-900"></div>
-      
+
       <div className="max-w-6xl mx-auto relative z-10">
         <div className="text-center mb-6">
           <div className="inline-block bg-gradient-to-r from-indigo-900 to-purple-900 p-2 rounded-full mb-6">
@@ -296,7 +296,7 @@ const EnhancedTimeline = () => {
           <div className="h-1 w-16 bg-gradient-to-r from-indigo-500 to-purple-500 mx-auto"></div>
           <p className="text-gray-300 mt-2 max-w-2xl mx-auto">Mark your calendar with these crucial deadlines for participating in the PhD Forum</p>
         </div>
-        
+
         <div className="max-w-4xl mx-auto">
           {dates.map((item, index) => (
             <div key={index} className="mb-4 flex">
@@ -334,10 +334,10 @@ const SubmissionFormat = () => {
   return (
     <div className="relative py-8 px-4 bg-gray-800 rounded-xl shadow-md mb-4 overflow-hidden">
       <AcademicCircuitPattern />
-      
+
       <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-purple-900 via-indigo-500 to-purple-900"></div>
       <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-purple-900 via-indigo-500 to-purple-900"></div>
-      
+
       <div className="max-w-6xl mx-auto relative z-10">
         <div className="text-center mb-6">
           <div className="inline-block bg-gradient-to-r from-purple-900 to-indigo-900 p-2 rounded-full mb-6">
@@ -348,7 +348,7 @@ const SubmissionFormat = () => {
           </h2>
           <div className="h-1 w-16 bg-gradient-to-r from-purple-500 to-indigo-500 mx-auto"></div>
         </div>
-        
+
         <div className="bg-black bg-opacity-40 p-4 rounded-xl border border-purple-800 max-w-4xl mx-auto backdrop-blur-sm">
           <div className="mb-4">
             <h3 className="text-purple-300 text-lg font-semibold mb-2 flex items-center">
@@ -372,7 +372,7 @@ const SubmissionFormat = () => {
               </li>
             </ul>
           </div>
-          
+
           <div className="mb-4">
             <h3 className="text-purple-300 text-lg font-semibold mb-2 flex items-center">
               <svg className="w-5 h-5 mr-2 text-purple-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -411,7 +411,7 @@ const SubmissionFormat = () => {
               </li>
             </ul>
           </div>
-          
+
           <div>
             <h3 className="text-purple-300 text-lg font-semibold mb-2 flex items-center">
               <svg className="w-5 h-5 mr-2 text-purple-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -443,7 +443,7 @@ const CONTENT_SECTIONS = [
     items: [
       "VLSI Design and Semiconductor Technology",
       "Next Generation Chip Architecture",
-     "AI/ML for VLSI Applications",
+      "AI/ML for VLSI Applications",
       "Emerging Computing Paradigms (Quantum, Neuromorphic)",
       "Low Power Design and Energy-Efficient Computing",
       "Security in VLSI Design",
@@ -522,11 +522,11 @@ const CONTENT_SECTIONS = [
 //           {/* Simple pattern background as a replacement */}
 //           <div className="w-full h-full bg-repeat" style={{ backgroundImage: "url('data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%239C92AC' fill-opacity='0.2'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')" }}></div>
 //         </div>
-        
+
 //         {/* Gradient borders */}
 //         <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-indigo-900 via-purple-500 to-indigo-900"></div>
 //         <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-indigo-900 via-purple-500 to-indigo-900"></div>
-        
+
 //         <div className="w-full max-w-6xl mx-auto relative z-10">
 //           {/* Header section */}
 //           <div className="text-center mb-6">
@@ -543,7 +543,7 @@ const CONTENT_SECTIONS = [
 //             </h2>
 //             <div className="h-1 w-24 bg-gradient-to-r from-indigo-500 to-purple-500 mx-auto"></div>
 //           </div>
-          
+
 //           {/* Content section */}
 //           <div className="bg-black bg-opacity-40 p-6 rounded-xl border border-indigo-800 max-w-4xl mx-auto backdrop-blur-sm">
 //             <div className="grid grid-cols-1 gap-6">
@@ -570,7 +570,7 @@ const CONTENT_SECTIONS = [
 //       </div>
 //     );
 //   };
-  
+
 
 // FAQ component
 const FAQ = () => {
@@ -604,10 +604,10 @@ const FAQ = () => {
   return (
     <div className="relative py-12 px-4 bg-gray-900 rounded-xl shadow-md overflow-hidden">
       <AcademicCircuitPattern />
-      
+
       <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-purple-900 via-indigo-500 to-purple-900"></div>
       <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-purple-900 via-indigo-500 to-purple-900"></div>
-      
+
       <div className="max-w-6xl mx-auto relative z-10">
         <div className="text-center mb-6">
           <div className="inline-block bg-gradient-to-r from-purple-900 to-indigo-900 p-3 rounded-full mb-6">
@@ -620,7 +620,7 @@ const FAQ = () => {
           </h2>
           <div className="h-1 w-16 bg-gradient-to-r from-purple-500 to-indigo-500 mx-auto"></div>
         </div>
-        
+
         <div className="max-w-4xl mx-auto grid gap-4">
           {faqs.map((faq, index) => (
             <div key={index} className="bg-black bg-opacity-40 border border-purple-800 rounded-lg p-6 hover:shadow-lg transition-all">
@@ -645,19 +645,19 @@ const CallToAction = () => {
           <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
             <defs>
               <pattern id="cta-circuit" x="0" y="0" width="100" height="100" patternUnits="userSpaceOnUse">
-                <path d="M20 20L50 20M50 20L50 80M50 80L80 80" stroke="#ffffff" strokeWidth="2" fill="none"/>
-                <circle cx="20" cy="20" r="4" fill="#ffffff"/>
-                <circle cx="80" cy="80" r="4" fill="#ffffff"/>
-                <path d="M20 80L40 80M40 80L40 40M40 40L80 40" stroke="#ffffff" strokeWidth="2" fill="none"/>
-                <circle cx="20" cy="80" r="4" fill="#ffffff"/>
-                <circle cx="80" cy="40" r="4" fill="#ffffff"/>
+                <path d="M20 20L50 20M50 20L50 80M50 80L80 80" stroke="#ffffff" strokeWidth="2" fill="none" />
+                <circle cx="20" cy="20" r="4" fill="#ffffff" />
+                <circle cx="80" cy="80" r="4" fill="#ffffff" />
+                <path d="M20 80L40 80M40 80L40 40M40 40L80 40" stroke="#ffffff" strokeWidth="2" fill="none" />
+                <circle cx="20" cy="80" r="4" fill="#ffffff" />
+                <circle cx="80" cy="40" r="4" fill="#ffffff" />
               </pattern>
             </defs>
-            <rect width="100%" height="100%" fill="url(#cta-circuit)"/>
+            <rect width="100%" height="100%" fill="url(#cta-circuit)" />
           </svg>
         </div>
       </div>
-      
+
       <div className="max-w-4xl mx-auto relative z-10 text-center">
         <div className="mb-4">
           <div className="inline-block bg-white bg-opacity-20 p-3 rounded-full mb-4">
@@ -670,13 +670,13 @@ const CallToAction = () => {
             Share your groundbreaking doctoral research with the world's leading experts in VLSI and semiconductor technology at VDAT-2026.
           </p>
         </div>
-        
+
         {/* Added QR Code Section */}
         <div className="mb-6 flex flex-col items-center">
           <div className="bg-white p-3 rounded-lg shadow-lg mb-2">
-            <img 
+            <img
               src="https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=https://docs.google.com/forms/d/e/1FAIpQLSfHj1znV0-c-BTWhY1c73ysXg5p1J5jG71dpkoD5iYSSlUQBw/viewform"
-              alt="Scan to Submit QR Code" 
+              alt="Scan to Submit QR Code"
               className="w-36 h-36"
               onError={(e) => {
                 e.target.onerror = null;
@@ -690,17 +690,17 @@ const CallToAction = () => {
             Scan this QR code with your mobile device to access the submission portal
           </p>
         </div>
-        
+
         <div className="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-6">
           <button className="px-6 py-3 bg-white text-indigo-900 font-bold rounded-lg hover:bg-indigo-100 transition duration-300 shadow-lg flex items-center text-base">
             <svg className="w-6 h-6 mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
             </svg>
             <a onClick={() => window.open("https://docs.google.com/forms/d/e/1FAIpQLSfHj1znV0-c-BTWhY1c73ysXg5p1J5jG71dpkoD5iYSSlUQBw/viewform", "_blank")}>
-            Submit Extended Abstract
+              Submit Extended Abstract
             </a>
           </button>
-          
+
           <div className="flex flex-col items-center">
             <button className="px-8 py-4 bg-gradient-to-r from-yellow-400 to-orange-500 text-indigo-900 font-extrabold rounded-lg hover:from-yellow-300 hover:to-orange-400 transition duration-300 shadow-xl flex items-center text-xl transform hover:scale-105 border-2 border-white">
               <svg className="w-7 h-7 mr-2 animate-bounce" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -725,33 +725,33 @@ const PhDForum = () => {
   return (
     <div className="bg-black min-h-screen text-white">
       <Navbar />
-      
 
-    
-    {
-      <main className="container mx-auto px-4 py-8">
 
-      
-        <PhDForumBanner />
 
-        
-        <CallToAction />
-        <div className="mt-10 space-y-10">
-          {CONTENT_SECTIONS.map((section) => (
-            <ContentSection
-              key={section.id}
-              id={section.id}
-              title={section.title}
-              content={section.content}
-              items={section.items}
-              type={section.type}
-              icon={section.icon || "star"}
-              bgColor={section.bgColor}
-              accentColor={section.accentColor}
-            />
-          ))}
+      {
+        <main className="container mx-auto px-4 py-8">
 
-          {/*
+
+          <PhDForumBanner />
+
+
+          <CallToAction />
+          <div className="mt-10 space-y-10">
+            {CONTENT_SECTIONS.map((section) => (
+              <ContentSection
+                key={section.id}
+                id={section.id}
+                title={section.title}
+                content={section.content}
+                items={section.items}
+                type={section.type}
+                icon={section.icon || "star"}
+                bgColor={section.bgColor}
+                accentColor={section.accentColor}
+              />
+            ))}
+
+            {/*
           
           <EnhancedTimeline />
           <SubmissionFormat />
@@ -759,8 +759,8 @@ const PhDForum = () => {
           <FAQ />
 
           */}
-        </div>
-      </main>
+          </div>
+        </main>
       }
       <Footer />
     </div>
