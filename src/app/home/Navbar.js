@@ -52,6 +52,7 @@ const Navbar = () => {
       dropdown: [
         { label: "Main Program", href: "/mpro" },
         { label: "Tutorials", href: "/tut_struct" },
+        { label: "Technical Programme", href: "/technical-programme" },
       ],
     },
     { label: "Speakers", href: "/Speakers" },
