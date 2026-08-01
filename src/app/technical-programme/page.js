@@ -262,8 +262,7 @@ const programmeData = [
               { id: 405, title: "A power-efficient single-ended 7T SRAM cell for low power and high performance applications", authors: "Sheshmani Yadav and Sonal Singh" },
               { id: 51, title: "FPGA-Based Realization of Takagi–Sugeno Fuzzy Controllers: Design, Implementation, and Performance Evaluation", authors: "Sarthak Kumar, Aditi Pandey, Rachna Singh and Ritu Raj" },
               { id: 323, title: "Dynamic Power Optimization in RISC-V Processors Using Advanced Clock Gating Techniques", authors: "Shuvam Pawar, soni Jay and Satish Maheshwaram" },
-              { id: 391, title: "A Robust Self Biased Pseudo-Differential Cascode Amplifier in 180 nm CMOS Technology", authors: "Gyan Prakash, sree hari rao patri and Nagulla Subba Rao" },
-              { id: 428, title: "Source-Isolated 14T Radiation-Hardened SRAM Cell for Space Applications", authors: "Mohammad Mufasir Fazili, Aryan Kannaujiya and Ambika Prasad Shah" }
+              
             ]
           },
           {
@@ -291,7 +290,9 @@ const programmeData = [
             sessionId: "Session 3.1.3a",
             papers: [
               { id: 304, title: "SCAFE: A SCOAP-Based Unsupervised Framework for Hardware Trojan Detection in Gate-Level Netlists", authors: "Pratham Prajapati, Vaishnavi Waghmare and Sunny Sharma" },
-              { id: 324, title: "Low-Power Segmented Approximate Adder with Smart Chaining for Error-Tolerant IoT and Image Processing Applications", authors: "Bhavana Krishnakumar and Rajesh Mohan R" }
+              { id: 324, title: "Low-Power Segmented Approximate Adder with Smart Chaining for Error-Tolerant IoT and Image Processing Applications", authors: "Bhavana Krishnakumar and Rajesh Mohan R" },
+              { id: 391, title: "A Robust Self Biased Pseudo-Differential Cascode Amplifier in 180 nm CMOS Technology", authors: "Gyan Prakash, sree hari rao patri and Nagulla Subba Rao" },
+              { id: 428, title: "Source-Isolated 14T Radiation-Hardened SRAM Cell for Space Applications", authors: "Mohammad Mufasir Fazili, Aryan Kannaujiya and Ambika Prasad Shah" }
             ]
           },
           {
