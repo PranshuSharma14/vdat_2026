@@ -11,7 +11,8 @@ const tracks = {
   D: { label: "Track D: Verification, Reliability & Hardware Security", color: "#f59e0b", bg: "rgba(245,158,11,0.12)", border: "rgba(245,158,11,0.4)" },
   W: { label: "Women in Engineering", color: "#ec4899", bg: "rgba(236,72,153,0.12)", border: "rgba(236,72,153,0.4)" },
   S: { label: "Startup", color: "#ef4444", bg: "rgba(239,68,68,0.12)", border: "rgba(239,68,68,0.4)" },
-  P: { label: "Ph.D. Forum", color: "#14b8a6", bg: "rgba(20,184,166,0.12)", border: "rgba(20,184,166,0.4)" }
+  P: { label: "Ph.D. Forum", color: "#14b8a6", bg: "rgba(20,184,166,0.12)", border: "rgba(20,184,166,0.4)" },
+  PT: { label: "Poster Presentations", color: "#6366f1", bg: "rgba(99,102,241,0.12)", border: "rgba(99,102,241,0.4)" },
 };
 
 const programmeData = [
@@ -302,6 +303,69 @@ const programmeData = [
               { id: 297, title: "BHARAT-TPM: Design and ASIC Implementation of an SPI Based AXI Enabled RSA-4096 Accelerator", authors: "Aneesh Raveendran, Mahima Agarwal, Divya B, Dr Rajasekr K, Vivian D, Hari Babu P and Dr S D Sudarsan" },
               { id: 302, title: "BHARAT-TPM: Micro-Architecture Design of AXI enabled HMAC SHA-3 Hardware Accelerator for a RISC-V Trusted Platform Module", authors: "Aneesh Raveendran, Adithyadev Mattada, Sheetal B V, Dr Rajasekar K, Vivian D, Hari Babu P and Dr S D Sudarsan" },
               { id: 190, title: "CHIMERA: A Chaotic Hopfield–Integrated Memristive Entropy Architecture for FPGA PRNGs", authors: "Kusum Lata, Arihant Agarwal and Arpit Jain" }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  , {
+    day: "Tab 4 (Posters)",
+    date: "20–21 August 2026",
+    sessions: [
+      {
+        sessionLabel: "Poster Session 1",
+        time: "Thursday, 20 August 2026",
+        tracks: [
+          {
+            track: "PT",
+            sessionId: "Posters 1",
+            papers: [
+              { id: 98, title: "Design of Analog CMOS Circuit using gm/ID-based Look-up Tables", authors: "Arohi Soni and Pravin S. Mane" },
+              { id: 115, title: "Coverage-Driven UVM-Based Verification of AMBA AHB VIP for Protocol Compliance", authors: "Saquib Azam, Laxmi Pradhan Kumre and Bhavana Prakash Shrivastava" },
+              { id: 144, title: "ASIC Design and Implementation of a 16-bit Floating-Point FFT Processor", authors: "Mohd Hasir, Aiman Malik and Mohd Wajid" },
+              { id: 152, title: "Energy-Efficient SNN Accelerator with Event Scheduling for Visual Edge Intelligence", authors: "Aman Kumar, Nagendra Kumar, Manas Bajpai and Santosh Kumar Vishvakarma" },
+              { id: 164, title: "A Deterministic Hardware Scheduler for Reducing RTOS Latency in RISC-V Architectures", authors: "Dhruv Bal Dikshit, Preyerna Srivastava, Shruti Kalra and Ruby Beniwal" },
+              { id: 181, title: "A Full Custom Design Methodology for n×n 6T SRAM Array with 2×2 Array Implementation", authors: "Purvi J. Patel, Jinal Thakor and Ansh Khanpara" },
+              { id: 183, title: "Sequential Context-Aware Unsupervised Detection of Hardware Trojans in Gate-Level Netlists", authors: "Sugata Bhunia and Nirmala Devi M" },
+              { id: 193, title: "Prune-Mask Fault Masking in Sparse Neural Accelerators: Co-Designed ISA, BIST, and Yield on a RISC-V Edge Platform", authors: "Binu Manohar, Dr. Arun Joy and Dr. Simi Zerine Sleeba" },
+              { id: 198, title: "A Heterogeneous RISC-V Architecture for Efficient Biomedical Signal Processing", authors: "Pritha Pawan Sharma, Soumya Jain, Sameena Khan and Sujay Deb" },
+              { id: 213, title: "Machine Learning Assisted Optimization of Al:Mg–TiO₂/SnO₂ Based MAPbI₃ Perovskite Solar Cells", authors: "Twinkle Gupta, Ankur Bhardwaj and Ajay Kumar" },
+              { id: 214, title: "A Trilayer Cap Stack Non-recessed Gate AlInGaN/GaN/AlInGaN Double Heterojunction GaN HEMT for RF and LNA Applications", authors: "Amit Agarwal and Sumit Kale" },
+              { id: 216, title: "Scalable UVM-Based Verification and FPGA Implementation of a Parameterized High-Speed Barrel Shifter", authors: "Divya Gupta, Shruti Kalra and Ruby Beniwal" },
+              { id: 227, title: "Double Perovskite (Lead-Free) Tl2PdBr6 Solar Cell Architecture for Terrestrial and Space Photovoltaics", authors: "Chinmaya Kumar Pradhan, Paramita Sarkar and S. K. Tripathy" },
+              { id: 234, title: "Edge AI Wildlife Classification with FPGA-Based Deterministic Deterrence on PYNQ-Z2", authors: "Palle Devi Sri Vinay Mohan Reddy, Bonthu Namo Sai Reddy, Chakilela Sairaj, Ngangbam Phalguni Singh and Vijay Rao Kumbhare" },
+              { id: 239, title: "Hierarchical MARL with PV Forecasting and Dynamic Pricing in Smart Grids", authors: "Samadrita Mondal and Nilotpal Chakraborty" },
+              { id: 242, title: "Fused SIM(S)D/Scalar Functional Units for RISC-V P-B-Zkn Instruction Set Extensions", authors: "Nancy Gupta and David Selvakumar" },
+              { id: 251, title: "Noise-Aware Compilation for Heterogeneous NISQ Hardware: A Cross-Topology Empirical Study", authors: "Prisha Bharti, Angel Garg, Anil Singh and Manu Bansal" }
+            ]
+          }
+        ]
+      },
+      {
+        sessionLabel: "Poster Session 2",
+        time: "Friday, 21 August 2026",
+        tracks: [
+          {
+            track: "PT",
+            sessionId: "Posters 2",
+            papers: [
+              { id: 266, title: "Design of a Low-power Self-biased Continuous-time Voltage Comparator in 65nm CMOS Technology", authors: "Akriti Jain, Muskan Mahla, Riyanka Banerjee, Gaurav Kaushal, Santosh Manabala and Jai Gopal Pandey" },
+              { id: 292, title: "BHARAT-TPM: Micro-Architecture Design of AXI enabled SM3 Hardware Accelerator for a RISC-V Trusted Platform Module", authors: "Aneesh Raveendran, Kiran P, Sheetal B V, Dr. Raja Sekar K, Vivian D, Hari Babu P and Dr. S. D. Sudarsan" },
+              { id: 315, title: "An Energy-Efficient 10T2R NVSRAM Bitcell Using Decoupled Bilateral RRAM Paths", authors: "Sharada Katailiha, Sidharthan B S and Santosh Kumar Vishvakarma" },
+              { id: 316, title: "Design and Implementation of a RISC-V Based MCU for Automotive Body Control Applications", authors: "Deepti Emmi, Abhishek Patawari, Aditya Sthawarmath, Aryaman Pathak, Saaj Mulik and Mousumi Bhanja" },
+              { id: 318, title: "Hierarchical Row Decoder for RHBD SRAM with Write Delay Stability and Yield Analysis", authors: "Vishruth R, Jamuna S, Aditya S. Purohit, Gowri Bandak, Hannan Ashrafi and Yadamakanti Sai Mohith Reddy" },
+              { id: 321, title: "ASPIRE: An Adaptive Switching Activity Aware Approximate Multiplier with Dynamic Transition Reduction for Energy Efficient Systems", authors: "Shantinikethan Sidharth and Ruby Mishra" },
+              { id: 338, title: "An UVMF-based Security-aware Functional Verification Framework for AES-256 Hardware IP", authors: "Ayush Modi, Diksha Shekhawat, Jugal Gandhi, M. Santosh, Jai Gopal Pandey and Chandra Shekhar" },
+              { id: 340, title: "Design and Analysis of a DTC-Assisted Fractional-N PLL for NavIC Applications", authors: "Venkatesh B, Saumitra Gupta and Dr. Hari Shanker Gupta" },
+              { id: 348, title: "CAPS: Controlled Adaptive Partitioning of STLB", authors: "Keerthisagar Kokkiligadda, Tejeshwar Bhagatsing Thorawade, Sanjoy Kumar Basu, Varun Venkitaraman Iyer and Virendra Singh" },
+              { id: 358, title: "Design and Implementation of a Digital FIR Filter using Optimized Hybrid Adders and Multipliers", authors: "Swathi K, Rajeswari Kotla, Rithwik Mandati and Swetha Siliveri" },
+              { id: 389, title: "Viterbi Continuous Branch Predictor: A Topological Approach to High-Accuracy CPU Branch Prediction", authors: "Sidhanth Krishnan and Sandeep Joshi" },
+              { id: 393, title: "Optimization of Layer Stacking in Piezoelectric Energy Harvesters for Human Muscle-Based Power Generation", authors: "Shradha Saxena and Archana Pandey" },
+              { id: 415, title: "Low-Power FPGA-Based Matrix Multiplier Using FSM-Controlled MAC Architecture", authors: "Suman Singh, Deepak Kumar, Chinmay Bobade and Pragati Singh" },
+              { id: 418, title: "A Unified UVM Framework for Accelerated Verification of Block Cipher IP Cores", authors: "Harsh Singh, Diksha Shekhawat, Jugal Gandhi, Saurabh Jain, M. Santosh, Jai Gopal Pandey and Chandra Shekhar" },
+              { id: 430, title: "IRTA: A Novel High Speed and Low Area Ternary Adder Using Input Reordering and Truth Table Compression", authors: "Rishi Nilesh Agrawal, Rajat Porwal and Syed Ershad Ahmed" },
+              { id: 436, title: "Impact of Band-Edge State Occupation and Critical Temperature Effects on Subthreshold Swing Characteristics of Cryogenic FinFETs", authors: "Khushi Jain, Sandeep Kumar and Navjeet Bagga" }
             ]
           }
         ]

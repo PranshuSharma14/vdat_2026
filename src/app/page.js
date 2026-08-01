@@ -72,6 +72,16 @@ const endorsedBy = [
 
 const speakers = [
   {
+    name: "Dr. Gouri Sankar Kar",
+    title: "Vice President of R&D for Compute and Memory Device Technologies",
+    organization: "imec",
+    photo: "",
+    bio: "Dr. Gouri Sankar Kar is Vice President of R&D for Compute and Memory Device Technologies at imec, Leuven, Belgium. He received his Ph.D. in semiconductor device physics from IIT Kharagpur in 2002. From 2002 to 2005, he served as a visiting scientist at the Max Planck Institute for Solid State Research in Stuttgart, Germany. In 2006, he joined Infineon/Qimonda in Dresden as Lead Integration Engineer, where he was responsible for developing vertical transistors for DRAM applications. Since joining imec in 2009, Dr. Kar has contributed to advanced compute and memory device technologies, supporting innovation and scaling in next-generation semiconductor systems.",
+    linkedin: "",
+    website: "https://www.imecitf.com/world/2025/speakers/gouri-kar"
+  },
+
+  {
     name: "Tapas Nandy",
     title: "Sr. Director, Microsoft / Sr. Member, IEEE",
     organization: "IEEE",
