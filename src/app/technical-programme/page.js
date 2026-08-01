@@ -311,12 +311,12 @@ const programmeData = [
     ]
   }
   , {
-    day: "Tab 4 (Posters)",
+    day: "Poster Sessions",
     date: "20–21 August 2026",
     sessions: [
       {
         sessionLabel: "Poster Session 1",
-        time: "Thursday, 20 August 2026",
+        time: "05:20 PM - 06:20 PM",
         tracks: [
           {
             track: "PT",
@@ -345,7 +345,7 @@ const programmeData = [
       },
       {
         sessionLabel: "Poster Session 2",
-        time: "Friday, 21 August 2026",
+        time: "04:55 PM - 05:55 PM",
         tracks: [
           {
             track: "PT",
@@ -482,8 +482,14 @@ export default function TechnicalProgramme() {
         </div>
 
         {/* Sessions */}
+        <div style={{
+          display: activeDay === 3 ? "grid" : "block",
+          gridTemplateColumns: activeDay === 3 ? "repeat(auto-fit, minmax(600px, 1fr))" : "none",
+          gap: activeDay === 3 ? "32px" : "0",
+          alignItems: "start"
+        }}>
         {currentDay.sessions.map((session, si) => (
-          <div key={si} style={{ marginBottom: "28px" }}>
+          <div key={si} style={{ marginBottom: "28px", height: "100%" }}>
             {/* Session Header */}
             <div
               style={{
@@ -591,6 +597,7 @@ export default function TechnicalProgramme() {
               </div>
           </div>
         ))}
+        </div>
       </div>
 
       {/* Footer note */}
