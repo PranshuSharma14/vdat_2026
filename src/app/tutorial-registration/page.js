@@ -49,7 +49,7 @@ const importantNotes = [
 ];
 
 const TutorialRegistrationPage = () => {
-  const GOOGLE_FORM_LINK = "https://forms.gle/TLRRNfZ11pqNCJHm9";
+  const GOOGLE_FORM_LINK = "https://docs.google.com/forms/d/e/1FAIpQLSfE7_rsUb5Zqr6MXrP3JAcAvqMCcFkIXl3je9lVKXroGQPy-A/viewform?pli=1";
 
   return (
     <div className="bg-black min-h-screen">
@@ -95,7 +95,7 @@ const TutorialRegistrationPage = () => {
 
           <div className="inline-flex items-center gap-3 bg-red-600/80 border border-red-400 text-white font-bold px-8 py-3 rounded-full text-lg shadow-lg mb-8 animate-pulse">
             <Calendar size={22} />
-            Last Day to Register:&nbsp;<span className="text-yellow-300">6th August 2026</span>
+            Last Day to Register:&nbsp;<span className="text-yellow-300">10th August 2026</span>
           </div>
 
           <div className="mt-4">
@@ -245,7 +245,7 @@ const TutorialRegistrationPage = () => {
             <Calendar className="text-yellow-300 shrink-0" size={32} />
             <div>
               <p className="text-white font-bold text-lg">Registration Deadline</p>
-              <p className="text-yellow-300 text-2xl font-extrabold">6th August 2026</p>
+              <p className="text-yellow-300 text-2xl font-extrabold">10th August 2026</p>
               <p className="text-white/70 text-sm mt-1">Ensure you register before the deadline to secure your spot.</p>
             </div>
           </div>
@@ -276,7 +276,7 @@ const TutorialRegistrationPage = () => {
             <ExternalLink className="ml-3 group-hover:translate-x-2 transition-transform" size={26} />
           </a>
           <p className="text-cyan-200 text-sm mt-6">
-            Last date: <strong className="text-yellow-300">6th August 2026</strong>
+            Last date: <strong className="text-yellow-300">10th August 2026</strong>
           </p>
         </div>
       </section>
@@ -286,4 +286,4 @@ const TutorialRegistrationPage = () => {
   );
 };
 
-export default TutorialRegistrationPage;
+export default TutorialRegistrationPage;
