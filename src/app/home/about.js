@@ -87,10 +87,10 @@ const AboutSection = () => {
           <h2 className="text-3xl font-bold mb-4 text-purple-500 text-center">
             Countdown
           </h2>
-          <div className="flex justify-center space-x-4">
+          <div className="flex justify-center space-x-2 sm:space-x-4">
             {Object.entries(remainingTime).map(([unit, value]) => (
               <div className="text-center" key={unit}>
-                <div className="text-4xl font-bold border border-purple-500 bg-black bg-opacity-30 rounded p-2">
+                <div className="text-2xl sm:text-4xl font-bold border border-purple-500 bg-black bg-opacity-30 rounded p-1.5 sm:p-2">
                   {String(value).padStart(2, "0")}
                 </div>
                 <div className="text-sm mt-1 capitalize">{unit}</div>

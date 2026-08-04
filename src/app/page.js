@@ -228,7 +228,7 @@ const Carousel = ({
           {/* Venue Card */}
           <div className="mb-8 sm:mb-10 flex justify-center md:justify-start">
 
-            <div className="flex items-start sm:items-center gap-3 sm:gap-4 bg-black/60 backdrop-blur-lg border border-white/20 text-white px-4 sm:px-6 py-3 sm:py-4 rounded-xl shadow-2xl max-w-xl w-full">
+            <div className="flex flex-col sm:flex-row items-start sm:items-center gap-3 sm:gap-4 bg-black/60 backdrop-blur-lg border border-white/20 text-white px-4 sm:px-6 py-3 sm:py-4 rounded-xl shadow-2xl max-w-xl w-full">
 
               {/* Location Icon */}
               <svg
@@ -252,15 +252,17 @@ const Carousel = ({
               </svg>
 
               {/* Venue Text */}
-              <p className="text-sm sm:text-lg md:text-xl font-medium leading-relaxed text-white drop-shadow-md">
-                <span className="text-yellow-300 font-semibold">Venue:</span>{" "}
-                Jaypee Institute of Information Technology, Sector 62, Noida, Uttar Pradesh, India
-              </p>
+              <div className="flex flex-col gap-1">
+                <p className="text-sm sm:text-lg md:text-xl font-medium leading-relaxed text-white drop-shadow-md">
+                  <span className="text-yellow-300 font-semibold">Venue:</span>{" "}
+                  Jaypee Institute of Information Technology, Sector 62, Noida, Uttar Pradesh, India
+                </p>
 
-              <p className="text-sm sm:text-lg md:text-xl font-medium leading-relaxed text-white drop-shadow-md">
-                <span className="text-yellow-300 font-semibold">Conference Record No:</span>{" "}
-                72243
-              </p>
+                <p className="text-sm sm:text-lg md:text-xl font-medium leading-relaxed text-white drop-shadow-md">
+                  <span className="text-yellow-300 font-semibold">Conference Record No:</span>{" "}
+                  72243
+                </p>
+              </div>
 
             </div>
 
@@ -398,7 +400,7 @@ const SponsorsSection = () => {
         </h2>
         <div className="h-1 w-24 bg-purple-500 mx-auto mb-12 rounded-full"></div>
 
-        <div className="grid grid-cols-5 gap-4 w-full">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4 w-full">
           {allSponsors.map((logo, i) => (
             <div
               key={i}

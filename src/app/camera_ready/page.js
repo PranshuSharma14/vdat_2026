@@ -24,7 +24,7 @@ export default function CameraReadyGuidelines() {
       <main className="flex-grow container mx-auto px-4 py-12">
         {/* Header Section */}
         <div className="text-center mb-16">
-          <h1 className="text-5xl md:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400 mb-6">
+          <h1 className="text-3xl sm:text-5xl md:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400 mb-6">
             Camera-Ready Submission
           </h1>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
@@ -40,7 +40,7 @@ export default function CameraReadyGuidelines() {
               <div className="p-3 bg-blue-100 rounded-2xl text-blue-600">
                 <FileEdit size={32} />
               </div>
-              <h2 className="text-3xl font-bold text-gray-900">1. Paper Preparation & Formatting</h2>
+              <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900">1. Paper Preparation & Formatting</h2>
             </div>
 
             <ul className="space-y-4 text-lg text-gray-700 list-none">
@@ -93,7 +93,7 @@ export default function CameraReadyGuidelines() {
               <div className="p-3 bg-purple-100 rounded-2xl text-purple-600">
                 <FileBadge size={32} />
               </div>
-              <h2 className="text-3xl font-bold text-gray-900">2. IEEE Electronic Copyright Form (eCF)</h2>
+              <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900">2. IEEE Electronic Copyright Form (eCF)</h2>
             </div>
 
             <ul className="space-y-4 text-lg text-gray-700 list-none">
@@ -118,7 +118,7 @@ export default function CameraReadyGuidelines() {
               <div className="p-3 bg-emerald-100 rounded-2xl text-emerald-600">
                 <ShieldCheck size={32} />
               </div>
-              <h2 className="text-3xl font-bold text-gray-900">3. IEEE PDF eXpress Compliance</h2>
+              <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900">3. IEEE PDF eXpress Compliance</h2>
             </div>
 
             <ul className="space-y-4 text-lg text-gray-700 list-none">
@@ -157,7 +157,7 @@ export default function CameraReadyGuidelines() {
               <div className="p-3 bg-amber-100 rounded-2xl text-amber-600">
                 <UploadCloud size={32} />
               </div>
-              <h2 className="text-3xl font-bold text-gray-900">4. Source Files & Final Submission</h2>
+              <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900">4. Source Files & Final Submission</h2>
             </div>
 
             <ul className="space-y-4 text-lg text-gray-700 list-none">
@@ -193,7 +193,7 @@ export default function CameraReadyGuidelines() {
           <div className="bg-gradient-to-r from-red-600 to-rose-700 rounded-3xl p-8 md:p-10 shadow-2xl text-white">
             <div className="flex items-center gap-4 mb-6">
               <AlertTriangle size={36} className="text-yellow-300" />
-              <h2 className="text-3xl font-bold">Important Information</h2>
+              <h2 className="text-xl sm:text-2xl md:text-3xl font-bold">Important Information</h2>
             </div>
 
             <p className="text-xl mb-6">The camera-ready submission will be considered complete <strong>only after uploading:</strong></p>

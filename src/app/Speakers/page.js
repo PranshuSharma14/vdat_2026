@@ -146,7 +146,7 @@ const SpeakersSection = () => {
 
           {/* Heading */}
           <div className="text-center mb-14">
-            <h1 className="text-5xl md:text-7xl font-extrabold text-white mb-5">
+            <h1 className="text-3xl sm:text-5xl md:text-7xl font-extrabold text-white mb-5">
               Featured Speakers
             </h1>
 
@@ -175,30 +175,30 @@ const SpeakersSection = () => {
               <SwiperSlide key={index}>
                 <div className="bg-gradient-to-r from-[#111827] to-[#1e293b] rounded-[40px] overflow-hidden border border-white/10 shadow-2xl">
 
-                  <div className="flex flex-col-reverse lg:flex-row items-center min-h-[750px]">
+                  <div className="flex flex-col-reverse lg:flex-row items-center min-h-0 lg:min-h-[750px]">
 
                     {/* LEFT CONTENT */}
-                    <div className="flex-1 p-8 md:p-16">
+                    <div className="flex-1 p-6 sm:p-8 md:p-16">
 
-                      <div className="inline-block bg-yellow-400 text-black px-5 py-2 rounded-full text-sm md:text-base font-bold mb-8">
+                      <div className="inline-block bg-yellow-400 text-black px-4 py-1.5 sm:px-5 sm:py-2 rounded-full text-xs sm:text-sm md:text-base font-bold mb-6 sm:mb-8">
                         Distinguished Speaker
                       </div>
 
-                      <h2 className="text-4xl md:text-6xl font-extrabold text-white leading-tight mb-5">
+                      <h2 className="text-2xl sm:text-4xl md:text-6xl font-extrabold text-white leading-tight mb-4 sm:mb-5">
                         {speaker.name}
                       </h2>
 
-                      <p className="text-2xl text-yellow-400 font-semibold mb-2">
+                      <p className="text-lg sm:text-2xl text-yellow-400 font-semibold mb-2">
                         {speaker.title}
                       </p>
 
-                      <p className="text-xl text-gray-300 mb-8">
+                      <p className="text-base sm:text-xl text-gray-300 mb-6 sm:mb-8">
                         {speaker.organization}
                       </p>
 
-                      <div className="w-28 h-1 bg-yellow-400 rounded-full mb-8"></div>
+                      <div className="w-20 sm:w-28 h-1 bg-yellow-400 rounded-full mb-6 sm:mb-8"></div>
 
-                      <p className="text-gray-200 text-lg md:text-xl leading-9 mb-10 text-justify max-w-4xl">
+                      <p className="text-gray-200 text-base sm:text-lg md:text-xl leading-7 sm:leading-9 mb-8 sm:mb-10 text-justify max-w-4xl">
                         {speaker.bio}
                       </p>
 
@@ -215,7 +215,7 @@ const SpeakersSection = () => {
                     </div>
 
                     {/* RIGHT IMAGE */}
-                    <div className="flex-1 flex justify-center items-center p-10">
+                    <div className="flex-1 flex justify-center items-center p-6 sm:p-10">
 
                       <div className="relative">
 
@@ -226,7 +226,7 @@ const SpeakersSection = () => {
                         <img
                           src={speaker.photo}
                           alt={speaker.name}
-                          className="relative w-[320px] h-[320px] md:w-[500px] md:h-[500px] object-cover rounded-[40px] border border-white/10 shadow-2xl"
+                          className="relative w-[200px] h-[200px] sm:w-[280px] sm:h-[280px] md:w-[500px] md:h-[500px] object-cover rounded-[24px] sm:rounded-[40px] border border-white/10 shadow-2xl"
                         />
 
                         {/* Floating LinkedIn */}

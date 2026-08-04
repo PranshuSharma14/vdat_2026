@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { FaBars, FaTimes, FaChevronDown } from "react-icons/fa";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import React from "react";
 import { Inter } from "next/font/google";
@@ -15,28 +15,44 @@ const inter = Inter({
 
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const [isPapersDropdownOpen, setIsPapersDropdownOpen] = useState(false);
-  const [isVenueDropdownOpen, setIsVenueDropdownOpen] = useState(false);
-  const [isprevyeardropdownopen, setIsprevyeardropdownopen] = useState(false);
-  const [isProgramDropdownOpen, setIsProgramDropdownOpen] = useState(false);
+  const [openDropdownIndex, setOpenDropdownIndex] = useState(null);
 
-  const toggleMobileMenu = () => setIsMobileMenuOpen(!isMobileMenuOpen);
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+    setOpenDropdownIndex(null);
+  };
+
+  // Lock body scroll when mobile menu is open
+  useEffect(() => {
+    if (isMobileMenuOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [isMobileMenuOpen]);
+
+  const toggleMobileDropdown = (index) => {
+    setOpenDropdownIndex(openDropdownIndex === index ? null : index);
+  };
 
   const menuItems = [
     { label: "Home", href: "/" },
     {
-  label: "Registration",
-  dropdown: [
-    {
-      label: "Conference Registration",
-      href: "/conference-registration",
+      label: "Registration",
+      dropdown: [
+        {
+          label: "Conference Registration",
+          href: "/conference-registration",
+        },
+        {
+          label: "Full Day Tutorial Registration",
+          href: "/tutorial-registration",
+        },
+      ],
     },
-    {
-      label: "Full Day Tutorial Registration",
-      href: "/tutorial-registration",
-    },
-  ],
-},
     {
       label: "Authors",
       dropdown: [
@@ -59,7 +75,7 @@ const Navbar = () => {
     { label: "Committee", href: "/committees" },
     { label: "Venue", href: "/venue" },
     { label: "Fellowship", href: "/fellowship" },
-    
+
     {
       label: "Previous Years",
       dropdown: [
@@ -138,6 +154,17 @@ const Navbar = () => {
           color: #facc15;
           background: rgba(250,204,21,0.07);
           padding-left: 22px;
+        }
+
+        .mobile-dropdown-items {
+          max-height: 0;
+          overflow: hidden;
+          transition: max-height 0.3s ease-out;
+        }
+
+        .mobile-dropdown-items.open {
+          max-height: 500px;
+          transition: max-height 0.4s ease-in;
         }
       `}</style>
 
@@ -269,9 +296,9 @@ const Navbar = () => {
         </div>
       </nav>
 
-      {/* MOBILE MENU */}
+      {/* MOBILE MENU — with working dropdowns */}
       <div
-        className={`lg:hidden fixed top-0 right-0 h-full w-4/5 max-w-xs z-[100] transition-transform duration-300 ${
+        className={`lg:hidden fixed top-0 right-0 h-full w-4/5 max-w-xs z-[100] transition-transform duration-300 overflow-y-auto ${
           isMobileMenuOpen ? "translate-x-0" : "translate-x-full"
         }`}
         style={{
@@ -281,21 +308,60 @@ const Navbar = () => {
         <div className="flex justify-between items-center px-5 py-4 border-b border-yellow-400/20">
           <span className="text-lg font-bold text-yellow-400">VDAT 2026</span>
           <button onClick={toggleMobileMenu}>
-            <FaTimes color="#facc15" />
+            <FaTimes color="#facc15" size={18} />
           </button>
         </div>
 
         <div className="flex flex-col px-4 py-3">
-          {menuItems.map((item, i) => (
-            <Link
-              key={i}
-              href={item.href || "#"}
-              className="text-white py-3 border-b border-white/10"
-              onClick={toggleMobileMenu}
-            >
-              {item.label}
-            </Link>
-          ))}
+          {menuItems.map((item, i) =>
+            item.dropdown ? (
+              /* Dropdown parent — toggle sub-items on click */
+              <div key={i} className="border-b border-white/10">
+                <button
+                  onClick={() => toggleMobileDropdown(i)}
+                  className="flex items-center justify-between w-full text-white py-3 text-left"
+                >
+                  <span>{item.label}</span>
+                  <FaChevronDown
+                    size={12}
+                    className={`text-yellow-400 transition-transform duration-300 ${
+                      openDropdownIndex === i ? "rotate-180" : ""
+                    }`}
+                  />
+                </button>
+
+                {/* Collapsible sub-menu */}
+                <div
+                  className={`mobile-dropdown-items ${
+                    openDropdownIndex === i ? "open" : ""
+                  }`}
+                >
+                  <div className="pl-4 pb-2 space-y-1">
+                    {item.dropdown.map((drop, j) => (
+                      <Link
+                        key={j}
+                        href={drop.href}
+                        className="block text-gray-300 hover:text-yellow-400 py-2 text-sm transition-colors duration-200"
+                        onClick={toggleMobileMenu}
+                      >
+                        {drop.label}
+                      </Link>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            ) : (
+              /* Simple link — no dropdown */
+              <Link
+                key={i}
+                href={item.href}
+                className="text-white py-3 border-b border-white/10"
+                onClick={toggleMobileMenu}
+              >
+                {item.label}
+              </Link>
+            )
+          )}
         </div>
       </div>
 

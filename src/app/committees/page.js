@@ -1024,10 +1024,10 @@ const committees = [
   },
 ];
 const MemberCard = ({ member }) => (
-  <div className="relative group w-52 mb-6 transition-all duration-300 hover:-translate-y-2">
+  <div className="relative group w-40 sm:w-52 mb-6 transition-all duration-300 hover:-translate-y-2">
     <div className="relative overflow-hidden rounded-lg shadow-lg">
       <div className="bg-gradient-to-b from-blue-100 to-blue-50 p-3 rounded-t-lg">
-        <div className="relative mx-auto w-36 h-36 overflow-hidden rounded-full border-4 border-blue-400 shadow-md">
+        <div className="relative mx-auto w-28 h-28 sm:w-36 sm:h-36 overflow-hidden rounded-full border-4 border-blue-400 shadow-md">
           <img
             src={member.image || "/default-avatar.png"}
             alt={member.name}
@@ -1062,12 +1062,12 @@ const MemberCard = ({ member }) => (
         </div>
       </div>
 
-      <div className="p-4 bg-white rounded-b-lg border-t border-blue-100">
-        <h3 className="text-lg font-bold text-blue-900 mb-1 h-[56px] flex items-center justify-center text-center">
+      <div className="p-3 sm:p-4 bg-white rounded-b-lg border-t border-blue-100">
+        <h3 className="text-base sm:text-lg font-bold text-blue-900 mb-1 h-[48px] sm:h-[56px] flex items-center justify-center text-center">
           {member.name}
         </h3>
 
-        <p className="text-sm text-blue-600 font-medium h-[60px] flex items-center justify-center text-center">
+        <p className="text-xs sm:text-sm text-blue-600 font-medium h-[52px] sm:h-[60px] flex items-center justify-center text-center">
           {member.institute}
         </p>
       </div>
@@ -1153,118 +1153,77 @@ const CommitteeCard = ({ title, members, chairs, table, condolence }) => {
         </div>
       )}
 
-      {/* TRACK CHAIR TABLE */}
+      {/* TRACK CHAIR TABLE — desktop: table, mobile: cards */}
       {table && (
-
-        <div className="overflow-x-auto rounded-3xl shadow-2xl border border-gray-200">
-
-          <table className="w-full border-collapse bg-white table-fixed">
-
-            {/* HEADER */}
-            <thead className="bg-gradient-to-r from-blue-700 to-blue-900 text-white">
-
-              <tr>
-
-                <th className="border px-6 py-5 text-lg font-bold">
-                  Track
-                </th>
-
-                <th className="border px-6 py-5 text-lg font-bold">
-                  Track Name
-                </th>
-
-                <th className="border px-6 py-5 text-lg font-bold">
-                  Chair 1
-                </th>
-
-                <th className="border px-6 py-5 text-lg font-bold">
-                  Chair 2
-                </th>
-
-                <th className="border px-6 py-5 text-lg font-bold">
-                  Chair 3
-                </th>
-
-                <th className="border px-6 py-5 text-lg font-bold">
-                  Chair 4
-                </th>
-
-              </tr>
-
-            </thead>
-
-            {/* BODY */}
-            <tbody>
-
-              {table.map((row, idx) => (
-
-                <tr
-                  key={idx}
-                  className="hover:bg-gray-50 transition text-black bg-white"
-                >
-
-                  {/* TRACK */}
-                  <td className="border px-5 py-6 font-bold text-2xl text-black bg-white align-middle">
-                    {row.track}
-                  </td>
-
-                  {/* TRACK NAME */}
-                  <td className="border px-5 py-6 text-left font-semibold text-black text-lg leading-relaxed bg-white align-middle">
-                    {row.trackName}
-                  </td>
-
-                  {/* CHAIRS */}
+        <>
+          {/* Mobile card layout */}
+          <div className="md:hidden space-y-6">
+            {table.map((row, idx) => (
+              <div key={idx} className="bg-white rounded-2xl shadow-lg border border-gray-200 overflow-hidden">
+                <div className="bg-gradient-to-r from-blue-700 to-blue-900 text-white px-5 py-3">
+                  <span className="font-bold text-lg">{row.track}</span>
+                  <span className="ml-2 text-blue-200">—</span>
+                  <span className="ml-2 text-sm font-medium">{row.trackName}</span>
+                </div>
+                <div className="grid grid-cols-2 gap-4 p-4">
                   {[row.chair1, row.chair2, row.chair3, row.chair4].map(
-                    (chair, i) => (
-
-                      <td
-                        key={i}
-                        className="border px-4 py-6 align-middle bg-white"
-                      >
-
-                        {chair ? (
-
-                          <div className="flex flex-col items-center text-center">
-
-                            <img
-                              src={chair.image}
-                              alt={chair.name}
-                              className="w-28 h-28 rounded-full object-cover border-4 border-blue-500 shadow-lg mb-4"
-                            />
-
-                            <p className="font-bold text-blue-700 text-xl leading-snug">
-                              {chair.name}
-                            </p>
-
-                            <p className="text-base text-gray-700 mt-2 leading-relaxed">
-                              {chair.institute}
-                            </p>
-
-                          </div>
-
-                        ) : (
-
-                          <div className="text-4xl text-gray-400">
-                            —
-                          </div>
-
-                        )}
-
-                      </td>
-
-                    )
+                    (chair, i) =>
+                      chair && (
+                        <div key={i} className="flex flex-col items-center text-center">
+                          <img
+                            src={chair.image}
+                            alt={chair.name}
+                            className="w-20 h-20 rounded-full object-cover border-3 border-blue-500 shadow-md mb-2"
+                          />
+                          <p className="font-bold text-blue-700 text-sm leading-snug">{chair.name}</p>
+                          <p className="text-xs text-gray-600 mt-1">{chair.institute}</p>
+                        </div>
+                      )
                   )}
+                </div>
+              </div>
+            ))}
+          </div>
 
+          {/* Desktop table layout */}
+          <div className="hidden md:block overflow-x-auto rounded-3xl shadow-2xl border border-gray-200">
+            <table className="w-full border-collapse bg-white table-fixed">
+              <thead className="bg-gradient-to-r from-blue-700 to-blue-900 text-white">
+                <tr>
+                  <th className="border px-6 py-5 text-lg font-bold">Track</th>
+                  <th className="border px-6 py-5 text-lg font-bold">Track Name</th>
+                  <th className="border px-6 py-5 text-lg font-bold">Chair 1</th>
+                  <th className="border px-6 py-5 text-lg font-bold">Chair 2</th>
+                  <th className="border px-6 py-5 text-lg font-bold">Chair 3</th>
+                  <th className="border px-6 py-5 text-lg font-bold">Chair 4</th>
                 </tr>
-
-              ))}
-
-            </tbody>
-
-          </table>
-
-        </div>
-
+              </thead>
+              <tbody>
+                {table.map((row, idx) => (
+                  <tr key={idx} className="hover:bg-gray-50 transition text-black bg-white">
+                    <td className="border px-5 py-6 font-bold text-2xl text-black bg-white align-middle">{row.track}</td>
+                    <td className="border px-5 py-6 text-left font-semibold text-black text-lg leading-relaxed bg-white align-middle">{row.trackName}</td>
+                    {[row.chair1, row.chair2, row.chair3, row.chair4].map(
+                      (chair, i) => (
+                        <td key={i} className="border px-4 py-6 align-middle bg-white">
+                          {chair ? (
+                            <div className="flex flex-col items-center text-center">
+                              <img src={chair.image} alt={chair.name} className="w-28 h-28 rounded-full object-cover border-4 border-blue-500 shadow-lg mb-4" />
+                              <p className="font-bold text-blue-700 text-xl leading-snug">{chair.name}</p>
+                              <p className="text-base text-gray-700 mt-2 leading-relaxed">{chair.institute}</p>
+                            </div>
+                          ) : (
+                            <div className="text-4xl text-gray-400">—</div>
+                          )}
+                        </td>
+                      )
+                    )}
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </>
       )}
 
     </div>

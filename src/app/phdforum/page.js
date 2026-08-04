@@ -231,9 +231,9 @@ const ContentSection = ({ id, title, content, items, type, icon, bgColor, accent
         )}
 
         {type === 'list' && (
-          <ul className="grid md:grid-cols-2 gap-x-6 gap-y-2 text-lg text-gray-200 max-w-4xl mx-auto">
+          <ul className="grid md:grid-cols-2 gap-x-6 gap-y-2 text-base sm:text-lg text-gray-200 max-w-4xl mx-auto">
             {items.map((item, index) => (
-              <li key={index} className="flex items-start p-3 hover:bg-black hover:bg-opacity-40 rounded-lg transition-all border border-transparent hover:border-indigo-700">
+              <li key={index} className="flex items-start p-2 sm:p-3 hover:bg-black hover:bg-opacity-40 rounded-lg transition-all border border-transparent hover:border-indigo-700">
                 <span className="mr-2 mt-1">
                   <Icon name={icon} className="w-4 h-4" />
                 </span>
