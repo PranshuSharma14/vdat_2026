@@ -120,6 +120,15 @@ const speakers = [
     photo: "/images/gauravgoel.jpeg",
     linkedin: "https://www.linkedin.com/in/gaurav-goel-01185a5/",
     website: ""
+  },
+  {
+    name: "Yogesh Mittal",
+    title: "Vice President, Engineering – High Performance Computing Product Group",
+    organization: "Renesas Electronics",
+    photo: "/images/yogesh mittal.png",
+    bio: "Yogesh Mittal is Vice President at Renesas Electronics, where he leads the High-Performance Computing R&D Center in India, spanning Noida and Hyderabad. A seasoned engineering leader with over 29 years in the semiconductor industry, Yogesh brings deep expertise across Automotive, Industrial, Consumer/IoT, and Networking domains. At Renesas, he is driving next-generation SoC and MCU innovations that are shaping the future of automotive computing. His work focuses on advanced multi-domain intelligent automotive platforms, including cutting-edge 3nm SoCs designed to power the next wave of software-defined vehicles. Prior to this, Yogesh has successfully built and scaled high-performing engineering teams from the ground up, consistently delivering complex chips “first-time right.” His track record includes leading the development chips for software-defined vehicle architectures in advance technology node. Beyond his role in engineering leadership, Yogesh is an active voice in the semiconductor ecosystem. He has also been a speaker at industry forums and conferences, where he shares insights on emerging technologies, chip design innovation, and the evolving landscape of automotive electronics.",
+    linkedin: "",
+    website: ""
   }
 ]
 
