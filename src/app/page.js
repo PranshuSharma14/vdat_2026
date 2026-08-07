@@ -397,6 +397,7 @@ const SponsorsSection = () => {
     { src: '/logos/NXP new.png', alt: 'NXP Semiconductors' },
     { src: '/logos/Cadence(platinum sponsor).png', alt: 'Cadence' },
     { src: '/logos/MEIT.png', alt: 'MeitY' },
+    { src: '/logos/Renesas(Gold Sponsor).png', alt: 'Renesas' },
     { src: '/logos/STM(gold sponsor).png', alt: 'STMicroelectronics' },
     { src: '/logos/synopsis(gold sponsor).png', alt: 'Synopsys' },
   ];
@@ -409,7 +410,7 @@ const SponsorsSection = () => {
         </h2>
         <div className="h-1 w-24 bg-purple-500 mx-auto mb-12 rounded-full"></div>
 
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4 w-full">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-4 w-full">
           {allSponsors.map((logo, i) => (
             <div
               key={i}
