@@ -11,6 +11,15 @@ import "swiper/swiper-bundle.css";
 const SpeakersSection = () => {
   const speakers = [
   {
+    name: "Dr. Satya Gupta",
+    title: "President",
+    organization: "The VLSI Society of India",
+    photo: "/images/satya.jpg",
+    bio: "Dr. Satya Gupta is a veteran semiconductor industry leader, entrepreneur, and technologist with over three decades of experience spanning VLSI design, ASIC development, and deep-tech innovation. He currently serves as President of the VLSI Society of India (VSI), where he plays a key role in advancing India's semiconductor ecosystem and fostering industry-academia collaboration. Dr. Gupta has held several leadership positions across the semiconductor and technology landscape, including CEO of EPIC Foundation, Chairman of IESA, and CEO of SenZopt Technologies. He also led Concept2Silicon Systems—later acquired by HCL Technologies—where he contributed to building globally competitive ASIC design capabilities. Earlier in his career, he was Director of ASIC Design at Intel, where he spent over a decade working on advanced microelectronics and chip design. An entrepreneur at heart, Dr. Gupta was also the Founder and VP of Engineering & Technology at Open-Silicon, contributing significantly to the evolution of ASIC business models. His career reflects a strong blend of technical depth and strategic leadership across startups, industry bodies, and global enterprises. He holds a Ph.D. in High-Speed Computing, Massively Parallel Computing, and Neural Networks from Old Dominion University, along with an M.Tech in Computer Engineering from IIT Delhi and a B.E. in Electrical and Electronics Engineering from BITS Pilani. Dr. Gupta is widely recognized for his contributions to India's semiconductor ecosystem, leadership in industry initiatives, and commitment to building indigenous capabilities in electronics and chip design.",
+    linkedin: "",
+  },
+
+  {
     name: "Dr. Gouri Sankar Kar",
     title: "Vice President of R&D for Compute and Memory Device Technologies",
     organization: "imec",
