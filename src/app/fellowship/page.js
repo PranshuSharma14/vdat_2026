@@ -247,15 +247,9 @@ const FellowshipPage = () => {
         Fellowship Applications
       </h2>
 
-      <div className="max-w-3xl mx-auto mt-16">
-
-  <div className="bg-gradient-to-r from-blue-700 via-indigo-700 to-purple-700 rounded-3xl p-8 text-center shadow-2xl">
-
-    <Users className="mx-auto text-white mb-4" size={48} />
-
-    <h2 className="text-4xl font-bold text-white">
-      
-    </h2>
+      <p className="mt-4 text-lg text-yellow-300 font-semibold">
+        ⚠️ Last Date of Entry: <span className="text-white">12th August, 2026</span>
+      </p>
 
    
  <a
@@ -271,10 +265,6 @@ const FellowshipPage = () => {
   </div>
 
 </div>
-
-    </div>
-
-  </div>
 
 </section>
      
