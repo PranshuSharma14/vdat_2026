@@ -292,6 +292,10 @@ export default function TutorialSchedule() {
             <p className="text-lg md:text-xl text-slate-300 max-w-3xl mx-auto font-light leading-relaxed">
               Join our comprehensive workshops and hands-on tutorials led by industry and academic experts across four specialized tracks.
             </p>
+            
+            <p className="text-lg md:text-xl font-semibold text-white mt-4 tracking-wide">
+              📅 19 August, 2026
+            </p>
           </div>
         </div>
       </header>
