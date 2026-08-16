@@ -150,7 +150,7 @@ const Carousel = ({
 
   return (
     <div
-      className="min-h-screen bg-gray-100 flex flex-col relative overflow-hidden w-full"
+      className="h-[70vh] bg-gray-100 flex flex-col relative overflow-hidden w-full"
       {...swipeHandlers}
     >
       {/* Background images */}
@@ -371,6 +371,101 @@ const Carousel = ({
   );
 };
 
+// Chief Guest Section — Sunita Verma
+const ChiefGuestSection = () => {
+  return (
+    <section className="relative py-16 md:py-24 overflow-hidden bg-gradient-to-br from-[#0f0c29] via-[#302b63] to-[#24243e]">
+      {/* Animated background decorations */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        <div className="absolute -top-20 -left-20 w-72 h-72 bg-yellow-400/10 rounded-full blur-3xl animate-pulse"></div>
+        <div className="absolute -bottom-20 -right-20 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }}></div>
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-blue-500/5 rounded-full blur-3xl"></div>
+        {/* Subtle grid pattern */}
+        <div className="absolute inset-0 opacity-[0.03]" style={{
+          backgroundImage: 'linear-gradient(rgba(255,255,255,0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.1) 1px, transparent 1px)',
+          backgroundSize: '60px 60px'
+        }}></div>
+      </div>
+
+      <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Top badge */}
+        <div className="flex justify-center mb-8">
+          <span className="inline-flex items-center gap-2 px-5 py-2 rounded-full text-sm font-semibold tracking-wider uppercase
+            bg-gradient-to-r from-yellow-400/20 to-orange-400/20 border border-yellow-400/30 text-yellow-300 backdrop-blur-sm">
+            <span className="w-2 h-2 bg-yellow-400 rounded-full animate-pulse"></span>
+            Honoured Chief Guest
+          </span>
+        </div>
+
+        {/* Welcome heading */}
+        <h2 className="text-center text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold mb-12 md:mb-16 leading-tight tracking-tight">
+          <span className="text-white">JIIT Welcomes the </span>
+          <br className="hidden sm:block" />
+          <span className="bg-gradient-to-r from-yellow-300 via-yellow-400 to-orange-400 text-transparent bg-clip-text">
+            Chief Guest of VDAT 2026
+          </span>
+        </h2>
+
+        {/* Content card */}
+        <div className="flex flex-col md:flex-row items-center gap-10 md:gap-16">
+          
+          {/* Photo with glowing frame */}
+          <div className="flex-shrink-0 flex flex-col items-center">
+            <div className="relative group">
+              {/* Outer glow ring */}
+              <div className="absolute -inset-3 bg-gradient-to-tr from-yellow-400 via-orange-400 to-purple-500 rounded-full opacity-60 blur-md group-hover:opacity-80 transition-opacity duration-500"></div>
+              {/* Border ring */}
+              <div className="absolute -inset-1.5 bg-gradient-to-tr from-yellow-400 via-orange-400 to-purple-500 rounded-full"></div>
+              {/* Photo */}
+              <div className="relative w-52 h-52 sm:w-64 sm:h-64 md:w-72 md:h-72 rounded-full overflow-hidden border-4 border-white/20 shadow-2xl">
+                <Image
+                  src="/images/SunitaVerma(Chief Guest).jpeg"
+                  alt="Smt. Sunita Verma"
+                  layout="fill"
+                  objectFit="cover"
+                  className="rounded-full"
+                  priority
+                />
+              </div>
+            </div>
+          </div>
+
+          {/* Info section */}
+          <div className="flex-1 text-center md:text-left">
+            <h3 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-3 tracking-tight">
+              Smt. Sunita Verma
+            </h3>
+            <p className="text-lg sm:text-xl text-yellow-300 font-semibold mb-2">
+              Scientist G &amp; Group Coordinator
+            </p>
+            <p className="text-base sm:text-lg text-gray-300 mb-6">
+              Ministry of Electronics &amp; Information Technology (MeitY), Government of India
+            </p>
+
+            {/* Decorative divider */}
+            <div className="h-1 w-20 bg-gradient-to-r from-yellow-400 to-orange-400 rounded-full mb-6 mx-auto md:mx-0"></div>
+
+            <p className="text-gray-300 text-base sm:text-lg leading-relaxed max-w-xl mx-auto md:mx-0">
+              We are deeply honoured to welcome <span className="text-yellow-300 font-semibold">Smt. Sunita Verma</span> as the Chief Guest 
+              for the 30th International Symposium on VLSI Design and Test. Her leadership in advancing India&apos;s electronics 
+              and semiconductor R&amp;D ecosystem has been truly transformative.
+            </p>
+
+            {/* Welcome badge */}
+            <div className="mt-8 inline-flex items-center gap-3 px-6 py-3 rounded-xl
+              bg-gradient-to-r from-yellow-400/10 to-orange-400/10 border border-yellow-400/20 backdrop-blur-sm">
+              <span className="text-2xl">🏅</span>
+              <span className="text-yellow-200 font-bold text-base sm:text-lg tracking-wide">
+                VDAT 2026 • August 20–22, JIIT Noida
+              </span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  );
+};
 
 
 const SponsorCard = ({ logo }) => {
@@ -619,6 +714,8 @@ const HomePage = () => {
         setCurrentImageIndex={setCurrentImageIndex}
         swipeHandlers={handlers}
       />
+
+      <ChiefGuestSection />
 
       {/*
       <AwardeesSection/>

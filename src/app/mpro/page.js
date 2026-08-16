@@ -38,7 +38,7 @@ const schedule = [
         duration: "20 min",
         type: "Keynote 1",
         session: "Keynote Block 1",
-        speaker: "Keynote 1: Mr. Hitesh Garg",
+        speaker: <>Keynote 1: Mr. Hitesh Garg<br/><span className="text-xs text-gray-500 font-normal">Vice President &amp; India Managing Director, NXP Semiconductors</span></>,
         audience: "Plenary",
       },
       {
@@ -46,7 +46,7 @@ const schedule = [
         duration: "20 min",
         type: "Keynote 2",
         session: "Keynote Block 2",
-        speaker: "Keynote 2: Ms. Tal Zigman",
+        speaker: <>Keynote 2: Ms. Tal Zigman<br/><span className="text-xs text-gray-500 font-normal">Global Academic Partnerships Leader, Cadence Design Systems</span></>,
         audience: "Plenary",
       },
       {
@@ -86,7 +86,7 @@ const schedule = [
         duration: "20 min",
         type: "Keynote 3",
         session: "Keynote Block 3",
-        speaker: "Keynote 3: Mr. Navin Bishnoi",
+        speaker: <>Keynote 3: Mr. Navin Bishnoi<br/><span className="text-xs text-gray-500 font-normal">Vice President &amp; India Country Manager, Marvell India</span></>,
         audience: "Plenary",
       },
       {
@@ -94,7 +94,7 @@ const schedule = [
         duration: "20 min",
         type: "Keynote 4",
         session: "Keynote Block 4",
-        speaker: "Keynote 4: Prof. Rajendra",
+        speaker: <>Keynote 4: Prof. Rajendra Singh<br/><span className="text-xs text-gray-500 font-normal">Professor, IIT Delhi</span></>,
         audience: "Plenary",
       },
       {
@@ -110,7 +110,7 @@ const schedule = [
         duration: "20 min",
         type: "Keynote 5",
         session: "Keynote Block 5",
-        speaker: "Keynote 5: Prof. Saibal Mukhopadhyay",
+        speaker: <>Keynote 5: Prof. Saibal Mukhopadhyay<br/><span className="text-xs text-gray-500 font-normal">Professor, Georgia Tech</span></>,
         audience: "",
       },
       {
@@ -181,7 +181,7 @@ const schedule = [
         duration: "20 min",
         type: "Keynote 6",
         session: "Keynote Block 6",
-        speaker: "Keynote 6: Mr. Anand Kumar",
+        speaker: <>Keynote 6: Mr. Anand Kumar<br/><span className="text-xs text-gray-500 font-normal">Managing Director – India, STMicroelectronics</span></>,
         audience: "Plenary",
       },
       {
@@ -189,7 +189,7 @@ const schedule = [
         duration: "20 min",
         type: "Keynote 7",
         session: "Keynote Block 7",
-        speaker: "Keynote 7: Mr. Yogesh Mittal",
+        speaker: <>Keynote 7: Mr. Yogesh Mittal<br/><span className="text-xs text-gray-500 font-normal">Vice President, Engineering, Renesas Electronics</span></>,
         audience: "Plenary",
       },
       {
@@ -229,7 +229,7 @@ const schedule = [
         duration: "20 min",
         type: "Keynote 8",
         session: "Keynote Block 8",
-        speaker: "Keynote 8: Prof. Maryam Shojaei Baghini",
+        speaker: <>Keynote 8: Prof. Maryam Shojaei Baghini<br/><span className="text-xs text-gray-500 font-normal">Professor, IIT Bombay</span></>,
         audience: "Plenary",
       },
       {
@@ -332,7 +332,7 @@ const schedule = [
         duration: "20 min",
         type: "Keynote 11",
         session: "Keynote Block 11",
-        speaker: "Keynote 11: Er. H. S. Jatana",
+        speaker: <>Keynote 11: Shri H.S. Jattana<br/><span className="text-xs text-gray-500 font-normal">Scientist &amp; Faculty, PGIMER</span></>,
         audience: "Plenary",
       },
       {
@@ -340,7 +340,7 @@ const schedule = [
         duration: "20 min",
         type: "Keynote 12",
         session: "Keynote Block 12",
-        speaker: "Keynote 12: Dr. Hari Shanker Gupta",
+        speaker: <>Keynote 12: Dr. Hari Shanker Gupta<br/><span className="text-xs text-gray-500 font-normal">Scientist, ISRO</span></>,
         audience: "Plenary",
       },
       {
@@ -356,7 +356,7 @@ const schedule = [
         duration: "20 min",
         type: "Keynote 9",
         session: "Keynote Block 13",
-        speaker: "Keynote 13: Prof. Yogesh Chauhan",
+        speaker: <>Keynote 13: Prof. Yogesh S. Chauhan<br/><span className="text-xs text-gray-500 font-normal">Professor, IIT Kanpur</span></>,
         audience: "Plenary",
       },
       {
@@ -364,7 +364,7 @@ const schedule = [
         duration: "20 min",
         type: "Keynote 13",
         session: "Keynote Block 14",
-        speaker: "Keynote 14: Dr. Gauri Shankerkar",
+        speaker: <>Keynote 14: Dr. Gouri Sankar Kar<br/><span className="text-xs text-gray-500 font-normal">VP of R&amp;D for Compute and Memory Device Technologies, imec</span></>,
         audience: "Plenary",
       },
       {
