@@ -33,13 +33,6 @@ const tracks = {
     border: "rgba(245,158,11,0.4)",
   },
 
-  W: {
-    label: "Women in Engineering",
-    color: "#ec4899",
-    bg: "rgba(236,72,153,0.12)",
-    border: "rgba(236,72,153,0.4)",
-  },
-
   S: {
     label: "Startup",
     color: "#ef4444",
@@ -54,8 +47,15 @@ const tracks = {
     border: "rgba(20,184,166,0.4)",
   },
 
-  PT: {
-    label: "Poster Presentations",
+  W: {
+    label: "Women in Engineering",
+    color: "#ec4899",
+    bg: "rgba(236,72,153,0.12)",
+    border: "rgba(236,72,153,0.4)",
+  },
+
+  POSTER: {
+    label: "Poster Session",
     color: "#6366f1",
     bg: "rgba(99,102,241,0.12)",
     border: "rgba(99,102,241,0.4)",
@@ -63,7 +63,7 @@ const tracks = {
 };
 
 /* ============================================================
-   MAIN TECHNICAL PROGRAMME
+   CONFERENCE PROGRAMME DATA
 ============================================================ */
 
 const programmeData = [
@@ -142,6 +142,13 @@ const programmeData = [
                   "Bhagavatula Sai Surya, Puchakayala Anil Chowdary, Mamidipaka Lakshmi Sai Narayana and Bharat Bhushan Upadhyay",
               },
               {
+                id: 293,
+                title:
+                  "CURIE: An Area-Efficient 63-TOPS/W Multi-Precision 4 Kb Digital Memory-in-Situ Inference Engine for DNNs & Spiking ML Workloads",
+                authors:
+                  "Shivangi Mishra, Mukul Lokhande and Santosh Kumar Vishvakarma",
+              },
+              {
                 id: 66,
                 title:
                   "Hybrid Signed MAC-Driven Stochastic SqueezeNet for Hardware-Constrained Neural Network Inference",
@@ -155,7 +162,7 @@ const programmeData = [
             track: "C",
             sessionId: "Session 1.1.3",
             venue: "LT5",
-            chair: "Dr. Avirup Dasgupta",
+            chair: "Prof. Rishu Chaujar, DTU",
             rapporteur: "Dr. Priyanka Kwatra",
             inCharge: "Dr. Sumit Mahajan",
 
@@ -164,8 +171,7 @@ const programmeData = [
                 id: 48,
                 title:
                   "Low-Power and High-Performance 4-Bit Vedic Multiplier Using CNTFET Technology",
-                authors:
-                  "VAISHALI H. DHARE, Krish Patel and Sanskar Gupta",
+                authors: "VAISHALI H. DHARE, Krish Patel and Sanskar Gupta",
               },
               {
                 id: 78,
@@ -195,7 +201,7 @@ const programmeData = [
             track: "D",
             sessionId: "Session 1.1.4",
             venue: "G11",
-            chair: "Prof. Saravanan Kumar",
+            chair: "Prof. Saravana Kumar",
             rapporteur: "Dr. Piyush Sharma",
             inCharge: "Dr. Divya Kaushik",
 
@@ -233,7 +239,7 @@ const programmeData = [
 
       {
         sessionLabel: "Technical Session 2",
-        time: "4:10 PM - 5:30 PM",
+        time: "04:10 PM - 05:30 PM",
 
         tracks: [
           {
@@ -242,7 +248,7 @@ const programmeData = [
             venue: "LT1",
             chair:
               "Mr. Vivek Kumar Dikshit, Director, R&D Engineering, Synopsys",
-            rapporteur: "Dr. Neha Bhaduria",
+            rapporteur: "Dr. Neha Bhadauria",
             inCharge: "Dr. Ishwar Chandra Yadav",
 
             papers: [
@@ -279,7 +285,7 @@ const programmeData = [
             track: "B",
             sessionId: "Session 1.2.2",
             venue: "LT4",
-            chair: "Prof. Jasdeep Kaur Dhanoa",
+            chair: "Dr. Hemant Kumar",
             rapporteur: "Ms. Jyoti Mishra",
             inCharge: "Dr. Ajit Singh Rathore",
 
@@ -299,10 +305,11 @@ const programmeData = [
                   "Riddhima Agarwal, Jatin Wadhera, Aarya ., Dhruv Raj Ghai, Manu Bansal and Anil Singh",
               },
               {
-                id: 142,
+                id: 347,
                 title:
-                  "Design and Formal Verification of a Logarithmic-Posit Arithmetic Core for Edge Neural Acceleration",
-                authors: "Rangeetha S and Akaashraj P",
+                  "Machine Learning Surrogate Framework for Trap-Dependent Characterization of 5 nm Nanosheet Gate-All-Around FETs",
+                authors:
+                  "Ritika Singh Katoch, Anamika Rajesh, Sarita Yadav, Shuvam Pawar and Nitanshu Chauhan",
               },
               {
                 id: 170,
@@ -318,7 +325,7 @@ const programmeData = [
             track: "C",
             sessionId: "Session 1.2.3",
             venue: "LT5",
-            chair: "Prof. Rishu Chaujar, DTU",
+            chair: "Prof. Jitendra Mohan",
             rapporteur: "Dr. Ankit Gupta",
             inCharge: "Dr. Mohit Kumar Saxena",
 
@@ -358,9 +365,9 @@ const programmeData = [
             sessionId: "Session 1.2.4",
             venue: "G11",
             chair:
-              "Prof. Rajendra Singh, IIT Delhi and Prof. Shruti Jain, JIIT",
-            rapporteur: "",
-            inCharge: "",
+              "Prof Rajendra Singh, IIT Delhi and Prof. Shruti Jain, JUIT",
+            rapporteur: "Dr. Samriti Kalia",
+            inCharge: "Dr. Rishibrind Kumar Upadhyay",
             papers: [],
           },
         ],
@@ -379,7 +386,7 @@ const programmeData = [
     sessions: [
       {
         sessionLabel: "Invited Talks",
-        time: "9:00 AM - 9:15 AM",
+        time: "09:00 AM - 09:15 AM",
 
         tracks: [
           {
@@ -390,7 +397,6 @@ const programmeData = [
               "Mr. Vikas Gupta, Senior Director, Applications Engineering, Synopsys Inc.",
             papers: [],
           },
-
           {
             track: "B",
             sessionId: "Invited Talk 2",
@@ -404,7 +410,7 @@ const programmeData = [
 
       {
         sessionLabel: "Technical Session 3",
-        time: "9:15 AM - 10:35 AM",
+        time: "09:15 AM - 10:35 AM",
 
         tracks: [
           {
@@ -450,7 +456,7 @@ const programmeData = [
             track: "B",
             sessionId: "Session 2.1.2",
             venue: "LT1",
-            chair: "Prof. Pankaj Gupta, IGDTUW",
+            chair: "Prof. Pankaj Gupta, Igdtuw",
             rapporteur: "Dr. Himani Gupta",
             inCharge: "Dr. Harish Bishwakarma",
 
@@ -498,8 +504,7 @@ const programmeData = [
                 id: 289,
                 title:
                   "TOPSIS-Assisted Optimization of a Dual-Gate Charge Plasma ISFET Using a SOBOL-Sampled TCAD Dataset",
-                authors:
-                  "Rupendra Kumar Dadsena and Chitrakant Sahu",
+                authors: "Rupendra Kumar Dadsena and Chitrakant Sahu",
               },
               {
                 id: 333,
@@ -519,8 +524,7 @@ const programmeData = [
                 id: 106,
                 title:
                   "Parametric Analysis and Characterization of HZO/TiN/Mica Heterostructure-Based Double-Gate Junctionless Ferroelectric FETs with Hf0.5Zr0.5O2 for Low-Power Memory Applications",
-                authors:
-                  "Harsha ATURI Ragini and Ramana murthy G",
+                authors: "Harsha ATURI Ragini and Ramana murthy G",
               },
             ],
           },
@@ -530,7 +534,7 @@ const programmeData = [
             sessionId: "Session 2.1.4",
             venue: "G11",
             chair:
-              "Mr. Rishatra Bhattacharya and Mr. Nishit Gupta",
+              "Mr Ritabrata Bhattacharya and Mr Nishit Gupta",
             rapporteur: "Dr. Manoj Tolani",
             inCharge: "Prof. Alok Joshi",
             papers: [],
@@ -540,23 +544,22 @@ const programmeData = [
 
       {
         sessionLabel: "Invited Talks",
-        time: "11:35 AM - 11:50 AM",
+        time: "11:35 AM - 11:50 PM",
 
         tracks: [
           {
             track: "A",
             sessionId: "Invited Talk 3",
             venue: "LT1",
-            speaker: "Prof. Anuj Grover, IIT-Delhi",
+            speaker: "Prof. Anuj Grover, IIIT-Delhi",
             papers: [],
           },
-
           {
             track: "B",
             sessionId: "Invited Talk 4",
             venue: "LT4",
             speaker:
-              "Mr. Singamala Sudhakar, Director, R&D – BAS Product Development, Infineon Technologies",
+              "Mr. Singamala Sudhakar, Director, R&D—BAS Product Development, Infineon Technologies",
             papers: [],
           },
         ],
@@ -564,14 +567,14 @@ const programmeData = [
 
       {
         sessionLabel: "Technical Session 4",
-        time: "11:50 AM - 1:10 PM",
+        time: "11:50 AM - 01:10 PM",
 
         tracks: [
           {
             track: "A",
             sessionId: "Session 2.2.1",
             venue: "LT1",
-            chair: "Prof. Anuj Grover, IIT-Delhi",
+            chair: "Prof. Anuj Grover, IIIT-Delhi",
             rapporteur: "Dr. Mohit Kumar Saxena",
             inCharge: "Dr. Ankit Gupta",
 
@@ -639,7 +642,7 @@ const programmeData = [
             venue: "LT4",
             chair: "Mr. Singamala Sudhakar",
             rapporteur: "Dr. Ishwar Chandra Yadav",
-            inCharge: "Dr. Neha Bhaduria",
+            inCharge: "Dr. Neha Bhadauria",
 
             papers: [
               {
@@ -666,7 +669,7 @@ const programmeData = [
               {
                 id: 427,
                 title:
-                  "Electro-Thermal Reliability and Self-Heating mitigation in TSV-Integrated SOI-TFETs",
+                  "Electro-Thermal Realiability and Self-Heating mitigation in TSV-Integrated SOI-TFETs",
                 authors:
                   "Joy Chowdhury, Komal Agarwal, Angsuman Sarkar, Kamalakanta Mahapatra and Jitendra Kumar Das",
               },
@@ -708,7 +711,7 @@ const programmeData = [
 
       {
         sessionLabel: "Invited Talks",
-        time: "2:40 PM - 2:55 PM",
+        time: "02:40 PM - 02:55 PM",
 
         tracks: [
           {
@@ -716,10 +719,9 @@ const programmeData = [
             sessionId: "Invited Talk 5",
             venue: "LT1",
             speaker:
-              "Dr. Jai Gopal Pandey, Scientist-F, CSIR-CEERI, Pilani",
+              "Dr. Jai Gopal Pandey, Scientist-F, CSIR–CEERI, Pilani",
             papers: [],
           },
-
           {
             track: "B",
             sessionId: "Invited Talk 6",
@@ -733,7 +735,7 @@ const programmeData = [
 
       {
         sessionLabel: "Technical Session 5",
-        time: "2:55 PM - 4:15 PM",
+        time: "02:55 PM - 04:15 PM",
 
         tracks: [
           {
@@ -819,11 +821,11 @@ const programmeData = [
 
             papers: [
               {
-                id: 431,
+                id: 394,
                 title:
-                  "Temperature-Dependent Performance Analysis of a Junctionless SOI FinFET-Based Hydrogen Gas Sensor Using TCAD",
+                  "Design of SOI Strained-Silicon I-MOS Architecture for Low-Voltage Snapback Zero-Capacitor 1T-DRAM",
                 authors:
-                  "Ayushi Lamba, Anurag Bhandari, Rishu Chaujar and M. Jamal Deen",
+                  "Sarvesh Kumar Prajapati, VIKRAM SHARMA and Pragati Singh",
               },
               {
                 id: 263,
@@ -836,7 +838,8 @@ const programmeData = [
                 id: 308,
                 title:
                   "Unified RISC-V-Zkned32/64 AES Functional Unit for Micro-architectural Macro-Ops Fusion",
-                authors: "NANCY GUPTA and DAVID SELVAKUMAR",
+                authors:
+                  "NANCY GUPTA and DAVID SELVAKUMAR",
               },
               {
                 id: 440,
@@ -853,7 +856,7 @@ const programmeData = [
             sessionId: "Session 2.3.4",
             venue: "LT5",
             chair: "Smita Sharma, Head, EAC IEEE, UP Section",
-            rapporteur: "Dr. Neha Bhaduria",
+            rapporteur: "Dr. Neha Bhadauria",
             inCharge: "Dr. Divya Kaushik",
 
             papers: [
@@ -894,7 +897,7 @@ const programmeData = [
     sessions: [
       {
         sessionLabel: "Invited Talks",
-        time: "9:00 AM - 9:15 AM",
+        time: "09:00 AM - 09:15 AM",
 
         tracks: [
           {
@@ -919,7 +922,7 @@ const programmeData = [
 
       {
         sessionLabel: "Technical Session 6",
-        time: "9:15 AM - 10:35 AM",
+        time: "09:15 AM - 10:35 AM",
 
         tracks: [
           {
@@ -935,7 +938,8 @@ const programmeData = [
                 id: 405,
                 title:
                   "A power-efficient single-ended 7T SRAM cell for low power and high performance applications",
-                authors: "Sheshmani Yadav and Sonal Singh",
+                authors:
+                  "Sheshmani Yadav and Sonal Singh",
               },
               {
                 id: 51,
@@ -960,7 +964,7 @@ const programmeData = [
             venue: "G2",
             chair: "Mr. Sachin Kalra",
             rapporteur: "Dr. Ishwar Chandra Yadav",
-            inCharge: "Dr. Neha Bhaduria",
+            inCharge: "Dr. Neha Bhadauria",
 
             papers: [
               {
@@ -978,16 +982,9 @@ const programmeData = [
                   "Abhishek Kumar Jha, Amitava Middya, Gaurav Kaushal and Biswabandhu Jana",
               },
               {
-                id: 293,
-                title:
-                  "CURIE: An Area-Efficient 63-TOPS/W Multi-Precision 4 Kb Digital Memory-in-Situ Inference Engine for DNNs & Spiking ML Workloads",
-                authors:
-                  "Shivangi Mishra, Mukul Lokhande and Santosh Kumar Vishvakarma",
-              },
-              {
                 id: 332,
                 title:
-                  "A Reconfigurable 11T SRAM Compute-in-Memory Architecture for Dual-Mode MAC Operations",
+                  "A Reconfigurable 11T SRAM Compute-in-Memory Architecture for Dual-Mode MAC Operations.",
                 authors:
                   "Umang Mahendrabhai Joshi, Priyank Prajapati, Pinalkumar Engineer and Anand Darji",
               },
@@ -998,18 +995,11 @@ const programmeData = [
             track: "B",
             sessionId: "Session 3.1.2b",
             venue: "G3",
-            chair: "Mr. Pushpendra Yadav",
+            chair: "Prof. Sandeep Chhoker",
             rapporteur: "Ms. Jyoti Mishra",
             inCharge: "Dr. Ajit Singh Rathore",
 
             papers: [
-              {
-                id: 347,
-                title:
-                  "Machine Learning Surrogate Framework for Trap-Dependent Characterization of 5 nm Nanosheet Gate-All-Around FETs",
-                authors:
-                  "Ritika Singh Katoch, Anamika Rajesh, Sarita Yadav, Shuvam Pawar and Nitanshu Chauhan",
-              },
               {
                 id: 382,
                 title:
@@ -1020,7 +1010,7 @@ const programmeData = [
               {
                 id: 400,
                 title:
-                  "TACO-R: A Hardware-Efficient Task-Aware Object Detection Pipeline with Sparse Graph Attention and Line-Buffer FPGA Acceleration",
+                  "TACO-R: A Hardware-Efficient Task-Aware Object Detection Pipeline with Sparse Graph Attention and Line-Buffer FPGA Acceleration.",
                 authors:
                   "Aman Gupta and Pinalkumar Engineer",
               },
@@ -1038,7 +1028,7 @@ const programmeData = [
             track: "D",
             sessionId: "Session 3.1.3a",
             venue: "G4",
-            chair: "Prof. Shamin Akhter",
+            chair: "Prof. Shamim Akhter",
             rapporteur: "Dr. Piyush Sharma",
             inCharge: "Dr. Mohit Kumar Saxena",
 
@@ -1077,13 +1067,6 @@ const programmeData = [
 
             papers: [
               {
-                id: 294,
-                title:
-                  "BHARAT-TPM: Design and ASIC Implementation of an SPI Based AXI Enabled AES Accelerator",
-                authors:
-                  "Aneesh Raveendran, Mahima Agarwal, Bhavana B L, Dr Raja Sekar k, Vivian D, Hari Babu P and Dr S D Sudarsan",
-              },
-              {
                 id: 297,
                 title:
                   "BHARAT-TPM: Design and ASIC Implementation of an SPI Based AXI Enabled RSA-4096 Accelerator",
@@ -1113,24 +1096,28 @@ const programmeData = [
 ];
 
 /* ============================================================
-   POSTER PROGRAMME
+   POSTER SESSIONS
 ============================================================ */
 
-const posterSessions = {
-  day1: {
-    day: "Day 1",
+const posterSessions = [
+  {
+    day: "Poster Session 1",
     date: "20th August 2026, Thursday",
-    title: "Poster Session 1",
     time: "05:30 PM - 06:30 PM",
+
     chair: "Dr. Jyoti Kedia and Dr. Ajay Kumar",
+    rapporteur: "Dr. Himani Gupta",
+    inCharge: "Dr. Divya Kaushik",
 
     papers: [
       {
         id: 144,
         title:
           "ASIC Design and Implementation of a 16-bit Floating-Point FFT Processor",
-        authors: "Mohd Hasfi, Aiman Malik and Mohd Wajid",
+        authors:
+          "Mohd Hasir, Aiman Malik and Mohd Wajid",
       },
+
       {
         id: 152,
         title:
@@ -1138,6 +1125,7 @@ const posterSessions = {
         authors:
           "Aman Kumar, Nagendra Kumar, Manas Bajpai and Santosh Kumar Vishvakarma",
       },
+
       {
         id: 164,
         title:
@@ -1145,6 +1133,7 @@ const posterSessions = {
         authors:
           "Dhruv Bal Dikshit, Preyerna Srivastava, Shruti Kalra and Ruby Beniwal",
       },
+
       {
         id: 181,
         title:
@@ -1152,19 +1141,23 @@ const posterSessions = {
         authors:
           "Purvi J. Patel, Jinal Thakor and Ansh Khanpara",
       },
+
       {
         id: 183,
         title:
           "Sequential Context-Aware Unsupervised Detection of Hardware Trojans in Gate-Level Netlists",
-        authors: "Sugata Bhunia; Nirmala Devi M",
+        authors:
+          "Sugata Bhunia; Nirmala Devi M",
       },
+
       {
         id: 193,
         title:
           "Prune-Mask Fault Masking in Sparse Neural Accelerators: Co-Designed ISA, BIST, and Yield on a RISC-V Edge Platform",
         authors:
-          "Binu Manochar; Dr. Arun Joy; Dr. Simi Zerine Sleeba",
+          "Binu Manohar; Dr. Arun Joy; Dr. Simi Zerine Sleeba",
       },
+
       {
         id: 198,
         title:
@@ -1172,26 +1165,31 @@ const posterSessions = {
         authors:
           "Pritha Pawan Sharma, Soumya Jain, Sameena Khan and Sujay Deb",
       },
+
       {
         id: 213,
         title:
-          "Machine Learning Assisted Optimization of Al:Mg–TiO2/SnO2 Based MAPbI3 Perovskite Solar Cells",
+          "Machine Learning Assisted Optimization of Al:Mg–TiO₂/SnO₂ Based MAPbI₃ Perovskite Solar Cells",
         authors:
-          "Twinkle Gupta, ANKUR BHARDWAL and Ajay Kumar",
+          "Twinkle Gupta, ANKUR BHARDWAJ and Ajay Kumar",
       },
+
       {
         id: 214,
         title:
           "A Trilayer Cap Stack Non-recessed Gate AlInGaN/GaN/AlInGaN Double Heterojunction GaN HEMT for RF and LNA Applications",
-        authors: "Amit Agarwal and Sumit Kale",
-      },
-      {
-        id: 216,
-        title:
-          "Scalable UVM-Based Verification and FPGA Implementation of a Parameterized High-Speed Barrel Shifter",
         authors:
-          "Divya Gupta, Shruti Kalra and Ruby Beniwal",
+          "Amit Agarwal and Sumit Kale",
       },
+
+      {
+        id: 393,
+        title:
+          "Optimization of Layer Stacking in Piezoelectric Energy Harvesters for Human Muscle-Based Power Generation",
+        authors:
+          "Shradha Saxena and Archana Pandey",
+      },
+
       {
         id: 227,
         title:
@@ -1199,6 +1197,7 @@ const posterSessions = {
         authors:
           "Chinmaya Kumar Pradhan, Paramita Sarkar and S. K. Tripathy",
       },
+
       {
         id: 234,
         title:
@@ -1206,18 +1205,23 @@ const posterSessions = {
         authors:
           "Palle Devi Sri Vinay Mohan Reddy, Bonthu Namo Sai Reddy, Chakilela Sairaj, Ngangbam Phalguni Singh and VIJAY RAO KUMBHARE",
       },
+
       {
         id: 239,
         title:
-          "Hierarchical Markov with PV Forecasting and Dynamic Pricing in Smart Grids",
-        authors: "Samadrita Mondal and Nilotpal Chakraborty",
+          "Hierarchical MARL with PV Forecasting and Dynamic Pricing in Smart Grids",
+        authors:
+          "Samadrita Mondal and Nilotpal Chakraborty",
       },
+
       {
         id: 242,
         title:
-          "Fused SIMD(S)/Scalar Functional Units for RISC-V P-B-Zkn Instruction Set Extensions",
-        authors: "NANCY GUPTA and DAVID SELVAKUMAR",
+          "Fused SIM(S)D/Scalar Functional Units for RISC-V P-B-Zkn Instruction Set Extensions",
+        authors:
+          "NANCY GUPTA and DAVID SELVAKUMAR",
       },
+
       {
         id: 251,
         title:
@@ -1228,12 +1232,14 @@ const posterSessions = {
     ],
   },
 
-  day2: {
-    day: "Day 2",
+  {
+    day: "Poster Session 2",
     date: "21st August 2026, Friday",
-    title: "Poster Session 2",
     time: "04:55 PM - 05:55 PM",
-    chair: "Mr. Praveen Verma and Dr. Saurabh Chaturvedi",
+
+    chair: "Mr. Praveen Verma and Prof. Ravinder Kumar",
+    rapporteur: "Dr. Mohit Kumar Saxena",
+    inCharge: "Dr. Harish Bishwakarma",
 
     papers: [
       {
@@ -1243,6 +1249,7 @@ const posterSessions = {
         authors:
           "Akriti Jain, Muskan Mahla, Riyanka Banerjee, Gaurav Kaushal, Santosh Manabala and Jai Gopal Pandey",
       },
+
       {
         id: 292,
         title:
@@ -1250,13 +1257,15 @@ const posterSessions = {
         authors:
           "Aneesh Raveendran, Kiran P, Sheetal B v, Dr. Raja Sekar k, Vivian D, Hari Babu P and Dr. S D Sudarsan",
       },
+
       {
         id: 315,
         title:
           "An Energy-Efficient 10T2R NVSRAM Bitcell Using Decoupled Bilateral RRAM Paths",
         authors:
-          "Sharada KataliIha, Sidharthan B S and Santosh Kumar Vishvakarma",
+          "Sharada Katailiha, Sidharthan B S and Santosh Kumar Vishvakarma",
       },
+
       {
         id: 316,
         title:
@@ -1264,19 +1273,23 @@ const posterSessions = {
         authors:
           "Deepti Emmi, Abhishek Patawari, Aditya Sthawarmath, aryaman pathak, Saaj Mulik and Mousumi Bhanja",
       },
+
       {
         id: 318,
         title:
           "Hierarchical Row Decoder for RHBD SRAM with Write Delay Stability and Yield Analysis",
         authors:
-          "Vishruth R, Jamuna S, Aditya S. Purohit, Gowri Bandak, Hannan Ashrafi and Yadamakanthi Sai Mohith reddy",
+          "Vishruth R, Jamuna S, Aditya S. Purohit, Gowri Bandak, Hannan Ashrafi and Yadamakanti Sai Mohith reddy",
       },
+
       {
         id: 321,
         title:
-          "ASPIRE: An Adaptive Switching Activity Aware Approximate Multiplier with Dynamic Transition Reduction for Energy Efficient Systems",
-        authors: "Shantinikethan Sidharth and Ruby Mishra",
+          "ASPIRE:An Adaptive Switching Activity Aware Approximate Multiplier with Dynamic Transition Reduction for Energy Efficient Systems",
+        authors:
+          "Shantinikethan Sidharth and Ruby Mishra",
       },
+
       {
         id: 338,
         title:
@@ -1284,6 +1297,7 @@ const posterSessions = {
         authors:
           "Ayush Modi, Diksha Shekhawat, Jugal Gandhi, M. Santosh, Jai Gopal Pandey and Chandra Shekhar",
       },
+
       {
         id: 340,
         title:
@@ -1291,6 +1305,7 @@ const posterSessions = {
         authors:
           "Venkatesh B, Saumitra Gupta and Dr. Hari Shanker Gupta",
       },
+
       {
         id: 348,
         title:
@@ -1298,6 +1313,7 @@ const posterSessions = {
         authors:
           "Keerthisagar Kokkiligadda, Tejeshwar Bhagatsing Thorawade, Sanjoy Kumar Basu, Varun Venkitaraman Iyer and Virendra Singh",
       },
+
       {
         id: 358,
         title:
@@ -1305,25 +1321,31 @@ const posterSessions = {
         authors:
           "Swathi K, Rajeswari Kotla, Rithwik Mandati and Swetha Siliveri",
       },
+
       {
         id: 389,
         title:
           "Viterbi Continuous Branch Predictor: A Topological Approach to High-Accuracy CPU Branch Prediction",
-        authors: "Siddhanth Krishnan; Sandeep Joshi",
+        authors:
+          "Sidhanth Krishnan; Sandeep Joshi",
       },
+
       {
-        id: 393,
+        id: 216,
         title:
-          "Optimization of Layer Stacking in Piezoelectric Energy Harvesters for Human Muscle-Based Power Generation",
-        authors: "Shradha Saxena and Archana Pandey",
+          "Scalable UVM-Based Verification and FPGA Implementation of a Parameterized High-Speed Barrel Shifter",
+        authors:
+          "Divya Gupta, Shruti Kalra and Ruby Beniwal",
       },
+
       {
         id: 415,
         title:
-          "Low Power FPGA-Based Matrix Multiplier Using FSM-Controlled MAC Architecture",
+          "Low-Power FPGA-Based Matrix Multiplier Using FSM-Controlled MAC Architecture",
         authors:
           "Suman Singh, Deepak Kumar, Chinmay Bobade and Pragati Singh",
       },
+
       {
         id: 418,
         title:
@@ -1331,6 +1353,7 @@ const posterSessions = {
         authors:
           "Harsh Singh, Diksha Shekhawat, Jugal Gandhi, Saurabh Jain, M. Santosh, Jai Gopal Pandey and Chandra Shekhar",
       },
+
       {
         id: 430,
         title:
@@ -1338,6 +1361,7 @@ const posterSessions = {
         authors:
           "Rishi Nilesh Agrawal, Rajat Porwal and Syed Ershad Ahmed",
       },
+
       {
         id: 436,
         title:
@@ -1347,179 +1371,826 @@ const posterSessions = {
       },
     ],
   },
+];
+
+/* ============================================================
+   PAPER CARD
+============================================================ */
+
+const PaperCard = ({ paper, trackMeta }) => {
+  return (
+    <div
+      style={{
+        background:
+          "rgba(255,255,255,0.04)",
+        border:
+          "1px solid rgba(255,255,255,0.08)",
+        borderRadius: "10px",
+        padding: "12px 14px",
+        transition: "all 0.2s ease",
+      }}
+      onMouseEnter={(e) => {
+        e.currentTarget.style.background =
+          "rgba(255,255,255,0.08)";
+        e.currentTarget.style.transform =
+          "translateY(-2px)";
+      }}
+      onMouseLeave={(e) => {
+        e.currentTarget.style.background =
+          "rgba(255,255,255,0.04)";
+        e.currentTarget.style.transform =
+          "translateY(0)";
+      }}
+    >
+      <div
+        style={{
+          display: "flex",
+          gap: "10px",
+          alignItems: "flex-start",
+        }}
+      >
+        <span
+          style={{
+            background:
+              `${trackMeta.color}22`,
+            border:
+              `1px solid ${trackMeta.color}55`,
+            color:
+              trackMeta.color,
+            fontSize: "0.68rem",
+            fontWeight: 800,
+            padding: "2px 8px",
+            borderRadius: "5px",
+            whiteSpace: "nowrap",
+            flexShrink: 0,
+            marginTop: "2px",
+          }}
+        >
+          #{paper.id}
+        </span>
+
+        <div>
+          <p
+            style={{
+              margin: "0 0 5px",
+              color:
+                "rgba(255,255,255,0.92)",
+              fontSize: "0.83rem",
+              fontWeight: 600,
+              lineHeight: 1.45,
+            }}
+          >
+            {paper.title}
+          </p>
+
+          <p
+            style={{
+              margin: 0,
+              color:
+                "rgba(233,213,255,0.58)",
+              fontSize: "0.73rem",
+              fontStyle: "italic",
+              lineHeight: 1.45,
+            }}
+          >
+            👤 {paper.authors}
+          </p>
+        </div>
+      </div>
+    </div>
+  );
 };
 
 /* ============================================================
-   POSTER CARD
+   SESSION CARD
 ============================================================ */
 
-const PosterSessionCard = ({ poster }) => {
+const SessionCard = ({ session }) => {
+  const isInvited =
+    session.sessionLabel ===
+    "Invited Talks";
+
   return (
-    <div>
+    <div
+      style={{
+        marginBottom: "28px",
+      }}
+    >
       <div
         style={{
+          width: "100%",
           background:
-            "linear-gradient(135deg, rgba(5,53,137,0.75) 0%, rgba(80,20,180,0.65) 100%)",
-          border: "1px solid rgba(250,204,21,0.28)",
-          borderRadius: "16px",
-          padding: "20px 24px",
+            "linear-gradient(135deg, rgba(5,53,137,0.65) 0%, rgba(80,20,180,0.55) 100%)",
+          border:
+            "1px solid rgba(250,204,21,0.25)",
+          borderRadius: "14px",
+          padding: "18px 24px",
           color: "white",
-          boxShadow: "0 6px 24px rgba(0,0,0,0.3)",
-          marginBottom: "16px",
+          boxShadow:
+            "0 4px 20px rgba(0,0,0,0.3)",
         }}
       >
         <div
           style={{
             display: "flex",
-            flexWrap: "wrap",
             alignItems: "center",
             gap: "12px",
+            flexWrap: "wrap",
           }}
         >
           <span
             style={{
               background:
-                "linear-gradient(90deg, #facc15, #f97316)",
-              color: "#111827",
+                isInvited
+                  ? "linear-gradient(90deg,#ec4899,#8b5cf6)"
+                  : "linear-gradient(90deg,#facc15,#f97316)",
+              color:
+                isInvited
+                  ? "#fff"
+                  : "#111827",
               fontWeight: 800,
-              padding: "5px 14px",
+              fontSize: "0.78rem",
+              padding: "4px 13px",
               borderRadius: "999px",
-              fontSize: "0.8rem",
               textTransform: "uppercase",
+              letterSpacing: "0.08em",
             }}
           >
-            {poster.title}
+            {session.sessionLabel}
           </span>
 
           <span
             style={{
               color: "#facc15",
-              fontWeight: 700,
               fontSize: "0.9rem",
+              fontWeight: 600,
             }}
           >
-            🕐 {poster.time}
+            🕐 {session.time}
           </span>
         </div>
 
         <div
           style={{
-            marginTop: "10px",
-            color: "rgba(233,213,255,0.8)",
-            fontSize: "0.9rem",
-          }}
-        >
-          {poster.date}
-        </div>
-
-        <div
-          style={{
-            marginTop: "8px",
-            color: "white",
+            marginTop: "7px",
+            color:
+              "rgba(233,213,255,0.7)",
             fontSize: "0.82rem",
           }}
         >
-          <strong style={{ color: "#facc15" }}>
-            Session Chair:
-          </strong>{" "}
-          {poster.chair}
-        </div>
+          {session.tracks.length}{" "}
+          {isInvited
+            ? "Invited Talks"
+            : "Parallel Tracks"}
 
-        <div
-          style={{
-            marginTop: "7px",
-            color: "rgba(233,213,255,0.7)",
-            fontSize: "0.8rem",
-          }}
-        >
-          {poster.papers.length} Poster Papers
+          {!isInvited && (
+            <>
+              &nbsp;·&nbsp;
+              {session.tracks.reduce(
+                (total, track) =>
+                  total +
+                  track.papers.length,
+                0
+              )}{" "}
+              Papers
+            </>
+          )}
         </div>
       </div>
 
       <div
         style={{
+          marginTop: "12px",
           display: "grid",
           gridTemplateColumns:
             "repeat(auto-fit, minmax(280px, 1fr))",
-          gap: "14px",
+          gap: "16px",
         }}
       >
-        {poster.papers.map((paper) => (
+        {session.tracks.map(
+          (trackData, index) => {
+            const trackMeta =
+              tracks[
+                trackData.track
+              ];
+
+            return (
+              <div
+                key={`${trackData.sessionId}-${index}`}
+                style={{
+                  background:
+                    trackMeta.bg,
+                  border:
+                    `1px solid ${trackMeta.border}`,
+                  borderRadius:
+                    "14px",
+                  overflow:
+                    "hidden",
+                  boxShadow:
+                    "0 4px 24px rgba(0,0,0,0.25)",
+                }}
+              >
+                <div
+                  style={{
+                    background:
+                      `linear-gradient(135deg, ${trackMeta.color}22, ${trackMeta.color}11)`,
+                    borderBottom:
+                      `1px solid ${trackMeta.border}`,
+                    padding:
+                      "14px 20px",
+                  }}
+                >
+                  <div
+                    style={{
+                      display:
+                        "flex",
+                      justifyContent:
+                        "space-between",
+                      alignItems:
+                        "center",
+                      flexWrap:
+                        "wrap",
+                      gap: "8px",
+                    }}
+                  >
+                    <span
+                      style={{
+                        background:
+                          trackMeta.color,
+                        color: "#fff",
+                        fontWeight: 800,
+                        fontSize:
+                          "0.72rem",
+                        padding:
+                          "3px 10px",
+                        borderRadius:
+                          "6px",
+                        letterSpacing:
+                          "0.05em",
+                      }}
+                    >
+                      {
+                        trackData.sessionId
+                      }
+                    </span>
+
+                    {!isInvited && (
+                      <span
+                        style={{
+                          color:
+                            trackMeta.color,
+                          fontSize:
+                            "0.72rem",
+                          fontWeight:
+                            600,
+                        }}
+                      >
+                        Track{" "}
+                        {
+                          trackData.track
+                        }
+                      </span>
+                    )}
+                  </div>
+
+                  <p
+                    style={{
+                      margin:
+                        "8px 0 0",
+                      color:
+                        "rgba(255,255,255,0.88)",
+                      fontSize:
+                        "0.82rem",
+                      fontWeight:
+                        600,
+                      lineHeight:
+                        1.45,
+                    }}
+                  >
+                    {
+                      trackMeta.label
+                    }
+                  </p>
+
+                  <div
+                    style={{
+                      marginTop:
+                        "10px",
+                      color:
+                        "#facc15",
+                      fontSize:
+                        "0.74rem",
+                      fontWeight:
+                        700,
+                    }}
+                  >
+                    📍 Venue:{" "}
+                    {
+                      trackData.venue
+                    }
+                  </div>
+
+                  {isInvited ? (
+                    <div
+                      style={{
+                        marginTop:
+                          "14px",
+                        paddingTop:
+                          "12px",
+                        borderTop:
+                          "1px solid rgba(255,255,255,0.08)",
+                      }}
+                    >
+                      <div
+                        style={{
+                          color:
+                            trackMeta.color,
+                          fontSize:
+                            "0.75rem",
+                          fontWeight:
+                            700,
+                          marginBottom:
+                            "5px",
+                        }}
+                      >
+                        Speaker
+                      </div>
+
+                      <div
+                        style={{
+                          color:
+                            "rgba(255,255,255,0.9)",
+                          fontSize:
+                            "0.83rem",
+                          lineHeight:
+                            1.55,
+                        }}
+                      >
+                        {
+                          trackData.speaker
+                        }
+                      </div>
+                    </div>
+                  ) : (
+                    <div
+                      style={{
+                        marginTop:
+                          "10px",
+                        paddingTop:
+                          "10px",
+                        borderTop:
+                          "1px solid rgba(255,255,255,0.08)",
+                        display:
+                          "flex",
+                        flexDirection:
+                          "column",
+                        gap: "5px",
+                      }}
+                    >
+                      <div
+                        style={{
+                          color:
+                            "rgba(255,255,255,0.82)",
+                          fontSize:
+                            "0.72rem",
+                          lineHeight:
+                            1.45,
+                        }}
+                      >
+                        <strong
+                          style={{
+                            color:
+                              trackMeta.color,
+                          }}
+                        >
+                          Session Chair:
+                        </strong>{" "}
+                        {
+                          trackData.chair ||
+                          "—"
+                        }
+                      </div>
+
+                      <div
+                        style={{
+                          color:
+                            "rgba(255,255,255,0.72)",
+                          fontSize:
+                            "0.72rem",
+                          lineHeight:
+                            1.45,
+                        }}
+                      >
+                        <strong
+                          style={{
+                            color:
+                              trackMeta.color,
+                          }}
+                        >
+                          Session Rapporteur:
+                        </strong>{" "}
+                        {
+                          trackData.rapporteur ||
+                          "—"
+                        }
+                      </div>
+
+                      <div
+                        style={{
+                          color:
+                            "rgba(255,255,255,0.72)",
+                          fontSize:
+                            "0.72rem",
+                          lineHeight:
+                            1.45,
+                        }}
+                      >
+                        <strong
+                          style={{
+                            color:
+                              trackMeta.color,
+                          }}
+                        >
+                          Session In-charge:
+                        </strong>{" "}
+                        {
+                          trackData.inCharge ||
+                          "—"
+                        }
+                      </div>
+                    </div>
+                  )}
+                </div>
+
+                {!isInvited && (
+                  <div
+                    style={{
+                      padding:
+                        "12px 16px",
+                      display:
+                        "flex",
+                      flexDirection:
+                        "column",
+                      gap: "10px",
+                    }}
+                  >
+                    {trackData.papers.length ===
+                    0 ? (
+                      <div
+                        style={{
+                          padding:
+                            "20px 14px",
+                          textAlign:
+                            "center",
+                          color:
+                            "rgba(233,213,255,0.5)",
+                          fontSize:
+                            "0.8rem",
+                        }}
+                      >
+                        Paper details will be announced.
+                      </div>
+                    ) : (
+                      trackData.papers.map(
+                        (paper) => (
+                          <PaperCard
+                            key={
+                              paper.id
+                            }
+                            paper={
+                              paper
+                            }
+                            trackMeta={
+                              trackMeta
+                            }
+                          />
+                        )
+                      )
+                    )}
+                  </div>
+                )}
+              </div>
+            );
+          }
+        )}
+      </div>
+    </div>
+  );
+};
+
+/* ============================================================
+   POSTER SESSION CARD
+============================================================ */
+
+const PosterSessionCard = ({
+  session,
+}) => {
+  const posterMeta =
+    tracks.POSTER;
+
+  return (
+    <div
+      style={{
+        marginBottom:
+          "30px",
+      }}
+    >
+      <div
+        style={{
+          background:
+            "linear-gradient(135deg, rgba(99,102,241,0.22), rgba(168,85,247,0.18))",
+          border:
+            "1px solid rgba(99,102,241,0.4)",
+          borderRadius:
+            "16px",
+          overflow:
+            "hidden",
+          boxShadow:
+            "0 8px 35px rgba(0,0,0,0.25)",
+        }}
+      >
+        {/* POSTER HEADER */}
+        <div
+          style={{
+            padding:
+              "22px 25px",
+            background:
+              "linear-gradient(90deg, rgba(99,102,241,0.25), rgba(168,85,247,0.25))",
+            borderBottom:
+              "1px solid rgba(255,255,255,0.08)",
+          }}
+        >
           <div
-            key={paper.id}
             style={{
-              background:
-                "linear-gradient(145deg, rgba(25,44,105,0.95), rgba(40,22,96,0.95))",
-              border: "1px solid rgba(99,102,241,0.32)",
-              borderRadius: "14px",
-              padding: "16px",
-              boxShadow: "0 4px 18px rgba(0,0,0,0.22)",
-              transition: "all 0.2s ease",
+              display:
+                "flex",
+              alignItems:
+                "center",
+              justifyContent:
+                "space-between",
+              gap: "15px",
+              flexWrap:
+                "wrap",
             }}
-            onMouseEnter={(e) => {
-              e.currentTarget.style.transform =
-                "translateY(-3px)";
-              e.currentTarget.style.background =
-                "linear-gradient(145deg, rgba(30,53,125,0.98), rgba(48,25,115,0.98))";
-            }}
-            onMouseLeave={(e) => {
-              e.currentTarget.style.transform =
-                "translateY(0)";
-              e.currentTarget.style.background =
-                "linear-gradient(145deg, rgba(25,44,105,0.95), rgba(40,22,96,0.95))";
+          >
+            <div>
+              <div
+                style={{
+                  display:
+                    "flex",
+                  alignItems:
+                    "center",
+                  gap: "10px",
+                  marginBottom:
+                    "6px",
+                }}
+              >
+                <span
+                  style={{
+                    background:
+                      "linear-gradient(90deg,#6366f1,#a855f7)",
+                    color:
+                      "#fff",
+                    padding:
+                      "5px 12px",
+                    borderRadius:
+                      "999px",
+                    fontWeight:
+                      800,
+                    fontSize:
+                      "0.75rem",
+                    textTransform:
+                      "uppercase",
+                  }}
+                >
+                  {session.day}
+                </span>
+
+                <span
+                  style={{
+                    color:
+                      "#facc15",
+                    fontWeight:
+                      700,
+                    fontSize:
+                      "0.85rem",
+                  }}
+                >
+                  🕐 {session.time}
+                </span>
+              </div>
+
+              <h2
+                style={{
+                  margin:
+                    0,
+                  color:
+                    "#fff",
+                  fontSize:
+                    "1.6rem",
+                  fontWeight:
+                    900,
+                }}
+              >
+                {session.day}
+              </h2>
+
+              <p
+                style={{
+                  margin:
+                    "4px 0 0",
+                  color:
+                    "rgba(233,213,255,0.7)",
+                  fontSize:
+                    "0.9rem",
+                }}
+              >
+                {session.date}
+              </p>
+            </div>
+
+            <div
+              style={{
+                padding:
+                  "8px 15px",
+                borderRadius:
+                  "999px",
+                background:
+                  "rgba(99,102,241,0.18)",
+                border:
+                  "1px solid rgba(99,102,241,0.35)",
+                color:
+                  "#a5b4fc",
+                fontSize:
+                  "0.78rem",
+                fontWeight:
+                  700,
+              }}
+            >
+              {session.papers.length} Posters
+            </div>
+          </div>
+
+          {/* PEOPLE */}
+          <div
+            style={{
+              display:
+                "grid",
+              gridTemplateColumns:
+                "repeat(auto-fit,minmax(220px,1fr))",
+              gap: "10px",
+              marginTop:
+                "18px",
             }}
           >
             <div
               style={{
-                display: "flex",
-                gap: "10px",
-                alignItems: "flex-start",
+                background:
+                  "rgba(255,255,255,0.04)",
+                border:
+                  "1px solid rgba(255,255,255,0.07)",
+                borderRadius:
+                  "10px",
+                padding:
+                  "10px 12px",
               }}
             >
-              <span
+              <div
                 style={{
-                  background:
-                    "rgba(99,102,241,0.18)",
-                  border:
-                    "1px solid rgba(99,102,241,0.45)",
-                  color: "#818cf8",
-                  padding: "3px 8px",
-                  borderRadius: "6px",
-                  fontSize: "0.72rem",
-                  fontWeight: 800,
-                  whiteSpace: "nowrap",
-                  flexShrink: 0,
+                  color:
+                    posterMeta.color,
+                  fontWeight:
+                    700,
+                  fontSize:
+                    "0.7rem",
+                  marginBottom:
+                    "3px",
                 }}
               >
-                #{paper.id}
-              </span>
+                Session Chair
+              </div>
 
-              <p
+              <div
                 style={{
-                  margin: 0,
-                  color: "rgba(255,255,255,0.92)",
-                  fontSize: "0.86rem",
-                  lineHeight: 1.45,
-                  fontWeight: 650,
+                  color:
+                    "rgba(255,255,255,0.85)",
+                  fontSize:
+                    "0.78rem",
                 }}
               >
-                {paper.title}
-              </p>
+                {session.chair}
+              </div>
             </div>
 
-            <p
+            <div
               style={{
-                margin: "10px 0 0",
-                color: "rgba(233,213,255,0.58)",
-                fontSize: "0.75rem",
-                lineHeight: 1.5,
-                fontStyle: "italic",
+                background:
+                  "rgba(255,255,255,0.04)",
+                border:
+                  "1px solid rgba(255,255,255,0.07)",
+                borderRadius:
+                  "10px",
+                padding:
+                  "10px 12px",
               }}
             >
-              👤 {paper.authors}
-            </p>
+              <div
+                style={{
+                  color:
+                    posterMeta.color,
+                  fontWeight:
+                    700,
+                  fontSize:
+                    "0.7rem",
+                  marginBottom:
+                    "3px",
+                }}
+              >
+                Session Rapporteur
+              </div>
+
+              <div
+                style={{
+                  color:
+                    "rgba(255,255,255,0.85)",
+                  fontSize:
+                    "0.78rem",
+                }}
+              >
+                {session.rapporteur}
+              </div>
+            </div>
+
+            <div
+              style={{
+                background:
+                  "rgba(255,255,255,0.04)",
+                border:
+                  "1px solid rgba(255,255,255,0.07)",
+                borderRadius:
+                  "10px",
+                padding:
+                  "10px 12px",
+              }}
+            >
+              <div
+                style={{
+                  color:
+                    posterMeta.color,
+                  fontWeight:
+                    700,
+                  fontSize:
+                    "0.7rem",
+                  marginBottom:
+                    "3px",
+                }}
+              >
+                Session In-charge
+              </div>
+
+              <div
+                style={{
+                  color:
+                    "rgba(255,255,255,0.85)",
+                  fontSize:
+                    "0.78rem",
+                }}
+              >
+                {session.inCharge}
+              </div>
+            </div>
           </div>
-        ))}
+        </div>
+
+        {/* POSTER PAPERS */}
+        <div
+          style={{
+            padding:
+              "18px",
+            display:
+              "grid",
+            gridTemplateColumns:
+              "repeat(auto-fit,minmax(330px,1fr))",
+            gap:
+              "12px",
+          }}
+        >
+          {session.papers.map(
+            (paper) => (
+              <PaperCard
+                key={
+                  paper.id
+                }
+                paper={
+                  paper
+                }
+                trackMeta={
+                  posterMeta
+                }
+              />
+            )
+          )}
+        </div>
       </div>
     </div>
   );
@@ -1529,1330 +2200,684 @@ const PosterSessionCard = ({ poster }) => {
    MAIN PAGE
 ============================================================ */
 
-export default function TechnicalProgramme() {
-  const [activeDay, setActiveDay] = useState("day1");
-  const [activeTrack, setActiveTrack] = useState("all");
+export default function Mpro() {
+  const [activeTab, setActiveTab] =
+    useState("day0");
 
-  const isPosterTab = activeDay === "poster";
+  const [activeTrack, setActiveTrack] =
+    useState("all");
 
-  const currentDayIndex = {
-    day1: 0,
-    day2: 1,
-    day3: 2,
-  };
+  const isPosterTab =
+    activeTab === "poster";
 
   const currentDay =
     !isPosterTab
-      ? programmeData[currentDayIndex[activeDay]]
+      ? programmeData[
+          Number(
+            activeTab.replace(
+              "day",
+              ""
+            )
+          )
+        ]
       : null;
 
   return (
     <div
       style={{
-        display: "flex",
-        flexDirection: "column",
-        minHeight: "100vh",
+        minHeight:
+          "100vh",
+        background:
+          "linear-gradient(160deg, #060d2e 0%, #0a1550 45%, #0d0930 100%)",
+        fontFamily:
+          "Inter, Roboto, sans-serif",
       }}
     >
       <Navbar />
 
-      <div
+      {/* ========================================================
+          HERO
+      ======================================================== */}
+
+      <header
         style={{
-          flex: 1,
+          position:
+            "relative",
+          overflow:
+            "hidden",
           background:
-            "linear-gradient(160deg, #060d2e 0%, #0a1550 40%, #0d0930 100%)",
-          fontFamily:
-            "Inter, Roboto, sans-serif",
+            "linear-gradient(135deg, rgba(5,53,137,0.97) 0%, rgba(80,20,180,0.92) 100%)",
+          borderBottom:
+            "1px solid rgba(250,204,21,0.25)",
+          padding:
+            "55px 24px 42px",
+          textAlign:
+            "center",
         }}
       >
-        {/* ========================================================
-           HERO
-        ======================================================== */}
-
         <div
           style={{
+            position:
+              "absolute",
+            inset: 0,
             background:
-              "linear-gradient(135deg, rgba(5,53,137,0.97) 0%, rgba(80,20,180,0.92) 100%)",
-            borderBottom:
-              "1px solid rgba(250,204,21,0.25)",
-            padding: "56px 24px 40px",
-            textAlign: "center",
-            position: "relative",
-            overflow: "hidden",
+              "url('/images/chip.jpeg') center/cover no-repeat",
+            opacity:
+              0.08,
           }}
-        >
-          <div
-            style={{
-              position: "absolute",
-              inset: 0,
-              background:
-                "url('/images/chip.jpeg') center/cover no-repeat",
-              opacity: 0.07,
-            }}
-          />
-
-          <div
-            style={{
-              position: "relative",
-              zIndex: 1,
-            }}
-          >
-            <div
-              style={{
-                display: "inline-block",
-                background:
-                  "linear-gradient(90deg, #facc15, #a855f7)",
-                borderRadius: "100px",
-                padding: "4px 18px",
-                fontSize: "0.7rem",
-                fontWeight: 700,
-                letterSpacing: "0.2em",
-                color: "#060d2e",
-                textTransform: "uppercase",
-                marginBottom: "16px",
-              }}
-            >
-              VDAT 2026
-            </div>
-
-            <h1
-              style={{
-                fontSize:
-                  "clamp(2rem, 5vw, 3.2rem)",
-                fontWeight: 900,
-                background:
-                  "linear-gradient(90deg, #facc15 0%, #e879f9 55%, #818cf8 100%)",
-                WebkitBackgroundClip:
-                  "text",
-                WebkitTextFillColor:
-                  "transparent",
-                margin:
-                  "0 0 12px",
-                letterSpacing:
-                  "-0.02em",
-              }}
-            >
-              Technical Programme
-            </h1>
-
-            <p
-              style={{
-                color:
-                  "rgba(233,213,255,0.8)",
-                fontSize: "1rem",
-                margin: 0,
-              }}
-            >
-              20–22 August 2026
-              &nbsp;|&nbsp; Jaypee Institute of
-              Information Technology (JIIT), Noida
-            </p>
-          </div>
-        </div>
-
-        {/* ========================================================
-           TRACK FILTER
-        ======================================================== */}
-
-        {!isPosterTab && (
-          <div
-            style={{
-              background:
-                "rgba(255,255,255,0.03)",
-              borderBottom:
-                "1px solid rgba(255,255,255,0.06)",
-              padding:
-                "16px 24px",
-            }}
-          >
-            <div
-              style={{
-                maxWidth:
-                  "1600px",
-                margin: "0 auto",
-                display: "flex",
-                flexWrap: "wrap",
-                gap: "12px",
-                justifyContent:
-                  "center",
-              }}
-            >
-              {Object.entries(
-                tracks
-              ).map(([key, t]) => (
-                <button
-                  key={key}
-                  onClick={() =>
-                    setActiveTrack(
-                      activeTrack === key
-                        ? "all"
-                        : key
-                    )
-                  }
-                  style={{
-                    display:
-                      "flex",
-                    alignItems:
-                      "center",
-                    gap: "8px",
-                    padding:
-                      "6px 14px",
-                    borderRadius:
-                      "100px",
-                    border: `1px solid ${
-                      activeTrack ===
-                      key
-                        ? t.color
-                        : "rgba(255,255,255,0.12)"
-                    }`,
-                    background:
-                      activeTrack ===
-                      key
-                        ? t.bg
-                        : "transparent",
-                    color:
-                      activeTrack ===
-                      key
-                        ? t.color
-                        : "rgba(255,255,255,0.6)",
-                    cursor:
-                      "pointer",
-                    fontSize:
-                      "0.78rem",
-                    fontWeight: 600,
-                    transition:
-                      "all 0.2s",
-                  }}
-                >
-                  <span
-                    style={{
-                      width: 8,
-                      height: 8,
-                      borderRadius:
-                        "50%",
-                      background:
-                        t.color,
-                      display:
-                        "inline-block",
-                    }}
-                  />
-
-                  {t.label}
-                </button>
-              ))}
-
-              {activeTrack !==
-                "all" && (
-                <button
-                  onClick={() =>
-                    setActiveTrack(
-                      "all"
-                    )
-                  }
-                  style={{
-                    padding:
-                      "6px 14px",
-                    borderRadius:
-                      "100px",
-                    border:
-                      "1px solid rgba(250,204,21,0.3)",
-                    background:
-                      "rgba(250,204,21,0.07)",
-                    color:
-                      "#facc15",
-                    cursor:
-                      "pointer",
-                    fontSize:
-                      "0.78rem",
-                    fontWeight: 600,
-                  }}
-                >
-                  Show All Tracks
-                </button>
-              )}
-            </div>
-          </div>
-        )}
-
-        {/* ========================================================
-           DAY / POSTER TABS
-        ======================================================== */}
+        />
 
         <div
           style={{
-            maxWidth: "1600px",
-            margin: "0 auto",
-            padding:
-              "32px 24px 0",
+            position:
+              "relative",
+            zIndex: 1,
           }}
         >
           <div
             style={{
               display:
-                "flex",
-              gap: "12px",
-              flexWrap:
-                "wrap",
+                "inline-block",
+              background:
+                "linear-gradient(90deg,#facc15,#a855f7)",
+              borderRadius:
+                "999px",
+              padding:
+                "5px 18px",
+              color:
+                "#060d2e",
+              fontSize:
+                "0.72rem",
+              fontWeight:
+                800,
+              letterSpacing:
+                "0.18em",
               marginBottom:
-                "32px",
+                "15px",
             }}
           >
-            {/* DAY 1 */}
-            <button
-              onClick={() => {
-                setActiveDay(
-                  "day1"
-                );
-                setActiveTrack(
-                  "all"
-                );
-              }}
-              style={{
-                padding:
-                  "12px 28px",
-                borderRadius:
-                  "12px",
-                border: `2px solid ${
-                  activeDay ===
-                  "day1"
-                    ? "#facc15"
-                    : "rgba(255,255,255,0.12)"
-                }`,
-                background:
-                  activeDay ===
-                  "day1"
-                    ? "linear-gradient(135deg, rgba(250,204,21,0.2), rgba(168,85,247,0.2))"
-                    : "rgba(255,255,255,0.04)",
-                color:
-                  activeDay ===
-                  "day1"
-                    ? "#facc15"
-                    : "rgba(255,255,255,0.65)",
-                cursor:
-                  "pointer",
-                fontWeight: 700,
-                fontSize:
-                  "0.95rem",
-                transition:
-                  "all 0.25s",
-                boxShadow:
-                  activeDay ===
-                  "day1"
-                    ? "0 0 20px rgba(250,204,21,0.15)"
-                    : "none",
-              }}
-            >
-              <div
-                style={{
-                  fontSize:
-                    "0.7rem",
-                  textTransform:
-                    "uppercase",
-                  letterSpacing:
-                    "0.15em",
-                  opacity:
-                    0.75,
-                  marginBottom:
-                    "3px",
-                }}
-              >
-                Day 1
-              </div>
-
-              20th August 2026
-            </button>
-
-            {/* DAY 2 */}
-            <button
-              onClick={() => {
-                setActiveDay(
-                  "day2"
-                );
-                setActiveTrack(
-                  "all"
-                );
-              }}
-              style={{
-                padding:
-                  "12px 28px",
-                borderRadius:
-                  "12px",
-                border: `2px solid ${
-                  activeDay ===
-                  "day2"
-                    ? "#facc15"
-                    : "rgba(255,255,255,0.12)"
-                }`,
-                background:
-                  activeDay ===
-                  "day2"
-                    ? "linear-gradient(135deg, rgba(250,204,21,0.2), rgba(168,85,247,0.2))"
-                    : "rgba(255,255,255,0.04)",
-                color:
-                  activeDay ===
-                  "day2"
-                    ? "#facc15"
-                    : "rgba(255,255,255,0.65)",
-                cursor:
-                  "pointer",
-                fontWeight: 700,
-                fontSize:
-                  "0.95rem",
-                transition:
-                  "all 0.25s",
-                boxShadow:
-                  activeDay ===
-                  "day2"
-                    ? "0 0 20px rgba(250,204,21,0.15)"
-                    : "none",
-              }}
-            >
-              <div
-                style={{
-                  fontSize:
-                    "0.7rem",
-                  textTransform:
-                    "uppercase",
-                  letterSpacing:
-                    "0.15em",
-                  opacity:
-                    0.75,
-                  marginBottom:
-                    "3px",
-                }}
-              >
-                Day 2
-              </div>
-
-              21st August 2026
-            </button>
-
-            {/* DAY 3 */}
-            <button
-              onClick={() => {
-                setActiveDay(
-                  "day3"
-                );
-                setActiveTrack(
-                  "all"
-                );
-              }}
-              style={{
-                padding:
-                  "12px 28px",
-                borderRadius:
-                  "12px",
-                border: `2px solid ${
-                  activeDay ===
-                  "day3"
-                    ? "#facc15"
-                    : "rgba(255,255,255,0.12)"
-                }`,
-                background:
-                  activeDay ===
-                  "day3"
-                    ? "linear-gradient(135deg, rgba(250,204,21,0.2), rgba(168,85,247,0.2))"
-                    : "rgba(255,255,255,0.04)",
-                color:
-                  activeDay ===
-                  "day3"
-                    ? "#facc15"
-                    : "rgba(255,255,255,0.65)",
-                cursor:
-                  "pointer",
-                fontWeight: 700,
-                fontSize:
-                  "0.95rem",
-                transition:
-                  "all 0.25s",
-                boxShadow:
-                  activeDay ===
-                  "day3"
-                    ? "0 0 20px rgba(250,204,21,0.15)"
-                    : "none",
-              }}
-            >
-              <div
-                style={{
-                  fontSize:
-                    "0.7rem",
-                  textTransform:
-                    "uppercase",
-                  letterSpacing:
-                    "0.15em",
-                  opacity:
-                    0.75,
-                  marginBottom:
-                    "3px",
-                }}
-              >
-                Day 3
-              </div>
-
-              22nd August 2026
-            </button>
-
-            {/* POSTER SESSIONS TAB */}
-            <button
-              onClick={() => {
-                setActiveDay(
-                  "poster"
-                );
-                setActiveTrack(
-                  "all"
-                );
-              }}
-              style={{
-                padding:
-                  "12px 28px",
-                borderRadius:
-                  "12px",
-                border: `2px solid ${
-                  activeDay ===
-                  "poster"
-                    ? "#a855f7"
-                    : "rgba(255,255,255,0.12)"
-                }`,
-                background:
-                  activeDay ===
-                  "poster"
-                    ? "linear-gradient(135deg, rgba(168,85,247,0.25), rgba(99,102,241,0.25))"
-                    : "rgba(255,255,255,0.04)",
-                color:
-                  activeDay ===
-                  "poster"
-                    ? "#c084fc"
-                    : "rgba(255,255,255,0.65)",
-                cursor:
-                  "pointer",
-                fontWeight: 700,
-                fontSize:
-                  "0.95rem",
-                transition:
-                  "all 0.25s",
-                boxShadow:
-                  activeDay ===
-                  "poster"
-                    ? "0 0 20px rgba(168,85,247,0.2)"
-                    : "none",
-              }}
-            >
-              <div
-                style={{
-                  fontSize:
-                    "0.7rem",
-                  textTransform:
-                    "uppercase",
-                  letterSpacing:
-                    "0.15em",
-                  opacity:
-                    0.75,
-                  marginBottom:
-                    "3px",
-                }}
-              >
-                Special
-              </div>
-
-              Poster Sessions
-            </button>
+            VDAT 2026
           </div>
 
-          {/* ======================================================
-             POSTER TAB CONTENT
-          ====================================================== */}
+          <h1
+            style={{
+              margin:
+                "0 0 12px",
+              fontSize:
+                "clamp(2rem,5vw,3.4rem)",
+              fontWeight:
+                900,
+              background:
+                "linear-gradient(90deg,#facc15,#e879f9,#818cf8)",
+              WebkitBackgroundClip:
+                "text",
+              WebkitTextFillColor:
+                "transparent",
+            }}
+          >
+            Technical Programme
+          </h1>
 
-          {isPosterTab ? (
-            <section
-              style={{
-                paddingBottom:
-                  "70px",
-              }}
-            >
-              <div
+          <p
+            style={{
+              margin: 0,
+              color:
+                "rgba(233,213,255,0.85)",
+              fontSize:
+                "1rem",
+            }}
+          >
+            20–22 August 2026
+            &nbsp;|&nbsp;
+            Jaypee Institute of Information Technology (JIIT), Noida
+          </p>
+        </div>
+      </header>
+
+      {/* ========================================================
+          TOP TABS
+      ======================================================== */}
+
+      <div
+        style={{
+          maxWidth:
+            "1600px",
+          margin:
+            "0 auto",
+          padding:
+            "28px 24px 12px",
+        }}
+      >
+        <div
+          style={{
+            display:
+              "grid",
+            gridTemplateColumns:
+              "repeat(4,1fr)",
+            gap:
+              "12px",
+          }}
+        >
+          {[
+            {
+              key: "day0",
+              title:
+                "Day 1",
+              subtitle:
+                "20 August 2026",
+            },
+            {
+              key: "day1",
+              title:
+                "Day 2",
+              subtitle:
+                "21 August 2026",
+            },
+            {
+              key: "day2",
+              title:
+                "Day 3",
+              subtitle:
+                "22 August 2026",
+            },
+            {
+              key: "poster",
+              title:
+                "Poster Sessions",
+              subtitle:
+                "20–21 August 2026",
+            },
+          ].map(
+            (tab) => (
+              <button
+                key={
+                  tab.key
+                }
+                onClick={() => {
+                  setActiveTab(
+                    tab.key
+                  );
+                  setActiveTrack(
+                    "all"
+                  );
+                }}
                 style={{
-                  textAlign:
-                    "center",
-                  marginBottom:
-                    "34px",
+                  padding:
+                    "15px 18px",
+                  borderRadius:
+                    "14px",
+                  border:
+                    `2px solid ${
+                      activeTab ===
+                      tab.key
+                        ? "#facc15"
+                        : "rgba(255,255,255,0.12)"
+                    }`,
+                  background:
+                    activeTab ===
+                    tab.key
+                      ? "linear-gradient(135deg, rgba(250,204,21,0.18), rgba(168,85,247,0.18))"
+                      : "rgba(255,255,255,0.04)",
+                  color:
+                    activeTab ===
+                    tab.key
+                      ? "#facc15"
+                      : "rgba(255,255,255,0.7)",
+                  cursor:
+                    "pointer",
+                  transition:
+                    "all 0.25s",
+                  boxShadow:
+                    activeTab ===
+                    tab.key
+                      ? "0 0 22px rgba(250,204,21,0.12)"
+                      : "none",
                 }}
               >
                 <div
                   style={{
-                    display:
-                      "inline-block",
-                    background:
-                      "linear-gradient(90deg, #ec4899, #6366f1)",
-                    borderRadius:
-                      "999px",
-                    padding:
-                      "5px 18px",
-                    color:
-                      "white",
-                    fontSize:
-                      "0.72rem",
-                    fontWeight:
-                      800,
-                    letterSpacing:
-                      "0.16em",
-                    textTransform:
-                      "uppercase",
-                    marginBottom:
-                      "12px",
-                  }}
-                >
-                  VDAT 2026
-                </div>
-
-                <h2
-                  style={{
-                    margin: 0,
-                    fontSize:
-                      "clamp(1.8rem, 4vw, 2.8rem)",
-                    fontWeight:
-                      900,
-                    background:
-                      "linear-gradient(90deg, #f472b6, #818cf8)",
-                    WebkitBackgroundClip:
-                      "text",
-                    WebkitTextFillColor:
-                      "transparent",
-                  }}
-                >
-                  Poster Sessions
-                </h2>
-
-                <p
-                  style={{
-                    margin:
-                      "10px auto 0",
-                    maxWidth:
-                      "760px",
-                    color:
-                      "rgba(233,213,255,0.65)",
                     fontSize:
                       "0.95rem",
-                    lineHeight:
-                      1.6,
+                    fontWeight:
+                      800,
                   }}
                 >
-                  Selected VDAT 2026 research papers presented
-                  during the poster sessions.
-                </p>
-              </div>
+                  {tab.title}
+                </div>
 
-              {/* POSTER DAY TABS INSIDE POSTER SECTION */}
+                <div
+                  style={{
+                    marginTop:
+                      "4px",
+                    fontSize:
+                      "0.68rem",
+                    opacity:
+                      0.72,
+                  }}
+                >
+                  {tab.subtitle}
+                </div>
+              </button>
+            )
+          )}
+        </div>
+      </div>
+
+      {/* ========================================================
+          TRACK FILTER
+      ======================================================== */}
+
+      {!isPosterTab && (
+        <div
+          style={{
+            background:
+              "rgba(255,255,255,0.03)",
+            borderBottom:
+              "1px solid rgba(255,255,255,0.06)",
+            borderTop:
+              "1px solid rgba(255,255,255,0.04)",
+            padding:
+              "16px 24px",
+            marginTop:
+              "15px",
+          }}
+        >
+          <div
+            style={{
+              maxWidth:
+                "1600px",
+              margin:
+                "0 auto",
+              display:
+                "flex",
+              flexWrap:
+                "wrap",
+              gap:
+                "10px",
+              justifyContent:
+                "center",
+            }}
+          >
+            {Object.entries(
+              tracks
+            )
+              .filter(
+                ([key]) =>
+                  key !==
+                  "POSTER"
+              )
+              .map(
+                ([key, track]) => (
+                  <button
+                    key={
+                      key
+                    }
+                    onClick={() =>
+                      setActiveTrack(
+                        activeTrack ===
+                          key
+                          ? "all"
+                          : key
+                      )
+                    }
+                    style={{
+                      display:
+                        "flex",
+                      alignItems:
+                        "center",
+                      gap:
+                        "8px",
+                      padding:
+                        "7px 14px",
+                      borderRadius:
+                        "999px",
+                      border:
+                        `1px solid ${
+                          activeTrack ===
+                          key
+                            ? track.color
+                            : "rgba(255,255,255,0.12)"
+                        }`,
+                      background:
+                        activeTrack ===
+                        key
+                          ? track.bg
+                          : "transparent",
+                      color:
+                        activeTrack ===
+                        key
+                          ? track.color
+                          : "rgba(255,255,255,0.62)",
+                      fontSize:
+                        "0.76rem",
+                      fontWeight:
+                        600,
+                      cursor:
+                        "pointer",
+                    }}
+                  >
+                    <span
+                      style={{
+                        width:
+                          8,
+                        height:
+                          8,
+                        borderRadius:
+                          "50%",
+                        background:
+                          track.color,
+                      }}
+                    />
+
+                    {
+                      track.label
+                    }
+                  </button>
+                )
+              )}
+
+            {activeTrack !==
+              "all" && (
+              <button
+                onClick={() =>
+                  setActiveTrack(
+                    "all"
+                  )
+                }
+                style={{
+                  padding:
+                    "7px 14px",
+                  borderRadius:
+                    "999px",
+                  border:
+                    "1px solid rgba(250,204,21,0.3)",
+                  background:
+                    "rgba(250,204,21,0.08)",
+                  color:
+                    "#facc15",
+                  fontSize:
+                    "0.76rem",
+                  fontWeight:
+                    600,
+                  cursor:
+                    "pointer",
+                }}
+              >
+                Show All
+              </button>
+            )}
+          </div>
+        </div>
+      )}
+
+      {/* ========================================================
+          CONTENT
+      ======================================================== */}
+
+      <main
+        style={{
+          maxWidth:
+            "1600px",
+          margin:
+            "0 auto",
+          padding:
+            "30px 24px 70px",
+        }}
+      >
+        {isPosterTab ? (
+          <>
+            {/* POSTER PAGE HEADER */}
+            <div
+              style={{
+                textAlign:
+                  "center",
+                marginBottom:
+                  "35px",
+              }}
+            >
+              <span
+                style={{
+                  display:
+                    "inline-block",
+                  background:
+                    "linear-gradient(90deg,#6366f1,#a855f7)",
+                  color:
+                    "#fff",
+                  padding:
+                    "6px 16px",
+                  borderRadius:
+                    "999px",
+                  fontWeight:
+                    800,
+                  fontSize:
+                    "0.75rem",
+                  letterSpacing:
+                    "0.08em",
+                  textTransform:
+                    "uppercase",
+                }}
+              >
+                Special Sessions
+              </span>
+
+              <h2
+                style={{
+                  margin:
+                    "12px 0 7px",
+                  color:
+                    "#fff",
+                  fontSize:
+                    "clamp(2rem,4vw,3rem)",
+                  fontWeight:
+                    900,
+                }}
+              >
+                Poster Sessions
+              </h2>
+
+              <p
+                style={{
+                  margin: 0,
+                  color:
+                    "rgba(233,213,255,0.65)",
+                  fontSize:
+                    "0.95rem",
+                }}
+              >
+                Poster Session 1 · 20 August 2026
+                &nbsp; | &nbsp;
+                Poster Session 2 · 21 August 2026
+              </p>
+            </div>
+
+            {posterSessions.map(
+              (session) => (
+                <PosterSessionCard
+                  key={
+                    session.day
+                  }
+                  session={
+                    session
+                  }
+                />
+              )
+            )}
+          </>
+        ) : (
+          <>
+            {/* DAY HEADER */}
+            <div
+              style={{
+                display:
+                  "flex",
+                flexWrap:
+                  "wrap",
+                alignItems:
+                  "center",
+                justifyContent:
+                  "space-between",
+                gap:
+                  "15px",
+                marginBottom:
+                  "28px",
+              }}
+            >
               <div
                 style={{
                   display:
                     "flex",
-                  justifyContent:
+                  alignItems:
                     "center",
-                  gap: "10px",
-                  flexWrap:
-                    "wrap",
-                  marginBottom:
-                    "28px",
+                  gap:
+                    "15px",
                 }}
               >
-                <button
-                  onClick={() =>
-                    setActiveTrack(
-                      "poster1"
-                    )
-                  }
+                <div
                   style={{
-                    padding:
-                      "10px 20px",
+                    width:
+                      58,
+                    height:
+                      58,
                     borderRadius:
-                      "10px",
-                    border:
-                      `1px solid ${
-                        activeTrack ===
-                        "poster1"
-                          ? "#facc15"
-                          : "rgba(255,255,255,0.14)"
-                      }`,
+                      "16px",
                     background:
-                      activeTrack ===
-                      "poster1"
-                        ? "rgba(250,204,21,0.12)"
-                        : "rgba(255,255,255,0.04)",
-                    color:
-                      activeTrack ===
-                      "poster1"
-                        ? "#facc15"
-                        : "rgba(255,255,255,0.65)",
-                    cursor:
-                      "pointer",
-                    fontWeight:
-                      700,
+                      "linear-gradient(135deg,#2563eb,#7c3aed)",
+                    display:
+                      "flex",
+                    alignItems:
+                      "center",
+                    justifyContent:
+                      "center",
+                    boxShadow:
+                      "0 10px 30px rgba(37,99,235,0.25)",
                   }}
                 >
-                  Poster Session 1
-                </button>
-
-                <button
-                  onClick={() =>
-                    setActiveTrack(
-                      "poster2"
-                    )
-                  }
-                  style={{
-                    padding:
-                      "10px 20px",
-                    borderRadius:
-                      "10px",
-                    border:
-                      `1px solid ${
-                        activeTrack ===
-                        "poster2"
-                          ? "#a855f7"
-                          : "rgba(255,255,255,0.14)"
-                      }`,
-                    background:
-                      activeTrack ===
-                      "poster2"
-                        ? "rgba(168,85,247,0.12)"
-                        : "rgba(255,255,255,0.04)",
-                    color:
-                      activeTrack ===
-                      "poster2"
-                        ? "#c084fc"
-                        : "rgba(255,255,255,0.65)",
-                    cursor:
-                      "pointer",
-                    fontWeight:
-                      700,
-                  }}
-                >
-                  Poster Session 2
-                </button>
-              </div>
-
-              <PosterSessionCard
-                poster={
-                  activeTrack ===
-                  "poster2"
-                    ? posterSessions.day2
-                    : posterSessions.day1
-                }
-              />
-            </section>
-          ) : (
-            /* ======================================================
-               NORMAL DAY CONTENT
-            ====================================================== */
-
-            <div>
-              {currentDay.sessions.map(
-                (session, si) => (
-                  <div
-                    key={si}
+                  <span
                     style={{
-                      marginBottom:
-                        "28px",
+                      fontSize:
+                        "1.6rem",
                     }}
                   >
-                    {/* SESSION HEADER */}
-                    <div
-                      style={{
-                        width:
-                          "100%",
-                        textAlign:
-                          "left",
-                        background:
-                          "linear-gradient(135deg, rgba(5,53,137,0.6) 0%, rgba(80,20,180,0.5) 100%)",
-                        border:
-                          "1px solid rgba(250,204,21,0.25)",
-                        borderRadius:
-                          "14px",
-                        padding:
-                          "18px 24px",
-                        display:
-                          "flex",
-                        alignItems:
-                          "center",
-                        justifyContent:
-                          "space-between",
-                        color:
-                          "white",
-                        boxShadow:
-                          "0 4px 20px rgba(0,0,0,0.3)",
-                      }}
-                    >
-                      <div>
-                        <div
-                          style={{
-                            display:
-                              "flex",
-                            alignItems:
-                              "center",
-                            gap:
-                              "12px",
-                            flexWrap:
-                              "wrap",
-                          }}
-                        >
-                          <span
-                            style={{
-                              background:
-                                "linear-gradient(90deg, #facc15, #f97316)",
-                              color:
-                                "#0a0a0a",
-                              fontWeight:
-                                800,
-                              fontSize:
-                                "0.78rem",
-                              padding:
-                                "3px 12px",
-                              borderRadius:
-                                "100px",
-                              textTransform:
-                                "uppercase",
-                              letterSpacing:
-                                "0.1em",
-                            }}
-                          >
-                            {
-                              session.sessionLabel
-                            }
-                          </span>
+                    📅
+                  </span>
+                </div>
 
-                          <span
-                            style={{
-                              color:
-                                "rgba(250,204,21,0.9)",
-                              fontSize:
-                                "0.9rem",
-                              fontWeight:
-                                600,
-                            }}
-                          >
-                            🕐{" "}
-                            {
-                              session.time
-                            }
-                          </span>
-                        </div>
+                <div>
+                  <h2
+                    style={{
+                      margin:
+                        0,
+                      color:
+                        "#fff",
+                      fontSize:
+                        "2rem",
+                      fontWeight:
+                        900,
+                    }}
+                  >
+                    {
+                      currentDay.day
+                    }
+                  </h2>
 
-                        <div
-                          style={{
-                            marginTop:
-                              "6px",
-                            color:
-                              "rgba(233,213,255,0.7)",
-                            fontSize:
-                              "0.82rem",
-                          }}
-                        >
-                          {
-                            session.tracks.length
-                          }{" "}
-                          Parallel Tracks
-                          &nbsp;·&nbsp;
-                          {
-                            session.tracks.reduce(
-                              (
-                                sum,
-                                track
-                              ) =>
-                                sum +
-                                track.papers
-                                  .length,
-                              0
-                            )
-                          }{" "}
-                          Papers
-                        </div>
-                      </div>
-                    </div>
+                  <p
+                    style={{
+                      margin:
+                        "4px 0 0",
+                      color:
+                        "rgba(233,213,255,0.7)",
+                      fontSize:
+                        "0.95rem",
+                    }}
+                  >
+                    {
+                      currentDay.date
+                    }
+                  </p>
+                </div>
+              </div>
 
-                    {/* SESSION BODY */}
-                    <div
-                      style={{
-                        marginTop:
-                          "12px",
-                        display:
-                          "grid",
-                        gridTemplateColumns:
-                          "repeat(auto-fit, minmax(250px, 1fr))",
-                        gap: "16px",
-                      }}
-                    >
-                      {session.tracks
-                        .filter(
-                          (
-                            trackData
-                          ) =>
-                            activeTrack ===
-                              "all" ||
-                            trackData.track ===
-                              activeTrack
-                        )
-                        .map(
-                          (
-                            trackData,
-                            ti
-                          ) => {
-                            const trackMeta =
-                              tracks[
-                                trackData
-                                  .track
-                              ];
-
-                            const isInvitedTalk =
-                              trackData.sessionId.includes(
-                                "Invited Talk"
-                              );
-
-                            return (
-                              <div
-                                key={
-                                  ti
-                                }
-                                style={{
-                                  background:
-                                    trackMeta.bg,
-                                  border:
-                                    `1px solid ${trackMeta.border}`,
-                                  borderRadius:
-                                    "14px",
-                                  overflow:
-                                    "hidden",
-                                  boxShadow:
-                                    "0 4px 24px rgba(0,0,0,0.25)",
-                                }}
-                              >
-                                {/* TRACK HEADER */}
-                                <div
-                                  style={{
-                                    background:
-                                      `linear-gradient(135deg, ${trackMeta.color}22, ${trackMeta.color}11)`,
-                                    borderBottom:
-                                      `1px solid ${trackMeta.border}`,
-                                    padding:
-                                      "14px 20px",
-                                  }}
-                                >
-                                  <div
-                                    style={{
-                                      display:
-                                        "flex",
-                                      justifyContent:
-                                        "space-between",
-                                      alignItems:
-                                        "center",
-                                      flexWrap:
-                                        "wrap",
-                                      gap:
-                                        "8px",
-                                    }}
-                                  >
-                                    <span
-                                      style={{
-                                        background:
-                                          trackMeta.color,
-                                        color:
-                                          "#fff",
-                                        fontWeight:
-                                          800,
-                                        fontSize:
-                                          "0.72rem",
-                                        padding:
-                                          "3px 10px",
-                                        borderRadius:
-                                          "6px",
-                                        letterSpacing:
-                                          "0.05em",
-                                      }}
-                                    >
-                                      {
-                                        trackData.sessionId
-                                      }
-                                    </span>
-
-                                    {!isInvitedTalk && (
-                                      <span
-                                        style={{
-                                          color:
-                                            trackMeta.color,
-                                          fontSize:
-                                            "0.72rem",
-                                          fontWeight:
-                                            600,
-                                          opacity:
-                                            0.9,
-                                        }}
-                                      >
-                                        Track{" "}
-                                        {
-                                          trackData.track
-                                        }
-                                      </span>
-                                    )}
-                                  </div>
-
-                                  <p
-                                    style={{
-                                      margin:
-                                        "8px 0 0",
-                                      color:
-                                        "rgba(255,255,255,0.85)",
-                                      fontSize:
-                                        "0.82rem",
-                                      fontWeight:
-                                        600,
-                                    }}
-                                  >
-                                    {
-                                      trackMeta.label
-                                    }
-                                  </p>
-
-                                  {/* VENUE */}
-                                  <div
-                                    style={{
-                                      marginTop:
-                                        "10px",
-                                      color:
-                                        "#facc15",
-                                      fontSize:
-                                        "0.74rem",
-                                      fontWeight:
-                                        700,
-                                    }}
-                                  >
-                                    📍 Venue:{" "}
-                                    {
-                                      trackData.venue
-                                    }
-                                  </div>
-
-                                  {/* INVITED TALK */}
-                                  {isInvitedTalk ? (
-                                    <div
-                                      style={{
-                                        marginTop:
-                                          "14px",
-                                        paddingTop:
-                                          "12px",
-                                        borderTop:
-                                          "1px solid rgba(255,255,255,0.08)",
-                                      }}
-                                    >
-                                      <div
-                                        style={{
-                                          color:
-                                            trackMeta.color,
-                                          fontSize:
-                                            "0.75rem",
-                                          fontWeight:
-                                            700,
-                                          marginBottom:
-                                            "4px",
-                                        }}
-                                      >
-                                        Speaker
-                                      </div>
-
-                                      <div
-                                        style={{
-                                          color:
-                                            "rgba(255,255,255,0.85)",
-                                          fontSize:
-                                            "0.82rem",
-                                          lineHeight:
-                                            1.5,
-                                        }}
-                                      >
-                                        {
-                                          trackData.speaker
-                                        }
-                                      </div>
-                                    </div>
-                                  ) : (
-                                    /* NORMAL SESSION */
-                                    <div
-                                      style={{
-                                        marginTop:
-                                          "10px",
-                                        paddingTop:
-                                          "10px",
-                                        borderTop:
-                                          "1px solid rgba(255,255,255,0.08)",
-                                        display:
-                                          "flex",
-                                        flexDirection:
-                                          "column",
-                                        gap:
-                                          "5px",
-                                      }}
-                                    >
-                                      <div
-                                        style={{
-                                          color:
-                                            "rgba(255,255,255,0.82)",
-                                          fontSize:
-                                            "0.72rem",
-                                          lineHeight:
-                                            1.4,
-                                        }}
-                                      >
-                                        <strong
-                                          style={{
-                                            color:
-                                              trackMeta.color,
-                                          }}
-                                        >
-                                          Session
-                                          Chair:
-                                        </strong>{" "}
-                                        {
-                                          trackData.chair ||
-                                          "—"
-                                        }
-                                      </div>
-
-                                      <div
-                                        style={{
-                                          color:
-                                            "rgba(255,255,255,0.72)",
-                                          fontSize:
-                                            "0.72rem",
-                                          lineHeight:
-                                            1.4,
-                                        }}
-                                      >
-                                        <strong
-                                          style={{
-                                            color:
-                                              trackMeta.color,
-                                          }}
-                                        >
-                                          Session
-                                          Rapporteur:
-                                        </strong>{" "}
-                                        {
-                                          trackData.rapporteur ||
-                                          "—"
-                                        }
-                                      </div>
-
-                                      <div
-                                        style={{
-                                          color:
-                                            "rgba(255,255,255,0.72)",
-                                          fontSize:
-                                            "0.72rem",
-                                          lineHeight:
-                                            1.4,
-                                        }}
-                                      >
-                                        <strong
-                                          style={{
-                                            color:
-                                              trackMeta.color,
-                                          }}
-                                        >
-                                          Session
-                                          In-charge:
-                                        </strong>{" "}
-                                        {
-                                          trackData.inCharge ||
-                                          "—"
-                                        }
-                                      </div>
-                                    </div>
-                                  )}
-                                </div>
-
-                                {/* PAPERS */}
-                                {!isInvitedTalk && (
-                                  <div
-                                    style={{
-                                      padding:
-                                        "12px 16px",
-                                      display:
-                                        "flex",
-                                      flexDirection:
-                                        "column",
-                                      gap:
-                                        "10px",
-                                    }}
-                                  >
-                                    {trackData.papers.length ===
-                                    0 ? (
-                                      <div
-                                        style={{
-                                          padding:
-                                            "20px 14px",
-                                          textAlign:
-                                            "center",
-                                          color:
-                                            "rgba(233,213,255,0.5)",
-                                          fontSize:
-                                            "0.8rem",
-                                        }}
-                                      >
-                                        Paper
-                                        details
-                                        will be
-                                        announced.
-                                      </div>
-                                    ) : (
-                                      trackData.papers.map(
-                                        (
-                                          paper,
-                                          pi
-                                        ) => (
-                                          <div
-                                            key={
-                                              pi
-                                            }
-                                            style={{
-                                              background:
-                                                "rgba(255,255,255,0.04)",
-                                              border:
-                                                "1px solid rgba(255,255,255,0.07)",
-                                              borderRadius:
-                                                "10px",
-                                              padding:
-                                                "12px 14px",
-                                              transition:
-                                                "all 0.2s",
-                                            }}
-                                            onMouseEnter={(
-                                              e
-                                            ) => {
-                                              e.currentTarget.style.background =
-                                                "rgba(255,255,255,0.08)";
-                                              e.currentTarget.style.transform =
-                                                "translateY(-2px)";
-                                            }}
-                                            onMouseLeave={(
-                                              e
-                                            ) => {
-                                              e.currentTarget.style.background =
-                                                "rgba(255,255,255,0.04)";
-                                              e.currentTarget.style.transform =
-                                                "translateY(0)";
-                                            }}
-                                          >
-                                            <div
-                                              style={{
-                                                display:
-                                                  "flex",
-                                                gap:
-                                                  "10px",
-                                                alignItems:
-                                                  "flex-start",
-                                              }}
-                                            >
-                                              <span
-                                                style={{
-                                                  background: `${trackMeta.color}22`,
-                                                  border: `1px solid ${trackMeta.color}55`,
-                                                  color:
-                                                    trackMeta.color,
-                                                  fontSize:
-                                                    "0.68rem",
-                                                  fontWeight:
-                                                    800,
-                                                  padding:
-                                                    "2px 8px",
-                                                  borderRadius:
-                                                    "5px",
-                                                  whiteSpace:
-                                                    "nowrap",
-                                                  flexShrink:
-                                                    0,
-                                                  marginTop:
-                                                    "2px",
-                                                }}
-                                              >
-                                                #
-                                                {
-                                                  paper.id
-                                                }
-                                              </span>
-
-                                              <div>
-                                                <p
-                                                  style={{
-                                                    margin:
-                                                      "0 0 5px",
-                                                    color:
-                                                      "rgba(255,255,255,0.9)",
-                                                    fontSize:
-                                                      "0.83rem",
-                                                    fontWeight:
-                                                      600,
-                                                    lineHeight:
-                                                      1.45,
-                                                  }}
-                                                >
-                                                  {
-                                                    paper.title
-                                                  }
-                                                </p>
-
-                                                <p
-                                                  style={{
-                                                    margin:
-                                                      0,
-                                                    color:
-                                                      "rgba(233,213,255,0.55)",
-                                                    fontSize:
-                                                      "0.73rem",
-                                                    fontStyle:
-                                                      "italic",
-                                                  }}
-                                                >
-                                                  👤{" "}
-                                                  {
-                                                    paper.authors
-                                                  }
-                                                </p>
-                                              </div>
-                                            </div>
-                                          </div>
-                                        )
-                                      )
-                                    )}
-                                  </div>
-                                )}
-                              </div>
-                            );
-                          }
-                        )}
-                    </div>
-                  </div>
-                )
-              )}
+              <div
+                style={{
+                  padding:
+                    "8px 16px",
+                  borderRadius:
+                    "999px",
+                  background:
+                    "rgba(59,130,246,0.1)",
+                  border:
+                    "1px solid rgba(59,130,246,0.25)",
+                  color:
+                    "#93c5fd",
+                  fontSize:
+                    "0.78rem",
+                  fontWeight:
+                    700,
+                }}
+              >
+                {
+                  currentDay.day
+                }{" "}
+                Programme
+              </div>
             </div>
-          )}
-        </div>
 
-        {/* FOOTER NOTE */}
-        <div
-          style={{
-            textAlign:
-              "center",
-            padding:
-              "10px 24px 64px",
-            color:
-              "rgba(233,213,255,0.35)",
-            fontSize:
-              "0.78rem",
-          }}
-        >
-          <p style={{ margin: 0 }}>
-            Programme subject to change. Please check the conference
-            website for the latest updates.
-          </p>
-        </div>
-      </div>
+            {/* SESSIONS */}
+            {currentDay.sessions.map(
+              (
+                session,
+                sessionIndex
+              ) => {
+                const filteredTracks =
+                  activeTrack ===
+                  "all"
+                    ? session.tracks
+                    : session.tracks.filter(
+                        (
+                          track
+                        ) =>
+                          track.track ===
+                          activeTrack
+                      );
+
+                if (
+                  filteredTracks.length ===
+                  0
+                ) {
+                  return null;
+                }
+
+                return (
+                  <SessionCard
+                    key={`${currentDay.day}-${sessionIndex}`}
+                    session={{
+                      ...session,
+                      tracks:
+                        filteredTracks,
+                    }}
+                  />
+                );
+              }
+            )}
+
+            <div
+              style={{
+                marginTop:
+                  "20px",
+                textAlign:
+                  "center",
+                color:
+                  "rgba(233,213,255,0.4)",
+                fontSize:
+                  "0.76rem",
+              }}
+            >
+              Programme subject to change. Please check the conference
+              website for the latest updates.
+            </div>
+          </>
+        )}
+      </main>
 
       <Footer />
     </div>

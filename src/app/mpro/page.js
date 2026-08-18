@@ -46,7 +46,15 @@ const schedule = [
         duration: "20 min",
         type: "Keynote 1",
         session: "Keynote Block 1",
-        speaker: <>Keynote 1: Mr. Hitesh Garg<br/><span className="text-xs text-gray-500 font-normal">Vice President and India Country Manager, NXP Semiconductors</span></>,
+        speaker: (
+          <>
+            Keynote 1: Mr. Hitesh Garg
+            <br />
+            <span className="text-xs text-gray-500 font-normal">
+              Vice President and India Country Manager, NXP Semiconductors
+            </span>
+          </>
+        ),
         audience: "Auditorium",
       },
       {
@@ -54,7 +62,16 @@ const schedule = [
         duration: "20 min",
         type: "Keynote 2",
         session: "Keynote Block 2",
-        speaker: <>Keynote 2: Ms. Tal Zigman<br/><span className="text-xs text-gray-500 font-normal">Global Academic Network and STEM Education Leader, Cadence Design Systems</span></>,
+        speaker: (
+          <>
+            Keynote 2: Ms. Tal Zigman
+            <br />
+            <span className="text-xs text-gray-500 font-normal">
+              Global Academic Network and STEM Education Leader, Cadence Design
+              Systems
+            </span>
+          </>
+        ),
         audience: "Auditorium",
       },
       {
@@ -86,7 +103,15 @@ const schedule = [
         duration: "20 min",
         type: "Keynote 3",
         session: "Keynote Block 3",
-        speaker: <>Keynote 3: Mr. Navin Bishnoi<br/><span className="text-xs text-gray-500 font-normal">Associate Vice President and India Country Manager, Marvell India</span></>,
+        speaker: (
+          <>
+            Keynote 3: Mr. Navin Bishnoi
+            <br />
+            <span className="text-xs text-gray-500 font-normal">
+              Associate Vice President and India Country Manager, Marvell India
+            </span>
+          </>
+        ),
         audience: "Auditorium",
       },
       {
@@ -110,7 +135,16 @@ const schedule = [
         duration: "20 min",
         type: "Keynote 5",
         session: "Keynote Block 5",
-        speaker: <>Keynote 5: Prof. Saibal Mukhopadhyay<br/><span className="text-xs text-gray-500 font-normal">Professor, School of Electrical and Computer Engineering, Georgia Institute of Technology, USA</span></>,
+        speaker: (
+          <>
+            Keynote 5: Prof. Saibal Mukhopadhyay
+            <br />
+            <span className="text-xs text-gray-500 font-normal">
+              Professor, School of Electrical and Computer Engineering,
+              Georgia Institute of Technology, USA
+            </span>
+          </>
+        ),
         audience: "Auditorium",
       },
       {
@@ -181,7 +215,16 @@ const schedule = [
         duration: "20 min",
         type: "Keynote 6",
         session: "Keynote Block 6",
-        speaker: <>Keynote 6: Mr. Anand Kumar<br/><span className="text-xs text-gray-500 font-normal">Managing Director, STMicroelectronics India; Global Head, IP and Library Design</span></>,
+        speaker: (
+          <>
+            Keynote 6: Mr. Anand Kumar
+            <br />
+            <span className="text-xs text-gray-500 font-normal">
+              Managing Director, STMicroelectronics India; Global Head, IP and
+              Library Design
+            </span>
+          </>
+        ),
         audience: "LT1",
       },
       {
@@ -189,7 +232,16 @@ const schedule = [
         duration: "20 min",
         type: "Keynote 7",
         session: "Keynote Block 7",
-        speaker: <>Keynote 7: Mr. Yogesh Mittal<br/><span className="text-xs text-gray-500 font-normal">Vice President of Engineering and India R&amp;D Head, High-Performance Computing, Renesas Electronics</span></>,
+        speaker: (
+          <>
+            Keynote 7: Mr. Yogesh Mittal
+            <br />
+            <span className="text-xs text-gray-500 font-normal">
+              Vice President of Engineering and India R&D Head, High-Performance
+              Computing, Renesas Electronics
+            </span>
+          </>
+        ),
         audience: "LT1",
       },
       {
@@ -229,7 +281,15 @@ const schedule = [
         duration: "20 min",
         type: "Keynote 8",
         session: "Keynote Block 8",
-        speaker: <>Keynote 8: Prof. Maryam Shojaei Baghini<br/><span className="text-xs text-gray-500 font-normal">Professor, Department of Electrical Engineering, IIT Bombay</span></>,
+        speaker: (
+          <>
+            Keynote 8: Prof. Maryam Shojaei Baghini
+            <br />
+            <span className="text-xs text-gray-500 font-normal">
+              Professor, Department of Electrical Engineering, IIT Bombay
+            </span>
+          </>
+        ),
         audience: "LT1",
       },
       {
@@ -237,7 +297,16 @@ const schedule = [
         duration: "20 min",
         type: "Keynote 9",
         session: "Keynote Block 9",
-        speaker: <>Keynote 9: Prof. Rajendra Singh<br/><span className="text-xs text-gray-500 font-normal">Professor, Department of Physics, IIT Delhi; Joint Faculty, Department of Electrical Engineering</span></>,
+        speaker: (
+          <>
+            Keynote 9: Prof. Rajendra Singh
+            <br />
+            <span className="text-xs text-gray-500 font-normal">
+              Professor, Department of Physics, IIT Delhi; Joint Faculty,
+              Department of Electrical Engineering
+            </span>
+          </>
+        ),
         audience: "LT1",
       },
       {
@@ -249,7 +318,7 @@ const schedule = [
         audience: "",
       },
       {
-        time: "02:55 PM – 04:15 PM",
+        time: "2:55 PM – 04:15 PM",
         duration: "80 min",
         type: "Technical Session",
         session: "Session 5",
@@ -332,7 +401,16 @@ const schedule = [
         duration: "20 min",
         type: "Keynote 11",
         session: "Keynote Block 11",
-        speaker: <>Keynote 11: Er. H. S. Jatana<br/><span className="text-xs text-gray-500 font-normal">Professor of Practice, DA-IICT/DAU, Gandhinagar; Former Scientist and Group Head, SCL–ISRO</span></>,
+        speaker: (
+          <>
+            Keynote 11: Er. H. S. Jatana
+            <br />
+            <span className="text-xs text-gray-500 font-normal">
+              Professor of Practice, DA-IICT/DAU, Gandhinagar; Former Scientist
+              and Group Head, SCL–ISRO
+            </span>
+          </>
+        ),
         audience: "LT1",
       },
       {
@@ -340,7 +418,16 @@ const schedule = [
         duration: "20 min",
         type: "Keynote 12",
         session: "Keynote Block 12",
-        speaker: <>Keynote 12: Dr. Hari Shanker Gupta<br/><span className="text-xs text-gray-500 font-normal">Scientist and Head, Advanced VLSI Design Division, Space Applications Centre, ISRO</span></>,
+        speaker: (
+          <>
+            Keynote 12: Dr. Hari Shanker Gupta
+            <br />
+            <span className="text-xs text-gray-500 font-normal">
+              Scientist and Head, Advanced VLSI Design Division, Space
+              Applications Centre, ISRO
+            </span>
+          </>
+        ),
         audience: "LT1",
       },
       {
@@ -354,17 +441,35 @@ const schedule = [
       {
         time: "11:35 AM – 11:55 AM",
         duration: "20 min",
-        type: "Keynote 13",
+        type: "Keynote 9",
         session: "Keynote Block 13",
-        speaker: <>Keynote 13: Prof. Yogesh Chauhan<br/><span className="text-xs text-gray-500 font-normal">Professor and Head, Department of Electrical Engineering, IIT Kanpur</span></>,
+        speaker: (
+          <>
+            Keynote 13: Prof. Yogesh Chauhan
+            <br />
+            <span className="text-xs text-gray-500 font-normal">
+              Professor and Head, Department of Electrical Engineering, IIT
+              Kanpur
+            </span>
+          </>
+        ),
         audience: "LT1",
       },
       {
         time: "11:55 AM – 12:15 PM",
         duration: "20 min",
-        type: "Keynote 14",
+        type: "Keynote 13",
         session: "Keynote Block 14",
-        speaker: <>Keynote 14: Dr. Gouri Sankar kar<br/><span className="text-xs text-gray-500 font-normal">Vice President, Compute and Memory Device Technologies,IMEC, Belgium</span></>,
+        speaker: (
+          <>
+            Keynote 14: Dr. Gouri Sankar kar
+            <br />
+            <span className="text-xs text-gray-500 font-normal">
+              Vice President, Compute and Memory Device Technologies,IMEC,
+              Belgium
+            </span>
+          </>
+        ),
         audience: "LT1",
       },
       {
@@ -432,18 +537,23 @@ const SessionTable = ({ rows }) => {
             <th className="px-4 py-4 text-left border-r border-white/20">
               Time
             </th>
+
             <th className="px-4 py-4 text-center border-r border-white/20">
               Duration
             </th>
+
             <th className="px-4 py-4 text-left border-r border-white/20">
               Type
             </th>
+
             <th className="px-4 py-4 text-left border-r border-white/20">
               Session
             </th>
+
             <th className="px-4 py-4 text-left border-r border-white/20">
               Speaker / Details
             </th>
+
             <th className="px-4 py-4 text-left">
               Venue / Audience
             </th>
@@ -534,7 +644,8 @@ const Mpro = () => {
           </p>
 
           <p className="mt-3 text-cyan-300 font-semibold text-lg">
-            20–22 August 2026 · Jaypee Institute of Information Technology, Noida
+            20–22 August 2026 · Jaypee Institute of Information Technology,
+            Noida
           </p>
         </div>
       </header>
@@ -571,9 +682,7 @@ const Mpro = () => {
                     {day.day}
                   </h2>
 
-                  <p className="text-gray-600 text-lg">
-                    {day.date}
-                  </p>
+                  <p className="text-gray-600 text-lg">{day.date}</p>
                 </div>
               </div>
 
@@ -591,9 +700,7 @@ const Mpro = () => {
       {/* FOOTER NOTE */}
       <section className="bg-gradient-to-r from-blue-700 via-indigo-700 to-purple-700 text-white">
         <div className="container mx-auto px-6 py-12 text-center">
-          <h3 className="text-3xl font-bold mb-3">
-            VDAT 2026
-          </h3>
+          <h3 className="text-3xl font-bold mb-3">VDAT 2026</h3>
 
           <p className="text-white/90 text-lg">
             Please note that session timings and allocations may be subject
