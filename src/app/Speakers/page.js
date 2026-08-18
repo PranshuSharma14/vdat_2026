@@ -334,7 +334,7 @@ const bothChairAndInvited = [
     designation: "Fellow and Director",
     institution: "L&T Semiconductor Technologies",
     email: "ashish.kumar.sharma@ltsct.com",
-    photo: null,
+    photo: "/images/ashishkumar.jpeg",
   },
 ];
 
