@@ -186,7 +186,7 @@ const sessionChairs = [
     designation: "Director, R&D Engineering",
     institution: "Synopsys",
     email: "vivekd@synopsys.com",
-    photo: "/images/vivek.jpg",
+    photo: "/images/vivekDixit.jpeg",
   },
   {
     sno: 5,
@@ -419,8 +419,8 @@ const PersonTable = ({ data, sectionTitle, accentColor = "#facc15" }) => (
               }}
               onMouseEnter={(e) => (e.currentTarget.style.background = "rgba(250,204,21,0.07)")}
               onMouseLeave={(e) =>
-                (e.currentTarget.style.background =
-                  idx % 2 === 0 ? "rgba(255,255,255,0.03)" : "transparent")
+              (e.currentTarget.style.background =
+                idx % 2 === 0 ? "rgba(255,255,255,0.03)" : "transparent")
               }
             >
               <td className="px-4 py-3 text-gray-400 text-sm font-mono">
